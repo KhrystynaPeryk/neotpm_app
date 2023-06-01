@@ -1,0 +1,74 @@
+@import '../../index.scss';
+
+@keyframes zoomingBackground {
+    0% {
+      background-size: 100% 100%;
+    }
+    50% {
+      background-size: 120% 120%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+}
+  
+.home-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../../assets/images/Home_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: zoomingBackground 10s ease-in-out infinite; /* Adjust the duration as needed */
+}
+
+.home-container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes colorTransition {
+    0% {
+      background-color: $colorT;
+    }
+    50% {
+      background-color: $colorM;
+    }
+    100% {
+        background-color: $colorP; 
+    }
+}
+
+.popup-button {
+    position: fixed;
+    top: 78%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 50%;
+    background-color: $colorT;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    border-radius: 0 8px 8px 0;
+    animation: colorTransition 1s infinite alternate;
+}
+  
+.popup-button-text {
+    writing-mode: vertical-lr;
+    transform: rotate(360deg);
+    color: white;
+    font-size: xx-large;
+}
