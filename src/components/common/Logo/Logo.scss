@@ -1,5 +1,19 @@
 .logo {
     position: absolute;
-    height: 8em;
-    width: 22em;
+    max-height: 8em;
+    max-width: 22em;
+    transition: max-width 0.5s ease, height 0.5s ease;
+
+    @media screen and (max-width: 500px) {
+        max-width: 20em;
+      }
+    @media screen and (max-width: 450px) {
+        max-width: 18em;
+    }
+    @media screen and (max-width: 400px) {
+        max-width: 16em;
+    }
+    @media screen and (max-width: 350px) {
+        max-width: 14em; 
+    }
 }

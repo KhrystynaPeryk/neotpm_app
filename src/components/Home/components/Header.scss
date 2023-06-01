@@ -1,11 +1,20 @@
 .header-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 8em 5em; /* Add the desired padding value */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8em 5em;
+  transition: padding 0.5s ease;
+
+  @media screen and (max-width: 350px) {
+    padding: 8em 4em; 
   }
+
+  @media screen and (max-width: 380px) {
+    padding: 8em 3em; 
+  }
+}
   
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
