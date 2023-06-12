@@ -12,7 +12,7 @@ const Home = () => {
     };
 
     const handleRedirectToQuiz = () => {
-        window.open('https://transparentpm.ae/', '_blank');
+        window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
     }
     return (
         <div className='home-container'>
@@ -31,7 +31,7 @@ const Home = () => {
                     <button type='button' onClick={handleRedirectToQuiz}>START</button>
                 </div>
             </div>
-            <a href='https://api.whatsapp.com/send?phone=971508486964' target='_blank' rel='noopener noreferrer'>
+            <a href='https://api.whatsapp.com/send?phone=971504420182' target='_blank' rel='noopener noreferrer'>
                 <div className='whatsapp-icon'>
                     <img src={WhatsAppIcon} alt='WhatsApp' />
                 </div>

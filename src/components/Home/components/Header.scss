@@ -6,11 +6,18 @@
   transition: padding 0.5s ease;
 
   @media screen and (max-width: 350px) {
-    padding: 8em 4em; 
+    padding: 8em 4em;
+    transition: all 0.5s ease;
   }
 
   @media screen and (max-width: 380px) {
-    padding: 8em 3em; 
+    padding: 8em 3em;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (max-width: 535px) {
+    padding: 7em 3em;
+    transition: all 0.5s ease;
   }
 }
   
