@@ -1,11 +1,18 @@
-import React, { useState } from 'react'
-import './Home.scss'
-import Header from './components/Header'
-import Main from './components/Main'
+import React, { useRef, useState, useEffect } from 'react';
+import './Home.scss';
+import Header from './components/Header';
+import Main from './components/Main';
 import WhatsAppIcon from '../../assets/images/whatsapp-icon.png';
 
 const Home = () => {
     const [isPopupOpen, setPopupOpen] = useState(true);
+
+    const myFirstIngRef = useRef();
+    const mySecondIngRef = useRef();
+    const myThirdIngRef = useRef();
+    const [myFirstElementVisible, setMyFirstElementVisible] = useState(false);
+    const [mySecondElementVisible, setMySecondElementVisible] = useState(false);
+    const [myThirdElementVisible, setMyThirdElementVisible] = useState(false);
 
     const togglePopup = () => {
         setPopupOpen(!isPopupOpen);
@@ -13,31 +20,133 @@ const Home = () => {
 
     const handleRedirectToQuiz = () => {
         window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
-    }
+    };
+
+    //useEffect for handling of fade-in animation for .home-services-content
+    useEffect(() => {
+        const handleIntersection = (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    if (entry.target === myFirstIngRef.current) {
+                    setMyFirstElementVisible(true);
+                    } else if (entry.target === mySecondIngRef.current) {
+                    setMySecondElementVisible(true);
+                    } else if (entry.target === myThirdIngRef.current) {
+                    setMyThirdElementVisible(true);
+                    }
+                } else {
+                    if (entry.target === myFirstIngRef.current) {
+                    setMyFirstElementVisible(false);
+                    } else if (entry.target === mySecondIngRef.current) {
+                    setMySecondElementVisible(false);
+                    } else if (entry.target === myThirdIngRef.current) {
+                    setMyThirdElementVisible(false);
+                    }
+                }
+            });
+        };
+    
+        const options = {
+          threshold: 0.2,
+        };
+    
+        const observer = new IntersectionObserver(handleIntersection, options);
+    
+        if (myFirstIngRef.current) {
+          observer.observe(myFirstIngRef.current);
+        }
+    
+        if (mySecondIngRef.current) {
+          observer.observe(mySecondIngRef.current);
+        }
+    
+        if (myThirdIngRef.current) {
+          observer.observe(myThirdIngRef.current);
+        }
+    
+        return () => {
+          if (myFirstIngRef.current) {
+            observer.unobserve(myFirstIngRef.current);
+          }
+          if (mySecondIngRef.current) {
+            observer.unobserve(mySecondIngRef.current);
+          }
+          if (myThirdIngRef.current) {
+            observer.unobserve(myThirdIngRef.current);
+          }
+        };
+    }, []);
+
     return (
-        <div className='home-container'>
+        <div className="home-container">
+        <section className="home-image">
             <Header />
             <Main />
             {!isPopupOpen && (
-                <div className='popup-button' onClick={togglePopup}>
-                    <span className='popup-button-text'>Quiz</span>
-                </div>
+            <div className="popup-button" onClick={togglePopup}>
+                <span className="popup-button-text">Quiz</span>
+            </div>
             )}
             <div className={isPopupOpen ? 'popup-container open' : 'popup-container'}>
-                <div className='popup-close-icon' onClick={togglePopup}>&times;</div>
-                <div className='popup-text'>
-                    <h1>Quiz Time:</h1>
-                    <p>Uncover Your Personalized <span>Power of Attorney</span> Services in Just a Few Clicks!</p>
-                    <button type='button' onClick={handleRedirectToQuiz}>START</button>
-                </div>
+            <div className="popup-close-icon" onClick={togglePopup}>
+                &times;
             </div>
-            <a href='https://api.whatsapp.com/send?phone=971504420182' target='_blank' rel='noopener noreferrer'>
-                <div className='whatsapp-icon'>
-                    <img src={WhatsAppIcon} alt='WhatsApp' />
-                </div>
+            <div className="popup-text">
+                <h1>Quiz Time:</h1>
+                <p>
+                Uncover Your Personalized <span>Power of Attorney</span> Services in Just a Few Clicks!
+                </p>
+                <button type="button" onClick={handleRedirectToQuiz}>
+                START
+                </button>
+            </div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=971504420182" target="_blank" rel="noopener noreferrer">
+            <div className="whatsapp-icon">
+                <img src={WhatsAppIcon} alt="WhatsApp" />
+            </div>
             </a>
+        </section>
+        <section className="home-services">
+            <div
+            className={`home-services-content ${myFirstElementVisible ? 'fade-in' : ''}`}
+            ref={myFirstIngRef}
+            >
+            <h1>Property Management</h1>
+            <p>Effortless Property Management Solutions: Leave the Hassle to Us</p>
+            <div className="btns-container">
+                <button type="button">Buy</button>
+                <button type="button">Learn More</button>
+            </div>
+            </div>
+            <div className="home-services-image first-service-img" />
+            <div
+            className={`home-services-content ${mySecondElementVisible ? 'fade-in' : ''}`}
+            ref={mySecondIngRef}
+            >
+            <h1>Property Maintenance</h1>
+            <p>Maintain and Enhance Your Property: Expert Property Maintenance Services for Lasting Value</p>
+            <div className="btns-container">
+                <button type="button">Buy</button>
+                <button type="button">Learn More</button>
+            </div>
+            </div>
+            <div className="home-services-image second-service-img" />
+            <div
+            className={`home-services-content ${myThirdElementVisible ? 'fade-in' : ''}`}
+            ref={myThirdIngRef}
+            >
+            <h1>Legal Documentation Support</h1>
+            <p>Simplify Property Processes with Expert Legal Documentation Support</p>
+            <div className="btns-container">
+                <button type="button">Buy</button>
+                <button type="button">Learn More</button>
+            </div>
+            </div>
+            <div className="home-services-image third-service-img" />
+        </section>
         </div>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

@@ -50,18 +50,9 @@
 
 .main-btn {
   z-index: 1;
+  @include reset-button-style;
   margin: 0 auto;
-  background: rgba(203, 200, 45, 0.5);
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  border-radius: 15px;
   color: white;
-  padding: 1em 3.5em;
-  transition: transform 0.25s;
   margin-bottom: 3em;
 }
 

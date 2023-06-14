@@ -16,4 +16,23 @@ $colorM: #D7C724;
 $color1: #44ffff;
 $color2: #ffff92;
 
+@mixin reset-button-style {
+  background: rgba(203, 200, 45, 0.5);
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  border-radius: 15px;
+  padding: 1em 3.5em;
+  transition: transform 0.25s;
+  margin: 2em 0;
+}
+
+
+@mixin hover-btn {
+  transform: translateY(-0.25em);
+  box-shadow: 0 0.5em 0.5em -0.4em $color2;
+}
 
