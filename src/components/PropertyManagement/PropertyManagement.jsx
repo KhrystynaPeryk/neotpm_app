@@ -17,45 +17,45 @@ const PropertyManagement = () => {
             </div>
         </div>
         <div className='property-table-wrapper'>
-            <section>
+            <section className='table-column'>
                 <div>
                     <img className='property-icon' src={LightHouse} alt='LightHouse' />
                 </div>
-                <div>LIGHT</div>
-                <div>Lease Renewal Assitance</div>
-                <div>-</div>
-                <div>-</div>
-                <div>-</div>
-                <div>-</div>
-                <div>From 3000 AED</div>
+                <div className='table-section-header'>LIGHT</div>
+                <div className='table-section-item'>Lease Renewal Assitance</div>
+                <div className='table-section-item'>-</div>
+                <div className='table-section-item'>-</div>
+                <div className='table-section-item'>-</div>
+                <div className='table-section-item'>-</div>
+                <div className='table-section-price'>From 3000 AED</div>
                 <button type='button'>Buy</button>
                 <div>Learn More</div>
             </section>
-            <section>
+            <section className='table-column'>
                 <div>
                     <img className='property-icon' src={StandardHouse} alt='StandardHouse' />
                 </div>
-                <div>STANDARD</div>
-                <div>Lease Renewal Assitance</div>
-                <div>Tenant Search and Liaison</div>
-                <div>Monthly Account Statements</div>
-                <div>Utility Transfer and Bill Payments</div>
-                <div>-</div>
-                <div>From 5000 AED per year</div>
+                <div className='table-section-header'>STANDARD</div>
+                <div className='table-section-item'>Lease Renewal Assitance</div>
+                <div className='table-section-item'>Tenant Search and Liaison</div>
+                <div className='table-section-item'>Monthly Account Statements</div>
+                <div className='table-section-item'>Utility Transfer and Bill Payments</div>
+                <div className='table-section-item'>-</div>
+                <div className='table-section-price'>From 5000 AED per year</div>
                 <button type='button'>Buy</button>
                 <div>Learn More</div>
             </section>
-            <section>
+            <section className='table-column'>
                 <div>
                     <img className='property-icon' src={ExecutiveHouse} alt='ExecutiveHouse' />
                 </div>
-                <div>EXECUTIVE</div>
-                <div>Lease Renewal Assitance</div>
-                <div>Tenant Search and Liaison</div>
-                <div>Monthly Account Statements</div>
-                <div>Utility Transfer and Bill Payments</div>
-                <div>Power of Attorney</div>
-                <div>From 6500 AED per year</div>
+                <div className='table-section-header'>EXECUTIVE</div>
+                <div className='table-section-item'>Lease Renewal Assitance</div>
+                <div className='table-section-item'>Tenant Search and Liaison</div>
+                <div className='table-section-item'>Monthly Account Statements</div>
+                <div className='table-section-item'>Utility Transfer and Bill Payments</div>
+                <div className='table-section-item'>Power of Attorney</div>
+                <div className='table-section-price'>From 6500 AED per year</div>
                 <button type='button'>Buy</button>
                 <div>Learn More</div>
             </section>
