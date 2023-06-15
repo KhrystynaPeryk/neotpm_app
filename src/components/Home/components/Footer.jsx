@@ -32,9 +32,13 @@ const Footer = () => {
             </div>
             <div className='footer-content-block'>
                 <h1>CONNECT WITH US</h1>
-                <div>
-                    <img src={WhatsAppIcon} alt="WhatsApp" />
-                    <img src={InstaIcon} alt="InstagramApp" />
+                <div className='footer-socials'>
+                    <a href="https://api.whatsapp.com/send?phone=971504420182" target="_blank" rel="noopener noreferrer">
+                        <img src={WhatsAppIcon} alt="WhatsApp"/>
+                    </a>
+                    <a href="https://www.instagram.com/transparentpm_auh/?fbclid=IwAR1aiMtOIfc8ThmLDSNeO8D3sTiKHGky8kmRPUhqZEx5lJDdIMAg1vXcr0w" target="_blank" rel="noopener noreferrer">
+                        <img src={InstaIcon} alt="InstagramApp" />
+                    </a>
                 </div>
             </div>
         </div>

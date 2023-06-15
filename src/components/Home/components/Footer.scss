@@ -34,14 +34,17 @@
         font-size: large;
     }
 
+    .footer-socials a {
+        margin-left: 0.5em;
+    }
     img {
         width: 1.5em;
         height: 1.5em;
         object-fit: contain;
     }
-    
-    img:nth-child(2) {
-        margin-left: 0.5em;
+
+    img:hover {
+        cursor: pointer;
     }
 }
 

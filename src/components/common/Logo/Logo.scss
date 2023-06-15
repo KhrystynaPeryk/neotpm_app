@@ -3,11 +3,11 @@
     max-height: 8em;
     max-width: 22em;
     transition: max-width 0.5s ease, height 0.5s ease;
-    z-index: 997;
+    z-index: 1;
 
     @media screen and (max-width: 500px) {
         max-width: 20em;
-      }
+    }
     @media screen and (max-width: 450px) {
         max-width: 18em;
     }

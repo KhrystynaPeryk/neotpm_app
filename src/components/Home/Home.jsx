@@ -1,11 +1,15 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Home.scss';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import WhatsAppIcon from '../../assets/images/whatsapp-icon.png';
+import NavBar from '../common/NavBar/NavBar';
 
 const Home = () => {
+    const navigate = useNavigate();
+
     const [isPopupOpen, setPopupOpen] = useState(true);
     const togglePopup = () => {
         setPopupOpen(!isPopupOpen);
@@ -13,6 +17,10 @@ const Home = () => {
 
     const handleRedirectToQuiz = () => {
         window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
+    };
+
+    const redirectToPropertyManagement = () => {
+      navigate('/property-management');
     };
 
     //below const and useEffect for handling of fade-in animation for .home-services-content
@@ -72,6 +80,7 @@ const Home = () => {
     return (
         <div className="home-container">
         <section className="home-image">
+            <NavBar />
             <Header />
             <Main />
             {!isPopupOpen && (
@@ -108,7 +117,7 @@ const Home = () => {
                 <p>Effortless Property Management Solutions: Leave the Hassle to Us</p>
                 <div className="btns-container">
                     <button type="button">Buy</button>
-                    <button type="button">Learn More</button>
+                    <button type="button" onClick={redirectToPropertyManagement}>Learn More</button>
                 </div>
             </div>
             <div className="home-services-image first-service-img" />
