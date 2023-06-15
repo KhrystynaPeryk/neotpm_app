@@ -9,17 +9,11 @@ import ExecutiveHouse from '../../assets/images/executive_house.png'
 const PropertyManagement = () => {
   return (
     <div className='property-container'>
-        <div>
+        <div className='property-before-table'>
             <NavBar />
-            <div className='header-container'>
-                <div className='logo-container'>
-                    <Logo />
-                </div>
-            </div>
-            <div className='main-container'>
-                <div className='main-text-box property-header-container'>
-                    <p className='header'>Our Property Management Packages</p>
-                </div>
+            <Logo />
+            <div className='property-header-wrapper'>
+                <p className='property-header'>Our Property Management Packages</p>
             </div>
         </div>
         <div className='property-table-wrapper'>
@@ -28,18 +22,42 @@ const PropertyManagement = () => {
                     <img className='property-icon' src={LightHouse} alt='LightHouse' />
                 </div>
                 <div>LIGHT</div>
+                <div>Lease Renewal Assitance</div>
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+                <div>-</div>
+                <div>From 3000 AED</div>
+                <button type='button'>Buy</button>
+                <div>Learn More</div>
             </section>
             <section>
                 <div>
                     <img className='property-icon' src={StandardHouse} alt='StandardHouse' />
                 </div>
                 <div>STANDARD</div>
+                <div>Lease Renewal Assitance</div>
+                <div>Tenant Search and Liaison</div>
+                <div>Monthly Account Statements</div>
+                <div>Utility Transfer and Bill Payments</div>
+                <div>-</div>
+                <div>From 5000 AED per year</div>
+                <button type='button'>Buy</button>
+                <div>Learn More</div>
             </section>
             <section>
                 <div>
                     <img className='property-icon' src={ExecutiveHouse} alt='ExecutiveHouse' />
                 </div>
                 <div>EXECUTIVE</div>
+                <div>Lease Renewal Assitance</div>
+                <div>Tenant Search and Liaison</div>
+                <div>Monthly Account Statements</div>
+                <div>Utility Transfer and Bill Payments</div>
+                <div>Power of Attorney</div>
+                <div>From 6500 AED per year</div>
+                <button type='button'>Buy</button>
+                <div>Learn More</div>
             </section>
         </div>
     </div>

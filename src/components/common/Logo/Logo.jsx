@@ -4,7 +4,9 @@ import logo from '../../../assets/images/Transparent_Logo_resized.png'
 
 const Logo = () => {
   return (
-    <img className='logo' src={logo} alt='logo'/>
+    <div className='logo-container'>
+      <img className='logo' src={logo} alt='logo'/>
+    </div>
   )
 }
 

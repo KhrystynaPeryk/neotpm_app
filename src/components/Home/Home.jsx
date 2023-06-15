@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.scss';
-import Header from './components/Header';
+import Logo from '../common/Logo/Logo';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import WhatsAppIcon from '../../assets/images/whatsapp-icon.png';
@@ -81,7 +81,7 @@ const Home = () => {
         <div className="home-container">
         <section className="home-image">
             <NavBar />
-            <Header />
+            <Logo />
             <Main />
             {!isPopupOpen && (
             <div className="popup-button" onClick={togglePopup}>
