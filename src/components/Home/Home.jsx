@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import './Home.scss';
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/Footer';
 import WhatsAppIcon from '../../assets/images/whatsapp-icon.png';
 
 const Home = () => {
@@ -135,6 +136,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="home-services-image third-service-img" />
+            <Footer />
         </section>
         </div>
     );

@@ -81,6 +81,8 @@
     transform: rotate(360deg);
     color: white;
     font-size: xx-large;
+    font-family: 'Domine', serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 // POP UP open style
@@ -168,15 +170,21 @@
     font-weight: 600;
     text-align: center;
     padding: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     h1 {
         font-size: xx-large;
         margin-top: 1em;
+        font-family: 'Abril Fatface', cursive;
 
         @media screen and (max-height: 750px) {
             font-size: large;
             transition: font-size 0.5s ease;
         }
+    }
+
+    p {
+        font-family: 'Domine', serif;
     }
 
     span {
@@ -186,6 +194,8 @@
     button {
         @include reset-button-style;
         color: white;
+        font-family: 'Domine', serif;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     button:hover {
@@ -255,6 +265,7 @@
     display: inline-grid;
     grid-template-columns: auto auto;
     gap: 1em;
+    font-family: 'Domine', serif;
 
     @media screen and (max-width: 300px) {
         grid-template-columns: auto;
@@ -268,6 +279,15 @@
     margin-left: 5em;
     margin-right: 5em;
     margin-bottom: 1em;
+
+    h1 {
+        font-family: 'Abril Fatface', cursive;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-family: 'Domine', serif;
+    }
 }
 
 @keyframes fadeIn {
@@ -287,11 +307,6 @@
     animation-fill-mode: forwards;
 }
 
-.home-services-image {
-    width: 100%;
-    margin-bottom: 3em;
-}
-
 .first-service-img {
     background-image: url('../../assets/images/img_3.jpg');
     background-size: cover;
@@ -300,6 +315,7 @@
     width: 100%;
     height: 30vh;
     background-attachment: fixed;
+    margin-bottom: 3em;
 }
 
 .second-service-img {
@@ -310,6 +326,7 @@
     width: 100%;
     height: 30vh;
     background-attachment: fixed;
+    margin-bottom: 3em;
 }
 
 .third-service-img {
@@ -320,4 +337,5 @@
     width: 100%;
     height: 30vh;
     background-attachment: fixed;
+    margin-bottom: 0;
 }

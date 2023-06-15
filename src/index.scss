@@ -16,6 +16,7 @@ $colorM: #D7C724;
 $color1: #44ffff;
 $color2: #ffff92;
 
+// button style
 @mixin reset-button-style {
   background: rgba(203, 200, 45, 0.5);
   border: none;
@@ -30,9 +31,15 @@ $color2: #ffff92;
   margin: 2em 0;
 }
 
-
+// button hover style
 @mixin hover-btn {
   transform: translateY(-0.25em);
   box-shadow: 0 0.5em 0.5em -0.4em $color2;
 }
 
+//Fonts
+// font-family: 'Abril Fatface', cursive;
+//font-family: 'Domine', serif;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Barlow Semi Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&family=Domine:wght@400;500;600&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap')
