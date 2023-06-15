@@ -29,7 +29,7 @@ const PropertyManagement = () => {
                 <div className='table-section-item'>-</div>
                 <div className='table-section-price'>From 3000 AED</div>
                 <button type='button'>Buy</button>
-                <div>Learn More</div>
+                <div className='property-learn-more'>Learn More</div>
             </section>
             <section className='table-column'>
                 <div>
@@ -43,7 +43,7 @@ const PropertyManagement = () => {
                 <div className='table-section-item'>-</div>
                 <div className='table-section-price'>From 5000 AED per year</div>
                 <button type='button'>Buy</button>
-                <div>Learn More</div>
+                <div className='property-learn-more'>Learn More</div>
             </section>
             <section className='table-column'>
                 <div>
@@ -57,7 +57,7 @@ const PropertyManagement = () => {
                 <div className='table-section-item'>Power of Attorney</div>
                 <div className='table-section-price'>From 6500 AED per year</div>
                 <button type='button'>Buy</button>
-                <div>Learn More</div>
+                <div className='property-learn-more'>Learn More</div>
             </section>
         </div>
     </div>

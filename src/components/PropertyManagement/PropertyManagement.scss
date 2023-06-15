@@ -20,21 +20,19 @@
     padding-bottom: 1em;
   
     @media screen and (max-width: 768px) {
-      height: auto;
       flex-direction: column;
       transition: all 0.5s ease;
     }
   
     @media screen and (max-width: 600px) {
-      height: auto;
       flex-direction: column;
       transition: all 0.5s ease;
-    }
+    }    
 
     .property-header {
         z-index: 1;
-        font-size: xxx-large;
-        width: 70%;
+        font-size: xx-large;
+        width: 30%;
         border-top: 1px solid $colorM;
         border-bottom: 1px solid $colorM;
         margin-bottom: 1em;
@@ -46,35 +44,20 @@
         margin: 0;
         padding-top: 1em;
         padding-bottom: 1em;
-       
-        @media screen and (max-width: 768px) {
-            padding: 20px;
-            width: 70%;
-            transition: all 0.5s ease;
-        }
-        
-        @media screen and (min-width: 769px) {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
+
+        @media screen and (max-width: 2065px) {
+            width: 40%;
             transition: all 0.5s ease;
         }
 
-        @media screen and (max-width: 1325px) {
-            width: 45%;
-            margin-left: auto;
-            margin-right: auto;
+        @media screen and (max-width: 770px) {
+            font-size: x-large;
             transition: all 0.5s ease;
         }
-      
-        @media screen and (max-height: 875px) {
-            font-size: xx-large;
-            transition: font-size 0.5s ease;
-        }
-      
-        @media screen and (max-width: 535px) {
-            font-size: xx-large;
-            width: 70%;
+
+        @media screen and (max-width: 470px) {
+            font-size: large;
+            width: 50%;
             transition: all 0.5s ease;
         }
     }
@@ -84,27 +67,49 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
-    // align-items: center;
+    margin-top: 2em;
+
+    @media screen and (max-width: 1170px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        transition: all 0.5s ease;
+    }
 
     .table-column {
         flex: 1;
         text-align: center;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: bold;
 
         .table-section-header {
             margin: 2em;
+            font-family: 'Domine', serif;
+            font-size: large;
+            font-weight: bolder;
         }
 
         .table-section-item {
             margin: 1em;
+            letter-spacing: 0.1em;
+            height: 2em;
         }
 
         .table-section-price {
             margin: 2em;
+            font-family: 'Domine', serif;
+            font-size: large;
+            font-weight: bolder;
+            height: 2em;
+            display: flex;
+            justify-content: center;
         }
 
         button {
             @include reset-button-style;
             color: white;
+            font-family: 'Domine', serif;
+            font-size: large;
+            font-weight: bolder;
             background-color: $colorT;
             margin-top: 1em;
             margin-bottom: 2em;
@@ -115,6 +120,11 @@
         button:hover {
             box-shadow: rgba(0, 0, 0, 0.5) 0px 64px 75px, rgba(0, 0, 0, 0.22) 0px -16px 40px, rgba(0, 0, 0, 0.22) 0px 6px 8px, rgba(0, 0, 0, 0.27) 0px 16px 18px, rgba(0, 0, 0, 0.19) 0px -5px 7px;
             transform: scale(1.1);
+        }
+
+        .property-learn-more {
+            margin-bottom: 2em;
+            color: #238DC1;
         }
     }
 }
