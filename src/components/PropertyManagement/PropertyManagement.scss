@@ -60,6 +60,10 @@
             width: 50%;
             transition: all 0.5s ease;
         }
+
+        &.subheader {
+            font-size: x-large;
+        }
     }
 }
 
@@ -125,6 +129,16 @@
         .property-learn-more {
             margin-bottom: 2em;
             color: #238DC1;
+
+            img {
+                width: 0.5em;
+                height: 0.5em;
+            }
+        }
+
+        .property-learn-more:hover {
+            cursor: pointer;
+            color: #39a5af;
         }
     }
 }
@@ -134,3 +148,24 @@
     height: 5em;
 }
 
+.maintenance-img {
+    @include service-img-style;
+    margin-bottom: 5em;
+
+    &.first {
+        background-image: url('../../assets/images/img_5.jpg');
+    }
+
+    &.second {
+        background-image: url('../../assets/images/img_4.jpg');
+    }
+
+    &.third {
+        background-image: url('../../assets/images/img_1.jpg');
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    z-index: 1;
+}

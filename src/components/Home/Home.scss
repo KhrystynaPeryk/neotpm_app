@@ -26,7 +26,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60em;
+    height: 65em;
     z-index: 1;
     background-image: url('../../assets/images/Home_image_resized.jpg');
     background-size: cover;
@@ -42,7 +42,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60em;
+    height: 65em;
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -74,6 +74,11 @@
     z-index: 999;
     border-radius: 0 8px 8px 0;
     animation: colorTransition 1s infinite alternate;
+
+    @media screen and (max-height: 530px) {
+        width: 40px;
+        transition: all 0.5s ease;
+    }
 }
  
 .popup-button-text {
@@ -83,6 +88,11 @@
     font-size: xx-large;
     font-family: 'Domine', serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+    @media screen and (max-height: 530px) {
+        font-size: medium;
+        transition: all 0.5s ease;
+    }
 }
 
 // POP UP open style
@@ -237,10 +247,10 @@
 
 .home-services {
     position: relative;
-    top: 60em;
+    top: 65em;
     left: 0;
     margin-top: 2em;
-    height: calc(100vh - 60em);
+    height: calc(100vh - 65em);
     width: 100%;
 
     button {
@@ -312,33 +322,18 @@
 
 .first-service-img {
     background-image: url('../../assets/images/img_3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 30vh;
-    background-attachment: fixed;
+    @include service-img-style;
     margin-bottom: 3em;
 }
 
 .second-service-img {
     background-image: url('../../assets/images/img_2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 30vh;
-    background-attachment: fixed;
+    @include service-img-style;
     margin-bottom: 3em;
 }
 
 .third-service-img {
     background-image: url('../../assets/images/img_6.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 30vh;
-    background-attachment: fixed;
+    @include service-img-style;
     margin-bottom: 0;
 }

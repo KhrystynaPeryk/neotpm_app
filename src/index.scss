@@ -37,9 +37,20 @@ $color2: #ffff92;
   box-shadow: 0 0.5em 0.5em -0.4em $color2;
 }
 
+// image style
+@mixin service-img-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  background-attachment: fixed;
+}
+
 //Fonts
 // font-family: 'Abril Fatface', cursive;
 //font-family: 'Domine', serif;
 //font-family: 'Open Sans', sans-serif;
 //font-family: 'Barlow Semi Condensed', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@100;300&family=Domine:wght@400;500;600;700&family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap')
+

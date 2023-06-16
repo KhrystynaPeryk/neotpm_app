@@ -1,43 +1,49 @@
-.logo {
-    position: absolute;
-    max-height: 8em;
-    max-width: 22em;
-    transition: max-width 0.5s ease, height 0.5s ease;
-    z-index: 1;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8em 5em;
+  transition: padding 0.5s ease;
 
-    @media screen and (max-width: 500px) {
-        max-width: 20em;
-    }
-    @media screen and (max-width: 450px) {
-        max-width: 18em;
-    }
-    @media screen and (max-width: 400px) {
-        max-width: 16em;
-    }
-    @media screen and (max-width: 350px) {
-        max-width: 14em; 
-    }
-}
-    
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 8em 5em;
-    transition: padding 0.5s ease;
-  
-    @media screen and (max-width: 350px) {
-      padding: 8em 4em;
-      transition: all 0.5s ease;
-    }
-  
-    @media screen and (max-width: 380px) {
-      padding: 8em 3em;
-      transition: all 0.5s ease;
-    }
-  
-    @media screen and (max-width: 535px) {
-      padding: 7em 3em;
-      transition: all 0.5s ease;
-    }
+  @media screen and (max-width: 350px) {
+    padding: 8em 4em;
+    transition: all 0.5s ease;
   }
+
+  @media screen and (max-width: 380px) {
+    padding: 8em 3em;
+    transition: all 0.5s ease;
+  }
+
+  @media screen and (max-width: 535px) {
+    padding: 7em 3em;
+    transition: all 0.5s ease;
+  }
+}
+
+.logo {
+  position: absolute;
+  max-height: 8em;
+  max-width: 22em;
+  transition: max-width 0.5s ease, height 0.5s ease;
+  z-index: 1;
+
+  @media screen and (max-width: 500px) {
+    max-width: 20em;
+  }
+  @media screen and (max-width: 450px) {
+    max-width: 18em;
+  }
+  @media screen and (max-width: 400px) {
+    max-width: 16em;
+  }
+  @media screen and (max-width: 350px) {
+    max-width: 14em; 
+  }
+
+  &.logo:hover {
+    cursor: pointer;
+  }
+}
+
+
