@@ -15,7 +15,7 @@ const PropertyManagement = () => {
     };
     
         
-    //below const and useEffect for handling of fade-in animation for .home-services-content
+    //below const and useEffect for handling of fade-in animation for .property-after-table
     const myFirstIngRef = useRef();
     const mySecondIngRef = useRef();
     const myThirdIngRef = useRef();
@@ -127,7 +127,7 @@ const PropertyManagement = () => {
                 ref={myFirstIngRef}
             >
                 <div className='property-header-wrapper'>
-                    <p className='property-header subheader'>LIGHT Package</p>
+                    <p className='property-header subheader'>LIGHT</p>
                 </div>
                 <p className='property-package-caption'>Experience the Convenience of <span>Lease Renewal Assistance</span>.</p>
                 <p className='property-package-description'>
@@ -142,7 +142,7 @@ const PropertyManagement = () => {
                 ref={mySecondIngRef}
             >
                 <div className='property-header-wrapper'>
-                    <p className='property-header subheader'>STANDARD Package</p>
+                    <p className='property-header subheader'>STANDARD</p>
                 </div>
                 <p className='property-package-caption'>Elevate Your Property Management Experience.</p>
                 <p className='property-package-description'>
@@ -157,7 +157,7 @@ const PropertyManagement = () => {
                 ref={myThirdIngRef}
             >
                 <div className='property-header-wrapper'>
-                    <p className='property-header subheader'>EXECUTIVE Package</p>
+                    <p className='property-header subheader'>EXECUTIVE</p>
                 </div>
                 <p className='property-package-caption'>Seamlessly Managed Properties with Added <span>Power of Attorney</span>.</p>
                 <p className='property-package-description'>
