@@ -63,34 +63,43 @@ const PropertyManagement = () => {
             </section>
         </div>
         <div className="home-services-image maintenance-img first" />
-        <div className='property-before-table'>
+        <div className='property-after-table'>
             <div className='property-header-wrapper'>
                 <p className='property-header subheader'>LIGHT Package</p>
             </div>
-            <p>Experience the Convenience of Lease Renewal Assistance
-                Discover the ease and efficiency of our Light Package, designed to provide you with a delightful taste of our exceptional services. With Transparent's Lease Renewal Assistance, we simplify the process, taking care of all the paperwork and negotiations on your behalf. Sit back and relax, knowing that your lease renewal is in the hands of our expert team. Experience hassle-free property management, even at its lightest level.
+            <p className='property-package-caption'>Experience the Convenience of <span>Lease Renewal Assistance</span>.</p>
+            <p className='property-package-description'>
+                Discover the ease and efficiency of our <b>Light Package</b>, designed to provide you with a delightful taste of our exceptional services. With Transparent's Lease Renewal Assistance, we <span>simplify the process</span>, taking care of all the paperwork and negotiations on your behalf. Sit back and relax, knowing that your lease renewal is in the hands of our expert team. Experience <span>hassle-free property management</span>, even at its lightest level.
             </p>
-            <button type='button'>Buy</button>
+            <div className='property-button-wrapper'>
+                <button type='button'>Buy</button>
+            </div>
         </div>
         <div className="home-services-image maintenance-img second" />
-        <div className='property-before-table'>
+        <div className='property-after-table'>
             <div className='property-header-wrapper'>
                 <p className='property-header subheader'>STANDARD Package</p>
             </div>
-            <p>Elevate Your Property Management Experience
-                Elevate your property management experience with our comprehensive Standard Package. At Transparent, we go above and beyond to ensure your property is impeccably managed. From rent collection and tenant screening to regular property inspections and maintenance coordination, we handle it all. With our unwavering commitment to excellence, your property investment will thrive under our care. Trust in our expertise and let us unlock the full potential of your property.
+            <p className='property-package-caption'>Elevate Your Property Management Experience.</p>
+            <p className='property-package-description'>
+                Elevate your property management experience with our comprehensive <b>Standard Package</b>. At Transparent, we go above and beyond to ensure your property is <span>impeccably managed</span>. From <span>rent collection</span> and <span>tenant screening</span> to regular <span>property inspections</span> and <span>maintenance coordination</span>, we handle it all. With our unwavering commitment to excellence, your property investment will thrive under our care. Trust in our expertise and let us unlock the full potential of your property.
             </p>
-            <button type='button'>Buy</button>
+            <div className='property-button-wrapper'>
+                <button type='button'>Buy</button>
+            </div>
         </div>
         <div className="home-services-image maintenance-img third" />
-        <div className='property-before-table'>
+        <div className='property-after-table'>
             <div className='property-header-wrapper'>
                 <p className='property-header subheader'>EXECUTIVE Package</p>
             </div>
-            <p>Seamlessly Managed Properties with Added Power of Attorney
-                Take your property management to new heights with our exclusive Executive Package. In addition to our comprehensive property management services, this package offers the invaluable benefit of Power of Attorney assistance. Our experienced team will handle all legal matters related to your property, ensuring seamless transactions and efficient representation on your behalf. Experience the peace of mind that comes with entrusting your property to Transparent's expert hands. Maximize your property's potential while enjoying the added convenience of our Executive Package.
+            <p className='property-package-caption'>Seamlessly Managed Properties with Added <span>Power of Attorney</span>.</p>
+            <p className='property-package-description'>
+                Take your property management to new heights with our exclusive <b>Executive Package</b>. In addition to our <span>comprehensive property management</span> services, this package offers the invaluable benefit of Power of Attorney assistance. Our experienced team will handle all legal matters related to your property, ensuring <span>seamless transactions</span> and <span>efficient representation on your behalf</span>. Experience the peace of mind that comes with entrusting your property to Transparent's expert hands. Maximize your property's potential while enjoying the added convenience of our Executive Package.
             </p>
-            <button type='button'>Buy</button>
+            <div className='property-button-wrapper'>
+                <button type='button'>Buy</button>
+            </div>
         </div>
         <div className='footer-wrapper'>
             <Footer />

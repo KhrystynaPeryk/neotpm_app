@@ -165,6 +165,66 @@
     }
 }
 
+.property-after-table {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    .property-package-caption {
+        font-family: 'Domine', serif;
+        font-weight: bold;
+        font-size: larger;
+        line-height: 2em;
+        letter-spacing: 0.3em;
+        text-align: center;
+
+        span {
+            color: $colorM;
+        }
+    }
+
+    .property-package-description {
+        font-family: 'Domine', serif;
+        line-height: 2em;
+        text-align: justify;
+        letter-spacing: 0.1em;
+
+        span {
+            color: $colorT;
+            font-style: italic;
+
+        }
+    }
+
+    .property-button-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            @include reset-button-style;
+            color: white;
+            background-color: #D7C724;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: box-shadow 0.3s ease;
+    
+            @media screen and (max-width: 460px) {
+                padding: 1em 1.3em;
+                transition: padding 0.5s ease;
+            }
+    
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 64px 75px, rgba(0, 0, 0, 0.22) 0px -16px 40px, rgba(0, 0, 0, 0.22) 0px 6px 8px, rgba(0, 0, 0, 0.27) 0px 16px 18px, rgba(0, 0, 0, 0.19) 0px -5px 7px;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
 .footer-wrapper {
     width: 100%;
     z-index: 1;
