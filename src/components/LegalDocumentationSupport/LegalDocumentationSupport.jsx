@@ -44,7 +44,20 @@ const LegalDocumentationSupport = () => {
                 </div>
               </div>
               <div className='flip-card-back'>
-                <p>Additional information about Power of Attorney</p>
+                <div>
+                  <h1>Planning to leave UAE or have left already?</h1>
+                  <p>
+                    You will need to appoint a responsible party who can <b>represent you and act on your behalf</b> to address a property concern while residing outside of the country.
+                    Without local representation, overseas owners who rent out property in the region face the expensive and time-consuming necessity of flying overseas to get things done in Abu Dhabi.
+                  </p>
+                  <ul>
+                    <p>We will help you with:</p>
+                    <li>issuing a Tawtheeq for your tenant</li>
+                    <li>collecting a title deed to settle a dispute</li>
+                    <li>a property handover</li>
+                    <li>buying and renting property in the UAE</li>
+                  </ul>     
+                </div>
                 <div className='back-button-wrapper'>
                   <div className='back-button' onClick={flipBack}><img src={ArrowLeft} alt='arrow-left'/> Back</div>
                 </div>
@@ -76,9 +89,11 @@ const LegalDocumentationSupport = () => {
                 </div>
               </div>
               <div className='flip-card-back'>
-                <p>Additional information about Golden Visa Assistance</p>
+                <h1>Are you planning to apply for a UAE Golden Visa?</h1>
+                <p>Would you like to determine if you meet the eligibility criteria for this program?</p>
+                <p>Our team is ready to assist you in assessing your qualifications for the UAE Golden Visa and managing the application process, ensuring a smooth and convenient experience as you obtain your UAE Golden Visa.</p>
                 <div className='back-button-wrapper'>
-                <div className='back-button' onClick={flipBack}><img src={ArrowLeft} alt='arrow-left'/> Back</div>
+                  <div className='back-button' onClick={flipBack}><img src={ArrowLeft} alt='arrow-left'/> Back</div>
                 </div>
               </div>
             </div>
@@ -96,9 +111,20 @@ const LegalDocumentationSupport = () => {
                 </div>
               </div>
               <div className='flip-card-back'>
-                <p>Additional information about Tawtheeq Assistance</p>
+                <h1>Do you wish to rent out property in the UAE?</h1>
+                <p>
+                  If so, you will need a Tawtheeq.
+                  A Tawtheeq is the government registration of your lease contract designed to formalise agreements and ensure transparency between landlords and tenants to help avoid disputes. 
+                </p>
+                <ul>
+                  <p>Reasons to get Tawtheeq</p>
+                  <li>Landlords cannot create a legal lease without a Tawtheeq, and you will not be able to raise a court case in the event of a dispute.</li>
+                  <li>Some community management companies have strict rules and may not allow tenants to move into a property without a Tawtheeq in place.</li>
+                  <li>A registered and up-to-date Tawtheeq Abu Dhabi contract is needed to connect your electricity and water with the Abu Dhabi Distribution Company (ADDC).</li>
+                  <li>Many types of tenants must have a legal Tawtheeq contract, such as government workers and those that want to sponsor a family member for a residence permit, for instance.</li>
+                </ul>
                 <div className='back-button-wrapper'>
-                <div className='back-button' onClick={flipBack}><img src={ArrowLeft} alt='arrow-left'/> Back</div>
+                  <div className='back-button' onClick={flipBack}><img src={ArrowLeft} alt='arrow-left'/> Back</div>
                 </div>
               </div>
             </div>

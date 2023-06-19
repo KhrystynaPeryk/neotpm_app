@@ -79,16 +79,16 @@ const PropertyMaintenance = () => {
             <div className="maintenance-img img-one" ref={imageContainerRef} />
             <div>
                 <h1>We Offer</h1>
-                <ul class="offer-list" >
-                    <li class="offer">Unlimited maintenance assistance calls</li>
-                    <li class="offer">24/7 coordination of maintenance work</li>
-                    <li class="offer">Collaboration with skilled tradesmen</li>
-                    <li class="offer">In-house team for prompt service at competitive prices</li>
-                    <li class="offer">Expert coordination with contractors and tenants</li>
-                    <li class="offer">Swift response to tenant emergencies</li>
-                    <li class="offer">Comprehensive property restoration services</li>
-                    <li class="offer">Thorough de-snagging before tenant occupancy</li>
-                    <li class="offer">Monthly account statements for cost transparency</li>
+                <ul className="offer-list" >
+                    <li className="offer">Unlimited maintenance assistance calls</li>
+                    <li className="offer">24/7 coordination of maintenance work</li>
+                    <li className="offer">Collaboration with skilled tradesmen</li>
+                    <li className="offer">In-house team for prompt service at competitive prices</li>
+                    <li className="offer">Expert coordination with contractors and tenants</li>
+                    <li className="offer">Swift response to tenant emergencies</li>
+                    <li className="offer">Comprehensive property restoration services</li>
+                    <li className="offer">Thorough de-snagging before tenant occupancy</li>
+                    <li className="offer">Monthly account statements for cost transparency</li>
                 </ul>
             </div>
             <div className="maintenance-img img-two" />
