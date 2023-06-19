@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
+import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 
 const PropertyMaintenance = () => {
+    const offerListRef = useRef(null);
+    useEffect(() => {
+        const listItems = offerListRef.current.querySelectorAll('.offer-list li');
+        for (let i = 0; i < listItems.length; i++) {
+          listItems[i].style.transitionDelay = `${i * 100}ms`;
+          listItems[i].classList.add('visible');
+        }
+      }, []);
+
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -48,6 +58,25 @@ const PropertyMaintenance = () => {
                         <label for="maid">Maid's room</label>
                     </div>
                 </div>
+            </div>
+            <div className="maintenance-img img-one" />
+            <div>
+                <h1>We Offer</h1>
+                <ul class="offer-list" ref={offerListRef}>
+                    <li class="offer">Unlimited maintenance assistance calls</li>
+                    <li class="offer">24/7 coordination of maintenance work</li>
+                    <li class="offer">Collaboration with skilled tradesmen</li>
+                    <li class="offer">In-house team for prompt service at competitive prices</li>
+                    <li class="offer">Expert coordination with contractors and tenants</li>
+                    <li class="offer">Swift response to tenant emergencies</li>
+                    <li class="offer">Comprehensive property restoration services</li>
+                    <li class="offer">Thorough de-snagging before tenant occupancy</li>
+                    <li class="offer">Monthly account statements for cost transparency</li>
+                </ul>
+            </div>
+            <div className="maintenance-img img-two" />
+            <div className='footer-wrapper'>
+                <Footer />
             </div>
         </div>
     )
