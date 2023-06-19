@@ -2,15 +2,41 @@
 
 .tiles-container {
     padding-top: 2em;
-    width: 80%;
+    // width: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-bottom: 2em;
+
+    // @media screen and (max-height: 760px) {
+    //     display: block;
+    //     transition: all 0.5s ease;
+    // }
 }
 
 .tiles-row {
     display: flex;
     justify-content: center;
+    align-items:center;
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.5s ease;
+
+        .tiles-img {
+            order: -1; /* Move .tiles-price to the beginning */
+            margin-bottom: 2em;
+            transition: all 0.5s ease;
+            font-size: small;
+            // width: 60vh;
+        }
+    }
+
+    // @media screen and (max-height: 760px) {
+    //     width: 100vh; 
+    // }
+
 }
 
 .tiles-img {
@@ -19,6 +45,48 @@
     width: 60vh;
     height: 40vh;
     perspective: 1000px;
+
+    @media screen and (max-height: 760px) {
+        width: 100%; 
+    }
+
+
+
+    @media screen and (min-width: 1320px) {
+        height: 70vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 1320px) {
+        height: 70vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 1120px) {
+        height: 75vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 1070px) {
+        height: 80vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 960px) {
+        height: 60vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 895px) {
+        height: 66vh;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 75vh;
+        transition: all 0.5s ease;
+    }
+
 
     .flip-card-inner {
         width: 100%;
@@ -46,6 +114,7 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         //below padding makes overlap of tiles
+        box-sizing: border-box;
         padding: 2em;
     }
     
@@ -82,6 +151,11 @@
         // flex-direction: column;
         // justify-content: center;
         // align-items: center;
+
+        @media screen and (max-width: 960px) {
+            font-size: small;
+            transition: all 0.5s ease;
+        }
 
         &:before {
             content: "";
@@ -141,6 +215,11 @@
     }
 }
 
+.flip-card-back-bottom {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .document-button-wrapper {
     z-index: 1;
 
@@ -165,6 +244,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    // @media screen and (max-height: 760px) {
+    //     width: 100vh; 
+    // }
 
     p {
         font-family: 'Domine', serif;

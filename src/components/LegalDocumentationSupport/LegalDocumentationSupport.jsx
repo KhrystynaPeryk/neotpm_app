@@ -47,7 +47,7 @@ const LegalDocumentationSupport = () => {
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
-                <div>
+                <div className='flip-card-back-padding'>
                   <h1>Planning to leave UAE or have left already?</h1>
                   <p>
                     You will need to appoint a responsible party who can <b>represent you and act on your behalf</b> to address a property concern while residing outside of the country.
@@ -115,16 +115,16 @@ const LegalDocumentationSupport = () => {
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
                 <h1>Do you wish to rent out property in the UAE?</h1>
-                <p>
+                <p className='flip-card-back-bottom'>
                   If so, you will need a Tawtheeq.
                   A Tawtheeq is the government registration of your lease contract designed to formalise agreements and ensure transparency between landlords and tenants to help avoid disputes. 
                 </p>
                 <ul>
-                  <p>Reasons to get Tawtheeq</p>
+                  <p className='flip-card-back-bottom'>Reasons to get Tawtheeq</p>
                   <li>Landlords cannot create a legal lease without a Tawtheeq, and you will not be able to raise a court case in the event of a dispute.</li>
                   <li>Some community management companies have strict rules and may not allow tenants to move into a property without a Tawtheeq in place.</li>
                   <li>A registered and up-to-date Tawtheeq Abu Dhabi contract is needed to connect your electricity and water with the Abu Dhabi Distribution Company (ADDC).</li>
-                  <li>Many types of tenants must have a legal Tawtheeq contract, such as government workers and those that want to sponsor a family member <br /> for a residence permit, for instance.</li>
+                  <li>Many types of tenants must have a legal Tawtheeq contract, such as government workers and those that want to sponsor a family member for a residence permit, for instance.</li>
                 </ul>
               </div>
             </div>
