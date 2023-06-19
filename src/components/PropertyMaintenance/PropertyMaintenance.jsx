@@ -5,14 +5,31 @@ import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 
 const PropertyMaintenance = () => {
-    const offerListRef = useRef(null);
+
+    const imageContainerRef = useRef(null);
     useEffect(() => {
-        const listItems = offerListRef.current.querySelectorAll('.offer-list li');
-        for (let i = 0; i < listItems.length; i++) {
-          listItems[i].style.transitionDelay = `${i * 100}ms`;
-          listItems[i].classList.add('visible');
-        }
+        const handleScroll = () => {
+          if (imageContainerRef.current) {
+            const scrollPosition = window.scrollY;
+            imageContainerRef.current.style.backgroundPositionY = `${scrollPosition}px`;
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
       }, []);
+
+      //UL styling
+    // const offerListRef = useRef(null);
+    // useEffect(() => {
+    //     const listItems = offerListRef.current.querySelectorAll('.offer-list li');
+    //     for (let i = 0; i < listItems.length; i++) {
+    //       listItems[i].style.transitionDelay = `${i * 100}ms`;
+    //       listItems[i].classList.add('visible');
+    //     }
+    //   }, []);
 
     return (
         <div className='property-container'>
@@ -59,10 +76,10 @@ const PropertyMaintenance = () => {
                     </div>
                 </div>
             </div>
-            <div className="maintenance-img img-one" />
+            <div className="maintenance-img img-one" ref={imageContainerRef} />
             <div>
                 <h1>We Offer</h1>
-                <ul class="offer-list" ref={offerListRef}>
+                <ul class="offer-list" >
                     <li class="offer">Unlimited maintenance assistance calls</li>
                     <li class="offer">24/7 coordination of maintenance work</li>
                     <li class="offer">Collaboration with skilled tradesmen</li>
