@@ -104,14 +104,13 @@
         }
 
         .back-button-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1em;
+            // display: flex;
+            // align-items: center;
+            // margin-top: 1em;
 
             position: absolute;
-            bottom: 2em;
-            left: 50%;
+            top: 5%;
+            left: 4%;
             transform: translateX(-50%);
   
             .back-button {
@@ -128,9 +127,8 @@
                 }
 
                 img {
-                    width: 0.5em;
-                    height: 0.5em;
-                    padding-right: 0.4em;
+                    width: 1em;
+                    height: 1em;
                 }
             }
         }
