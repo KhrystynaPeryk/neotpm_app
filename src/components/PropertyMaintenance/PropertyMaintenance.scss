@@ -99,13 +99,44 @@
         padding-top: 10px;
         padding-left: 10px;
         label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: 'Open Sans', sans-serif;
             font-size: medium;
         }
+
+        input[type="checkbox"] {
+            display: none; /* Hide the default radio button */
+        }
+
+        .checkmark {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(57, 165, 175, 0.4);
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .checkmark::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            opacity: 0;
+        }
+
+        input[type="checkbox"]:checked + .checkmark::after {
+            opacity: 1; /* Show the dot when the radio button is checked */
+        }
     }
-    // &input[type="checkbox"] {
-    //     font-family: 'Open Sans', sans-serif;
-    // }
+
 }
 
 .quote-btn {
