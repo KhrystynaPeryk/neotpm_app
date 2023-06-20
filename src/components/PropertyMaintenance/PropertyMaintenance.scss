@@ -12,42 +12,53 @@
     }
 }
 
-.offer-list {
+ul {
     list-style: none;
-    padding: 0;
+    padding:0;
+
+    li {
+        display: flex;
+        justify-content:baseline;
+        align-items: center;
+        margin: 1em;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: bolder;
+        font-size: large;
+    }
+
+    li:hover {
+        transform: translateX(-50%);
+        transition: all .3s ease-out;
+    }
 }
-  
-.offer {
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 25px;
-    font-size: 16px;
-    color: #333;
+
+
+
+.offer-list .offer::before {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('../../assets/images/wrench-icon.png');
+    background-size: cover;
+    margin-right: 0.5em;
 }
-  
-.offer:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    background-color: #333;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out;
+
+.offer-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
 }
-  
-.offer:hover:before {
-    transform: scale(1);
+
+.offer-list-header {
+    @include header-animation;
+    font-size: xx-large;
 }
-  
-.offer:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 11px;
-    width: 0;
-    height: 1px;
-    background-color: #333;
-    transition: width 0.3s ease-in-out;
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }

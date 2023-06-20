@@ -1,35 +1,10 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 
 const PropertyMaintenance = () => {
-
-    // const imageContainerRef = useRef(null);
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //       if (imageContainerRef.current) {
-    //         const scrollPosition = window.scrollY;
-    //         imageContainerRef.current.style.backgroundPositionY = `${scrollPosition}px`;
-    //       }
-    //     };
-    
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => {
-    //       window.removeEventListener('scroll', handleScroll);
-    //     };
-    //   }, []);
-
-      //UL styling
-    // const offerListRef = useRef(null);
-    // useEffect(() => {
-    //     const listItems = offerListRef.current.querySelectorAll('.offer-list li');
-    //     for (let i = 0; i < listItems.length; i++) {
-    //       listItems[i].style.transitionDelay = `${i * 100}ms`;
-    //       listItems[i].classList.add('visible');
-    //     }
-    //   }, []);
 
     return (
         <div className='property-container'>
@@ -77,8 +52,8 @@ const PropertyMaintenance = () => {
                 </div>
             </div>
             <div className="maintenance-img img-one" />
-            <div>
-                <h1>Our commitment includes providing the following services</h1>
+            <div className='offer-list-wrapper'>
+                <h1 className='offer-list-header'>We Offer</h1>
                 <ul className="offer-list" >
                     <li className="offer">Unlimited maintenance assistance calls</li>
                     <li className="offer">24/7 coordination of maintenance work</li>
