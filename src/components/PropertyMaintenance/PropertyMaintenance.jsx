@@ -10,14 +10,15 @@ const PropertyMaintenance = () => {
     const [propertyType, setPropertyType] = useState();
     const [roomsNumber, setRoomsNumber] = useState();
     const [propertyLocation, setPropertyLocation] = useState();
-    const [driverRoom, setDriverRoom] = useState();
-    const [maidRoom, setMaidRoom] = useState();
+    const [driverRoom, setDriverRoom] = useState(false);
+    const [maidRoom, setMaidRoom] = useState(false);
 
     const [errors, setErrors] = useState({});
 
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
+        console.log('handlePropertyType', e.target.value)
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
@@ -32,11 +33,13 @@ const PropertyMaintenance = () => {
     }
 
     const handleDriverRoom = (e) => {
-        setDriverRoom(e.target.value)
+        console.log('handleDriverRoom', e.target.checked)
+        setDriverRoom(e.target.checked)
     }
 
     const handleMaidRoom = (e) => {
-        setMaidRoom(e.target.value)
+        console.log('handleMaidRoom', e.target.checked)
+        setMaidRoom(e.target.checked)
     }
 
     // logic to calculate the quote
@@ -46,25 +49,26 @@ const PropertyMaintenance = () => {
         // Form validation
         const errors = {};
         if (!propertyType) {
-        errors.propertyType = 'Please select a property type.';
+            errors.propertyType = 'Please select a property type.';
         }
         if (!roomsNumber) {
-        errors.roomsNumber = 'Please select the number of rooms.';
+            errors.roomsNumber = 'Please select the number of rooms.';
         }
         if (!propertyLocation) {
-        errors.propertyLocation = 'Please select a property location.';
+            errors.propertyLocation = 'Please select a property location.';
         }
 
         if (Object.keys(errors).length > 0) {
-        setErrors(errors);
+            setErrors(errors);
         } else {
             
-        // Proceed with calculating the quote
-        console.log('propertyType:', propertyType);
-        console.log('roomsNumber:', roomsNumber);
-        console.log('propertyLocation:', propertyLocation);
-        console.log('driverRoom:', driverRoom);
-        console.log('maidRoom:', maidRoom);
+            // Proceed with calculating the quote
+            console.log('propertyType:', propertyType);
+            console.log('roomsNumber:', roomsNumber);
+            console.log('propertyLocation:', propertyLocation);
+            console.log('driverRoom:', driverRoom);
+            console.log('maidRoom:', maidRoom);
+
         }
     }
 
@@ -148,26 +152,39 @@ const PropertyMaintenance = () => {
                     <div className='select-container-item'>
                         <select name="location" id="location" onChange={handlePropertyLocation}>
                             <option value="">-- Property Location --</option>
-                            <option value="center">Abu Dhabi Center</option>
+                            <option value="center">Abu Dhabi City Center</option>
                             <option value="yas">Yas Island</option>
-                            <option value="reem">Al Reem Island</option>
                             <option value="saadiyat">Saadiyat Island</option>
+                            <option value="reef">Al Reef</option>
+                            <option value="other">Other</option>
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
                 </div>
                 <div className='checkbox-container'>
                     <div className='checkbox-container-item'>
-                        <label htmlFor="driver" onChange={handleDriverRoom}>
+                        <label htmlFor="driver">
                             <div>Driver's room/Garage</div>
-                            <input type="checkbox" id="driver" name="driver" />
+                            <input 
+                                type="checkbox"
+                                id="driver"
+                                name="driver"
+                                checked={driverRoom}
+                                onChange={handleDriverRoom}
+                            />
                             <span className="checkmark"></span>
                         </label>
                     </div>
                     <div className='checkbox-container-item'>
-                        <label htmlFor="maid" onChange={handleMaidRoom}>
+                        <label htmlFor="maid">
                             <div>Maid's room</div>
-                            <input type="checkbox" id="maid" name="maid" />
+                            <input 
+                                type="checkbox"
+                                id="maid"
+                                name="maid"
+                                checked={maidRoom}
+                                onChange={handleMaidRoom}
+                            />
                             <span className="checkmark"></span>
                         </label>
                     </div>
