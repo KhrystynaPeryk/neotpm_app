@@ -2,91 +2,78 @@
 
 .tiles-container {
     padding-top: 2em;
-    // width: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    // @media screen and (max-height: 760px) {
-    //     display: block;
-    //     transition: all 0.5s ease;
-    // }
 }
 
 .tiles-row {
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    width: 70%;
 
-    @media screen and (max-width: 768px) {
-        align-items: center;
-        flex-direction: column;
+    @media screen and (max-width: 1600px) {
+        grid-template-rows: 600px;
         transition: all 0.5s ease;
+    }
 
+    @media screen and (max-width: 1290px) {
+        grid-template-rows: 700px;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 1060px) {
+        grid-template-rows: 800px;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 960px) {
+        grid-template-rows: 600px;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 876px) {
+        grid-template-rows: 650px;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 830px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px;
+        transition: all 0.5s ease;
+        width: 100%;
+        // order: -1 enables tiles.img to be positioned before .tiles-price
         .tiles-img {
-            order: -1; /* Move .tiles-price to the beginning */
-            margin-bottom: 2em;
+            order: -1;
             transition: all 0.5s ease;
-            font-size: small;
-            // width: 60vh;
         }
     }
 
-    // @media screen and (max-height: 760px) {
-    //     width: 100vh; 
-    // }
+    @media screen and (max-width: 540px) {
+        grid-template-rows: 450px;
+    }
+
+    @media screen and (max-width: 540px) {
+        grid-template-rows: 450px;
+    }
+
+    @media screen and (max-width: 460px) {
+        grid-template-rows: 500px;
+    }
+
+    @media screen and (max-width: 370px) {
+        grid-template-rows: 600px;
+    }
 
 }
 
 .tiles-img {
     position: relative;
     background-color: transparent;
-    width: 60vh;
-    height: 40vh;
     perspective: 1000px;
-
-    @media screen and (max-height: 760px) {
-        width: 100%; 
-    }
-
-
-
-    @media screen and (min-width: 1320px) {
-        height: 70vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1320px) {
-        height: 70vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1120px) {
-        height: 75vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1070px) {
-        height: 80vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 960px) {
-        height: 60vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 895px) {
-        height: 66vh;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 400px) {
-        height: 75vh;
-        transition: all 0.5s ease;
-    }
-
 
     .flip-card-inner {
         width: 100%;
@@ -113,7 +100,6 @@
         border-radius: 5px;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        //below padding makes overlap of tiles
         box-sizing: border-box;
         padding: 2em;
     }
@@ -147,11 +133,6 @@
         background-image: url('../../assets/images/img_8.jpg');
         color: black;
 
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-
         @media screen and (max-width: 960px) {
             font-size: small;
             transition: all 0.5s ease;
@@ -178,10 +159,6 @@
         }
 
         .back-button-wrapper {
-            // display: flex;
-            // align-items: center;
-            // margin-top: 1em;
-
             position: absolute;
             top: 5%;
             left: 4%;
@@ -237,17 +214,10 @@
 }    
 
 .tiles-price {
-    width: 60vh;
-    height: 40vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    // @media screen and (max-height: 760px) {
-    //     width: 100vh; 
-    // }
 
     p {
         font-family: 'Domine', serif;
