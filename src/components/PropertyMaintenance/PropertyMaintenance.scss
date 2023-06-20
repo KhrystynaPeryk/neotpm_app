@@ -4,6 +4,7 @@
 .maintenance-img {
     &.img-one {
         background-image: url('../../assets/images/img_9.jpg');
+        margin-bottom: 1em;
     }
 
     &.img-two {
@@ -12,6 +13,81 @@
     }
 }
 
+.property-features-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+
+    .property-features-wrapper-caption {
+        width: 80%;
+        text-align: center;
+
+        .title-word {
+            animation: color-animation 4s linear infinite;
+            font-weight: bold;
+        }
+          
+          .title-word-1 {
+            --color-1: #DF8453;
+            --color-2: #3D8DAE;
+            --color-3: #E4A9A8;
+        }
+          
+          .title-word-2 {
+            --color-1: #DBAD4A;
+            --color-2: #ACCFCB;
+            --color-3: #CBC82D;
+        }
+          
+          .title-word-3 {
+            --color-1: #ACCFCB;
+            --color-2: #E4A9A8;
+            --color-3: #ACCFCB;
+        }
+    }
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+.select-container {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+
+    .select-container-item{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        select {
+            padding: 10px;
+            background-color:rgba(57, 165, 175, 0.4);
+            border:none;
+            border-radius: 5px;
+        }
+    }
+}
+
+  
+//   .checkbox-container input[type="checkbox"] {
+
+
+//ul styling
 ul {
     list-style: none;
     padding:0;
@@ -28,6 +104,7 @@ ul {
         font-family: 'Barlow Semi Condensed', sans-serif;
         font-weight: bolder;
         font-size: large;
+        letter-spacing: 0.05em;
     }
 
 }
@@ -50,12 +127,19 @@ ul {
     transform: translateX(0);
     display: flex;
     padding: 0.5em 0.5em;
-    border: 1px solid #CBC82D;
-    background-color: #c7c545;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(203, 200, 45, 0.5) 0px 1px 2px 0px;
     border-radius: 10px;
     transition: all .3s ease-out;
     padding-left: 2em;
+
+    overflow: hidden;
+  }
+
+  .offer-list-start li.slide-in .offer {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   @keyframes slideInFromLeft {

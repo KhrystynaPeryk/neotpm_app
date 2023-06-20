@@ -53,38 +53,51 @@ const PropertyMaintenance = () => {
                 </div>
             </div>
             <div className='property-features-wrapper'>
-                <p>In order to provide you with a quote for a maintenance service, please select the below:</p>
+                <p className='property-features-wrapper-caption'>
+                    To assist you in receiving a tailored quote for our 
+                    <span className="title-word title-word-1"> ANNUAL </span> 
+                    <span class="title-word title-word-2">PROPERTY </span> 
+                    <span class="title-word title-word-3">MAINTENANCE </span>
+                    service, kindly make a selection from the options provided below:
+                </p>
                 <div className='select-container'>
-                    <select name="type-property" id="type-property">
-                        <option value="">Property Type</option>
-                        <option value="apartment">Apartment</option>
-                        <option value="villa">Villa</option>
-                    </select>
-                    <select name="rooms" id="rooms">
-                        <option value="">Number of rooms</option>
-                        <option value="1r">1</option>
-                        <option value="2r">2</option>
-                        <option value="3r">3</option>
-                        <option value="4r">4</option>
-                        <option value="5r">5</option>
-                        <option value="6r">6</option>
-                    </select>
-                    <select name="location" id="location">
-                        <option value="">Property Location</option>
-                        <option value="center">Abu Dhabi Center</option>
-                        <option value="yas">Yas Island</option>
-                        <option value="reem">Al Reem Island</option>
-                        <option value="saadiyat">Saadiyat Island</option>
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <input type="checkbox" id="driver" name="driver" />
-                        <label for="driver">Driver's room/Garage</label>
+                    <div className='select-container-item'>
+                        <select name="type-property" id="type-property">
+                            <option value="">-- Property Type --</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="townhouse">Townhouse</option>
+                        </select>
                     </div>
-                    <div>
-                        <input type="checkbox" id="maid" name="maid" />
+                    <div className='select-container-item'>
+                        <select name="rooms" id="rooms">
+                            <option value="">-- Number of rooms --</option>
+                            <option value="1r">1</option>
+                            <option value="2r">2</option>
+                            <option value="3r">3</option>
+                            <option value="4r">4</option>
+                            <option value="5r">5</option>
+                            <option value="6r">6</option>
+                        </select>
+                    </div>
+                    <div className='select-container-item'>
+                        <select name="location" id="location">
+                            <option value="">-- Property Location --</option>
+                            <option value="center">Abu Dhabi Center</option>
+                            <option value="yas">Yas Island</option>
+                            <option value="reem">Al Reem Island</option>
+                            <option value="saadiyat">Saadiyat Island</option>
+                        </select>
+                    </div>
+                </div>
+                <div className='checkbox-container'>
+                    <div className='checkbox-container-item'>
+                        <label for="driver">Driver's room/Garage</label>
+                        <input type="checkbox" id="driver" name="driver" />
+                    </div>
+                    <div className='checkbox-container-item'>
                         <label for="maid">Maid's room</label>
+                        <input type="checkbox" id="maid" name="maid" />
                     </div>
                 </div>
             </div>
