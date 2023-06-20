@@ -100,6 +100,9 @@ const PropertyMaintenance = () => {
                         <input type="checkbox" id="maid" name="maid" />
                     </div>
                 </div>
+                <div>
+                    <button className='quote-btn' type='submit'>Give me a quote!</button>
+                </div>
             </div>
             <div className="maintenance-img img-one" />
             <div className='offer-list-wrapper'>
