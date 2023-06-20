@@ -1,10 +1,47 @@
-import React, { useState } from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 
 const PropertyMaintenance = () => {
+
+    const myList = useRef();
+    const [myListVisible, setMyListVisible] = useState(false);
+
+    useEffect(() => {
+        const handleIntersection = (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                if (entry.target === myList.current) {
+                  setMyListVisible(true);
+                  const listItems = myList.current.querySelectorAll('li');
+                  listItems.forEach((item, index) => {
+                    setTimeout(() => {
+                      item.classList.add('slide-in');
+                    }, index * 300); // Delay each item's animation by 200ms
+                  });
+                }
+              }
+            });
+        };
+        const options = {
+            threshold: 0.2,
+        };
+    
+        const observer = new IntersectionObserver(handleIntersection, options);
+    
+        if (myList.current) {
+            observer.observe(myList.current);
+        }
+    
+    
+        return () => {
+            if (myList.current) {
+                observer.unobserve(myList.current);
+            }
+        };
+    }, []);
 
     return (
         <div className='property-container'>
@@ -54,7 +91,10 @@ const PropertyMaintenance = () => {
             <div className="maintenance-img img-one" />
             <div className='offer-list-wrapper'>
                 <h1 className='offer-list-header'>We Offer</h1>
-                <ul className="offer-list" >
+                <ul 
+                    className={`offer-list-start ${myListVisible ? 'offer-list' : ''}`}
+                    ref={myList}
+                >
                     <li className="offer">Unlimited maintenance assistance calls</li>
                     <li className="offer">24/7 coordination of maintenance work</li>
                     <li className="offer">Collaboration with skilled tradesmen</li>

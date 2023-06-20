@@ -16,23 +16,58 @@ ul {
     list-style: none;
     padding:0;
 
+    @media screen and (max-width: 510px) {
+        width: 80%;
+    }
+
     li {
         display: flex;
         justify-content:baseline;
         align-items: center;
-        margin: 1em;
+        margin: 0.5em;
         font-family: 'Barlow Semi Condensed', sans-serif;
         font-weight: bolder;
         font-size: large;
     }
 
-    li:hover {
-        transform: translateX(-50%);
-        transition: all .3s ease-out;
-    }
 }
 
-
+.offer-list-start {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all .3s ease-out; 
+  }
+  
+  .offer-list-start li {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .offer-list-start li.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+    display: flex;
+    padding: 0.5em 0.5em;
+    border: 1px solid #CBC82D;
+    background-color: #c7c545;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    transition: all .3s ease-out;
+    padding-left: 2em;
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 .offer-list .offer::before {
     content: "";
@@ -41,7 +76,11 @@ ul {
     height: 1.5em;
     background-image: url('../../assets/images/wrench-icon.png');
     background-size: cover;
-    margin-right: 0.5em;
+    margin-right: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 4.5%;
 }
 
 .offer-list-wrapper {
