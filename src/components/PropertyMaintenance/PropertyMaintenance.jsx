@@ -6,20 +6,20 @@ import './PropertyMaintenance.scss'
 
 const PropertyMaintenance = () => {
 
-    const imageContainerRef = useRef(null);
-    useEffect(() => {
-        const handleScroll = () => {
-          if (imageContainerRef.current) {
-            const scrollPosition = window.scrollY;
-            imageContainerRef.current.style.backgroundPositionY = `${scrollPosition}px`;
-          }
-        };
+    // const imageContainerRef = useRef(null);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //       if (imageContainerRef.current) {
+    //         const scrollPosition = window.scrollY;
+    //         imageContainerRef.current.style.backgroundPositionY = `${scrollPosition}px`;
+    //       }
+    //     };
     
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //       window.removeEventListener('scroll', handleScroll);
+    //     };
+    //   }, []);
 
       //UL styling
     // const offerListRef = useRef(null);
@@ -76,9 +76,9 @@ const PropertyMaintenance = () => {
                     </div>
                 </div>
             </div>
-            <div className="maintenance-img img-one" ref={imageContainerRef} />
+            <div className="maintenance-img img-one" />
             <div>
-                <h1>We Offer</h1>
+                <h1>Our commitment includes providing the following services</h1>
                 <ul className="offer-list" >
                     <li className="offer">Unlimited maintenance assistance calls</li>
                     <li className="offer">24/7 coordination of maintenance work</li>
