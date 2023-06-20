@@ -13,17 +13,22 @@ const PropertyMaintenance = () => {
     const [driverRoom, setDriverRoom] = useState();
     const [maidRoom, setMaidRoom] = useState();
 
+    const [errors, setErrors] = useState({});
+
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
     const handleRoomNumber = (e) => {
         setRoomsNumber(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, roomsNumber: undefined }));
     }
 
     const handlePropertyLocation = (e) => {
         setPropertyLocation(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, propertyLocation: undefined }));
     }
 
     const handleDriverRoom = (e) => {
@@ -37,11 +42,30 @@ const PropertyMaintenance = () => {
     // logic to calculate the quote
     const calculateQuote = (e) => {
         e.preventDefault();
-        console.log('propertyType: ', propertyType)
-        console.log('roomsNumber: ', roomsNumber)
-        console.log('propertyLocation: ', propertyLocation)
-        console.log('driverRoom: ', driverRoom)
-        console.log('maidRoom: ', maidRoom)
+
+        // Form validation
+        const errors = {};
+        if (!propertyType) {
+        errors.propertyType = 'Please select a property type.';
+        }
+        if (!roomsNumber) {
+        errors.roomsNumber = 'Please select the number of rooms.';
+        }
+        if (!propertyLocation) {
+        errors.propertyLocation = 'Please select a property location.';
+        }
+
+        if (Object.keys(errors).length > 0) {
+        setErrors(errors);
+        } else {
+            
+        // Proceed with calculating the quote
+        console.log('propertyType:', propertyType);
+        console.log('roomsNumber:', roomsNumber);
+        console.log('propertyLocation:', propertyLocation);
+        console.log('driverRoom:', driverRoom);
+        console.log('maidRoom:', maidRoom);
+        }
     }
 
     // unordered list appearing animation
@@ -107,6 +131,7 @@ const PropertyMaintenance = () => {
                             <option value="villa">Villa</option>
                             <option value="townhouse">Townhouse</option>
                         </select>
+                        {errors.propertyType && <div className="error-message errorOne">{errors.propertyType}</div>}
                     </div>
                     <div className='select-container-item'>
                         <select name="rooms" id="rooms" onChange={handleRoomNumber}>
@@ -118,6 +143,7 @@ const PropertyMaintenance = () => {
                             <option value="5r">5</option>
                             <option value="6r">6</option>
                         </select>
+                        {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
                     <div className='select-container-item'>
                         <select name="location" id="location" onChange={handlePropertyLocation}>
@@ -127,6 +153,7 @@ const PropertyMaintenance = () => {
                             <option value="reem">Al Reem Island</option>
                             <option value="saadiyat">Saadiyat Island</option>
                         </select>
+                        {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
                 </div>
                 <div className='checkbox-container'>

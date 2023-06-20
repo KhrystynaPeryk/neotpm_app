@@ -75,6 +75,8 @@
         display: flex;
         justify-content:center;
         align-items: center;
+        flex-direction: column;
+        position: relative;
 
         select {
             padding: 10px;
@@ -99,11 +101,13 @@
         padding-top: 10px;
         padding-left: 10px;
         label {
+            width: 300px;
             display: flex;
-            justify-content: center;
+
             align-items: center;
             font-family: 'Open Sans', sans-serif;
             font-size: medium;
+            position: relative;
         }
 
         input[type="checkbox"] {
@@ -116,7 +120,9 @@
             height: 20px;
             background-color: rgba(57, 165, 175, 0.4);
             border-radius: 3px;
-            position: relative;
+            position: absolute;
+            right:0;
+            
         }
 
         .checkmark::after {
@@ -245,4 +251,11 @@ ul {
     to {
         background-position: 200% center;
     }
+}
+
+.error-message {
+    font-size: small;
+    color: #E4A9A8;
+    position: absolute;
+    bottom: -55%;
 }
