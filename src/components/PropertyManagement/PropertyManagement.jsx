@@ -1,4 +1,6 @@
 import React, {useRef, useEffect, useState} from 'react'
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../store/actions/actions';
 import './PropertyManagement.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
@@ -7,13 +9,50 @@ import LightHouse from '../../assets/images/light_house.png'
 import StandardHouse from '../../assets/images/standard_house.png'
 import ExecutiveHouse from '../../assets/images/executive_house.png'
 import ArrowRight from '../../assets/images/arrow-right.png'
+import { v4 as uuidv4 } from 'uuid';
 
 const PropertyManagement = () => {
 
     const handleRedirectToQuiz = () => {
         window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
     };
-    
+
+    const dispatch = useDispatch();
+
+    //ADD LIGHT PACKAGE TO CART
+    const addLightToCart = () => {
+        dispatch(addProduct({
+            id: uuidv4(),
+            service: {
+                type: 'property management',
+                package: 'Light',
+            },
+            price: 3000
+        }));
+    }
+    //ADD STANDARD PACKAGE TO CART
+    const addStandardToCart = () => {
+        dispatch(addProduct({
+            id: uuidv4(),
+            service: {
+                type: 'property management',
+                package: 'Standard',
+            },
+            price: 5000
+        }));
+    }
+
+    //ADD EXECUTIVE TO CART
+    const addExecutiveToCart = () => {
+        dispatch(addProduct({
+            id: uuidv4(),
+            service: {
+                type: 'property management',
+                package: 'Executive',
+            },
+            price: 6500
+        }));
+    }
         
     //below const and useEffect for handling of fade-in animation for .property-after-table
     const myFirstIngRef = useRef();
@@ -90,7 +129,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>-</div>
                     <div className='table-section-item'>-</div>
                     <div className='table-section-price'>From 3000 AED</div>
-                    <button type='button'>Buy</button>
+                    <button type='button' onClick={addLightToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
@@ -104,7 +143,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Utility Transfer and Bill Payments</div>
                     <div className='table-section-item'>-</div>
                     <div className='table-section-price'>From 5000 AED per year</div>
-                    <button type='button'>Buy</button>
+                    <button type='button' onClick={addStandardToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
@@ -118,7 +157,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Utility Transfer and Bill Payments</div>
                     <div className='table-section-item'>Power of Attorney</div>
                     <div className='table-section-price'>From 6500 AED per year</div>
-                    <button type='button'>Buy</button>
+                    <button type='button' onClick={addExecutiveToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
             </div>

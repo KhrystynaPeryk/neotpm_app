@@ -72,6 +72,19 @@
     align-items: center;
     margin-right: 1em;
     z-index: 1;
+    position: relative;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    .navbar-cart-qty-container{
+        position: absolute;
+        bottom: 0;
+        left: -2px;
+        color: black;
+        font-weight: bold;
+    }
 }
 
 .navbar-container-expanded {

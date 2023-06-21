@@ -1,11 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import './NavBar.scss'
 import BurgerMenu from '../../../assets/images/burger-menu.png'
 import Cart from '../../../assets/images/cart.png'
 
 const NavBar = () => {
     const navigate = useNavigate();
+    const stateProducts = useSelector((state) => state.products)
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false);
@@ -66,6 +68,10 @@ const NavBar = () => {
         navigate('/legal-documentation-support')
     }
 
+    const redirectToCart = () => {
+        navigate('/cart')
+    }
+
     return (
         <div className='navbar-container-wrapper'>
             <div className='navbar-container'>
@@ -82,7 +88,14 @@ const NavBar = () => {
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
                     <div className='navbar-section navbar-documents' onClick={redirectToLegalDocumentationSupport}>Legal Document Support</div>
                 </div>
-                <div className='navbar-cart'>
+                <div className='navbar-cart' onClick={redirectToCart}>
+                    {stateProducts.length !== 0 && 
+                        <div className='navbar-cart-qty-container'>
+                            <div className='navbar-cart-qty'>
+                                {stateProducts.length}
+                           </div> 
+                        </div>
+                    }
                     <img src={Cart} alt='Cart' />
                 </div>
             </div>

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-// import { fetchProducts, fetchCurrency, changeCart, changeCartAmount, isModalOpen, changeCategory } from './reducers';
+import { changeCart } from './reducers';
 
 const allReducers = combineReducers({
-
+    products: changeCart,
 });
 
 export default allReducers;
