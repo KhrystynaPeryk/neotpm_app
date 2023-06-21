@@ -91,23 +91,56 @@
         transition: all 0.5s ease;
     }
 
+    @media screen and (max-width: 790px) {
+        width: 60%;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 660px) {
+        width: 70%;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 560px) {
+        width: 80%;
+        transition: all 0.5s ease;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 85%;
+        transition: all 0.5s ease;
+    }
+
     .table-column {
         flex: 1;
         text-align: center;
-        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-family: 'Domine', serif;
         font-weight: bold;
 
         .table-section-header {
             margin: 2em;
-            font-family: 'Domine', serif;
             font-size: large;
             font-weight: bolder;
         }
 
         .table-section-item {
             margin: 1em;
-            letter-spacing: 0.1em;
-            height: 2em;
+            letter-spacing: 0.06em;
+            font-family: 'Open Sans', sans-serif;
+            height: 3em;
+            font-weight: 500;
+
+            // &.bronze {
+            //     color: #cd7f32;
+            // }
+
+            // &.gold {
+            //     color: #1a850c;
+            // }
+
+            // &.platinum {
+            //     color: #306fc9;
+            // }
         }
 
         .table-section-price {
@@ -151,6 +184,32 @@
         .property-learn-more:hover {
             cursor: pointer;
             color: #39a5af;
+        }
+
+        .property-icon-container {
+            position: relative;
+            display: inline-block;
+
+
+            .ribbon {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 13%;
+                right: 0;
+                transform: translateY(-50%);
+                transform: rotate(1.125turn);
+                width: 60%;
+                height: 15px;
+                background: red;
+                overflow: hidden;
+                border-radius: 10px;
+
+                span {
+                    font-size: small;
+                }
+            }
         }
     }
 }

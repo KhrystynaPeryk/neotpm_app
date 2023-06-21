@@ -24,10 +24,10 @@ const PropertyManagement = () => {
         dispatch(addProduct({
             id: uuidv4(),
             service: {
-                type: 'property management',
-                package: 'Bronze',
+                type: 'Property Management',
+                details: 'Bronze package',
             },
-            price: 3000
+            price: 3500
         }));
     }
     //ADD Gold PACKAGE TO CART
@@ -35,8 +35,8 @@ const PropertyManagement = () => {
         dispatch(addProduct({
             id: uuidv4(),
             service: {
-                type: 'property management',
-                package: 'Gold',
+                type: 'Property Management',
+                details: 'Gold package',
             },
             price: 5000
         }));
@@ -47,8 +47,8 @@ const PropertyManagement = () => {
         dispatch(addProduct({
             id: uuidv4(),
             service: {
-                type: 'property management',
-                package: 'Platinum',
+                type: 'Property Management',
+                details: 'Platinum package',
             },
             price: 6500
         }));
@@ -123,14 +123,20 @@ const PropertyManagement = () => {
                         <img className='property-icon' src={BronzeHouse} alt='LightHouse' />
                     </div>
                     <div className='table-section-header'>BRONZE</div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>-</div>
-                    <div className='table-section-item'>-</div>
-                    <div className='table-section-item'>-</div>
-                    <div className='table-section-price'>From 3000 AED</div>
+                    <div className='table-section-item bronze'>Tenant Sourcing</div>
+                    <div className='table-section-item bronze'>Rental Cheque Management</div>
+                    <div className='table-section-item bronze'>Move-in Services</div>
+                    <div className='table-section-item bronze'>Tenancy Renewal</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-price'>From 3500 AED</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
@@ -139,30 +145,43 @@ const PropertyManagement = () => {
                         <img className='property-icon' src={GoldHouse} alt='StandardHouse' />
                     </div>
                     <div className='table-section-header'>GOLD</div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>Move-out Services</div>
-                    <div className='table-section-item'>Security Deposit Settlement</div>
-                    <div className='table-section-item'>Bill Payment</div>
-                    <div className='table-section-price'>From 5000 AED per year</div>
+                    <div className='table-section-item bronze'>Tenant Sourcing</div>
+                    <div className='table-section-item bronze'>Rental Cheque Management</div>
+                    <div className='table-section-item bronze'>Move-in Services</div>
+                    <div className='table-section-item bronze'>Tenancy Renewal</div>
+                    <div className='table-section-item gold'>Move-out Services</div>
+                    <div className='table-section-item gold'>Security Deposit Settlement</div>
+                    <div className='table-section-item gold'>Bill Payment</div>
+                    <div className='table-section-item gold'>Maintenance Solution Liaison</div>
+                    <div className='table-section-item gold'>Handover Assistance from Developer</div>
+                    <div className='table-section-item gold'>Governmental Compliance</div>
+                    <div className='table-section-item gold'>Ad Hoc Assistance (4h credit/annum)</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-item'>−</div>
+                    <div className='table-section-price'>From 5000 AED</div>
                     <button type='button' onClick={addGoldToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
-                    <div>
+                    <div className='property-icon-container'>
                         <img className='property-icon' src={PlatinumHouse} alt='ExecutiveHouse' />
+                        <div className='ribbon'><span>POA</span></div>
                     </div>
                     <div className='table-section-header'>PLATINUM</div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>Move-out Services</div>
-                    <div className='table-section-item'>Security Deposit Settlement</div>
-                    <div className='table-section-item'>Bill Payment</div>
-                    <div className='table-section-price'>From 6500 AED per year</div>
+                    <div className='table-section-item bronze'>Tenant Sourcing</div>
+                    <div className='table-section-item bronze'>Rental Cheque Management</div>
+                    <div className='table-section-item bronze'>Move-in Services</div>
+                    <div className='table-section-item bronze'>Tenancy Renewal</div>
+                    <div className='table-section-item gold'>Move-out Services</div>
+                    <div className='table-section-item gold'>Security Deposit Settlement</div>
+                    <div className='table-section-item gold'>Bill Payment</div>
+                    <div className='table-section-item gold'>Maintenance Solution Liaison</div>
+                    <div className='table-section-item gold'>Handover Assistance from Developer</div>
+                    <div className='table-section-item gold'>Governmental Compliance</div>
+                    <div className='table-section-item gold'>Ad Hoc Assistance (10h credit/annum)</div>
+                    <div className='table-section-item platinum'>Legal Representation (POA)</div>
+                    <div className='table-section-item platinum'>Sales & Post Sales Assistance</div>
+                    <div className='table-section-price'>From 6500 AED</div>
                     <button type='button' onClick={addPlatinumToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>

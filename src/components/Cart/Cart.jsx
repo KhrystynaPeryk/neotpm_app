@@ -16,9 +16,25 @@ const Cart = () => {
                 <Logo />
             </div>
             {stateProducts.length === 0 ?
-                <div>Your Cart is empty...😟</div> :
-                <div>
-                    <div>Your Cart</div>
+                <div className='cart-header empty'>Your Cart is empty...😟</div> :
+                <div className='cart-products-container'>
+                    <div className='cart-header'>Your Cart</div>
+                    <div className='cart-products-wrapper'>
+                        {stateProducts.map((item) => {
+                            return (
+                                <div className='cart-products-items-wrapper' key={item.id}>
+                                    <CartItem product={item} />
+                                </div>    
+                            )
+                        })}
+                    </div>
+                    <div>
+                        <div>Total:</div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <button type='button'>Checkout</button>
+                    </div>     
                 </div> 
             }
             <Footer />
