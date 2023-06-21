@@ -24,6 +24,19 @@
         width: 1em;
         height: 1em;
     }
+
+    .navbar-container-cross {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 25px;
+        font-weight: 100;
+        font-family: inherent;
+        color: #CBC82D;
+        z-index: 1;
+        margin-left: 0.5em;
+    }
 }
 
 .navbar-sections {
@@ -62,6 +75,10 @@
 }
 
 .navbar-container-expanded {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
     position: absolute;
     top: -100%;
     left: 0;
@@ -73,9 +90,35 @@
     font-size: small;
     letter-spacing: 0.2em;
 
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     animation: navbarExpand 0.5s ease forwards;
+
+    @media screen and (max-height: 680px) {
+        height: 18vh;
+        transition: height 0.5s ease;
+    }
+
+    @media screen and (max-height: 600px) {
+        height: 20vh;
+        transition: height 0.5s ease;
+    }
+
+    @media screen and (max-height: 530px) {
+        height: 22vh;
+        transition: height 0.5s ease;
+    }
+
+    @media screen and (max-height: 480px) {
+        height: 25vh;
+        transition: height 0.5s ease;
+    }
+
+    @media screen and (max-height: 410px) {
+        height: 28vh;
+        transition: height 0.5s ease;
+    }
 
     .navbar-section {
         margin-bottom: 10px;

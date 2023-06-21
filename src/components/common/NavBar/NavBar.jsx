@@ -10,8 +10,7 @@ const NavBar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     const [isAnimating, setIsAnimating] = useState(false);
 
-    // store the isBurgerMenuVisible in redux 
-    const [isBurgerMenuVisible, setBurgerMenuVisible] = useState(true)
+    const [isBurgerMenuVisible, setBurgerMenuVisible] = useState()
 
     const expandedNavbarRef = useRef(null);
     const handleClickOutsideNavBar = (event) => {
@@ -20,24 +19,19 @@ const NavBar = () => {
         } else {
             setIsNavExpanded(true)
         }
-      }
+    }
 
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-                setBurgerMenuVisible(true);
-            }  else {
-                setBurgerMenuVisible(false);
-                setIsNavExpanded(false);
-            }
-        };
+    const handleResize = () => {
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            setBurgerMenuVisible(true);
+        }  else {
+            setBurgerMenuVisible(false);
+            setIsNavExpanded(false);
+        }
+    };
 
-        // const handleClickOutside = (event) => {
-        //     if (expandedNavbarRef.current && !expandedNavbarRef.current.contains(event.target)) {
-        //       setIsNavExpanded(false);
-        //     }
-        // };
-    
+    useEffect(() => {  
+        handleResize(); 
         window.addEventListener('resize', handleResize);
         window.addEventListener('mousedown', handleClickOutsideNavBar);
     
@@ -56,6 +50,10 @@ const NavBar = () => {
         }, 500);
     }
 
+    const closeExpandedNavBar = () => {
+        setIsNavExpanded(false)
+    }
+
     const redirectToPropertyManagement = () => {
         navigate('/property-management');
     };
@@ -71,9 +69,14 @@ const NavBar = () => {
     return (
         <div className='navbar-container-wrapper'>
             <div className='navbar-container'>
-                <div className={isBurgerMenuVisible ? 'navbar-burger' : 'hidden' }>
-                    <img src={BurgerMenu} alt='BurgerMenu' onClick={ExpandNavBar}/>
-                </div>
+                {isNavExpanded ? 
+                    <div className='navbar-container-cross' onClick={closeExpandedNavBar}> 
+                        &times;
+                    </div> :
+                    <div className={isBurgerMenuVisible ? 'navbar-burger' : 'hidden' }>
+                        <img src={BurgerMenu} alt='BurgerMenu' onClick={ExpandNavBar}/>
+                    </div>
+                }
                 <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
                     <div className='navbar-section navbar-management' onClick={redirectToPropertyManagement}>Property Management</div>
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
