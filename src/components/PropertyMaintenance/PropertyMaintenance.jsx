@@ -13,12 +13,13 @@ const PropertyMaintenance = () => {
     const [driverRoom, setDriverRoom] = useState(false);
     const [maidRoom, setMaidRoom] = useState(false);
 
+    const [quote, setQuote] = useState(0)
+
     const [errors, setErrors] = useState({});
 
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
-        console.log('handlePropertyType', e.target.value)
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
@@ -33,13 +34,15 @@ const PropertyMaintenance = () => {
     }
 
     const handleDriverRoom = (e) => {
-        console.log('handleDriverRoom', e.target.checked)
         setDriverRoom(e.target.checked)
     }
 
     const handleMaidRoom = (e) => {
-        console.log('handleMaidRoom', e.target.checked)
         setMaidRoom(e.target.checked)
+    }
+
+    const handleBackToQuote = () => {
+        setQuote(0);
     }
 
     // logic to calculate the quote
@@ -62,13 +65,16 @@ const PropertyMaintenance = () => {
             setErrors(errors);
         } else {
             
-            // Proceed with calculating the quote
+            // Proceed with calculating the quote based on
             console.log('propertyType:', propertyType);
             console.log('roomsNumber:', roomsNumber);
             console.log('propertyLocation:', propertyLocation);
             console.log('driverRoom:', driverRoom);
             console.log('maidRoom:', maidRoom);
 
+            // lOGIC TO CALCULATE THE QUOTE
+
+            setQuote(1000.00)
         }
     }
 
@@ -121,11 +127,11 @@ const PropertyMaintenance = () => {
             </div>
             <form className='property-features-wrapper' onSubmit={calculateQuote}>
                 <p className='property-features-wrapper-caption'>
-                    To assist you in receiving a tailored quote for our 
+                    Get your custom quote for our 
                     <span className="title-word title-word-1"> ANNUAL </span> 
                     <span className="title-word title-word-2">PROPERTY </span> 
                     <span className="title-word title-word-3">MAINTENANCE </span>
-                    service, kindly make a selection from the options provided below:
+                    service now.
                 </p>
                 <div className='select-container'>
                     <div className='select-container-item'>
@@ -189,8 +195,17 @@ const PropertyMaintenance = () => {
                         </label>
                     </div>
                 </div>
-                <div>
-                    <button className='quote-btn' type='submit'>Give me a quote!</button>
+                <div className='quote-container'>
+                    {quote ? 
+                        <div className='quote-container-price'>
+                            <p className='border-animation'>Your quote is {quote} AED</p>
+                            <div className='quote-buttons-container'>
+                                <button className='quote-buttons-item' type='button'>Buy</button>
+                                <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Back</button>
+                            </div>    
+                        </div> :
+                        <button className='quote-btn' type='submit'>Give me a quote!</button>
+                    }
                 </div>
             </form>
             <div className="maintenance-img img-one" />
