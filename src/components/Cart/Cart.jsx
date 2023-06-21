@@ -15,8 +15,8 @@ const Cart = () => {
                 <NavBar />
                 <Logo />
             </div>
-            {stateProducts.LENGTH === 0 ?
-                <div>Your Cart is empty...</div> :
+            {stateProducts.length === 0 ?
+                <div>Your Cart is empty...😟</div> :
                 <div>
                     <div>Your Cart</div>
                 </div> 
