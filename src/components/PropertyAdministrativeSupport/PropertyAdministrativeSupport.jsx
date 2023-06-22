@@ -3,9 +3,9 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import ArrowLeft from '../../assets/images/arrow-left.png'
-import './LegalDocumentationSupport.scss'
+import './PropertyAdministrativeSupport.scss'
 
-const LegalDocumentationSupport = () => {
+const PropertyAdministrativeSupport = () => {
 
   //handling of tiles flips
   const [flippedTileIndex, setFlippedTileIndex] = useState(null);
@@ -28,7 +28,7 @@ const LegalDocumentationSupport = () => {
         <NavBar />
         <Logo />
         <div className='property-header-wrapper'>
-          <p className='property-header'>Our Legal Documentation Support</p>
+          <p className='property-header'>Our Property Administrative Support</p>
         </div>
       </div>
       <div className='tiles-container'>
@@ -183,4 +183,4 @@ const LegalDocumentationSupport = () => {
   )
 }
 
-export default LegalDocumentationSupport
+export default PropertyAdministrativeSupport

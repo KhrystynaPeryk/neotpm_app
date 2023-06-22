@@ -114,7 +114,7 @@ const PropertyManagement = () => {
                 <NavBar />
                 <Logo />
                 <div className='property-header-wrapper'>
-                    <p className='property-header'>Our Property Management Services</p>
+                    <p className='property-header'>Our Property Management Packages</p>
                 </div>
             </div>
             <div className='property-table-wrapper'>
@@ -123,10 +123,10 @@ const PropertyManagement = () => {
                         <img className='property-icon' src={BronzeHouse} alt='LightHouse' />
                     </div>
                     <div className='table-section-header'>BRONZE</div>
-                    <div className='table-section-item bronze'>Tenant Sourcing</div>
-                    <div className='table-section-item bronze'>Rental Cheque Management</div>
-                    <div className='table-section-item bronze'>Move-in Services</div>
-                    <div className='table-section-item bronze'>Tenancy Renewal</div>
+                    <div className='table-section-item'>Tenant Sourcing</div>
+                    <div className='table-section-item'>Rental Cheque Management</div>
+                    <div className='table-section-item'>Move-in Services</div>
+                    <div className='table-section-item'>Tenancy Renewal</div>
                     <div className='table-section-item'>−</div>
                     <div className='table-section-item'>−</div>
                     <div className='table-section-item'>−</div>
@@ -145,17 +145,17 @@ const PropertyManagement = () => {
                         <img className='property-icon' src={GoldHouse} alt='StandardHouse' />
                     </div>
                     <div className='table-section-header'>GOLD</div>
-                    <div className='table-section-item bronze'>Tenant Sourcing</div>
-                    <div className='table-section-item bronze'>Rental Cheque Management</div>
-                    <div className='table-section-item bronze'>Move-in Services</div>
-                    <div className='table-section-item bronze'>Tenancy Renewal</div>
-                    <div className='table-section-item gold'>Move-out Services</div>
-                    <div className='table-section-item gold'>Security Deposit Settlement</div>
-                    <div className='table-section-item gold'>Bill Payment</div>
-                    <div className='table-section-item gold'>Maintenance Solution Liaison</div>
-                    <div className='table-section-item gold'>Handover Assistance from Developer</div>
-                    <div className='table-section-item gold'>Governmental Compliance</div>
-                    <div className='table-section-item gold'>Ad Hoc Assistance (4h credit/annum)</div>
+                    <div className='table-section-item'>Tenant Sourcing</div>
+                    <div className='table-section-item'>Rental Cheque Management</div>
+                    <div className='table-section-item'>Move-in Services</div>
+                    <div className='table-section-item'>Tenancy Renewal</div>
+                    <div className='table-section-item'>Move-out Services</div>
+                    <div className='table-section-item'>Security Deposit Settlement</div>
+                    <div className='table-section-item'>Bill Payment</div>
+                    <div className='table-section-item'>Maintenance Solution Liaison</div>
+                    <div className='table-section-item'>Handover Assistance from Developer</div>
+                    <div className='table-section-item'>Governmental Compliance</div>
+                    <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
                     <div className='table-section-item'>−</div>
                     <div className='table-section-item'>−</div>
                     <div className='table-section-price'>From 5000 AED</div>
@@ -168,19 +168,19 @@ const PropertyManagement = () => {
                         <div className='ribbon'><span>POA</span></div>
                     </div>
                     <div className='table-section-header'>PLATINUM</div>
-                    <div className='table-section-item bronze'>Tenant Sourcing</div>
-                    <div className='table-section-item bronze'>Rental Cheque Management</div>
-                    <div className='table-section-item bronze'>Move-in Services</div>
-                    <div className='table-section-item bronze'>Tenancy Renewal</div>
-                    <div className='table-section-item gold'>Move-out Services</div>
-                    <div className='table-section-item gold'>Security Deposit Settlement</div>
-                    <div className='table-section-item gold'>Bill Payment</div>
-                    <div className='table-section-item gold'>Maintenance Solution Liaison</div>
-                    <div className='table-section-item gold'>Handover Assistance from Developer</div>
-                    <div className='table-section-item gold'>Governmental Compliance</div>
-                    <div className='table-section-item gold'>Ad Hoc Assistance (10h credit/annum)</div>
-                    <div className='table-section-item platinum'>Legal Representation (POA)</div>
-                    <div className='table-section-item platinum'>Sales & Post Sales Assistance</div>
+                    <div className='table-section-item'>Tenant Sourcing</div>
+                    <div className='table-section-item'>Rental Cheque Management</div>
+                    <div className='table-section-item'>Move-in Services</div>
+                    <div className='table-section-item'>Tenancy Renewal</div>
+                    <div className='table-section-item'>Move-out Services</div>
+                    <div className='table-section-item'>Security Deposit Settlement</div>
+                    <div className='table-section-item'>Bill Payment</div>
+                    <div className='table-section-item'>Maintenance Solution Liaison</div>
+                    <div className='table-section-item'>Handover Assistance from Developer</div>
+                    <div className='table-section-item'>Governmental Compliance</div>
+                    <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
+                    <div className='table-section-item'>Legal Representation (POA)</div>
+                    <div className='table-section-item'>Sales & Post Sales Assistance</div>
                     <div className='table-section-price'>From 6500 AED</div>
                     <button type='button' onClick={addPlatinumToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
