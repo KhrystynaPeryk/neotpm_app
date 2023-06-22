@@ -5,9 +5,9 @@ import './PropertyManagement.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
-import BronzeHouse from '../../assets/images/light_house.png'
-import GoldHouse from '../../assets/images/standard_house.png'
-import PlatinumHouse from '../../assets/images/executive_house.png'
+import BronzeHouse from '../../assets/images/bronze-icon-white.png'
+import GoldHouse from '../../assets/images/gold-icon-white.png'
+import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
 import ArrowRight from '../../assets/images/arrow-right.png'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -119,10 +119,10 @@ const PropertyManagement = () => {
             </div>
             <div className='property-table-wrapper'>
                 <section className='table-column'>
-                    <div>
-                        <img className='property-icon' src={BronzeHouse} alt='LightHouse' />
+                    <div className='property-icon-container bronze'>
+                        <img className='property-icon' src={BronzeHouse} alt='BronzeHouse' />
+                        <div className='table-section-header'>BRONZE</div>
                     </div>
-                    <div className='table-section-header'>BRONZE</div>
                     <div className='table-section-item'>Tenant Sourcing</div>
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
@@ -141,10 +141,10 @@ const PropertyManagement = () => {
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
-                    <div>
-                        <img className='property-icon' src={GoldHouse} alt='StandardHouse' />
+                    <div className='property-icon-container gold'>
+                        <img className='property-icon' src={GoldHouse} alt='GoldHouse' />
+                        <div className='table-section-header'>GOLD</div>
                     </div>
-                    <div className='table-section-header'>GOLD</div>
                     <div className='table-section-item'>Tenant Sourcing</div>
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
@@ -163,11 +163,11 @@ const PropertyManagement = () => {
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
-                    <div className='property-icon-container'>
-                        <img className='property-icon' src={PlatinumHouse} alt='ExecutiveHouse' />
-                        <div className='ribbon'><span>POA</span></div>
+                    <div className='property-icon-container platinum'>
+                        <img className='property-icon' src={PlatinumHouse} alt='PlatinumHouse' />
+                        <div className='ribbon'><span></span></div>
+                        <div className='table-section-header'>PLATINUM</div>
                     </div>
-                    <div className='table-section-header'>PLATINUM</div>
                     <div className='table-section-item'>Tenant Sourcing</div>
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
