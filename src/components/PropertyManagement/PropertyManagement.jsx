@@ -127,20 +127,21 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
                     <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-price'>From 3500 AED</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-price'>From 3500 AED or 3% of the rent</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
-                <section className='table-column'>
+                <section className='table-column gold'>
+                    <div className='ribbon'><span>HIT</span></div>
                     <div className='property-icon-container gold'>
                         <img className='property-icon' src={GoldHouse} alt='GoldHouse' />
                         <div className='table-section-header'>GOLD</div>
@@ -156,16 +157,16 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Handover Assistance from Developer</div>
                     <div className='table-section-item'>Governmental Compliance</div>
                     <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-item'>−</div>
-                    <div className='table-section-price'>From 5000 AED</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-price'>From 5000 AED or 5% of the rent</div>
                     <button type='button' onClick={addGoldToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
+                    <div className='ribbon'><span>+POA</span></div>
                     <div className='property-icon-container platinum'>
                         <img className='property-icon' src={PlatinumHouse} alt='PlatinumHouse' />
-                        <div className='ribbon'><span></span></div>
                         <div className='table-section-header'>PLATINUM</div>
                     </div>
                     <div className='table-section-item'>Tenant Sourcing</div>
@@ -181,7 +182,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
-                    <div className='table-section-price'>From 6500 AED</div>
+                    <div className='table-section-price'>From 6500 AED or 8% of the rent</div>
                     <button type='button' onClick={addPlatinumToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
