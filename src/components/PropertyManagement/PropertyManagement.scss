@@ -37,11 +37,13 @@
         border-bottom: 1px solid $colorM;
         margin-bottom: 1em;
         color: black;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Comfortaa', cursive;
+        font-weight: bold;
+        text-transform: uppercase;
         text-align: center;
         letter-spacing: 5px;
-        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-        0px -4px 10px rgba(255,255,255,0.3);
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.2), 
+        0px -4px 10px rgba(255,255,255,0.2);
         margin: 0;
         padding-top: 1em;
         padding-bottom: 1em;
@@ -85,35 +87,23 @@
     justify-content: space-between;
     gap: 1em;
     margin: 3em 0;
-    // border: 1px solid black;
-    // border-radius: 5px;
     padding: 0.5em;
 
-    // @media screen and (max-width: 1170px) {
-    //     justify-content: flex-start;
-    //     flex-wrap: wrap;
-    //     transition: all 0.5s ease;
-    // }
+    @media screen and (max-width: 1250px) {
+        width: 75%;
+        transition: all 0.5s ease;
+    }
 
-    // @media screen and (max-width: 790px) {
-    //     width: 60%;
-    //     transition: all 0.5s ease;
-    // }
+    @media screen and (max-width: 1130px) {
+        width: 80%;
+        transition: all 0.5s ease;
+    }
 
-    // @media screen and (max-width: 660px) {
-    //     width: 70%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 560px) {
-    //     width: 80%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 500px) {
-    //     width: 85%;
-    //     transition: all 0.5s ease;
-    // }
+    @media screen and (max-width: 1000px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        transition: all 0.5s ease;
+    }
 
     .table-column {
         position: relative;
