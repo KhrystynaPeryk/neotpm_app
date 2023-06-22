@@ -135,7 +135,6 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>╳</div>
                     <div className='table-section-item'>╳</div>
                     <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
                     <div className='table-section-price'>From 3500 AED or 3% of the rent</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
                     <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
@@ -155,7 +154,6 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Bill Payment</div>
                     <div className='table-section-item'>Maintenance Solution Liaison</div>
                     <div className='table-section-item'>Handover Assistance from Developer</div>
-                    <div className='table-section-item'>Governmental Compliance</div>
                     <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
                     <div className='table-section-item'>╳</div>
                     <div className='table-section-item'>╳</div>
@@ -178,7 +176,6 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Bill Payment</div>
                     <div className='table-section-item'>Maintenance Solution Liaison</div>
                     <div className='table-section-item'>Handover Assistance from Developer</div>
-                    <div className='table-section-item'>Governmental Compliance</div>
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
