@@ -74,6 +74,12 @@
     z-index: 1;
     position: relative;
 
+    // fix the bug on width 415 cart is not visible - below does not help
+    @media screen and (max-width: 415px) {
+        margin-right: 5em;
+        transition: all 0.5s ease;
+    }
+
     &:hover{
         cursor: pointer;
     }

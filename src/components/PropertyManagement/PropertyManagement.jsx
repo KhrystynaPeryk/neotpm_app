@@ -11,8 +11,12 @@ import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
 import ArrowRight from '../../assets/images/arrow-right.png'
 import { v4 as uuidv4 } from 'uuid';
 
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 const PropertyManagement = () => {
 
+    const [activeSlide, setActiveSlide] = useState(0);
     const handleRedirectToQuiz = () => {
         window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
     };
@@ -108,6 +112,7 @@ const PropertyManagement = () => {
         };
     }, []);
 
+
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -199,7 +204,50 @@ const PropertyManagement = () => {
                     <button type='button'>Buy</button>
                 </div>
             </div>
-            <div className="home-services-image maintenance-img second" />
+            <div className="carousel-container">
+                <Carousel
+                    selectedItem={activeSlide}
+                    onChange={(index) => setActiveSlide(index)}
+                    showArrows
+                    infiniteLoop
+                    autoPlay
+                    interval={3000}
+                >                        
+                    <div className="carousel-item bronze">
+                        <p className='carousel-item-header'>Tenant Sourcing</p>
+                        <p>Advise market price</p>
+                        <p>Professional photography</p>
+                        <p>Online marketing</p>
+                        <p>Internal/External agents promotion</p>
+                        <p>Monitor weekly viewing numbers</p>
+                        <p>Strategise on property promotion</p>
+                    </div>
+                    <div className="carousel-item bronze">
+                        <p className='carousel-item-header'>Rental Cheque Management</p>
+                        <p>Rent & security deposit collection</p>
+                        <p>Cheque deposit service</p>
+                        <p>Hold security deposit</p>
+                    </div>
+                    <div className="carousel-item bronze">
+                        <p className='carousel-item-header'>Move-in Services</p>
+                        <p>Tawtheeq application</p>
+                        <p>ADDC application</p>
+                        <p>Gas connection</p>
+                        <p>Chilled water connection</p>
+                        <p>Move-in Inspection</p>
+                        <p>Inventory list</p>
+                    </div>
+                    <div className="carousel-item bronze">
+                        <p className='carousel-item-header'>Tenancy Renewal</p>
+                        <p>Renewal reminder to both parties</p>
+                        <p>Renewal negotiation</p>
+                        <p>Rental cheque collection</p>
+                        <p>Tawtheeq application</p>
+                    </div>
+                    {/* Add more slides as needed */}
+                </Carousel>
+            </div>
+            {/* <div className="home-services-image maintenance-img second" /> */}
             <div className={`property-after-table ${mySecondElementVisible ? 'fade-in' : ''}`}
                 ref={mySecondIngRef}
             >
@@ -214,7 +262,90 @@ const PropertyManagement = () => {
                     <button type='button'>Buy</button>
                 </div>
             </div>
-            <div className="home-services-image maintenance-img third" />
+            <div className="carousel-container">
+                <Carousel
+                    selectedItem={activeSlide}
+                    onChange={(index) => setActiveSlide(index)}
+                    showArrows
+                    infiniteLoop
+                    autoPlay
+                    interval={3000}
+                >                        
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Tenant Sourcing</p>
+                        <p>Advise market price</p>
+                        <p>Professional photography</p>
+                        <p>Online marketing</p>
+                        <p>Internal/External agents promotion</p>
+                        <p>Monitor weekly viewing numbers</p>
+                        <p>Strategise on property promotion</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Rental Cheque Management</p>
+                        <p>Rent & security deposit collection</p>
+                        <p>Cheque deposit service</p>
+                        <p>Hold security deposit</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Move-in Services</p>
+                        <p>Tawtheeq application</p>
+                        <p>ADDC application</p>
+                        <p>Gas connection</p>
+                        <p>Chilled water connection</p>
+                        <p>Move-in Inspection</p>
+                        <p>Inventory list</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Tenancy Renewal</p>
+                        <p>Renewal reminder to both parties</p>
+                        <p>Renewal negotiation</p>
+                        <p>Rental cheque collection</p>
+                        <p>Tawtheeq application</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Move-out Services</p>
+                        <p>Move-out application with the developer</p>
+                        <p>Move-out documentation and clearances</p>
+                        <p>Move-out handover of keys, access cards</p>
+                        <p>Pre-move out inspection (upon request)</p>
+                        <p>Move-out inspection with detailed inspection report</p>
+                        <p>Quotation generation for fix up the property</p>
+                        <p>Property fix-up supervision</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Security Deposit Settlement</p>
+                        <p>Detailed breakdown report</p>
+                        <p>Settle security deposit</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Bill Payment</p>
+                        <p>Service charge payment assistance</p>
+                        <p>Utility bill payment assistance</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Maintenance Solution Liaison</p>
+                        <p>Maintenance Liaison</p>
+                        <p>Obtain Quotation</p>
+                        <p>Ensure quality of maintenance work</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Handover Assistance from developer</p>
+                        <p>Obtain title deed</p>
+                        <p>Transfer ADDC's account name</p>
+                        <p>Snagging and desnagging</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Governmental Compliance</p>
+                        <p>Tawtheeq Account Management</p>
+                        <p>Other ad hoc assistance</p>
+                    </div>
+                    <div className="carousel-item gold">
+                        <p className='carousel-item-header'>Ad Hoc Assistance</p>
+                        <p>4h credits/annum in assisting to resolve any other issues unspecified (or AED 100/hour)</p>
+                    </div>
+                </Carousel>
+            </div>
+            {/* <div className="home-services-image maintenance-img third" /> */}
             <div className={`property-after-table ${myThirdElementVisible ? 'fade-in' : ''}`}
                 ref={myThirdIngRef}
             >
@@ -228,6 +359,108 @@ const PropertyManagement = () => {
                 <div className='property-button-wrapper'>
                     <button type='button'>Buy</button>
                 </div>
+            </div>
+            <div className="carousel-container">
+                <Carousel
+                    selectedItem={activeSlide}
+                    onChange={(index) => setActiveSlide(index)}
+                    showArrows
+                    infiniteLoop
+                    autoPlay
+                    interval={3000}
+                >                        
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Tenant Sourcing</p>
+                        <p>Advise market price</p>
+                        <p>Professional photography</p>
+                        <p>Online marketing</p>
+                        <p>Internal/External agents promotion</p>
+                        <p>Monitor weekly viewing numbers</p>
+                        <p>Strategise on property promotion</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Rental Cheque Management</p>
+                        <p>Rent & security deposit collection</p>
+                        <p>Cheque deposit service</p>
+                        <p>Hold security deposit</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Move-in Services</p>
+                        <p>Tawtheeq application</p>
+                        <p>ADDC application</p>
+                        <p>Gas connection</p>
+                        <p>Chilled water connection</p>
+                        <p>Move-in Inspection</p>
+                        <p>Inventory list</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Tenancy Renewal</p>
+                        <p>Renewal reminder to both parties</p>
+                        <p>Renewal negotiation</p>
+                        <p>Rental cheque collection</p>
+                        <p>Tawtheeq application</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Move-out Services</p>
+                        <p>Move-out application with the developer</p>
+                        <p>Move-out documentation and clearances</p>
+                        <p>Move-out handover of keys, access cards</p>
+                        <p>Pre-move out inspection (upon request)</p>
+                        <p>Move-out inspection with detailed inspection report</p>
+                        <p>Quotation generation for fix up the property</p>
+                        <p>Property fix-up supervision</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Security Deposit Settlement</p>
+                        <p>Detailed breakdown report</p>
+                        <p>Settle security deposit</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Bill Payment</p>
+                        <p>Service charge payment assistance</p>
+                        <p>Utility bill payment assistance</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Maintenance Solution Liaison</p>
+                        <p>Maintenance Liaison</p>
+                        <p>Obtain Quotation</p>
+                        <p>Ensure quality of maintenance work</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Handover Assistance from developer</p>
+                        <p>Obtain title deed</p>
+                        <p>Transfer ADDC's account name</p>
+                        <p>Snagging and desnagging</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Governmental Compliance</p>
+                        <p>Tawtheeq Account Management</p>
+                        <p>Other ad hoc assistance</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Legal Representation (POA)</p>
+                        <p>Bounced cheques collection</p>
+                        <p>Attending sales transfer on behalf of the client</p>
+                        <p>Sign or collect legal documentation</p>
+                        <p>Rental Dispute Settlement</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Handover Assistance from developer</p>
+                        <p>Obtain title deed</p>
+                        <p>Transfer ADDC's account name</p>
+                        <p>Snagging and desnagging</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Sales & Post Sales Assistance</p>
+                        <p>Sales viewing arrangement</p>
+                        <p>Sales promotion (internal and external agency)</p>
+                        <p>Settlement of utility account after the sale transfer</p>
+                    </div>
+                    <div className="carousel-item platinum">
+                        <p className='carousel-item-header'>Ad Hoc Assistance</p>
+                        <p>10h credits/annum in assisting to resolve any other issues unspecified (or AED 100/hour)</p>
+                    </div>
+                </Carousel>
             </div>
             <div className='quiz-request-wrapper'>
                 <div className='quiz-request-content'>
