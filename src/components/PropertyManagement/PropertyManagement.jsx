@@ -23,6 +23,20 @@ const PropertyManagement = () => {
 
     const dispatch = useDispatch();
 
+    //handling scroll to the section
+    const scrollToBronzeSection = () => {
+        myFirstIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToGoldSection = () => {
+        mySecondIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToPlatinumSection = () => {
+        myThirdIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+    
+
     //ADD Bronze PACKAGE TO CART
     const addBronzeToCart = () => {
         dispatch(addProduct({
@@ -142,7 +156,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>╳</div>
                     <div className='table-section-price'>From 3500 AED or 3% of the rent</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
-                    <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column gold'>
                     <div className='ribbon'><span>HIT</span></div>
@@ -164,7 +178,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>╳</div>
                     <div className='table-section-price'>From 5000 AED or 5% of the rent</div>
                     <button type='button' onClick={addGoldToCart}>Buy</button>
-                    <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
                     <div className='ribbon'><span>+POA</span></div>
@@ -186,7 +200,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
                     <div className='table-section-price'>From 6500 AED or 8% of the rent</div>
                     <button type='button' onClick={addPlatinumToCart}>Buy</button>
-                    <div className='property-learn-more'>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
             </div>
             <div className="home-services-image maintenance-img first" />
@@ -196,9 +210,9 @@ const PropertyManagement = () => {
                 <div className='property-header-wrapper'>
                     <p className='property-header subheader'>BRONZE</p>
                 </div>
-                <p className='property-package-caption'>Experience the Convenience of <span>Lease Renewal Assistance</span>.</p>
+                <p className='property-package-caption'>Experience the Convenience of <span>Hassle-free</span> Property Management.</p>
                 <p className='property-package-description'>
-                    Discover the ease and efficiency of our <b>Bronze Package</b>, designed to provide you with a delightful taste of our exceptional services. With Transparent's Lease Renewal Assistance, we <span>simplify the process</span>, taking care of all the paperwork and negotiations on your behalf. Sit back and relax, knowing that your lease renewal is in the hands of our expert team. Experience <span>hassle-free property management</span>, even at its lightest level.
+                    <b>The Bronze Package</b> offers <span>essential</span> services to assist you in <span>managing your rental property</span>. It includes features such as advising market prices, professional photography, online marketing, promotion through internal and external agents, monitoring weekly viewing numbers, strategizing property promotion, rental cheque management, move-in services, and tenancy renewal.
                 </p>
                 <div className='property-button-wrapper'>
                     <button type='button'>Send Your Details</button>
@@ -212,6 +226,7 @@ const PropertyManagement = () => {
                     infiniteLoop
                     autoPlay
                     interval={3000}
+                    showThumbs={false}
                 >                        
                     <div className="carousel-item bronze">
                         <p className='carousel-item-header'>Bronze Tenant Sourcing</p>
@@ -255,15 +270,15 @@ const PropertyManagement = () => {
                 </Carousel>
             </div>
             {/* <div className="home-services-image maintenance-img second" /> */}
-            <div className={`property-after-table ${mySecondElementVisible ? 'fade-in' : ''}`}
+            <div id="gold-section" className={`property-after-table ${mySecondElementVisible ? 'fade-in' : ''}`}
                 ref={mySecondIngRef}
             >
                 <div className='property-header-wrapper'>
                     <p className='property-header subheader'>GOLD</p>
                 </div>
-                <p className='property-package-caption'>Elevate Your Property Management Experience.</p>
+                <p className='property-package-caption'><span>Elevate</span> Your Property Management Experience.</p>
                 <p className='property-package-description'>
-                    Elevate your property management experience with our comprehensive <b>Gold Package</b>. At Transparent, we go above and beyond to ensure your property is <span>impeccably managed</span>. From <span>rent collection</span> and <span>tenant screening</span> to regular <span>property inspections</span> and <span>maintenance coordination</span>, we handle it all. With our unwavering commitment to excellence, your property investment will thrive under our care. Trust in our expertise and let us unlock the full potential of your property.
+                    Upgrade to the <b>Gold Package</b> for <span>comprehensive property management</span> services. In addition to the features provided in the Bronze Package, it offers <span>other benefits</span> like move-out services, security deposit settlement, bill payment assistance, maintenance solution liaison, handover assistance from the developer, governmental compliance support, ad hoc assistance, and more.
                 </p>
                 <div className='property-button-wrapper'>
                     <button type='button'>Send Your Details</button>
@@ -277,6 +292,7 @@ const PropertyManagement = () => {
                     infiniteLoop
                     autoPlay
                     interval={3000}
+                    showThumbs={false}
                 >                        
                     <div className="carousel-item gold">
                         <p className='carousel-item-header'>Gold Tenant Sourcing</p>
@@ -375,7 +391,7 @@ const PropertyManagement = () => {
                 </Carousel>
             </div>
             {/* <div className="home-services-image maintenance-img third" /> */}
-            <div className={`property-after-table ${myThirdElementVisible ? 'fade-in' : ''}`}
+            <div id="platinum-section" className={`property-after-table ${myThirdElementVisible ? 'fade-in' : ''}`}
                 ref={myThirdIngRef}
             >
                 <div className='property-header-wrapper'>
@@ -383,7 +399,7 @@ const PropertyManagement = () => {
                 </div>
                 <p className='property-package-caption'>Seamlessly Managed Properties with Added <span>Power of Attorney</span>.</p>
                 <p className='property-package-description'>
-                    Take your property management to new heights with our exclusive <b>Executive Package</b>. In addition to our <span>comprehensive property management</span> services, this package offers the invaluable benefit of Power of Attorney assistance. Our experienced team will handle all legal matters related to your property, ensuring <span>seamless transactions</span> and <span>efficient representation on your behalf</span>. Experience the peace of mind that comes with entrusting your property to Transparent's expert hands. Maximize your property's potential while enjoying the added convenience of our Executive Package.
+                    Experience the utmost convenience with our <b>Platinum Package</b>. It encompasses all the features of the Gold Package and goes a step further by <span>providing legal representation</span>, including bounced cheques collection and rental dispute settlement. It also offers sales and post-sales assistance, making it an all-inclusive package for property owners seeking hassle-free management.
                 </p>
                 <div className='property-button-wrapper'>
                     <button type='button'>Send Your Details</button>
@@ -397,6 +413,7 @@ const PropertyManagement = () => {
                     infiniteLoop
                     autoPlay
                     interval={3000}
+                    showThumbs={false}
                 >                        
                     <div className="carousel-item platinum">
                         <p className='carousel-item-header'>Platinum Tenant Sourcing</p>

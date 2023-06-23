@@ -177,6 +177,13 @@
                 width: 0.5em;
                 height: 0.5em;
             }
+
+            a {
+                &:link, &:visited, &:hover, &:active {
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
         }
 
         .property-learn-more:hover {
