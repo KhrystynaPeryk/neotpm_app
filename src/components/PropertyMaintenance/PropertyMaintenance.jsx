@@ -29,23 +29,6 @@ const PropertyMaintenance = () => {
         } else {
             setIsVillaPackagesVisible(false)
         }
-        console.log('isVillaPackagesVisible - ', isVillaPackagesVisible)
-        // //erase all prevous state values once the propertyType changes
-        // setPropertyType('')
-        // setRoomsNumber('')
-        // setPropertyLocation('')
-        // setDriverRoom('')
-        // setMaidRoom('')
-        // setVillaPackages('')
-        console.log('-----AFTER PROPERTYtYPE CHANGE----')
-        console.log('propertyType:', propertyType);
-        console.log('roomsNumber:', roomsNumber);
-        console.log('propertyLocation:', propertyLocation);
-        console.log('driverRoom:', driverRoom);
-        console.log('maidRoom:', maidRoom);
-        console.log('villaPackages', villaPackages)
-        console.log('---------')
-
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
@@ -100,20 +83,20 @@ const PropertyMaintenance = () => {
             errors.propertyLocation = 'Please select a property location.';
         }
         if (!maidRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
+            console.log('maidRoom should not be selected - ', maidRoom)
             errors.maidRoom = 'Please select an option above';
         }
         if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
             errors.driverRoom = 'Please select an option above';
         }
-        if (!villaPackages && propertyType === 'villa' || propertyType === 'townhouse') {
+        if (!villaPackages && propertyType === 'villa') {
+            console.log('villaPackages should not be selected - ', villaPackages)
             errors.villaPackages = 'Please select a package';
         }
-
-        // // erase driver and maid room values for villa/townhouse
-        // if(propertyType === 'villa' || propertyType === 'townhouse') {
-        //     setDriverRoom()
-        //     setMaidRoom()
-        // }
+        if (!villaPackages && propertyType === 'townhouse') {
+            console.log('villaPackages should not be selected - ', villaPackages)
+            errors.villaPackages = 'Please select a package';
+        }
 
         if (Object.keys(errors).length > 0) {
             setErrors(errors);
@@ -221,45 +204,40 @@ const PropertyMaintenance = () => {
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
-                        {isVillaPackagesVisible ? (
-                        <div className='select-container'>
-                            <div className='select-container-item'>
-                                <select value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
-                                    <option value="" defaultValue=''>-- Choose a package --</option>
-                                    <option value="bronze">Bronze package*</option>
-                                    <option value="gold">Gold package*</option>
-                                    <option value="platinum">Platinum package*</option>
-                                </select>
-                                {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
-                            </div>
-                            <div className='packages-description'>
-                                <div className='packages-description-item'>*<b>Bronze:</b> Just AMC With 2 PPM a year</div>
-                                <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year, 2 pest control, 2 external glass cleaning</div>
-                                <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year, 4 pest control, 2 external glass cleaning</div>
-                            </div>
+                    <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
+                        <div className='select-container-item'>
+                            <select value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
+                                <option value="" defaultValue=''>-- Choose a package --</option>
+                                <option value="bronze">Bronze package*</option>
+                                <option value="gold">Gold package*</option>
+                                <option value="platinum">Platinum package*</option>
+                            </select>
+                            {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
                         </div>
-                                     
-                        ) : (
-                            <div className='select-container'>
-                                <div className='select-container-item'>
-                                    <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
-                                        <option value="" defaultValue=''>-- Maid Room --</option>
-                                        <option value="yes">a maid room</option>
-                                        <option value="no">no maid room</option>
-                                    </select>
-                                    {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
-                                </div>
-                                <div className='select-container-item'>
-                                    <select value={driverRoom} name="maid" id="maid" onChange={handleDriverRoom}>
-                                        <option value="" defaultValue=''>-- Driver Room --</option>
-                                        <option value="yes">a driver room</option>
-                                        <option value="no">no driver room</option>
-                                    </select>
-                                    {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
-                                </div>
-                            </div>   
-                        )}
-                    
+                        <div className='packages-description'>
+                            <div className='packages-description-item'>*<b>Bronze:</b> Just AMC With 2 PPM a year</div>
+                            <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year, 2 pest control, 2 external glass cleaning</div>
+                            <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year, 4 pest control, 2 external glass cleaning</div>
+                        </div>
+                    </div>
+                    <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'none'} : {'display' : 'flex'} }>
+                        <div className='select-container-item'>
+                            <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
+                                <option value="" defaultValue=''>-- Maid Room --</option>
+                                <option value="yes">a maid room</option>
+                                <option value="no">no maid room</option>
+                            </select>
+                            {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
+                        </div>
+                        <div className='select-container-item'>
+                            <select value={driverRoom} name="maid" id="maid" onChange={handleDriverRoom}>
+                                <option value="" defaultValue=''>-- Driver Room --</option>
+                                <option value="yes">a driver room</option>
+                                <option value="no">no driver room</option>
+                            </select>
+                            {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
+                        </div>
+                    </div>     
                 </div>
                 {/* <div className='checkbox-container'>
                     <div className='checkbox-container-item'>
