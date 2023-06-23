@@ -13,6 +13,8 @@ const PropertyMaintenance = () => {
     const [driverRoom, setDriverRoom] = useState();
     const [maidRoom, setMaidRoom] = useState();
     const [villaPackages, setVillaPackages] = useState();
+    // handles a view villa/townhouse packages or maid/driver room
+    const [isVillaPackagesVisible, setIsVillaPackagesVisible] = useState(false);
 
     const [quote, setQuote] = useState(0)
 
@@ -21,6 +23,11 @@ const PropertyMaintenance = () => {
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
+        if (e.target.value === 'villa' || e.target.value === 'townhouse') {
+            setIsVillaPackagesVisible(true)
+        } else {
+            setIsVillaPackagesVisible(false)
+        }
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
@@ -42,6 +49,10 @@ const PropertyMaintenance = () => {
     const handleMaidRoom = (e) => {
         setMaidRoom(e.target.value)
         setErrors((prevErrors) => ({ ...prevErrors, maidRoom: undefined }));
+    }
+
+    const handlevillaPckgs = (e) => {
+        setVillaPackages(e.target.value)
     }
 
     const handleBackToQuote = () => {
@@ -174,25 +185,40 @@ const PropertyMaintenance = () => {
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
-                    <div className='select-container'>
-                        <div className='select-container-item'>
-                            <select name="maid" id="maid" onChange={handleMaidRoom}>
-                                <option value="">-- Maid Room --</option>
-                                <option value="yes">a maid room</option>
-                                <option value="no">no maid room</option>
-                            </select>
-                            {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
+                        {isVillaPackagesVisible ? (
+                        <div className='select-container'>
+                            <div className='select-container-item'>
+                                <select name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
+                                    <option value="">-- Choose a package --</option>
+                                    <option value="bronze">BRONZE</option>
+                                    <option value="gold">GOLD</option>
+                                    <option value="platinum">PLATINUM</option>
+                                </select>
+                                {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
+                            </div>
                         </div>
-                        <div className='select-container-item'>
-                            <select name="maid" id="maid" onChange={handleDriverRoom}>
-                                <option value="">-- Driver Room --</option>
-                                <option value="yes">a driver room</option>
-                                <option value="no">no driver room</option>
-                            </select>
-                            {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
-                        </div>
-                    </div>
-
+                                     
+                        ) : (
+                            <div className='select-container'>
+                                <div className='select-container-item'>
+                                    <select name="maid" id="maid" onChange={handleMaidRoom}>
+                                        <option value="">-- Maid Room --</option>
+                                        <option value="yes">a maid room</option>
+                                        <option value="no">no maid room</option>
+                                    </select>
+                                    {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
+                                </div>
+                                <div className='select-container-item'>
+                                    <select name="maid" id="maid" onChange={handleDriverRoom}>
+                                        <option value="">-- Driver Room --</option>
+                                        <option value="yes">a driver room</option>
+                                        <option value="no">no driver room</option>
+                                    </select>
+                                    {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
+                                </div>
+                            </div>   
+                        )}
+                    
                 </div>
                 {/* <div className='checkbox-container'>
                     <div className='checkbox-container-item'>
