@@ -10,8 +10,9 @@ const PropertyMaintenance = () => {
     const [propertyType, setPropertyType] = useState();
     const [roomsNumber, setRoomsNumber] = useState();
     const [propertyLocation, setPropertyLocation] = useState();
-    const [driverRoom, setDriverRoom] = useState(false);
-    const [maidRoom, setMaidRoom] = useState(false);
+    const [driverRoom, setDriverRoom] = useState();
+    const [maidRoom, setMaidRoom] = useState();
+    const [villaPackages, setVillaPackages] = useState();
 
     const [quote, setQuote] = useState(0)
 
@@ -34,11 +35,13 @@ const PropertyMaintenance = () => {
     }
 
     const handleDriverRoom = (e) => {
-        setDriverRoom(e.target.checked)
+        setDriverRoom(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, driverRoom: undefined }));
     }
 
     const handleMaidRoom = (e) => {
-        setMaidRoom(e.target.checked)
+        setMaidRoom(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, maidRoom: undefined }));
     }
 
     const handleBackToQuote = () => {
@@ -54,11 +57,17 @@ const PropertyMaintenance = () => {
         if (!propertyType) {
             errors.propertyType = 'Please select a property type.';
         }
-        if (!roomsNumber) {
+        if (!roomsNumber && propertyType !== 'studio') {
             errors.roomsNumber = 'Please select the number of rooms.';
         }
         if (!propertyLocation) {
             errors.propertyLocation = 'Please select a property location.';
+        }
+        if (!maidRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
+            errors.maidRoom = 'Please select an option above';
+        }
+        if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
+            errors.driverRoom = 'Please select an option above';
         }
 
         if (Object.keys(errors).length > 0) {
@@ -92,7 +101,7 @@ const PropertyMaintenance = () => {
                   listItems.forEach((item, index) => {
                     setTimeout(() => {
                       item.classList.add('slide-in');
-                    }, index * 300); // Delay each item's animation by 200ms
+                    }, index * 300);
                   });
                 }
               }
@@ -159,16 +168,33 @@ const PropertyMaintenance = () => {
                     <div className='select-container-item'>
                         <select name="location" id="location" onChange={handlePropertyLocation}>
                             <option value="">-- Property Location --</option>
-                            <option value="center">Abu Dhabi City Center</option>
-                            <option value="yas">Yas Island</option>
-                            <option value="saadiyat">Saadiyat Island</option>
-                            <option value="reef">Al Reef</option>
-                            <option value="other">Other</option>
+                            <option value="ADCityReem">Abu Dhabi City/Al Reem</option>
+                            <option value="SaadiyatYas">Saadiyat/Yas Island</option>
+                            <option value="OutOfAD">Out of Abu Dhabi</option>
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
+                    <div className='select-container'>
+                        <div className='select-container-item'>
+                            <select name="maid" id="maid" onChange={handleMaidRoom}>
+                                <option value="">-- Maid Room --</option>
+                                <option value="yes">a maid room</option>
+                                <option value="no">no maid room</option>
+                            </select>
+                            {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
+                        </div>
+                        <div className='select-container-item'>
+                            <select name="maid" id="maid" onChange={handleDriverRoom}>
+                                <option value="">-- Driver Room --</option>
+                                <option value="yes">a driver room</option>
+                                <option value="no">no driver room</option>
+                            </select>
+                            {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
+                        </div>
+                    </div>
+
                 </div>
-                <div className='checkbox-container'>
+                {/* <div className='checkbox-container'>
                     <div className='checkbox-container-item'>
                         <label htmlFor="driver">
                             <div>Driver's room/Garage</div>
@@ -195,7 +221,7 @@ const PropertyMaintenance = () => {
                             <span className="checkmark"></span>
                         </label>
                     </div>
-                </div>
+                </div> */}
                 <div className='quote-container'>
                     {quote ? 
                         <div className='quote-container-price'>
