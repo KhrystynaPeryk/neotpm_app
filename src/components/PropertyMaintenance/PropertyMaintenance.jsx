@@ -23,11 +23,29 @@ const PropertyMaintenance = () => {
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
+        //handles a view villa/townhouse packages or maid/driver room
         if (e.target.value === 'villa' || e.target.value === 'townhouse') {
             setIsVillaPackagesVisible(true)
         } else {
             setIsVillaPackagesVisible(false)
         }
+        console.log('isVillaPackagesVisible - ', isVillaPackagesVisible)
+        // //erase all prevous state values once the propertyType changes
+        // setPropertyType('')
+        // setRoomsNumber('')
+        // setPropertyLocation('')
+        // setDriverRoom('')
+        // setMaidRoom('')
+        // setVillaPackages('')
+        console.log('-----AFTER PROPERTYtYPE CHANGE----')
+        console.log('propertyType:', propertyType);
+        console.log('roomsNumber:', roomsNumber);
+        console.log('propertyLocation:', propertyLocation);
+        console.log('driverRoom:', driverRoom);
+        console.log('maidRoom:', maidRoom);
+        console.log('villaPackages', villaPackages)
+        console.log('---------')
+
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
     }
 
@@ -53,10 +71,17 @@ const PropertyMaintenance = () => {
 
     const handlevillaPckgs = (e) => {
         setVillaPackages(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, villaPackages: undefined }));
     }
 
     const handleBackToQuote = () => {
         setQuote(0);
+        setPropertyType('')
+        setRoomsNumber('')
+        setPropertyLocation('')
+        setDriverRoom('')
+        setMaidRoom('')
+        setVillaPackages('')
     }
 
     // logic to calculate the quote
@@ -80,6 +105,15 @@ const PropertyMaintenance = () => {
         if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
             errors.driverRoom = 'Please select an option above';
         }
+        if (!villaPackages && propertyType === 'villa' || propertyType === 'townhouse') {
+            errors.villaPackages = 'Please select a package';
+        }
+
+        // // erase driver and maid room values for villa/townhouse
+        // if(propertyType === 'villa' || propertyType === 'townhouse') {
+        //     setDriverRoom()
+        //     setMaidRoom()
+        // }
 
         if (Object.keys(errors).length > 0) {
             setErrors(errors);
@@ -91,10 +125,12 @@ const PropertyMaintenance = () => {
             console.log('propertyLocation:', propertyLocation);
             console.log('driverRoom:', driverRoom);
             console.log('maidRoom:', maidRoom);
+            console.log('villaPackages', villaPackages)
 
             // lOGIC TO CALCULATE THE QUOTE
 
             setQuote(1000.00)
+            
         }
     }
 
@@ -155,8 +191,8 @@ const PropertyMaintenance = () => {
                 </p>
                 <div className='select-container'>
                     <div className='select-container-item'>
-                        <select name="type-property" id="type-property" onChange={handlePropertyType}>
-                            <option value="">-- Property Type --</option>
+                        <select value={propertyType} name="type-property" id="type-property" onChange={handlePropertyType}>
+                            <option value="" defaultValue=''>-- Property Type --</option>
                             <option value="apartment">Apartment</option>
                             <option value="villa">Villa</option>
                             <option value="townhouse">Townhouse</option>
@@ -165,20 +201,20 @@ const PropertyMaintenance = () => {
                         {errors.propertyType && <div className="error-message errorOne">{errors.propertyType}</div>}
                     </div>
                     <div className='select-container-item'>
-                        <select name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
-                            <option value="">-- Number of rooms --</option>
-                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="1r">1</option>}
-                            <option value="2r">2</option>
-                            <option value="3r">3</option>
-                            <option value="4r">4</option>
-                            {propertyType !== 'apartment' && <option value="5r">5</option>}
-                            {propertyType !== 'apartment' && <option value="6r">6</option>}
+                        <select value={roomsNumber} name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
+                            <option value="" defaultValue=''>-- Number of rooms --</option>
+                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="1r">1 room</option>}
+                            <option value="2r">2 rooms</option>
+                            <option value="3r">3 rooms</option>
+                            <option value="4r">4 rooms</option>
+                            {propertyType !== 'apartment' && <option value="5r">5 rooms</option>}
+                            {propertyType !== 'apartment' && <option value="6r">6 rooms</option>}
                         </select>
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
                     <div className='select-container-item'>
-                        <select name="location" id="location" onChange={handlePropertyLocation}>
-                            <option value="">-- Property Location --</option>
+                        <select value={propertyLocation} name="location" id="location" onChange={handlePropertyLocation}>
+                            <option value="" defaultValue=''>-- Property Location --</option>
                             <option value="ADCityReem">Abu Dhabi City/Al Reem</option>
                             <option value="SaadiyatYas">Saadiyat/Yas Island</option>
                             <option value="OutOfAD">Out of Abu Dhabi</option>
@@ -188,29 +224,34 @@ const PropertyMaintenance = () => {
                         {isVillaPackagesVisible ? (
                         <div className='select-container'>
                             <div className='select-container-item'>
-                                <select name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
-                                    <option value="">-- Choose a package --</option>
-                                    <option value="bronze">BRONZE</option>
-                                    <option value="gold">GOLD</option>
-                                    <option value="platinum">PLATINUM</option>
+                                <select value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
+                                    <option value="" defaultValue=''>-- Choose a package --</option>
+                                    <option value="bronze">Bronze package*</option>
+                                    <option value="gold">Gold package*</option>
+                                    <option value="platinum">Platinum package*</option>
                                 </select>
                                 {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
+                            </div>
+                            <div className='packages-description'>
+                                <div className='packages-description-item'>*<b>Bronze:</b> Just AMC With 2 PPM a year</div>
+                                <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year, 2 pest control, 2 external glass cleaning</div>
+                                <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year, 4 pest control, 2 external glass cleaning</div>
                             </div>
                         </div>
                                      
                         ) : (
                             <div className='select-container'>
                                 <div className='select-container-item'>
-                                    <select name="maid" id="maid" onChange={handleMaidRoom}>
-                                        <option value="">-- Maid Room --</option>
+                                    <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
+                                        <option value="" defaultValue=''>-- Maid Room --</option>
                                         <option value="yes">a maid room</option>
                                         <option value="no">no maid room</option>
                                     </select>
                                     {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
                                 </div>
                                 <div className='select-container-item'>
-                                    <select name="maid" id="maid" onChange={handleDriverRoom}>
-                                        <option value="">-- Driver Room --</option>
+                                    <select value={driverRoom} name="maid" id="maid" onChange={handleDriverRoom}>
+                                        <option value="" defaultValue=''>-- Driver Room --</option>
                                         <option value="yes">a driver room</option>
                                         <option value="no">no driver room</option>
                                     </select>
