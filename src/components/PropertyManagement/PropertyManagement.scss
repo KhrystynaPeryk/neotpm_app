@@ -134,11 +134,18 @@
 
         .table-section-item {
             margin: 1em;
-            // letter-spacing: 0.06em;
             font-family: 'Montserrat', sans-serif;
             height: 3em;
             font-weight: 500;
             text-transform: uppercase;
+
+            // hide a cross on a table for max-width 491px
+            &.table-cross {
+                @media screen and (max-width: 491px) {
+                    display: none;
+                    color: blue;
+                }
+            }
         }
 
         .table-section-price {
@@ -314,11 +321,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 2em;
-    // background: rgba(205, 128, 50, 0.651);
-    // background: linear-gradient(90deg, rgba(205,127,50,1) 50%, rgba(240,248,255,1) 100%);
-    // padding: 2em;
-    // border-radius: 70%;
+    margin-bottom: 6em;
 
     @media screen and (max-width: 700px) {
         width: 60%;
@@ -396,7 +399,7 @@
     justify-content: center;
     padding-top: 2em;
     padding-bottom: 1em;
-    margin-bottom: 5em;
+    margin-bottom: 6em;
     align-items: center;
     background-color: rgba(217, 217, 217, 0.5);
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -438,12 +441,12 @@
 
 .carousel-container {
     width: 100%;
+    margin-bottom: 6em;
 
     .carousel-item {
-        // height: 40vh;
         height: 400px;
         color: white;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Comfortaa', cursive;
 
         display: flex;
         flex-direction: column;
@@ -483,22 +486,17 @@
 
         .carousel-item-feature {
             position: relative;
-            // margin-left: 40%;
-            // text-align: left;
-            padding-left: 20px;
+            padding-left: 25px;
 
             &:before {
-                content: '➔';
+                content: '➙';
                 position: absolute;
                 margin-right: 20px;
                 top: 0;
                 left:0;
-
             }
         }
         .carousel-item-header {
-            // padding-top: 2em;
-            // padding-bottom: 1em;
             font-size: large;
             font-weight: bold;
             text-transform: uppercase;

@@ -84,26 +84,26 @@ const NavBar = () => {
                     </div>
                 }
                 <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
-                    <div className='navbar-section navbar-management' onClick={redirectToPropertyManagement}>Property Management</div>
+                    <div className='navbar-section' onClick={redirectToPropertyManagement}>Property Management</div>
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
-                    <div className='navbar-section navbar-documents' onClick={redirectToPropertyAdministrativeSupport}>Property Administrative Support</div>
+                    <div className='navbar-section' onClick={redirectToPropertyAdministrativeSupport}>Property Administrative Support</div>
                 </div>
-                <div className='navbar-cart' onClick={redirectToCart}>
-                    {stateProducts.length !== 0 && 
-                        <div className='navbar-cart-qty-container'>
-                            <div className='navbar-cart-qty'>
-                                {stateProducts.length}
-                           </div> 
-                        </div>
-                    }
-                    <img src={Cart} alt='Cart' />
+                    <div className='navbar-cart' onClick={redirectToCart}>
+                        {stateProducts.length !== 0 && 
+                            <div className='navbar-cart-qty-container'>
+                                <div className='navbar-cart-qty'>
+                                    {stateProducts.length}
+                            </div> 
+                            </div>
+                        }
+                        <img src={Cart} alt='Cart' />
                 </div>
             </div>
             {isNavExpanded &&
                 <div ref={expandedNavbarRef} className={`navbar-container-expanded ${isAnimating ? 'animate' : ''}`}>
-                    <div className='navbar-section navbar-management' onClick={redirectToPropertyManagement}>➔ Property Management</div>
-                    <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>➔ Property Maintenance</div>
-                    <div className='navbar-section navbar-documents' onClick={redirectToPropertyAdministrativeSupport}>➔ Property Administrative Support</div>
+                    <div className='navbar-section-expanded' onClick={redirectToPropertyManagement}>➔ Property Management</div>
+                    <div className='navbar-section-expanded' onClick={redirectToPropertyMaintenance}>➔ Property Maintenance</div>
+                    <div className='navbar-section-expanded' onClick={redirectToPropertyAdministrativeSupport}>➔ Property Administrative Support</div>
                 </div>
             }
         </div>

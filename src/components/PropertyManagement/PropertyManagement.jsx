@@ -146,14 +146,14 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
                     <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-price'>From 3500 AED or 3% of the rent</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
                     <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
@@ -174,8 +174,8 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Maintenance Solution Liaison</div>
                     <div className='table-section-item'>Handover Assistance from Developer</div>
                     <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
-                    <div className='table-section-item'>╳</div>
-                    <div className='table-section-item'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
+                    <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-price'>From 5000 AED or 5% of the rent</div>
                     <button type='button' onClick={addGoldToCart}>Buy</button>
                     <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>

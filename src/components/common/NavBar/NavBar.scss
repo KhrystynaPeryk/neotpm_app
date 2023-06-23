@@ -2,15 +2,11 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-
-    .hidden {
-        visibility: hidden;
-    }
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: 2em;
     background-color: rgba(0, 0, 0, 0.5);
@@ -19,6 +15,7 @@
     font-weight: 100;
     font-size: small;
     letter-spacing: 0.2em;
+    position: relative;
 
     img {
         width: 1em;
@@ -35,7 +32,24 @@
         font-family: inherent;
         color: #CBC82D;
         z-index: 1;
-        margin-left: 0.5em;
+
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+
+    .navbar-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 6px;
+        left: 15px;
+    }
+
+    .hidden {
+        visibility: hidden;
     }
 }
 
@@ -50,7 +64,7 @@
         transition: all .3 ease;
     }
     
-    //visibility:hidden
+    //visibility:hidden for NavBar sections on max-width 768px
     @media screen and (max-width: 768px) {
         visibility:hidden;
     }
@@ -65,26 +79,14 @@
     }
 }
 
-.navbar-burger {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 1em;
-}
-
 .navbar-cart {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1em;
     z-index: 1;
-    position: relative;
-
-    // fix the bug on width 415 cart is not visible - below does not help
-    @media screen and (max-width: 415px) {
-        margin-right: 5em;
-        transition: all 0.5s ease;
-    }
+    position: absolute;
+    top: 6px;
+    right: 15px;
 
     &:hover{
         cursor: pointer;
@@ -145,13 +147,13 @@
         transition: height 0.5s ease;
     }
 
-    .navbar-section {
+    .navbar-section-expanded {
         margin-bottom: 10px;
     }
 }
 
 .navbar-container-expanded.animate {
-    top: calc(100% + 10px); /* Adjust the value as per your desired spacing */
+    top: calc(100% + 10px);
   }
 
   @keyframes navbarExpand {
