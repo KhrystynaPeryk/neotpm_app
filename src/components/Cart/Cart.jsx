@@ -33,7 +33,7 @@ const Cart = () => {
                         <div></div>
                     </div>
                     <div>
-                        <button type='button'>Checkout</button>
+                        <button className='checkout-btn' type='button'>Checkout</button>
                     </div>     
                 </div> 
             }
