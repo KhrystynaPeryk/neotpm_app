@@ -140,18 +140,19 @@ const PropertyMaintenance = () => {
                             <option value="apartment">Apartment</option>
                             <option value="villa">Villa</option>
                             <option value="townhouse">Townhouse</option>
+                            <option value="studio">Studio</option>
                         </select>
                         {errors.propertyType && <div className="error-message errorOne">{errors.propertyType}</div>}
                     </div>
                     <div className='select-container-item'>
-                        <select name="rooms" id="rooms" onChange={handleRoomNumber}>
+                        <select name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
                             <option value="">-- Number of rooms --</option>
-                            <option value="1r">1</option>
+                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="1r">1</option>}
                             <option value="2r">2</option>
                             <option value="3r">3</option>
                             <option value="4r">4</option>
-                            <option value="5r">5</option>
-                            <option value="6r">6</option>
+                            {propertyType !== 'apartment' && <option value="5r">5</option>}
+                            {propertyType !== 'apartment' && <option value="6r">6</option>}
                         </select>
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
