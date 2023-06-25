@@ -16,6 +16,7 @@ const PropertyMaintenance = () => {
     const [villaPackages, setVillaPackages] = useState();
     // handles a view villa/townhouse packages or maid/driver room
     const [isVillaPackagesVisible, setIsVillaPackagesVisible] = useState(false);
+    const [isMaidDriverVisible, setMaidDriverVisible] = useState(true);
 
     const [quote, setQuote] = useState(0)
 
@@ -24,12 +25,19 @@ const PropertyMaintenance = () => {
     //handling change in form values
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
-        //handles a view villa/townhouse packages or maid/driver room
-        if (e.target.value === 'villa' || e.target.value === 'townhouse') {
+
+        //handles a visibility of villapackages and maid/driver room on change of propertyType
+        if (propertyLocation === 'SaadiyatYas' && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
             setIsVillaPackagesVisible(true)
+            setMaidDriverVisible(false)
+        } else if (propertyLocation !== 'SaadiyatYas' && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
+            setIsVillaPackagesVisible(false)
+            setMaidDriverVisible(false)
         } else {
             setIsVillaPackagesVisible(false)
+            setMaidDriverVisible(true)
         }
+        
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
         setQuote(0);
     }
@@ -41,6 +49,19 @@ const PropertyMaintenance = () => {
 
     const handlePropertyLocation = (e) => {
         setPropertyLocation(e.target.value)
+
+        //handles a visibility of villapackages and maid/driver room on change of propertyLocation
+        if (e.target.value === 'SaadiyatYas' && (propertyType === 'villa' || propertyType === 'townhouse') ) {
+            setIsVillaPackagesVisible(true)
+            setMaidDriverVisible(false)
+        } else if (e.target.value !== 'SaadiyatYas' && (propertyType === 'villa' || propertyType === 'townhouse') ) {
+            setIsVillaPackagesVisible(false)
+            setMaidDriverVisible(false)
+        } else {
+            setIsVillaPackagesVisible(false)
+            setMaidDriverVisible(true)
+        } 
+
         setErrors((prevErrors) => ({ ...prevErrors, propertyLocation: undefined }));
     }
 
@@ -91,11 +112,11 @@ const PropertyMaintenance = () => {
         if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
             errors.driverRoom = 'Please select an option above';
         }
-        if (!villaPackages && propertyType === 'villa') {
+        if (!villaPackages && propertyType === 'villa' && propertyLocation === 'SaadiyatYas') {
             console.log('villaPackages should not be selected - ', villaPackages)
             errors.villaPackages = 'Please select a package';
         }
-        if (!villaPackages && propertyType === 'townhouse') {
+        if (!villaPackages && propertyType === 'townhouse' && propertyLocation === 'SaadiyatYas' ) {
             console.log('villaPackages should not be selected - ', villaPackages)
             errors.villaPackages = 'Please select a package';
         }
@@ -220,7 +241,7 @@ const PropertyMaintenance = () => {
                             <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
                         </div>
                     </div>
-                    <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'none'} : {'display' : 'flex'} }>
+                    <div className='select-container' style={isMaidDriverVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
                         <div className='select-container-item'>
                             <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
                                 <option value="" defaultValue=''>-- Maid Room --</option>
