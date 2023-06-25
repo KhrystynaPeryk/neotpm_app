@@ -3,6 +3,7 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
+import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalculator'
 
 const PropertyMaintenance = () => {
 
@@ -30,6 +31,7 @@ const PropertyMaintenance = () => {
             setIsVillaPackagesVisible(false)
         }
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
+        setQuote(0);
     }
 
     const handleRoomNumber = (e) => {
@@ -111,9 +113,7 @@ const PropertyMaintenance = () => {
             console.log('villaPackages', villaPackages)
 
             // lOGIC TO CALCULATE THE QUOTE
-
-            setQuote(1000.00)
-            
+            setQuote(maintenanceQuoteCalculator(propertyType, propertyLocation, roomsNumber, maidRoom, driverRoom, villaPackages))           
         }
     }
 
@@ -198,16 +198,16 @@ const PropertyMaintenance = () => {
                     <div className='select-container-item'>
                         <select value={propertyLocation} name="location" id="location" onChange={handlePropertyLocation}>
                             <option value="" defaultValue=''>-- Property Location --</option>
-                            <option value="ADCityReem">Abu Dhabi City/Al Reem</option>
+                            <option value="AbuDhabiCityReem">Abu Dhabi City/Al Reem</option>
                             <option value="SaadiyatYas">Saadiyat/Yas Island</option>
-                            <option value="OutOfAD">Out of Abu Dhabi</option>
+                            <option value="OutOfAbuDhabi">Out of Abu Dhabi</option>
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
                     <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
                         <div className='select-container-item'>
                             <select value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
-                                <option value="" defaultValue=''>-- Choose a package --</option>
+                                <option value="" defaultValue=''>-- Choose a package* --</option>
                                 <option value="bronze">Bronze package*</option>
                                 <option value="gold">Gold package*</option>
                                 <option value="platinum">Platinum package*</option>
@@ -215,9 +215,9 @@ const PropertyMaintenance = () => {
                             {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
                         </div>
                         <div className='packages-description'>
-                            <div className='packages-description-item'>*<b>Bronze:</b> Just AMC With 2 PPM a year</div>
-                            <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year, 2 pest control, 2 external glass cleaning</div>
-                            <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year, 4 pest control, 2 external glass cleaning</div>
+                            <div className='packages-description-item'>*<b>Bronze:</b> 2 PPM a year</div>
+                            <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
+                            <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
                         </div>
                     </div>
                     <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'none'} : {'display' : 'flex'} }>
@@ -230,7 +230,7 @@ const PropertyMaintenance = () => {
                             {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
                         </div>
                         <div className='select-container-item'>
-                            <select value={driverRoom} name="maid" id="maid" onChange={handleDriverRoom}>
+                            <select value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
                                 <option value="" defaultValue=''>-- Driver Room --</option>
                                 <option value="yes">a driver room</option>
                                 <option value="no">no driver room</option>
@@ -273,7 +273,7 @@ const PropertyMaintenance = () => {
                             <p className='border-animation'>Your quote is {quote} AED</p>
                             <div className='quote-buttons-container'>
                                 <button className='quote-buttons-item' type='button'>Buy</button>
-                                <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Back</button>
+                                <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Reset</button>
                             </div>    
                         </div> :
                         <button className='quote-btn' type='submit'>Give me a quote!</button>
