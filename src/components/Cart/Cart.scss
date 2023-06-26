@@ -5,7 +5,6 @@
     font-size: xx-large;
     font-weight: bold;
     margin-bottom: 2em;
-    min-height: 33.4vh;
 
     &.empty {
         height: 33.4vh;
@@ -16,11 +15,32 @@
 
 .cart-products-container {
     width: 50%;
+    min-height: 33.4vh;
     font-family: 'Domine', serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    @media screen and (max-width: 1480px) {
+        width: 60%;
+        transition: all .3 ease;
+    }
+
+    @media screen and (max-width: 1190px) {
+        width: 70%;
+        transition: all .3 ease;
+    }
+
+    @media screen and (max-width: 1020px) {
+        width: 80%;
+        transition: all .3 ease;
+    }
+
+    @media screen and (max-width: 890px) {
+        width: 90%;
+        transition: all .3 ease;
+    }
     
     .cart-products-items-wrapper {
         width: 100%;
@@ -40,7 +60,8 @@
             color: white;
             background-color: #D7C724;
             margin-top: 1em;
-            margin-bottom: 2em;
+            margin-bottom: 3em;
+            font-family: 'Montserrat', sans-serif;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             transition: box-shadow 0.3s ease;
     
