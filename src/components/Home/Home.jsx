@@ -124,7 +124,7 @@ const Home = () => {
                     <h1>Property Management</h1>
                     <p>Effortless Property Management Solutions: Leave the Hassle to Us</p>
                     <div className="btns-container">
-                        <button type="button">Buy</button>
+                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToPropertyManagement}>Learn More</button>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ const Home = () => {
                     <h1>Property Maintenance</h1>
                     <p>Maintain and Enhance Your Property: Expert Property Maintenance Services for Lasting Value</p>
                     <div className="btns-container">
-                        <button type="button">Buy</button>
+                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToPropertyMaintenance}>Learn More</button>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const Home = () => {
                     <h1>Owner Support</h1>
                     <p>Simplify Property Processes with Expert Support</p>
                     <div className="btns-container">
-                        <button type="button">Buy</button>
+                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToOwnerSupport}>Learn More</button>
                     </div>
                 </div>
