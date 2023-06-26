@@ -5,6 +5,7 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './Cart.scss'
+import { calculateTotalInCart } from '../../helpers/calculateTotalInCart';
 
 const Cart = () => {
 
@@ -30,7 +31,7 @@ const Cart = () => {
                     </div>
                     <div>
                         <div>Total:</div>
-                        <div></div>
+                        <div>AED {calculateTotalInCart(stateProducts)}</div>
                     </div>
                     <div>
                         <button className='checkout-btn' type='button'>Checkout</button>
