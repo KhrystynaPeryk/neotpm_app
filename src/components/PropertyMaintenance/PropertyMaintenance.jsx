@@ -37,6 +37,11 @@ const PropertyMaintenance = () => {
             setIsVillaPackagesVisible(false)
             setMaidDriverVisible(true)
         }
+
+        setRoomsNumber('')
+        setPropertyLocation('')
+        setDriverRoom('')
+        setMaidRoom('')
         
         setErrors((prevErrors) => ({ ...prevErrors, propertyType: undefined }));
         setQuote(0);
@@ -188,11 +193,10 @@ const PropertyMaintenance = () => {
             </div>
             <form className='property-features-wrapper' onSubmit={calculateQuote}>
                 <p className='property-features-wrapper-caption'>
-                    Get your custom quote for our 
-                    <span className="title-word title-word-1"> ANNUAL </span> 
-                    <span className="title-word title-word-2">PROPERTY </span> 
-                    <span className="title-word title-word-3">MAINTENANCE </span>
-                    service now.
+                    <span className="title-word title-word-1"> Annual </span> 
+                    <span className="title-word title-word-2">Property </span> 
+                    <span className="title-word title-word-3">Maintenance </span><br />
+                    Quote Calculator
                 </p>
                 <div className='select-container'>
                     <div className='select-container-item'>
@@ -237,9 +241,9 @@ const PropertyMaintenance = () => {
                             {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
                         </div>
                         <div className='packages-description'>
-                            <div className='packages-description-item'>*<b>Bronze:</b> 2 PPM a year</div>
-                            <div className='packages-description-item'>*<b>Gold:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
-                            <div className='packages-description-item'>*<b>Platinum:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
+                            <div className='packages-description-item'>*<b>BRONZE:</b> 2 PPM a year</div>
+                            <div className='packages-description-item'>*<b>GOLD:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
+                            <div className='packages-description-item'>*<b>PLATINUM:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
                         </div>
                     </div>
                     <div className='select-container' style={isMaidDriverVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
@@ -264,7 +268,7 @@ const PropertyMaintenance = () => {
                 <div className='quote-container'>
                     {quote ? 
                         <div className='quote-container-price'>
-                            <p className='border-animation'>Your quote is {quote} AED per year</p>
+                            <p>{quote} AED per year</p>
                             <div className='quote-buttons-container'>
                                 <button className='quote-buttons-item' type='button'>Buy</button>
                                 <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Reset</button>
@@ -274,9 +278,9 @@ const PropertyMaintenance = () => {
                     }
                 </div>
             </form>
-            <div className="maintenance-img img-one" />
+            {/* <div className="maintenance-img img-one" /> */}
             <div className='offer-list-wrapper'>
-                <h1 className='offer-list-header'>We Offer</h1>
+                <h1 className='offer-list-header'>Our Maintenance Service offers:</h1>
                 <ul 
                     className={`offer-list-start ${myListVisible ? 'offer-list' : ''}`}
                     ref={myList}
