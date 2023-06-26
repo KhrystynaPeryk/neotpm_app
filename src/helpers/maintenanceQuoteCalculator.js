@@ -32,7 +32,7 @@ export const maintenanceQuoteCalculator = (
             const r_4_outOfAbuDhabi = 4850.00;
 
             if (propertyLocation === 'AbuDhabiCityReem') {
-                if (roomsNumber === '1r') {
+                if (roomsNumber === '1BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_1_AbuDhabiCityReem + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -42,7 +42,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_1_AbuDhabiCityReem
                     }
-                } else if (roomsNumber === '2r') {
+                } else if (roomsNumber === '2BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_2_AbuDhabiCityReem + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -52,7 +52,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_2_AbuDhabiCityReem
                     }
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === 'BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_3_AbuDhabiCityReem + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -62,7 +62,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_3_AbuDhabiCityReem
                     }
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_4_AbuDhabiCityReem + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -74,7 +74,7 @@ export const maintenanceQuoteCalculator = (
                     }
                 }
             } else if (propertyLocation === 'SaadiyatYas') {
-                if (roomsNumber === '1r') {
+                if (roomsNumber === '1BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_1_SaadiyatYas + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -84,7 +84,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_1_SaadiyatYas
                     }
-                } else if (roomsNumber === '2r') {
+                } else if (roomsNumber === '2BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_2_SaadiyatYas + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -94,7 +94,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_2_SaadiyatYas
                     }
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === '3BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_3_SaadiyatYas + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -104,7 +104,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_3_SaadiyatYas
                     }
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_4_SaadiyatYas + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -116,7 +116,7 @@ export const maintenanceQuoteCalculator = (
                     }
                 }
             } else if (propertyLocation === 'OutOfAbuDhabi') {
-                if (roomsNumber === '1r') {
+                if (roomsNumber === '1BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_1_outOfAbuDhabi + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -126,7 +126,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_1_outOfAbuDhabi
                     }
-                } else if (roomsNumber === '2r') {
+                } else if (roomsNumber === '2BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_2_outOfAbuDhabi + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -136,7 +136,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_2_outOfAbuDhabi
                     }
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === '3BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_3_outOfAbuDhabi + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -146,7 +146,7 @@ export const maintenanceQuoteCalculator = (
                     } else {
                         return r_3_outOfAbuDhabi
                     }
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     if (driverRoom === 'yes' && maidRoom === 'yes') {
                         return r_4_outOfAbuDhabi + maidAndDriverPrice
                     } else if (maidRoom === 'yes') {
@@ -232,19 +232,19 @@ export const maintenanceQuoteCalculator = (
             }
 
             if (propertyLocation === 'AbuDhabiCityReem') {
-                if (roomsNumber === '2r') {
+                if (roomsNumber === '2BR') {
                     return r_2_villa_AbuDhabiCityReem
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === '3BR') {
                     return r_3_villa_AbuDhabiCityReem
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     return r_4_villa_AbuDhabiCityReem
-                } else if (roomsNumber === '5r') {
+                } else if (roomsNumber === '5BR') {
                     return r_5_villa_AbuDhabiCityReem
-                } else if (roomsNumber === '6r') {
+                } else if (roomsNumber === '6BR') {
                     return r_6_villa_AbuDhabiCityReem
                 }
             } else if (propertyLocation === 'SaadiyatYas') {
-                if (roomsNumber === '2r') {
+                if (roomsNumber === '2BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_2;
@@ -256,7 +256,7 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.platinum.r_2;
                             break;
                     }
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === '3BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_3;
@@ -268,7 +268,7 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.platinum.r_3;
                             break; 
                     }
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_4;
@@ -280,7 +280,7 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.platinum.r_4;
                             break;
                     }
-                } else if (roomsNumber === '5r') {
+                } else if (roomsNumber === '5BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_5;
@@ -292,7 +292,7 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.platinum.r_5;
                             break;
                     }
-                } else if (roomsNumber === '6r') {
+                } else if (roomsNumber === '6BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_6;
@@ -306,15 +306,15 @@ export const maintenanceQuoteCalculator = (
                     }
                 }
             } else if (propertyLocation === 'OutOfAbuDhabi') {
-                if (roomsNumber === '2r') {
+                if (roomsNumber === '2BR') {
                     return r_2_villa_OutOfAbuDhabi
-                } else if (roomsNumber === '3r') {
+                } else if (roomsNumber === '3BR') {
                     return r_3_villa_OutOfAbuDhabi
-                } else if (roomsNumber === '4r') {
+                } else if (roomsNumber === '4BR') {
                     return r_4_villa_OutOfAbuDhabi
-                } else if (roomsNumber === '5r') {
+                } else if (roomsNumber === '5BR') {
                     return r_5_villa_OutOfAbuDhabi
-                } else if (roomsNumber === '6r') {
+                } else if (roomsNumber === '6BR') {
                     return r_6_villa_OutOfAbuDhabi
                 }
             }
