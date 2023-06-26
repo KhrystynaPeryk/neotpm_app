@@ -72,6 +72,10 @@ const NavBar = () => {
         navigate('/cart')
     }
 
+    const redirectToHome = () => {
+        navigate('/')
+    }
+
     return (
         <div className='navbar-container-wrapper'>
             <div className='navbar-container'>
@@ -84,6 +88,9 @@ const NavBar = () => {
                     </div>
                 }
                 <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
+                    <div className='navbar-section nav-logo' onClick={redirectToHome}></div>
+                </div>
+                <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
                     <div className='navbar-section' onClick={redirectToPropertyManagement}>Property Management</div>
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
                     <div className='navbar-section' onClick={redirectToOwnerSupport}>Owner Support</div>
@@ -93,7 +100,7 @@ const NavBar = () => {
                             <div className='navbar-cart-qty-container'>
                                 <div className='navbar-cart-qty'>
                                     {stateProducts.length}
-                            </div> 
+                                </div> 
                             </div>
                         }
                         <img src={Cart} alt='Cart' />
@@ -101,6 +108,7 @@ const NavBar = () => {
             </div>
             {isNavExpanded &&
                 <div ref={expandedNavbarRef} className={`navbar-container-expanded ${isAnimating ? 'animate' : ''}`}>
+                    <div className='navbar-section-expanded' onClick={redirectToHome}>➔ Home</div>
                     <div className='navbar-section-expanded' onClick={redirectToPropertyManagement}>➔ Property Management</div>
                     <div className='navbar-section-expanded' onClick={redirectToPropertyMaintenance}>➔ Property Maintenance</div>
                     <div className='navbar-section-expanded' onClick={redirectToOwnerSupport}>➔ Owner Support</div>

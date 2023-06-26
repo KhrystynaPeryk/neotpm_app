@@ -16,7 +16,7 @@ const CartItem = ({product}) => {
     return (
         <div className='cart-item-container'>
             <div className="cart-item-name-service">
-                <div className="cart-item-name"><b>{product.service.type} {product.service.type === 'Property Maintenance' ? 'Annual Contract' : ''}</b></div>
+                <div className="cart-item-name"><b>{product.service.type} {product.service.type === 'Property Maintenance' ? 'Annual Service' : ''}</b></div>
                 {product.service.type === 'Property Maintenance' ? (
                     'Service details: ' + (product.service.details?.roomsNumber ? product.service.details.roomsNumber : ' ') + ' ' + (product.service.details.propertyType.charAt(0).toUpperCase() + product.service.details.propertyType.slice(1)) +
                     (product.service.details?.maidRoom === 'yes' ? ' + a maid room' : '') + (product.service.details?.driverRoom === 'yes' ? ' + a driver room' : '') + ' ' +

@@ -133,7 +133,7 @@ const PropertyManagement = () => {
                 <NavBar />
                 <Logo />
                 <div className='property-header-wrapper'>
-                    <p className='property-header'>Our Property Management Packages</p>
+                    <p className='property-header'>Property Management Packages</p>
                 </div>
             </div>
             <div className='property-table-wrapper'>

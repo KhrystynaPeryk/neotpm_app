@@ -256,7 +256,7 @@ const PropertyMaintenance = () => {
                 <NavBar />
                 <Logo />
                 <div className='property-header-wrapper'>
-                    <p className='property-header'>Our Property Maintenance Service</p>
+                    <p className='property-header'>Property Maintenance</p>
                 </div>
             </div>
             <form className='property-features-wrapper' onSubmit={calculateQuote}>
@@ -346,7 +346,6 @@ const PropertyMaintenance = () => {
                     }
                 </div>
             </form>
-            {/* <div className="maintenance-img img-one" /> */}
             <div className='offer-list-wrapper'>
                 <h1 className='offer-list-header'>Our Maintenance Service offers:</h1>
                 <ul 
@@ -364,7 +363,6 @@ const PropertyMaintenance = () => {
                     <li className="offer">Monthly account statements for cost transparency</li>
                 </ul>
             </div>
-            <div className="maintenance-img img-two" />
             <div className='footer-wrapper'>
                 <Footer />
             </div>

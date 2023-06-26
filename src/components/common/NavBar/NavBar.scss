@@ -77,6 +77,18 @@
         margin-left: 3em;
         margin-right: 3em;
     }
+
+    .nav-logo {
+        background-image: url('../../../assets/images/tpm_logo.png');
+        width: 3em;
+        height: 2em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 .navbar-cart {
@@ -114,7 +126,7 @@
     top: -100%;
     left: 0;
     width: 100%;
-    height: 15vh;
+    height: 140px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -125,31 +137,6 @@
     padding-left: 40px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     animation: navbarExpand 0.5s ease forwards;
-
-    @media screen and (max-height: 680px) {
-        height: 18vh;
-        transition: height 0.5s ease;
-    }
-
-    @media screen and (max-height: 600px) {
-        height: 20vh;
-        transition: height 0.5s ease;
-    }
-
-    @media screen and (max-height: 530px) {
-        height: 22vh;
-        transition: height 0.5s ease;
-    }
-
-    @media screen and (max-height: 480px) {
-        height: 25vh;
-        transition: height 0.5s ease;
-    }
-
-    @media screen and (max-height: 410px) {
-        height: 28vh;
-        transition: height 0.5s ease;
-    }
 
     .navbar-section-expanded {
         margin-bottom: 10px;

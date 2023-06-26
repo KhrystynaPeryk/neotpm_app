@@ -1,18 +1,5 @@
 @import '../../index.scss';
 
-
-.maintenance-img {
-    &.img-one {
-        background-image: url('../../assets/images/img_9.jpg');
-        margin-bottom: 1em;
-    }
-
-    &.img-two {
-        background-image: url('../../assets/images/img_10_dark.jpg');
-        margin-bottom:0;
-    }
-}
-
 .property-features-wrapper {
     width: 50%;
     display: flex;
