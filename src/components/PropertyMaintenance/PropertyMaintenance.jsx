@@ -88,6 +88,7 @@ const PropertyMaintenance = () => {
         setDriverRoom('')
         setMaidRoom('')
         setVillaPackages('')
+        setIsVillaPackagesVisible(false)
     }
 
     // logic to calculate the quote
@@ -260,44 +261,16 @@ const PropertyMaintenance = () => {
                         </div>
                     </div>     
                 </div>
-                {/* <div className='checkbox-container'>
-                    <div className='checkbox-container-item'>
-                        <label htmlFor="driver">
-                            <div>Driver's room/Garage</div>
-                            <input 
-                                type="checkbox"
-                                id="driver"
-                                name="driver"
-                                checked={driverRoom}
-                                onChange={handleDriverRoom}
-                            />
-                            <span className="checkmark"></span>
-                        </label>
-                    </div>
-                    <div className='checkbox-container-item'>
-                        <label htmlFor="maid">
-                            <div>Maid's room</div>
-                            <input 
-                                type="checkbox"
-                                id="maid"
-                                name="maid"
-                                checked={maidRoom}
-                                onChange={handleMaidRoom}
-                            />
-                            <span className="checkmark"></span>
-                        </label>
-                    </div>
-                </div> */}
                 <div className='quote-container'>
                     {quote ? 
                         <div className='quote-container-price'>
-                            <p className='border-animation'>Your quote is {quote} AED</p>
+                            <p className='border-animation'>Your quote is {quote} AED per year</p>
                             <div className='quote-buttons-container'>
                                 <button className='quote-buttons-item' type='button'>Buy</button>
                                 <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Reset</button>
                             </div>    
                         </div> :
-                        <button className='quote-btn' type='submit'>Give me a quote!</button>
+                        <button className='quote-btn' type='submit'>Calculate a quote!</button>
                     }
                 </div>
             </form>
