@@ -16,6 +16,7 @@
 
 .cart-products-container {
     width: 80%;
+    font-family: 'Domine', serif;
 
     .checkout-btn {
         @include reset-button-style;
@@ -25,7 +26,6 @@
             margin-bottom: 2em;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             transition: box-shadow 0.3s ease;
-            font-family: 'Domine', serif;
     
             @media screen and (max-width: 460px) {
                 padding: 1em 1.3em;

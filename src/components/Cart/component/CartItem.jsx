@@ -1,8 +1,17 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { removeProduct } from '../../../store/actions/actions'
 import './CartItem.scss'
 import { formatPropertyLocation } from '../../../helpers/formatPropertyLocation'
 
 const CartItem = ({product}) => {
+
+    const dispatch = useDispatch();
+
+    const removeItemFromCart = () => {
+        dispatch(removeProduct(product.id))
+    }
+
     return (
         <div className='cart-item-container'>
             <div className="cart-item-name">
@@ -15,7 +24,7 @@ const CartItem = ({product}) => {
             </div>
             <div className="cart-item-qty"></div>
             <div className="cart-item-price">AED {product.price}</div>
-            <div className="cart-item-remove">Remove</div>
+            <div className="cart-item-remove" onClick={removeItemFromCart}>Remove</div>
         </div>
     )
 }
