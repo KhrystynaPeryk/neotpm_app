@@ -64,8 +64,8 @@ const NavBar = () => {
         navigate('/property-maintenance');
       };
 
-    const redirectToPropertyAdministrativeSupport = () => {
-        navigate('/property-administrative-support')
+    const redirectToOwnerSupport = () => {
+        navigate('/owner-support')
     }
 
     const redirectToCart = () => {
@@ -86,7 +86,7 @@ const NavBar = () => {
                 <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
                     <div className='navbar-section' onClick={redirectToPropertyManagement}>Property Management</div>
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
-                    <div className='navbar-section' onClick={redirectToPropertyAdministrativeSupport}>Property Administrative Support</div>
+                    <div className='navbar-section' onClick={redirectToOwnerSupport}>Owner Support</div>
                 </div>
                     <div className='navbar-cart' onClick={redirectToCart}>
                         {stateProducts.length !== 0 && 
@@ -103,7 +103,7 @@ const NavBar = () => {
                 <div ref={expandedNavbarRef} className={`navbar-container-expanded ${isAnimating ? 'animate' : ''}`}>
                     <div className='navbar-section-expanded' onClick={redirectToPropertyManagement}>➔ Property Management</div>
                     <div className='navbar-section-expanded' onClick={redirectToPropertyMaintenance}>➔ Property Maintenance</div>
-                    <div className='navbar-section-expanded' onClick={redirectToPropertyAdministrativeSupport}>➔ Property Administrative Support</div>
+                    <div className='navbar-section-expanded' onClick={redirectToOwnerSupport}>➔ Owner Support</div>
                 </div>
             }
         </div>

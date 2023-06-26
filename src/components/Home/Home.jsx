@@ -27,8 +27,8 @@ const Home = () => {
         navigate('/property-maintenance');
       };
 
-    const redirectToPropertyAdministrativeSupport = () => {
-        navigate('/property-administrative-support')
+    const redirectToOwnerSupport = () => {
+        navigate('/owner-support')
     }
 
     //below const and useEffect for handling of fade-in animation for .home-services-content
@@ -145,11 +145,11 @@ const Home = () => {
                 className={`home-services-content ${myThirdElementVisible ? 'fade-in' : ''}`}
                 ref={myThirdIngRef}
                 >
-                    <h1>Property Administrative Support</h1>
-                    <p>Simplify Property Processes with Expert Property Administrative Support</p>
+                    <h1>Owner Support</h1>
+                    <p>Simplify Property Processes with Expert Support</p>
                     <div className="btns-container">
                         <button type="button">Buy</button>
-                        <button type="button" onClick={redirectToPropertyAdministrativeSupport}>Learn More</button>
+                        <button type="button" onClick={redirectToOwnerSupport}>Learn More</button>
                     </div>
                 </div>
                 <div className="home-services-image third-service-img" />

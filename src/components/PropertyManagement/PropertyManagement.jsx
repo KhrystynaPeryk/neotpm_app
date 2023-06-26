@@ -154,7 +154,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-price'>From 3500 AED or 3% of the rent</div>
+                    <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
                     <button type='button' onClick={addBronzeToCart}>Buy</button>
                     <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
@@ -176,7 +176,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-price'>From 5000 AED or 5% of the rent</div>
+                    <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
                     <button type='button' onClick={addGoldToCart}>Buy</button>
                     <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
@@ -198,7 +198,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
-                    <div className='table-section-price'>From 6500 AED or 8% of the rent</div>
+                    <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
                     <button type='button' onClick={addPlatinumToCart}>Buy</button>
                     <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
