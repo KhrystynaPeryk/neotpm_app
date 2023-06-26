@@ -1,6 +1,6 @@
-export function formatNumber(number) {
+export function formatPriceInCart(price) {
     // Convert the number to a string
-    let numStr = String(number);
+    let numStr = String(price);
   
     // Split the string into the integer and decimal parts
     let parts = numStr.split('.');

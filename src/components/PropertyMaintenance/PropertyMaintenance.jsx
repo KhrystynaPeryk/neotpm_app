@@ -7,6 +7,7 @@ import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalculator'
 import { v4 as uuidv4 } from 'uuid';
+import { formatPriceInCart } from '../../helpers/formatPriceInCart';
 
 const PropertyMaintenance = () => {
     const dispatch = useDispatch();
@@ -335,7 +336,7 @@ const PropertyMaintenance = () => {
                 <div className='quote-container'>
                     {quote ? 
                         <div className='quote-container-price'>
-                            <p>{quote} AED per year</p>
+                            <p>AED {formatPriceInCart(quote)} per year</p>
                             <div className='quote-buttons-container'>
                                 <button className='quote-buttons-item' type='button' onClick={addMaintenanceToCart}>Buy</button>
                                 <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Reset</button>

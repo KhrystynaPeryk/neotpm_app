@@ -6,6 +6,7 @@ import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './Cart.scss'
 import { calculateTotalInCart } from '../../helpers/calculateTotalInCart';
+import { formatPriceInCart } from '../../helpers/formatPriceInCart';
 
 const Cart = () => {
 
@@ -20,7 +21,7 @@ const Cart = () => {
                 <div className='cart-header empty'>Your Cart is empty...😟</div> :
                 <div className='cart-products-container'>
                     <div className='cart-header'>Your Cart</div>
-                    <div className='cart-products-wrapper'>
+
                         {stateProducts.map((item) => {
                             return (
                                 <div className='cart-products-items-wrapper' key={item.id}>
@@ -28,10 +29,10 @@ const Cart = () => {
                                 </div>    
                             )
                         })}
-                    </div>
-                    <div>
-                        <div>Total:</div>
-                        <div>AED {calculateTotalInCart(stateProducts)}</div>
+
+                    <div className='cart-total-wrapper'>
+                        <div><b>Total:</b></div>
+                        <div><b>AED {formatPriceInCart(calculateTotalInCart(stateProducts))}</b></div>
                     </div>
                     <div>
                         <button className='checkout-btn' type='button'>Checkout</button>

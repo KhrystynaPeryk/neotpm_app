@@ -4,10 +4,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 100%;
     font-family: 'Domine', serif;
     margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(203, 200, 45, 0.5);
 
+    .cart-item-name-service {
+        width: 80%;
+        padding-right: 2em;
+        .cart-item-name {
+            margin-bottom: 0.5em;
+        }
+    }
+    .cart-item-price {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
     .cart-item-remove {
         color: #238DC1;
         &:hover {
