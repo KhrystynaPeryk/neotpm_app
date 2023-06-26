@@ -1,11 +1,15 @@
 import React, {useState, useEffect, useRef} from 'react'
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../store/actions/actions';
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import './PropertyMaintenance.scss'
 import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalculator'
+import { v4 as uuidv4 } from 'uuid';
 
 const PropertyMaintenance = () => {
+    const dispatch = useDispatch();
 
     //stating values from the form
     const [propertyType, setPropertyType] = useState();
@@ -144,6 +148,69 @@ const PropertyMaintenance = () => {
         }
     }
 
+    //ADD a product to cart
+    const addMaintenanceToCart = () => {
+        if (propertyType === 'apartment') {
+            dispatch(addProduct({
+                id: uuidv4(),
+                service: {
+                    type: 'Property Maintenance',
+                    details: {
+                        propertyType,
+                        roomsNumber,
+                        propertyLocation,
+                        maidRoom,
+                        driverRoom
+                    }
+                },
+                price: quote
+            }));
+        } else if (propertyType === 'studio') {
+            dispatch(addProduct({
+                id: uuidv4(),
+                service: {
+                    type: 'Property Maintenance',
+                    details: {
+                        propertyType,
+                        propertyLocation,
+                        maidRoom,
+                        driverRoom
+                    }
+                },
+                price: quote
+            }));
+        } else if (propertyType === 'villa' || propertyType === 'townhouse') {
+            if (propertyLocation === 'SaadiyatYas') {
+                dispatch(addProduct({
+                    id: uuidv4(),
+                    service: {
+                        type: 'Property Maintenance',
+                        details: {
+                            propertyType,
+                            roomsNumber,
+                            propertyLocation,
+                            villaPackages
+                        }
+                    },
+                    price: quote
+                }));
+            } else {
+                dispatch(addProduct({
+                    id: uuidv4(),
+                    service: {
+                        type: 'Property Maintenance',
+                        details: {
+                            propertyType,
+                            roomsNumber,
+                            propertyLocation,
+                        }
+                    },
+                    price: quote
+                }));
+            }
+        }
+    }
+
     // unordered list appearing animation
     const myList = useRef();
     const [myListVisible, setMyListVisible] = useState(false);
@@ -270,7 +337,7 @@ const PropertyMaintenance = () => {
                         <div className='quote-container-price'>
                             <p>{quote} AED per year</p>
                             <div className='quote-buttons-container'>
-                                <button className='quote-buttons-item' type='button'>Buy</button>
+                                <button className='quote-buttons-item' type='button' onClick={addMaintenanceToCart}>Buy</button>
                                 <button className='quote-buttons-item back-btn' type='button' onClick={handleBackToQuote}>Reset</button>
                             </div>    
                         </div> :
