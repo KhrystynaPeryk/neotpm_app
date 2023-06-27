@@ -12,41 +12,73 @@ const DocumentsRequestForm = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [selectedFiles, setSelectedFiles] = useState([]);
+    const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // Prepare form data
-        const formData = new FormData();
+            // Validate file upload
+        if (selectedFiles.length === 0) {
+            setError('Please select at least one file.');
+            return;
+        }
+        // Get a new access token from the Zoho OAuth API
+        let accessToken;
+        try {
+        const response = await axios.post('https://accounts.zoho.com/oauth/v2/token', null, {
+            params: {
+            refresh_token: '1000.44a682bb6df0fae30a93f2019f069e38.881efdb9f32e2ea3a6096b1f56194e4e',
+            client_id: '1000.16WZP509CYCQRH1BS65X5QEDRUNE2W',
+            client_secret: 'f15400ac627c3683169322f8c237434c4cd81d2ee9',
+            grant_type: 'refresh_token',
+            },
+        });
+
+        accessToken = response.data.access_token;
+        console.log(accessToken)
+        } catch (error) {
+        console.error('Error obtaining access token:', error);
+        // Handle error scenario
+        return;
+        }
+
+        // // Prepare form data
+        // const formData = new FormData();
         // formData.append('name', name);
         // formData.append('email', email);
         // formData.append('message', message);
-        selectedFiles.forEach((file) => {
-          formData.append('files[]', file.file, file.name);
-        });
-    
-        try {
-          // Make HTTP POST request to Zoho WorkDrive API endpoint
-          const response = await axios.post('https://www.zohoapis.com/workdrive/api/v1/collections', formData, {
-            headers: {
-              'Content-Type': 'multipart/form-data',
-              // Add any required authentication headers or tokens for the API
-            },
-          });
-    
-          // Handle response from the API
-          console.log('Files uploaded successfully:', response.data);
-          // Reset the form or navigate to a success page
-        } catch (error) {
-          console.error('Error uploading files:', error);
-          // Handle error scenario
-        }
-      };
+        // selectedFiles.forEach((file) => {
+        // formData.append('files[]', file.file, file.name);
+        // });
+
+        // try {
+        // // Make HTTP POST request to Zoho WorkDrive API endpoint
+        // const response = await axios.post('https://workdriveapi.zoho.com/api/v1/files/upload', formData, {
+        //     headers: {
+        //     'Content-Type': 'multipart/form-data',
+        //     Authorization: `Bearer ${accessToken}`,
+        //     },
+        // });
+
+        // // Handle response from the API
+        // console.log('Files uploaded successfully:', response.data);
+        // // Reset the form or navigate to a success page
+        // } catch (error) {
+        // console.error('Error uploading files:', error);
+        // // Handle error scenario
+        // }
+    };
 
     const handleFileChange = (e) => {
         const files = Array.from(e.target.files).slice(0, 5);
-        setSelectedFiles(files);
-    };
-
+        const updatedFiles = files.map((file) => {
+          return {
+            file,
+            name: file.name,
+          };
+        });
+        setSelectedFiles(updatedFiles);
+      };
+    
     const handleDragOver = (e) => {
         e.preventDefault();
     };
@@ -54,7 +86,13 @@ const DocumentsRequestForm = () => {
     const handleDrop = (e) => {
         e.preventDefault();
         const files = Array.from(e.dataTransfer.files).slice(0, 5);
-        setSelectedFiles(files);
+        const updatedFiles = files.map((file) => {
+          return {
+            file,
+            name: file.name,
+          };
+        });
+        setSelectedFiles(updatedFiles);
     };
 
     return (
@@ -111,7 +149,9 @@ const DocumentsRequestForm = () => {
               <div>Selected files:</div>
               <ul>
                 {selectedFiles.map((file, index) => (
-                  <li key={index}>{file.name}</li>
+                  <li key={index}>
+                    {file.name}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -123,9 +163,9 @@ const DocumentsRequestForm = () => {
             multiple
             className='file-input'
             onChange={handleFileChange}
-            required
           />
         </div>
+        {error && <div className='error-message'>{error}</div>}
         <button type='submit'>Submit</button>
       </form>
         </div>
