@@ -1,0 +1,19 @@
+.drop-area {
+    border: 2px dashed #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+  
+    &.drag-over {
+      border-color: #aaa;
+    }
+  
+    .drop-area-text {
+      color: #888;
+    }
+  }
+  
+  .file-input {
+    display: none;
+  }

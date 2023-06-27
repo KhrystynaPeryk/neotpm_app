@@ -1,6 +1,7 @@
 import React, {useRef, useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../store/actions/actions';
+import { useNavigate } from 'react-router-dom';
 import './PropertyManagement.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
@@ -15,6 +16,8 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const PropertyManagement = () => {
+
+    const navigate = useNavigate();
 
     const [activeSlide, setActiveSlide] = useState(0);
     const handleRedirectToQuiz = () => {
@@ -70,6 +73,39 @@ const PropertyManagement = () => {
             },
             price: 6500
         }));
+    }
+
+    const redirectToDocumentsFormBronze = () => {
+        navigate('/documents-form', {
+            state: {
+                service: {
+                    type: 'Property Management',
+                    details: 'Bronze package',
+                },
+            }
+        });
+    }
+
+    const redirectToDocumentsFormGold = () => {
+        navigate('/documents-form', {
+            state: {
+                service: {
+                    type: 'Property Management',
+                    details: 'Gold package',
+                },
+            }
+        });
+    }
+
+    const redirectToDocumentsFormPlatinum = () => {
+        navigate('/documents-form', {
+            state: {
+                service: {
+                    type: 'Property Management',
+                    details: 'Platinum package',
+                },
+            }
+        });
     }
         
     //below const and useEffect for handling of fade-in animation for .property-after-table
@@ -215,7 +251,7 @@ const PropertyManagement = () => {
                     <b>The Bronze Package</b> offers <span>essential</span> services to assist you in <span>managing your rental property</span>. It includes features such as advising market prices, professional photography, online marketing, promotion through internal and external agents, monitoring weekly viewing numbers, strategizing property promotion, rental cheque management, move-in services, and tenancy renewal.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button'>Send Your Details</button>
+                    <button type='button' onClick={redirectToDocumentsFormBronze}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container">
@@ -281,7 +317,7 @@ const PropertyManagement = () => {
                     Upgrade to the <b>Gold Package</b> for <span>comprehensive property management</span> services. In addition to the features provided in the Bronze Package, it offers <span>other benefits</span> like move-out services, security deposit settlement, bill payment assistance, maintenance solution liaison, handover assistance from the developer, governmental compliance support, ad hoc assistance, and more.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button'>Send Your Details</button>
+                    <button type='button' onClick={redirectToDocumentsFormGold}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container">
@@ -402,7 +438,7 @@ const PropertyManagement = () => {
                     Experience the utmost convenience with our <b>Platinum Package</b>. It encompasses all the features of the Gold Package and goes a step further by <span>providing legal representation</span>, including bounced cheques collection and rental dispute settlement. It also offers sales and post-sales assistance, making it an all-inclusive package for property owners seeking hassle-free management.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button'>Send Your Details</button>
+                    <button type='button' onClick={redirectToDocumentsFormPlatinum}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container">
