@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
@@ -7,6 +8,7 @@ import './OwnerSupport.scss'
 
 const OwnerSupport = () => {
 
+  const navigate = useNavigate();
   //handling of tiles flips
   const [flippedTileIndex, setFlippedTileIndex] = useState(null);
 
@@ -65,17 +67,15 @@ const OwnerSupport = () => {
             </div>
           </div>
           <div className='tiles-price'>
-            <p>1000 AED</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Buy</button>
+              <button type='button' onClick={() => navigate('/owner-support/power-of-attorney')}>Compare Packages</button>
             </div>
           </div>
         </div>
         <div className='tiles-row'>
           <div className='tiles-price'>
-            <p>1000 AED</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Buy</button>
+              <button type='button'>Compare Packages</button>
             </div>
           </div>
           <div className='tiles-img'>
@@ -130,17 +130,15 @@ const OwnerSupport = () => {
             </div>
           </div>
           <div className='tiles-price'>
-            <p>1000 AED</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Buy</button>
+              <button type='button'>Compare Packages</button>
             </div>
           </div>
         </div>
         <div className='tiles-row'>
           <div className='tiles-price'>
-            <p>1000 AED</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Buy</button>
+              <button type='button'>Compare Packages</button>
             </div>
           </div>
           <div className='tiles-img'>

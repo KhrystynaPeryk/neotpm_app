@@ -1,19 +1,62 @@
-.drop-area {
+@import '../../index.scss';
+.document-form-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3em;
+  margin-right: 3em;
+  .document-form-caption {
+    font-size: x-large;
+    margin-bottom: 1em;
+    text-align: center
+  }
+  .form-inputs {
+    display: flex;
+    flex-direction: column;
+
+    input, textarea {
+      padding: 1em;
+      border-radius: 15px;
+      margin: 0.5em;
+      border: 1px solid black;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    textarea {
+      height: 100px;
+    }
+  }
+
+  .drop-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2px dashed #ddd;
     padding: 20px;
+    padding-bottom: 10%;
+    padding-top: 10%;
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
-  
+    
     &.drag-over {
       border-color: #aaa;
     }
-  
+    
     .drop-area-text {
       color: #888;
+      width: 70%;
     }
   }
-  
+    
   .file-input {
     display: none;
   }
+
+  button {
+    @include reset-button-style;
+
+    &:hover {
+      @include hover-btn;
+    }
+  }
+}

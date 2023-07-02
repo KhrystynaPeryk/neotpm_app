@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios'; 
 import './DocumentsRequestForm.scss'
@@ -13,6 +13,12 @@ const DocumentsRequestForm = () => {
     const [message, setMessage] = useState('');
     const [selectedFiles, setSelectedFiles] = useState([]);
     const [error, setError] = useState('');
+
+    useEffect( () => {
+      if (location.state) {
+        setMessage('Hi, I am interested in ' + location.state.service.type + ' : ' + location.state.service.details)
+      }
+    }, [])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -101,73 +107,60 @@ const DocumentsRequestForm = () => {
                 <NavBar />
                 <Logo />
             </div>
-            <div>
-                {location.state ? (
-                <div>
-                    <div>{location.state.service.type}</div>
-                    <div>{location.state.service.details}</div>
-                </div>
-                ) : ''}
-            </div>
-            <div>
-                Upload your documents and we will get back to you with a custom quote
-            </div>
-            <form onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input
-            type='text'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Email:
-          <input
-            type='email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <label>
-          Message:
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </label>
-        <div
-          className='drop-area'
-          onDragOver={handleDragOver}
-          onDrop={handleDrop}
-        >
-          {selectedFiles.length > 0 ? (
-            <div>
-              <div>Selected files:</div>
-              <ul>
-                {selectedFiles.map((file, index) => (
-                  <li key={index}>
-                    {file.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : (
-            <div className='drop-area-text'>Drag and drop up to 5 files here</div>
-          )}
-          <input
-            type='file'
-            multiple
-            className='file-input'
-            onChange={handleFileChange}
-          />
-        </div>
-        {error && <div className='error-message'>{error}</div>}
-        <button type='submit'>Submit</button>
-      </form>
+            <form onSubmit={handleSubmit} className='document-form-container'>
+              <div className='document-form-caption'>
+                  Upload your documents and we will get back to you with a custom quote
+              </div>
+              <div className='form-inputs'>
+                  <input
+                    type='text'
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    placeholder='Name'
+                  />
+                  <input
+                    type='email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    placeholder='Email'
+                  />
+                  <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder='Message'
+                  />
+              </div>
+              <div
+                className='drop-area'
+                onDragOver={handleDragOver}
+                onDrop={handleDrop}
+              >
+                {selectedFiles.length > 0 ? (
+                  <div>
+                    <div>Selected files:</div>
+                    <ul>
+                      {selectedFiles.map((file, index) => (
+                        <li key={index}>
+                          {file.name}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <div className='drop-area-text'>Drag and drop up to 5 files here</div>
+                )}
+                <input
+                  type='file'
+                  multiple
+                  className='file-input'
+                  onChange={handleFileChange}
+                />
+              </div>
+              {error && <div className='error-message'>{error}</div>}
+              <button className='btn-upload-docs' type='submit'>Submit</button>
+            </form>
         </div>
     )
 }
