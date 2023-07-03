@@ -7,6 +7,9 @@ import Logo from '../../../common/Logo/Logo'
 import Footer from '../../../common/Footer/Footer'
 import './PowerOfAttorney.scss'
 import { v4 as uuidv4 } from 'uuid';
+import Proper from '../../../../assets/images/poa_lite.png'
+import Lite from '../../../../assets/images/poa_proper.png'
+import Comprehensive from '../../../../assets/images/poa_comprehensive.png'
 
 const PowerOfAttorney = () => {
 
@@ -61,6 +64,7 @@ const PowerOfAttorney = () => {
             <div className="owner-support-item-container">
                 <div className='table-column'>
                     <div className='table-column-header'>
+                        <img src={Lite} alt='lite'></img>
                         <div className='package-name'>LITE</div>
                         <div>POA Assistance</div>
                     </div>
@@ -87,12 +91,13 @@ const PowerOfAttorney = () => {
                     </div>
                     <div className='table-column-footer'>
                         <div className='table-column-price'>AED 2,500.00</div>
-                        <button type='button' onClick={addLiteToCart}>Buy</button>
+                        <button type='button' onClick={addLiteToCart}>BUY</button>
                     </div>
                 </div>
                 <div className='table-column proper'>
                     <div className='ribbon'><span>HIT</span></div>
                     <div className='table-column-header'>
+                        <img src={Proper} alt='proper'></img>
                         <div className='package-name'>PROPER</div>
                         <div>POA + POA Assistance</div>
                     </div>
@@ -119,12 +124,13 @@ const PowerOfAttorney = () => {
                     </div>
                     <div className='table-column-footer'>
                         <div className='table-column-price'>AED 4,500.00</div>
-                        <button type='button' onClick={addProperToCart}>Buy</button>
+                        <button type='button' onClick={addProperToCart}>BUY</button>
                     </div>
                 </div>
                 <div className='table-column'>
                     <div className='ribbon'><span>+PM</span></div>
                     <div className='table-column-header'>
+                    <img src={Comprehensive} alt='comprehensive'></img>
                         <div className='package-name'>COMPREHENSIVE</div>
                         <div>PM with POA</div>
                     </div>
@@ -151,7 +157,7 @@ const PowerOfAttorney = () => {
                     </div>
                     <div className='table-column-footer'>
                         <div className='table-column-price'>6% of the Rent with a Minimum Annual Fee of AED 6,500.00</div>
-                        <button type='button' onClick={redirectToDocumentsFormComprehensive}>Buy</button>
+                        <button type='button' onClick={redirectToDocumentsFormComprehensive}>BUY</button>
                     </div>
                 </div>
             </div>

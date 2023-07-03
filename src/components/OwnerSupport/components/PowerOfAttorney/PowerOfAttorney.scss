@@ -1,10 +1,10 @@
 @import '../../../../index.scss';
 
 .owner-support-item-container {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 1em;
-    width: 70%;
     margin: 2em;
     margin-bottom: 3em;
 
@@ -69,25 +69,30 @@
     }
 
     .table-column {
-        text-align: center;
+        position: relative;
         display: flex;
+        text-align: center;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         flex: 1;
         border-radius: 15px;
-        position: relative;
         font-family: 'Domine', serif;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transition: all 0.3s ease-in-out;
-        background-color: #238DC1;
-
-        // flex-wrap: wrap;
-        // width: 100%;
+        background-color: #e5e4e2;
 
         .table-column-header {
-            background-color: #238DC1;
+            background: rgb(35,141,193);
+            background: linear-gradient(90deg, rgba(35,141,193,1) 50%, rgba(229,228,226,1) 100%);
             color: white;
-            padding: 5em 0;
+            width: 100%;
+
+            border-radius: 100% 0% 100% 0% / 44% 43% 57% 56%;
+            padding-top: 4em;
+            padding-bottom: 5em;
+            margin-top: 1em;
+            letter-spacing: 0.2em;
 
             .package-name {
                 letter-spacing: 0.2em;
@@ -95,6 +100,12 @@
                 font-size: x-large;
                 font-weight: bold;
                 color: $colorM;
+                font-family: 'Tilt Prism', cursive;
+            }
+
+            img {
+                width: 5em;
+                height: 5em;
             }
         }
         .table-column-body {
@@ -120,13 +131,14 @@
         .table-column-footer {
             margin: 2em 0;
             .table-column-price {
-                color: white;
                 height: 3em;
                 padding: 0 3em;
+                font-size: large;
             }
             button {
                 @include reset-button-style;
                 background-color: $colorM;
+                color: white;
 
                 &:hover {
                     @include hover-btn;
