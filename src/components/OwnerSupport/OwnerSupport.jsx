@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import ArrowLeft from '../../assets/images/arrow-left.png'
 import './OwnerSupport.scss'
+import { addProduct } from '../../store/actions/actions';
+import { v4 as uuidv4 } from 'uuid';
 
 const OwnerSupport = () => {
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   //handling of tiles flips
   const [flippedTileIndex, setFlippedTileIndex] = useState(null);
 
@@ -23,6 +27,30 @@ const OwnerSupport = () => {
   const isTileFlipped = (index) => {
     return flippedTileIndex === index;
   };
+
+  // ADD tawtheeq issuance to cart
+  const addTawtheeqIssuanceToCart = () => {
+    dispatch(addProduct({
+      id: uuidv4(),
+      service: {
+          type: 'Tawtheeq Issuance',
+          details: '',
+      },
+      price: 630
+  }));
+  }
+
+    // ADD tawtheeq assistance to cart
+    const addTawtheeqAssistanceToCart = () => {
+      dispatch(addProduct({
+        id: uuidv4(),
+        service: {
+            type: 'Tawtheeq Assistance',
+            details: '',
+        },
+        price: 1500
+    }));
+    }
 
   return (
     <div className='property-container'>
@@ -74,8 +102,9 @@ const OwnerSupport = () => {
         </div>
         <div className='tiles-row'>
           <div className='tiles-price'>
+            <p>AED 630.00</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Compare Packages</button>
+              <button type='button' onClick={addTawtheeqIssuanceToCart}>BUY</button>
             </div>
           </div>
           <div className='tiles-img'>
@@ -83,7 +112,7 @@ const OwnerSupport = () => {
               className={`flip-card-inner ${isTileFlipped(1) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front'>
-                <h1>Golden Visa Assistance</h1>
+                <h1>Tawtheeq Issuance</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(1)}>Learn More</button>
                 </div>
@@ -92,9 +121,9 @@ const OwnerSupport = () => {
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
-                <h1>Are you planning to apply for a UAE Golden Visa?</h1>
-                <p>Would you like to determine if you meet the eligibility criteria for this program?</p>
-                <p>Our team is ready to assist you in assessing your qualifications for the UAE Golden Visa and managing the application process, ensuring a smooth and convenient experience as you obtain your UAE Golden Visa.</p>
+                <h1>Do you need an access to SmartHub?</h1>
+                <p className='flip-card-back-bottom'>Tawtheeq Issuance is a service that allows both UAE residents and non-residents to obtain access to the smarthub on behalf of the customer.</p>
+                <p className='flip-card-back-bottom'>They can also choose to transfer their request to Crompton Partners for a seamless and convenient processing experience.</p>
               </div>
             </div>
           </div>
@@ -114,24 +143,17 @@ const OwnerSupport = () => {
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
-                <h1>Do you wish to rent out property in the UAE?</h1>
-                <p className='flip-card-back-bottom'>
-                  If so, you will need a Tawtheeq.
-                  A Tawtheeq is the government registration of your lease contract designed to formalise agreements and ensure transparency between landlords and tenants to help avoid disputes. 
-                </p>
-                <ul>
-                  <p className='flip-card-back-bottom'>Reasons to get Tawtheeq</p>
-                  <li>Landlords cannot create a legal lease without a Tawtheeq, and you will not be able to raise a court case in the event of a dispute.</li>
-                  <li>Some community management companies have strict rules and may not allow tenants to move into a property without a Tawtheeq in place.</li>
-                  <li>A registered and up-to-date Tawtheeq Abu Dhabi contract is needed to connect your electricity and water with the Abu Dhabi Distribution Company (ADDC).</li>
-                  <li>Many types of tenants must have a legal Tawtheeq contract, such as government workers and those that want to sponsor a family member for a residence permit, for instance.</li>
-                </ul>
+                <h1>Tawtheeq Made Easy: Access & Support</h1>
+                <p className='flip-card-back-bottom'>Tawtheeq Assistance, on the other hand, caters to both residents and non-residents of the UAE. </p>
+                <p className='flip-card-back-bottom'>This service enables individuals to link their name in the Tawtheeq system, in accordance with the title deed. Access to the Tawtheeq system is facilitated through the SmartHub, where users can verify their identity using their own UAE pass.</p>
+                <p className='flip-card-back-bottom'>Additionally, Tawtheeq Assistance allows users to activate the Tawtheeq system under the owner's name or transfer the process to Crompton Partners for further assistance.</p>
               </div>
             </div>
           </div>
           <div className='tiles-price'>
+            <p>AED 1,500.00</p>
             <div className='price-button-wrapper'>
-              <button type='button'>Compare Packages</button>
+              <button type='button' onClick={addTawtheeqAssistanceToCart}>BUY</button>
             </div>
           </div>
         </div>
@@ -170,6 +192,33 @@ const OwnerSupport = () => {
                   <li>Ongoing management available</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className='tiles-row'>
+          <div className='tiles-img'>
+            <div 
+              className={`flip-card-inner ${isTileFlipped(4) ? 'flipped' : ''}`}
+            >
+              <div className='flip-card-front'>
+                <h1>Golden Visa Services</h1>
+                <div className='document-button-wrapper'>
+                  <button type='button' onClick={() => flipTile(4)}>Learn More</button>
+                </div>
+              </div>
+              <div className='flip-card-back'>
+                <div className='back-button-wrapper' onClick={flipBack}>
+                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
+                </div>
+                <h1>Are you planning to apply for a UAE Golden Visa?</h1>
+                <p className='flip-card-back-bottom'>Would you like to determine if you meet the eligibility criteria for this program?</p>
+                <p className='flip-card-back-bottom'>Our team is ready to assist you in assessing your qualifications for the UAE Golden Visa and managing the application process, ensuring a smooth and convenient experience as you obtain your UAE Golden Visa.</p>
+              </div>
+            </div>
+          </div>
+          <div className='tiles-price'>
+            <div className='price-button-wrapper'>
+              <button type='button'>Compare Packages</button>
             </div>
           </div>
         </div> 

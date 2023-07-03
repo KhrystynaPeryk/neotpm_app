@@ -27,20 +27,19 @@ const DocumentsRequestForm = () => {
             setError('Please select at least one file.');
             return;
         }
-        // Get a new access token from the Zoho OAuth API
-        let accessToken;
-        try {
-        const response = await axios.post('https://accounts.zoho.com/oauth/v2/token', null, {
-          params: {
-            refresh_token: '1000.44a682bb6df0fae30a93f2019f069e38.881efdb9f32e2ea3a6096b1f56194e4e',
-            client_id: '1000.16WZP509CYCQRH1BS65X5QEDRUNE2W',
-            client_secret: 'f15400ac627c3683169322f8c237434c4cd81d2ee9',
-            grant_type: 'refresh_token',
-          },
-        });
 
-        accessToken = response.access_token;
-        console.log(accessToken)
+        try {
+        // const response = await axios.post('https://accounts.zoho.com/oauth/v2/token', null, {
+        //   params: {
+        //     refresh_token: '1000.44a682bb6df0fae30a93f2019f069e38.881efdb9f32e2ea3a6096b1f56194e4e',
+        //     client_id: '1000.16WZP509CYCQRH1BS65X5QEDRUNE2W',
+        //     client_secret: 'f15400ac627c3683169322f8c237434c4cd81d2ee9',
+        //     grant_type: 'refresh_token',
+        //   },
+        // });
+        const response = await axios.post('http://localhost:3001/get-token')
+
+        console.log(response.data.access_token)
         } catch (error) {
         console.error('Error obtaining access token:', error);
         // Handle error scenario

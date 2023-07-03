@@ -1,6 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../store/actions/actions';
 import { useNavigate } from 'react-router-dom';
 import './PropertyManagement.scss'
 import NavBar from '../common/NavBar/NavBar'
@@ -10,7 +9,6 @@ import BronzeHouse from '../../assets/images/bronze-icon-white.png'
 import GoldHouse from '../../assets/images/gold-icon-white.png'
 import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
 import ArrowRight from '../../assets/images/arrow-right.png'
-import { v4 as uuidv4 } from 'uuid';
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -24,8 +22,6 @@ const PropertyManagement = () => {
         window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
     };
 
-    const dispatch = useDispatch();
-
     //handling scroll to the section
     const scrollToBronzeSection = () => {
         myFirstIngRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -38,42 +34,6 @@ const PropertyManagement = () => {
     const scrollToPlatinumSection = () => {
         myThirdIngRef.current.scrollIntoView({ behavior: 'smooth' });
     };
-    
-
-    //ADD Bronze PACKAGE TO CART
-    const addBronzeToCart = () => {
-        dispatch(addProduct({
-            id: uuidv4(),
-            service: {
-                type: 'Property Management',
-                details: 'Bronze package',
-            },
-            price: 3500
-        }));
-    }
-    //ADD Gold PACKAGE TO CART
-    const addGoldToCart = () => {
-        dispatch(addProduct({
-            id: uuidv4(),
-            service: {
-                type: 'Property Management',
-                details: 'Gold package',
-            },
-            price: 5000
-        }));
-    }
-
-    //ADD Platinum PACKAGE TO CART
-    const addPlatinumToCart = () => {
-        dispatch(addProduct({
-            id: uuidv4(),
-            service: {
-                type: 'Property Management',
-                details: 'Platinum package',
-            },
-            price: 6500
-        }));
-    }
 
     const redirectToDocumentsFormBronze = () => {
         navigate('/documents-form', {
@@ -191,7 +151,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
-                    <button type='button' onClick={addBronzeToCart}>Buy</button>
+                    <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
                     <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column gold'>
@@ -213,7 +173,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-item table-cross'>╳</div>
                     <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
-                    <button type='button' onClick={addGoldToCart}>Buy</button>
+                    <button type='button' onClick={redirectToDocumentsFormGold}>BUY</button>
                     <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
                 <section className='table-column'>
@@ -235,7 +195,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
                     <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
-                    <button type='button' onClick={addPlatinumToCart}>Buy</button>
+                    <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
                     <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
             </div>
