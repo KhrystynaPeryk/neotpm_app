@@ -211,7 +211,7 @@ const PropertyManagement = () => {
                     <button type='button' onClick={redirectToDocumentsFormBronze}>Send Your Details</button>
                 </div>
             </div>
-            <div className="carousel-container">
+            <div className="carousel-container bronze">
                 <Carousel
                     selectedItem={activeSlide}
                     onChange={(index) => setActiveSlide(index)}
@@ -221,7 +221,7 @@ const PropertyManagement = () => {
                     interval={4000}
                     showThumbs={false}
                 >                        
-                    <div className="carousel-item bronze">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Bronze Tenant Sourcing</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Advise market price</p>
@@ -232,7 +232,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Strategise on property promotion</p>
                         </div>
                     </div>
-                    <div className="carousel-item bronze">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Bronze Rental Cheque Management</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Rent & security deposit collection</p>
@@ -240,7 +240,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Hold security deposit</p>
                         </div>    
                     </div>
-                    <div className="carousel-item bronze">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Bronze Move-in Services</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Tawtheeq application</p>
@@ -251,7 +251,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Inventory list</p>
                         </div>
                     </div>
-                    <div className="carousel-item bronze">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Bronze Tenancy Renewal</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Renewal reminder to both parties</p>
@@ -277,7 +277,7 @@ const PropertyManagement = () => {
                     <button type='button' onClick={redirectToDocumentsFormGold}>Send Your Details</button>
                 </div>
             </div>
-            <div className="carousel-container">
+            <div className="carousel-container gold">
                 <Carousel
                     selectedItem={activeSlide}
                     onChange={(index) => setActiveSlide(index)}
@@ -287,7 +287,7 @@ const PropertyManagement = () => {
                     interval={4000}
                     showThumbs={false}
                 >                        
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Tenant Sourcing</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Advise market price</p>              
@@ -298,7 +298,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Strategise on property promotion</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Rental Cheque Management</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Rent & security deposit collection</p>
@@ -306,7 +306,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Hold security deposit</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">                        
+                    <div className="carousel-item">                        
                         <p className='carousel-item-header'>Gold Move-in Services</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Tawtheeq application</p>
@@ -317,7 +317,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Inventory list</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Tenancy Renewal</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Renewal reminder to both parties</p>
@@ -326,7 +326,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Tawtheeq application</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">             
+                    <div className="carousel-item">             
                         <p className='carousel-item-header'>Gold Move-out Services</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Move-out application with the developer</p>
@@ -338,21 +338,21 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Property fix-up supervision</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Security Deposit Settlement</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Detailed breakdown report</p>
                             <p className='carousel-item-feature'>Settle security deposit</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">                
+                    <div className="carousel-item">                
                         <p className='carousel-item-header'>Gold Bill Payment</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Service charge payment assistance</p>
                             <p className='carousel-item-feature'>Utility bill payment assistance</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Maintenance Solution Liaison</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Maintenance Liaison</p>
@@ -360,7 +360,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Ensure quality of maintenance work</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Handover Assistance from developer</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Obtain title deed</p>
@@ -368,14 +368,14 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Snagging and desnagging</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Gold Governmental Compliance</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Tawtheeq Account Management</p>
                             <p className='carousel-item-feature'>Other ad hoc assistance</p>
                         </div>
                     </div>
-                    <div className="carousel-item gold">                
+                    <div className="carousel-item">                
                         <p className='carousel-item-header'>Gold Ad Hoc Assistance</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>4h credits/annum in assisting to resolve any other issues unspecified (or AED 100/hour)</p>
@@ -398,7 +398,7 @@ const PropertyManagement = () => {
                     <button type='button' onClick={redirectToDocumentsFormPlatinum}>Send Your Details</button>
                 </div>
             </div>
-            <div className="carousel-container">
+            <div className="carousel-container platinum">
                 <Carousel
                     selectedItem={activeSlide}
                     onChange={(index) => setActiveSlide(index)}
@@ -408,7 +408,7 @@ const PropertyManagement = () => {
                     interval={4000}
                     showThumbs={false}
                 >                        
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Tenant Sourcing</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Advise market price</p>
@@ -419,7 +419,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Strategise on property promotion</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Rental Cheque Management</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Rent & security deposit collection</p>
@@ -427,7 +427,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Hold security deposit</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Move-in Services</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Tawtheeq application</p>
@@ -438,7 +438,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Inventory list</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Tenancy Renewal</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Renewal reminder to both parties</p>
@@ -447,7 +447,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Tawtheeq application</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Move-out Services</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Move-out application with the developer</p>
@@ -459,21 +459,21 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Property fix-up supervision</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Security Deposit Settlement</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Detailed breakdown report</p>
                             <p className='carousel-item-feature'>Settle security deposit</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Bill Payment</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Service charge payment assistance</p>
                             <p className='carousel-item-feature'>Utility bill payment assistance</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Maintenance Solution Liaison</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Maintenance Liaison</p>
@@ -481,7 +481,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Ensure quality of maintenance work</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Handover Assistance from developer</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Obtain title deed</p>
@@ -489,14 +489,14 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Snagging and desnagging</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Governmental Compliance</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Tawtheeq Account Management</p>
                             <p className='carousel-item-feature'>Other ad hoc assistance</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Legal Representation (POA)</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Bounced cheques collection</p>
@@ -505,7 +505,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Rental Dispute Settlement</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Handover Assistance from developer</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Obtain title deed</p>
@@ -513,7 +513,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Snagging and desnagging</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Sales & Post Sales Assistance</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>Sales viewing arrangement</p>
@@ -521,7 +521,7 @@ const PropertyManagement = () => {
                             <p className='carousel-item-feature'>Settlement of utility account after the sale transfer</p>
                         </div>
                     </div>
-                    <div className="carousel-item platinum">
+                    <div className="carousel-item">
                         <p className='carousel-item-header'>Platinum Ad Hoc Assistance</p>
                         <div className='carousel-item-feature-wrapper'>
                             <p className='carousel-item-feature'>10h credits/annum in assisting to resolve any other issues unspecified (or AED 100/hour)</p>
