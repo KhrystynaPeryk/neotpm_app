@@ -298,22 +298,22 @@
     @include service-img-style;
     margin-bottom: 5em;
 
-    &.first {
-        background-image: url('../../assets/images/img_5.jpg');
-    }
+    // &.first {
+    //     background-image: url('../../assets/images/img_5.jpg');
+    // }
 
-    &.second {
-        background-image: url('../../assets/images/img_4.jpg');
-    }
+    // &.second {
+    //     background-image: url('../../assets/images/img_4.jpg');
+    // }
 
-    &.third {
-        background-image: url('../../assets/images/img_1.jpg');
-    }
+    // &.third {
+    //     background-image: url('../../assets/images/img_1.jpg');
+    // }
 
-    &.fourth {
-        background-image: url('../../assets/images/img_7.jpg');
-        margin-bottom:0;
-    }
+    // &.fourth {
+    //     background-image: url('../../assets/images/img_7.jpg');
+    //     margin-bottom:0;
+    // }
 }
 
 .property-after-table {
@@ -408,8 +408,8 @@
         align-items: center;
 
         &.bronze {
-            background-image: url('../../assets/images/img_4_dark.jpg');
-            background-position: 50% 31%;
+            background-image: url('../../assets/images/img_5.jpg');
+            background-position: 50% 50%;
 
             .carousel-item-header {
                 color: rgba(205,127,50,1);
@@ -417,8 +417,8 @@
         }
         
         &.gold {
-            background-image: url('../../assets/images/img_1_dark.jpg');
-            background-position: 50% 70%;
+            background-image: url('../../assets/images/img_10_dark.png');
+            background-position: 50% 35%;
 
             .carousel-item-header {
                 color: rgba(255,215,0,1);
@@ -427,7 +427,7 @@
 
         &.platinum {
             background-image: url('../../assets/images/img_7_dark.jpg');
-            background-position: 50% 70%;
+            background-position: 50% 85%;
 
             .carousel-item-header {
                 color: rgb(194, 212, 236);

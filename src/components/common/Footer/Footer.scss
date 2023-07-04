@@ -36,8 +36,11 @@
         font-size: large;
     }
 
-    .footer-socials a {
-        margin-left: 0.5em;
+    .footer-socials {
+        padding-bottom: 2em;
+        & a {
+            margin-left: 0.5em;
+        }
     }
     img {
         width: 1.5em;

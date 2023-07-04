@@ -1,5 +1,17 @@
 @import '../../index.scss';
 
+@keyframes zoomingBackground {
+    0% {
+      background-size: 100% 100%;
+    }
+    50% {
+      background-size: 120% 120%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+}
+
 .property-features-wrapper {
     width: 50%;
     display: flex;
@@ -18,6 +30,7 @@
     height: 800px;
     background-attachment: fixed;
     background-image: url('../../assets/images/img_9_dark.jpg');
+    animation: zoomingBackground 10s ease-in-out infinite;
 
     .property-features-wrapper-caption {
         width: 80%;

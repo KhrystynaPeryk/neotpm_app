@@ -196,7 +196,7 @@ const PropertyManagement = () => {
                     <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
                 </section>
             </div>
-            <div className="home-services-image maintenance-img first" />
+            {/* <div className="home-services-image maintenance-img first" /> */}
             <div className={`property-after-table ${myFirstElementVisible ? 'fade-in' : ''}`}
                 ref={myFirstIngRef}
             >
@@ -218,7 +218,7 @@ const PropertyManagement = () => {
                     showArrows
                     infiniteLoop
                     autoPlay
-                    interval={3000}
+                    interval={4000}
                     showThumbs={false}
                 >                        
                     <div className="carousel-item bronze">
@@ -284,7 +284,7 @@ const PropertyManagement = () => {
                     showArrows
                     infiniteLoop
                     autoPlay
-                    interval={3000}
+                    interval={4000}
                     showThumbs={false}
                 >                        
                     <div className="carousel-item gold">
@@ -405,7 +405,7 @@ const PropertyManagement = () => {
                     showArrows
                     infiniteLoop
                     autoPlay
-                    interval={3000}
+                    interval={4000}
                     showThumbs={false}
                 >                        
                     <div className="carousel-item platinum">

@@ -135,15 +135,6 @@ const PropertyMaintenance = () => {
         if (Object.keys(errors).length > 0) {
             setErrors(errors);
         } else {
-            
-            // Proceed with calculating the quote based on
-            console.log('propertyType:', propertyType);
-            console.log('roomsNumber:', roomsNumber);
-            console.log('propertyLocation:', propertyLocation);
-            console.log('driverRoom:', driverRoom);
-            console.log('maidRoom:', maidRoom);
-            console.log('villaPackages', villaPackages)
-
             // lOGIC TO CALCULATE THE QUOTE
             setQuote(maintenanceQuoteCalculator(propertyType, propertyLocation, roomsNumber, maidRoom, driverRoom, villaPackages))           
         }

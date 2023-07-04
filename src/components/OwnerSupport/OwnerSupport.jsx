@@ -67,13 +67,13 @@ const OwnerSupport = () => {
             <div 
               className={`flip-card-inner ${isTileFlipped(0) ? 'flipped' : ''}`}
             >
-              <div className='flip-card-front'>
+              <div className='flip-card-front poa'>
                 <h1>Power of Attorney</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(0)}>Learn More</button>
                 </div>
               </div>
-              <div className='flip-card-back'>
+              <div className='flip-card-back poa'>
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
@@ -110,13 +110,13 @@ const OwnerSupport = () => {
           <div 
               className={`flip-card-inner ${isTileFlipped(1) ? 'flipped' : ''}`}
             >
-              <div className='flip-card-front'>
+              <div className='flip-card-front t-issuance'>
                 <h1>Tawtheeq Issuance</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(1)}>Learn More</button>
                 </div>
               </div>
-              <div className='flip-card-back'>
+              <div className='flip-card-back t-issuance'>
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
@@ -134,13 +134,13 @@ const OwnerSupport = () => {
             <div 
               className={`flip-card-inner ${isTileFlipped(2) ? 'flipped' : ''}`}
             >
-              <div className='flip-card-front'>
+              <div className='flip-card-front t-assistance'>
                 <h1>Tawtheeq Assistance</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(2)}>Learn More</button>
                 </div>
               </div>
-              <div className='flip-card-back'>
+              <div className='flip-card-back t-assistance'>
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
@@ -170,13 +170,13 @@ const OwnerSupport = () => {
           <div 
               className={`flip-card-inner ${isTileFlipped(3) ? 'flipped' : ''}`}
             >
-              <div className='flip-card-front'>
+              <div className='flip-card-front handover'>
                 <h1>Property Handover Assistance</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(3)}>Learn More</button>
                 </div>
               </div>
-              <div className='flip-card-back'>
+              <div className='flip-card-back handover'>
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
@@ -204,13 +204,13 @@ const OwnerSupport = () => {
             <div 
               className={`flip-card-inner ${isTileFlipped(4) ? 'flipped' : ''}`}
             >
-              <div className='flip-card-front'>
+              <div className='flip-card-front golden-visa'>
                 <h1>Golden Visa Services</h1>
                 <div className='document-button-wrapper'>
                   <button type='button' onClick={() => flipTile(4)}>Learn More</button>
                 </div>
               </div>
-              <div className='flip-card-back'>
+              <div className='flip-card-back golden-visa'>
                 <div className='back-button-wrapper' onClick={flipBack}>
                   <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
                 </div>
