@@ -309,9 +309,9 @@ const PropertyMaintenance = () => {
                             {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
                         </div>
                         <div className='packages-description'>
-                            <div className='packages-description-item'>*<b>BRONZE:</b> 2 PPM a year</div>
-                            <div className='packages-description-item'>*<b>GOLD:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
-                            <div className='packages-description-item'>*<b>PLATINUM:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
+                            <div className='packages-description-item bronze'>*<b>BRONZE:</b> 2 PPM a year</div>
+                            <div className='packages-description-item gold'>*<b>GOLD:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
+                            <div className='packages-description-item platinum'>*<b>PLATINUM:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
                         </div>
                     </div>
                     <div className='select-container' style={isMaidDriverVisible ? {'display' : 'flex'} : {'display' : 'none'} }>

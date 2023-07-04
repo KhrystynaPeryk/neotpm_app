@@ -27,7 +27,7 @@ const DocumentsRequestForm = () => {
             setError('Please select at least one file.');
             return;
         }
-
+        let accessToken;
         try {
         // const response = await axios.post('https://accounts.zoho.com/oauth/v2/token', null, {
         //   params: {
@@ -37,40 +37,42 @@ const DocumentsRequestForm = () => {
         //     grant_type: 'refresh_token',
         //   },
         // });
-        const response = await axios.post('http://localhost:3001/get-token')
+          const response = await axios.post('http://127.0.0.1:5001/neo-tpm-backend/us-central1/app/get-token')
 
-        console.log(response.data.access_token)
+          console.log(response.data.access_token)
+          accessToken = response.data.access_token
         } catch (error) {
-        console.error('Error obtaining access token:', error);
-        // Handle error scenario
-        return;
+          console.error('Error ON FRONT END:', error);
+          // Handle error scenario
+          return;
         }
 
-        // // Prepare form data
-        // const formData = new FormData();
-        // formData.append('name', name);
-        // formData.append('email', email);
-        // formData.append('message', message);
-        // selectedFiles.forEach((file) => {
-        // formData.append('files[]', file.file, file.name);
-        // });
+        // Prepare form data
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('message', message);
+        selectedFiles.forEach((file) => {
+          formData.append('files[]', file.file, file.name);
+        });
 
-        // try {
-        // // Make HTTP POST request to Zoho WorkDrive API endpoint
-        // const response = await axios.post('https://workdriveapi.zoho.com/api/v1/files/upload', formData, {
-        //     headers: {
-        //     'Content-Type': 'multipart/form-data',
-        //     Authorization: `Bearer ${accessToken}`,
-        //     },
-        // });
+        try {
+        // Make HTTP POST request to Zoho WorkDrive API endpoint
+        console.log('before second post')
+        const response = await axios.post('http://127.0.0.1:5001/neo-tpm-backend/us-central1/app/upload', formData, {
+            headers: {
+            'Content-Type': 'multipart/form-data',
+            Authorization: `Bearer ${accessToken}`,
+            },
+        });
 
-        // // Handle response from the API
-        // console.log('Files uploaded successfully:', response.data);
-        // // Reset the form or navigate to a success page
-        // } catch (error) {
-        // console.error('Error uploading files:', error);
-        // // Handle error scenario
-        // }
+        // Handle response from the API
+        console.log('Files uploaded successfully:', response.data);
+        // Reset the form or navigate to a success page
+        } catch (error) {
+        console.error('Error uploading files:', error);
+        // Handle error scenario
+        }
     };
 
     const handleFileChange = (e) => {

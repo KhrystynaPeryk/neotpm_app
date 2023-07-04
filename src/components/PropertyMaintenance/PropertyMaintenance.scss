@@ -99,6 +99,18 @@
         line-height: 1.5em;
         border-radius: 5px;
         width: 80%;
+
+        .packages-description-item {
+            &.bronze b{
+                color: $bronze;
+            }
+            &.gold b{
+                color: $gold;
+            }
+            &.platinum b{
+                color: #3D8DAE;
+            }
+        }
     }
 }
 

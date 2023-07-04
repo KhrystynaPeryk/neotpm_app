@@ -122,9 +122,8 @@ const Home = () => {
                 ref={myFirstIngRef}
                 >
                     <h1>Property Management</h1>
-                    <p>Effortless Property Management Solutions: Leave the Hassle to Us</p>
+                    <p className='home-services-caption'>Effortless Property Management Solutions: Leave the Hassle to Us</p>
                     <div className="btns-container">
-                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToPropertyManagement}>Learn More</button>
                     </div>
                 </div>
@@ -134,9 +133,8 @@ const Home = () => {
                 ref={mySecondIngRef}
                 >
                     <h1>Property Maintenance</h1>
-                    <p>Maintain and Enhance Your Property: Expert Property Maintenance Services for Lasting Value</p>
+                    <p className='home-services-caption'>Maintain and Enhance Your Property: Expert Property Maintenance Services for Lasting Value</p>
                     <div className="btns-container">
-                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToPropertyMaintenance}>Learn More</button>
                     </div>
                 </div>
@@ -146,9 +144,8 @@ const Home = () => {
                 ref={myThirdIngRef}
                 >
                     <h1>Owner Support</h1>
-                    <p>Simplify Property Processes with Expert Support</p>
+                    <p className='home-services-caption'>Simplify Property Processes with Expert Support</p>
                     <div className="btns-container">
-                        {/* <button type="button">Buy</button> */}
                         <button type="button" onClick={redirectToOwnerSupport}>Learn More</button>
                     </div>
                 </div>

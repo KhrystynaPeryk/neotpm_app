@@ -253,6 +253,10 @@
     height: calc(100vh - 65em);
     width: 100%;
 
+    .home-services-caption {
+        line-height: 1.5em;
+    }
+
     button {
         @include reset-button-style;
         color: white;

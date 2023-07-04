@@ -1,10 +1,10 @@
 import React, {useRef, useEffect, useState} from 'react'
-import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import './PropertyManagement.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
+import POAQuiz from '../common/POAQuiz/POAQuiz';
 import BronzeHouse from '../../assets/images/bronze-icon-white.png'
 import GoldHouse from '../../assets/images/gold-icon-white.png'
 import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
@@ -18,9 +18,6 @@ const PropertyManagement = () => {
     const navigate = useNavigate();
 
     const [activeSlide, setActiveSlide] = useState(0);
-    const handleRedirectToQuiz = () => {
-        window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
-    };
 
     //handling scroll to the section
     const scrollToBronzeSection = () => {
@@ -532,16 +529,7 @@ const PropertyManagement = () => {
                     </div>
                 </Carousel>
             </div>
-            <div className='quiz-request-wrapper'>
-                <div className='quiz-request-content'>
-                    <h1>Do you need a Power of Attorney?</h1>
-                    <p>If you are unsure whether you need a Power of Attorney, take our short quiz to find out!</p>
-                    <div className='quiz-button-wrapper'>
-                        <button type='button' onClick={handleRedirectToQuiz}>START</button>
-                    </div>
-                </div>
-            </div>
-            <div className="home-services-image maintenance-img fourth" />
+                <POAQuiz />
             <div className='footer-wrapper'>
                 <Footer />
             </div>

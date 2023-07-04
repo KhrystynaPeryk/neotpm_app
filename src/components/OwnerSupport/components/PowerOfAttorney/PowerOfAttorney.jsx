@@ -10,6 +10,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Proper from '../../../../assets/images/poa_lite.png'
 import Lite from '../../../../assets/images/poa_proper.png'
 import Comprehensive from '../../../../assets/images/poa_comprehensive.png'
+import POAQuiz from '../../../common/POAQuiz/POAQuiz';
 
 const PowerOfAttorney = () => {
 
@@ -161,6 +162,7 @@ const PowerOfAttorney = () => {
                     </div>
                 </div>
             </div>
+                < POAQuiz />
             <div className='footer-wrapper'>
                 <Footer />
             </div>
