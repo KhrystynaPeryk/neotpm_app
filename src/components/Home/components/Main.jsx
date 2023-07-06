@@ -1,10 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Main.scss'
 
 const Main = () => {
 
+  const navigate = useNavigate();
+
   const handleRedirect = () => {
-    window.open('https://transparentpm.ae/', '_blank');
+    navigate('/property-management');
   }
 
   return (

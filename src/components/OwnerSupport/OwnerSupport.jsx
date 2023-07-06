@@ -37,20 +37,42 @@ const OwnerSupport = () => {
           details: '',
       },
       price: 630
-  }));
+    }));
   }
 
-    // ADD tawtheeq assistance to cart
-    const addTawtheeqAssistanceToCart = () => {
-      dispatch(addProduct({
-        id: uuidv4(),
-        service: {
-            type: 'Tawtheeq Assistance',
-            details: '',
-        },
-        price: 1500
+  // ADD tawtheeq assistance to cart
+  const addTawtheeqAssistanceToCart = () => {
+    dispatch(addProduct({
+      id: uuidv4(),
+      service: {
+          type: 'Tawtheeq Assistance',
+          details: '',
+      },
+      price: 1500
     }));
-    }
+  }
+
+  const redirectToDocumentsFormGoldenVisa = () => {
+    navigate('/documents-form', {
+        state: {
+            service: {
+                type: 'Golden Visa',
+                details: 'Assistance',
+            },
+        }
+    });
+  }
+
+  const redirectToDocumentsFormHandover = () => {
+    navigate('/documents-form', {
+        state: {
+            service: {
+                type: 'Property Handover',
+                details: 'Assistance',
+            },
+        }
+    });
+  }
 
   return (
     <div className='property-container'>
@@ -163,7 +185,7 @@ const OwnerSupport = () => {
         <div className='tiles-row'>
           <div className='tiles-price'>
             <div className='price-button-wrapper compare'>
-              <button type='button'>Compare Packages</button>
+              <button type='button' onClick={redirectToDocumentsFormHandover}>Send Your Details</button>
             </div>
           </div>
           <div className='tiles-img'>
@@ -224,7 +246,7 @@ const OwnerSupport = () => {
           </div>
           <div className='tiles-price'>
             <div className='price-button-wrapper compare'>
-              <button type='button'>Compare Packages</button>
+              <button type='button' onClick={redirectToDocumentsFormGoldenVisa}>Send Your Details</button>
             </div>
           </div>
         </div> 
