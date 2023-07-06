@@ -24,8 +24,8 @@ const DocumentsRequestForm = () => {
         e.preventDefault();
             // Validate file upload
         if (selectedFiles.length === 0) {
-            setError('Please select at least one file.');
-            return;
+          setError('Please select at least one file.');
+          return;
         }
         let accessToken;
         try {
@@ -75,32 +75,35 @@ const DocumentsRequestForm = () => {
         }
     };
 
-    const handleFileChange = (e) => {
-        const files = Array.from(e.target.files).slice(0, 5);
-        const updatedFiles = files.map((file) => {
-          return {
-            file,
-            name: file.name,
-          };
-        });
-        setSelectedFiles(updatedFiles);
-      };
+
+
+    //FOR DRAG AND DROP
+    // const handleFileChange = (e) => {
+    //     const files = Array.from(e.target.files).slice(0, 5);
+    //     const updatedFiles = files.map((file) => {
+    //       return {
+    //         file,
+    //         name: file.name,
+    //       };
+    //     });
+    //     setSelectedFiles(updatedFiles);
+    //   };
     
-    const handleDragOver = (e) => {
-        e.preventDefault();
-    };
+    // const handleDragOver = (e) => {
+    //     e.preventDefault();
+    // };
     
-    const handleDrop = (e) => {
-        e.preventDefault();
-        const files = Array.from(e.dataTransfer.files).slice(0, 5);
-        const updatedFiles = files.map((file) => {
-          return {
-            file,
-            name: file.name,
-          };
-        });
-        setSelectedFiles(updatedFiles);
-    };
+    // const handleDrop = (e) => {
+    //     e.preventDefault();
+    //     const files = Array.from(e.dataTransfer.files).slice(0, 5);
+    //     const updatedFiles = files.map((file) => {
+    //       return {
+    //         file,
+    //         name: file.name,
+    //       };
+    //     });
+    //     setSelectedFiles(updatedFiles);
+    // };
 
     return (
         <div className='property-container'>
@@ -109,8 +112,9 @@ const DocumentsRequestForm = () => {
                 <Logo />
             </div>
             <form onSubmit={handleSubmit} className='document-form-container'>
+              <div className='document-form-header'>Contact Form</div>
               <div className='document-form-caption'>
-                  Upload your documents and we will get back to you with a custom quote
+                  Upload your contact details and documents and we will get back to you with a custom quote
               </div>
               <div className='form-inputs'>
                   <input
@@ -133,7 +137,7 @@ const DocumentsRequestForm = () => {
                     placeholder='Message'
                   />
               </div>
-              <div
+              {/* <div
                 className='drop-area'
                 onDragOver={handleDragOver}
                 onDrop={handleDrop}
@@ -159,8 +163,8 @@ const DocumentsRequestForm = () => {
                   onChange={handleFileChange}
                 />
               </div>
-              {error && <div className='error-message'>{error}</div>}
-              <button className='btn-upload-docs' type='submit'>Submit</button>
+              {error && <div className='error-message'>{error}</div>} */}
+              <button className='btn-upload-docs' type='submit'>Click to Upload Your Files</button>
             </form>
         </div>
     )

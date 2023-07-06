@@ -4,10 +4,20 @@
   flex-direction: column;
   margin-left: 3em;
   margin-right: 3em;
-  .document-form-caption {
+
+  .document-form-header {
     font-size: x-large;
+    text-align: center;
+    font-weight: bold;
     margin-bottom: 1em;
-    text-align: center
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 0.2em;
+  }
+
+  .document-form-caption {
+    font-size: large;
+    margin-bottom: 1em;
+    text-align: center;
   }
   .form-inputs {
     display: flex;
@@ -17,7 +27,7 @@
       padding: 1em;
       border-radius: 15px;
       margin: 0.5em;
-      border: 1px solid black;
+      border: 2px solid #238DC1;
       font-family: 'Montserrat', sans-serif;
     }
 
@@ -54,6 +64,7 @@
 
   button {
     @include reset-button-style;
+    border: 2px solid #CBC82D;
 
     &:hover {
       @include hover-btn;
