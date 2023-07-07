@@ -18,14 +18,14 @@ const DocumentsRequestForm = () => {
     if (location.state) {
       setMessage('Service: ' + location.state.service.type + ' ' + location.state.service.details)
     }
-  }, [])
+  }, [location.state])
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     setIsSpinner(true)
     try {
-      const response = await axios.post('http://127.0.0.1:5001/transparentpm-25f07/us-central1/ZohoApi/upload-documents', {
+      const response = await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/upload-documents', {
         name: name + ' ' +  email + ' ' + location.state.service.type // Pass the name and email variable in the request payload
       });
   
@@ -35,7 +35,7 @@ const DocumentsRequestForm = () => {
     setIsSpinner(false)
 
     try {
-      await axios.post('http://127.0.0.1:5001/transparentpm-25f07/us-central1/ZohoApi/send-emails', {
+      await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
         content: 'Hi, here is the link to your documents: ' + response.data.newFileLink, // Pass the name and email variable in the request payload
         email: email
       });
@@ -91,8 +91,8 @@ const DocumentsRequestForm = () => {
         </div>
         {newFileLink.length !== 0 ? (
           <div className='reset-container'>
-            <a href={newFileLink} target="_blank">Link to Upload Files</a>
-            <a href='' onClick={handleResetForm}>Reset</a>
+            <a href={newFileLink} target="_blank" rel="noopener noreferrer">Link to Upload Files</a>
+            <button onClick={handleResetForm}>Reset</button>
           </div>
         ) : (
           <button className='btn-upload-docs' type='submit' disabled={isSpinner}>Click to Upload Your Files</button>
