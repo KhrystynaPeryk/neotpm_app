@@ -16,7 +16,7 @@ const DocumentsRequestForm = () => {
 
   useEffect( () => {
     if (location.state) {
-      setMessage('Hi, I am interested in ' + location.state.service.type + ' : ' + location.state.service.details)
+      setMessage('Service: ' + location.state.service.type + ' ' + location.state.service.details)
     }
   }, [])
 
@@ -26,17 +26,26 @@ const DocumentsRequestForm = () => {
     setIsSpinner(true)
     try {
       const response = await axios.post('http://127.0.0.1:5001/transparentpm-25f07/us-central1/ZohoApi/upload-documents', {
-        name: name + ' ' +  email // Pass the name and email variable in the request payload
+        name: name + ' ' +  email + ' ' + location.state.service.type // Pass the name and email variable in the request payload
       });
   
     setNewFileLink(response.data.newFileLink);
     console.log(newFileLink)
     window.open(response.data.newFileLink, '_blank')
     setIsSpinner(false)
+
+    try {
+      await axios.post('http://127.0.0.1:5001/transparentpm-25f07/us-central1/ZohoApi/send-emails', {
+        content: 'Hi, here is the link to your documents: ' + response.data.newFileLink, // Pass the name and email variable in the request payload
+        email: email
+      });
+    } catch (error) {
+      console.error('ZohoApi function error - cannot send email', error);
+      return;
+    }
   
     } catch (error) {
-      console.error('ZohoApi function error', error);
-      // Handle error scenario
+      console.error('ZohoApi function error - cannot create file/link', error);
       return;
     }
   };
@@ -77,11 +86,12 @@ const DocumentsRequestForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder='Message'
+            disabled='true'
           />
         </div>
         {newFileLink.length !== 0 ? (
           <div className='reset-container'>
-            <a href={newFileLink}>Link to Upload Files</a>
+            <a href={newFileLink} target="_blank">Link to Upload Files</a>
             <a href='' onClick={handleResetForm}>Reset</a>
           </div>
         ) : (
