@@ -18,7 +18,7 @@ const DocumentsRequestForm = () => {
     if (location.state) {
       setMessage('Service: ' + location.state.service.type + ' ' + location.state.service.details)
     }
-  }, [])
+  }, [location.state])
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -91,8 +91,8 @@ const DocumentsRequestForm = () => {
         </div>
         {newFileLink.length !== 0 ? (
           <div className='reset-container'>
-            <a href={newFileLink} target="_blank">Link to Upload Files</a>
-            <a href='' onClick={handleResetForm}>Reset</a>
+            <a href={newFileLink} target="_blank" rel="noopener noreferrer">Link to Upload Files</a>
+            <button onClick={handleResetForm}>Reset</button>
           </div>
         ) : (
           <button className='btn-upload-docs' type='submit' disabled={isSpinner}>Click to Upload Your Files</button>
