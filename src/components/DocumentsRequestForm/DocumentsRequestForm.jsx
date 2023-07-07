@@ -86,7 +86,7 @@ const DocumentsRequestForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder='Message'
-            disabled='true'
+            disabled={true}
           />
         </div>
         {newFileLink.length !== 0 ? (
