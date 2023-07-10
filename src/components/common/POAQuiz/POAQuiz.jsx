@@ -4,7 +4,7 @@ import './POAQuiz.scss'
 const POAQuiz = () => {
 
     const handleRedirectToQuiz = () => {
-        window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
+        window.location.href = 'https://transparent-poa.involve.me/poa-uae/';
     };
     return (
         <div className='quiz-request-wrapper'>

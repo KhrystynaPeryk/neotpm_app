@@ -25,24 +25,24 @@ const DocumentsRequestForm = () => {
     
     setIsSpinner(true)
     try {
+      const constructFolderName = location.state ? location.state.service.type + ' ' + location.state.service.details : message
       const response = await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/upload-documents', {
-        name: name + ' ' +  email + ' ' + location.state.service.type // Pass the name and email variable in the request payload
+        name: name + ' ' +  email + ' ' + constructFolderName // Pass the name and email variable in the request payload
       });
   
-    setNewFileLink(response.data.newFileLink);
-    console.log(newFileLink)
-    window.open(response.data.newFileLink, '_blank')
-    setIsSpinner(false)
+      setNewFileLink(response.data.newFileLink);
+      window.open(response.data.newFileLink, '_blank')
+      setIsSpinner(false)
 
-    try {
-      await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-        content: 'Hi, here is the link to your documents: ' + response.data.newFileLink, // Pass the name and email variable in the request payload
-        email: email
-      });
-    } catch (error) {
-      console.error('ZohoApi function error - cannot send email', error);
-      return;
-    }
+      try {
+        await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
+          content: 'Hi, here is the link to your documents: ' + response.data.newFileLink, // Pass the name and email variable in the request payload
+          email: email
+        });
+      } catch (error) {
+        console.error('ZohoApi function error - cannot send email', error);
+        return;
+      }
   
     } catch (error) {
       console.error('ZohoApi function error - cannot create file/link', error);
@@ -71,6 +71,7 @@ const DocumentsRequestForm = () => {
           <input
             type='text'
             value={name}
+            maxLength={100}
             onChange={(e) => setName(e.target.value)}
             required
             placeholder='Name'
@@ -84,9 +85,10 @@ const DocumentsRequestForm = () => {
           />
           <textarea
             value={message}
+            maxLength={100}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder='Message'
-            disabled={true}
+            placeholder='Service of your interest'
+            disabled={location.state ? true : false}
           />
         </div>
         {newFileLink.length !== 0 ? (

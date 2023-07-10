@@ -8,7 +8,7 @@ import Google from '../../../assets/images/google.png'
 const Footer = () => {
 
     const redirectToReviews = () => {
-        window.open('https://www.google.com/search?q=Transparent+Property+Management&sxsrf=AB5stBhtxvzW56baISdwiP9fGzUoYMabxQ%3A1688454588514&ei=vMWjZJb-HvOQkdUPhcaZoAQ&ved=0ahUKEwiWzN6_v_T_AhVzSKQEHQVjBkQQ4dUDCA8&uact=5&oq=Transparent+Property+Management&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzINCC4QrwEQxwEQigUQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yGQguEK8BEMcBEIoFEJcFENwEEN4EEOAEGAFKBAhBGABQAFgAYJcHaABwAHgAgAHZAYgB2QGSAQMyLTGYAQCgAQKgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp#lrd=0x3e5e67b3c30d3707:0xddeb86680ee9f4e7,1,,,,', '_blank');
+        window.location.href = 'https://www.google.com/search?q=Transparent+Property+Management&sxsrf=AB5stBhtxvzW56baISdwiP9fGzUoYMabxQ%3A1688454588514&ei=vMWjZJb-HvOQkdUPhcaZoAQ&ved=0ahUKEwiWzN6_v_T_AhVzSKQEHQVjBkQQ4dUDCA8&uact=5&oq=Transparent+Property+Management&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzINCC4QrwEQxwEQigUQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yGQguEK8BEMcBEIoFEJcFENwEEN4EEOAEGAFKBAhBGABQAFgAYJcHaABwAHgAgAHZAYgB2QGSAQMyLTGYAQCgAQKgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp#lrd=0x3e5e67b3c30d3707:0xddeb86680ee9f4e7,1,,,,'
     };
 
     return (

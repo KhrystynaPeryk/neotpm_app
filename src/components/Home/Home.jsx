@@ -16,7 +16,7 @@ const Home = () => {
     };
 
     const handleRedirectToQuiz = () => {
-        window.open('https://transparent-poa.involve.me/poa-uae/', '_blank');
+        window.location.href = 'https://transparent-poa.involve.me/poa-uae/';
     };
 
     const redirectToPropertyManagement = () => {
@@ -110,7 +110,7 @@ const Home = () => {
                     </button>
                 </div>
                 </div>
-                <a href="https://api.whatsapp.com/send?phone=971504420182" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=971504420182" target="_self" rel="noopener noreferrer">
                 <div className="whatsapp-icon">
                     <img src={WhatsAppIcon} alt="WhatsApp" />
                 </div>
