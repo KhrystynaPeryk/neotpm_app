@@ -309,16 +309,16 @@ const PropertyMaintenance = () => {
                         <div className='select-container-item'>
                             <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
                                 <option value="" defaultValue=''>-- Maid Room --</option>
-                                <option value="yes">a maid room</option>
-                                <option value="no">no maid room</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                             {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
                         </div>
                         <div className='select-container-item'>
                             <select value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
                                 <option value="" defaultValue=''>-- Driver Room --</option>
-                                <option value="yes">a driver room</option>
-                                <option value="no">no driver room</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
                             </select>
                             {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
                         </div>
