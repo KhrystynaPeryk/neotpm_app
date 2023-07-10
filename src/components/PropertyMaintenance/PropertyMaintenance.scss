@@ -95,7 +95,7 @@
         flex-direction: column;
         position: relative;
 
-        select {
+        .select-container-element {
             padding: 10px;
             width: 300px;
             background-color:rgba(57, 165, 175, 0.7);
@@ -104,6 +104,10 @@
             font-family: 'Open Sans', sans-serif;
             font-size: medium;
             color: inherit;
+
+            &.disabled {
+                color: grey;;
+            }
         }
     }
 

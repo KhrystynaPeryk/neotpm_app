@@ -259,7 +259,7 @@ const PropertyMaintenance = () => {
                 </p>
                 <div className='select-container'>
                     <div className='select-container-item'>
-                        <select value={propertyType} name="type-property" id="type-property" onChange={handlePropertyType}>
+                        <select className='select-container-element' value={propertyType} name="type-property" id="type-property" onChange={handlePropertyType}>
                             <option value="" defaultValue=''>-- Property Type --</option>
                             <option value="apartment">Apartment</option>
                             <option value="villa">Villa</option>
@@ -269,7 +269,7 @@ const PropertyMaintenance = () => {
                         {errors.propertyType && <div className="error-message errorOne">{errors.propertyType}</div>}
                     </div>
                     <div className='select-container-item'>
-                        <select value={roomsNumber} name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
+                        <select className={propertyType === 'studio' ? 'select-container-element disabled' : 'select-container-element'} value={roomsNumber} name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
                             <option value="" defaultValue=''>-- Number of rooms --</option>
                             {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="1BR">1 room</option>}
                             <option value="2BR">2 rooms</option>
@@ -281,7 +281,7 @@ const PropertyMaintenance = () => {
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
                     <div className='select-container-item'>
-                        <select value={propertyLocation} name="location" id="location" onChange={handlePropertyLocation}>
+                        <select className='select-container-element' value={propertyLocation} name="location" id="location" onChange={handlePropertyLocation}>
                             <option value="" defaultValue=''>-- Property Location --</option>
                             <option value="AbuDhabiCityReem">Abu Dhabi City/Al Reem</option>
                             <option value="SaadiyatYas">Saadiyat/Yas Island</option>
@@ -291,7 +291,7 @@ const PropertyMaintenance = () => {
                     </div>
                     <div className='select-container' style={isVillaPackagesVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
                         <div className='select-container-item'>
-                            <select value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
+                            <select className='select-container-element' value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
                                 <option value="" defaultValue=''>-- Choose a package* --</option>
                                 <option value="bronze">Bronze package*</option>
                                 <option value="gold">Gold package*</option>
@@ -307,7 +307,7 @@ const PropertyMaintenance = () => {
                     </div>
                     <div className='select-container' style={isMaidDriverVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
                         <div className='select-container-item'>
-                            <select value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
+                            <select className='select-container-element' value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
                                 <option value="" defaultValue=''>-- Maid Room --</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
@@ -315,7 +315,7 @@ const PropertyMaintenance = () => {
                             {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
                         </div>
                         <div className='select-container-item'>
-                            <select value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
+                            <select className='select-container-element' value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
                                 <option value="" defaultValue=''>-- Driver Room --</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
