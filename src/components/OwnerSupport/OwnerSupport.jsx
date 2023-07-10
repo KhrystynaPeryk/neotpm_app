@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
-import ArrowLeft from '../../assets/images/arrow-left.png'
 import './OwnerSupport.scss'
 import { addProduct } from '../../store/actions/actions';
 import { v4 as uuidv4 } from 'uuid';
@@ -85,20 +84,21 @@ const OwnerSupport = () => {
       </div>
       <div className='tiles-container'>
         <div className='tiles-row'>
-          <div className='tiles-img'>
+          <div className='tiles-img' onClick={() => flipBack(0)}>
             <div 
               className={`flip-card-inner ${isTileFlipped(0) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front poa'>
-                <h1>Power of Attorney</h1>
-                <div className='document-button-wrapper'>
-                  <button type='button' onClick={() => flipTile(0)}>Learn More</button>
-                </div>
+                {isTileFlipped(0) ? '' : (
+                  <div className='flip-card-front poa'>
+                    <h1>Power of Attorney</h1>
+                    <div className='document-button-wrapper'>
+                      <button type='button' onClick={(event) => { event.stopPropagation(); flipTile(0); }}>Learn More</button>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className='flip-card-back poa'>
-                <div className='back-button-wrapper' onClick={flipBack}>
-                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
-                </div>
                 <div className='flip-card-back-padding'>
                   <h1>Planning to leave UAE or have left already?</h1>
                   <p>
@@ -128,20 +128,21 @@ const OwnerSupport = () => {
               <button type='button' onClick={addTawtheeqIssuanceToCart}>BUY</button>
             </div>
           </div>
-          <div className='tiles-img'>
+          <div className='tiles-img' onClick={() => flipBack(1)}>
           <div 
               className={`flip-card-inner ${isTileFlipped(1) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front t-issuance'>
-                <h1>Tawtheeq Issuance</h1>
-                <div className='document-button-wrapper'>
-                  <button type='button' onClick={() => flipTile(1)}>Learn More</button>
+              {isTileFlipped(1) ? '' : (
+                <div className='flip-card-front t-issuance'>
+                  <h1>Tawtheeq Issuance</h1>
+                  <div className='document-button-wrapper'>
+                    <button type='button' onClick={(event) => { event.stopPropagation(); flipTile(1); }}>Learn More</button>
+                  </div>
                 </div>
+              )}
               </div>
               <div className='flip-card-back t-issuance'>
-                <div className='back-button-wrapper' onClick={flipBack}>
-                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
-                </div>
                 <div className='flip-card-back-padding'>
                   <h1>Do you need an access to SmartHub?</h1>
                   <p className='flip-card-back-bottom'>Tawtheeq Issuance is a service that allows both UAE residents and non-residents to obtain access to the smarthub on behalf of the customer.</p>
@@ -152,20 +153,21 @@ const OwnerSupport = () => {
           </div>
         </div>
         <div className='tiles-row'>
-          <div className='tiles-img'>
+          <div className='tiles-img' onClick={() => flipBack(2)}>
             <div 
               className={`flip-card-inner ${isTileFlipped(2) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front t-assistance'>
-                <h1>Tawtheeq Assistance</h1>
-                <div className='document-button-wrapper'>
-                  <button type='button' onClick={() => flipTile(2)}>Learn More</button>
-                </div>
+                {isTileFlipped(2) ? '' : (
+                  <div className='flip-card-front t-assistance'>
+                    <h1>Tawtheeq Assistance</h1>
+                    <div className='document-button-wrapper'>
+                      <button type='button' onClick={(event) => { event.stopPropagation(); flipTile(2); }}>Learn More</button>
+                    </div>
+                  </div>  
+                )}
               </div>
               <div className='flip-card-back t-assistance'>
-                <div className='back-button-wrapper' onClick={flipBack}>
-                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
-                </div>
                 <div className='flip-card-back-padding'>
                   <h1>Tawtheeq Made Easy: Access & Support</h1>
                   <p className='flip-card-back-bottom'>Tawtheeq Assistance, on the other hand, caters to both residents and non-residents of the UAE. </p>
@@ -188,20 +190,21 @@ const OwnerSupport = () => {
               <button type='button' onClick={redirectToDocumentsFormHandover}>Send Your Details</button>
             </div>
           </div>
-          <div className='tiles-img'>
+          <div className='tiles-img' onClick={() => flipBack(3)}>
           <div 
               className={`flip-card-inner ${isTileFlipped(3) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front handover'>
-                <h1>Property Handover Assistance</h1>
-                <div className='document-button-wrapper'>
-                  <button type='button' onClick={() => flipTile(3)}>Learn More</button>
-                </div>
+                {isTileFlipped(3) ? '' : (
+                  <div className='flip-card-front handover'>
+                    <h1>Property Handover Assistance</h1>
+                    <div className='document-button-wrapper'>
+                      <button type='button' onClick={(event) => { event.stopPropagation(); flipTile(3); }}>Learn More</button>
+                    </div>
+                  </div>
+                )}
               </div>
               <div className='flip-card-back handover'>
-                <div className='back-button-wrapper' onClick={flipBack}>
-                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
-                </div>
                 <div className='flip-card-back-padding'>
                   <h1>Transparency Handover Services</h1>
                   <p>
@@ -222,20 +225,21 @@ const OwnerSupport = () => {
           </div>
         </div>
         <div className='tiles-row'>
-          <div className='tiles-img'>
+          <div className='tiles-img' onClick={() => flipBack(4)}>
             <div 
               className={`flip-card-inner ${isTileFlipped(4) ? 'flipped' : ''}`}
             >
               <div className='flip-card-front golden-visa'>
-                <h1>Golden Visa Services</h1>
-                <div className='document-button-wrapper'>
-                  <button type='button' onClick={() => flipTile(4)}>Learn More</button>
-                </div>
+                  {isTileFlipped(4) ? '' : (
+                    <div className='flip-card-front golden-visa'>
+                      <h1>Golden Visa Services</h1>
+                      <div className='document-button-wrapper'>
+                        <button type='button' onClick={(event) => { event.stopPropagation(); flipTile(4); }}>Learn More</button>
+                      </div>
+                    </div>  
+                  )}
               </div>
               <div className='flip-card-back golden-visa'>
-                <div className='back-button-wrapper' onClick={flipBack}>
-                  <div className='back-button'><img src={ArrowLeft} alt='arrow-left'/></div>
-                </div>
                 <div className='flip-card-back-padding'>
                   <h1>Are you planning to apply for a UAE Golden Visa?</h1>
                   <p className='flip-card-back-bottom'>Would you like to determine if you meet the eligibility criteria for this program?</p>
