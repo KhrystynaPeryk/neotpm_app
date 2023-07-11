@@ -4,69 +4,77 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 1em;
     margin: 2em;
     margin-bottom: 6em;
+    flex-wrap: wrap; 
+    transition: all 0.3s ease-in-out;
 
-    @media screen and (max-width: 1620px) {
-        width: 75%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1550px) {
-        width: 80%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1430px) {
-        width: 85%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1340px) {
+    @media screen and (max-width: 400px) {
         width: 90%;
         transition: all 0.5s ease;
     }
 
-    @media screen and (max-width: 1251px) {
-        width: 100%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1620px) {
+    //     width: 75%;
+    //     transition: all 0.5s ease;
+    // }
 
-    @media screen and (max-width: 1200px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 70%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1550px) {
+    //     width: 80%;
+    //     transition: all 0.5s ease;
+    // }
 
-    @media screen and (max-width: 990px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 60%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1430px) {
+    //     width: 85%;
+    //     transition: all 0.5s ease;
+    // }
 
-    @media screen and (max-width: 680px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 70%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1340px) {
+    //     width: 90%;
+    //     transition: all 0.5s ease;
+    // }
 
-    @media screen and (max-width: 530px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 80%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1251px) {
+    //     width: 100%;
+    //     transition: all 0.5s ease;
+    // }
 
-    @media screen and (max-width: 460px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 90%;
-        transition: all 0.5s ease;
-    }
+    // @media screen and (max-width: 1200px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     width: 70%;
+    //     transition: all 0.5s ease;
+    // }
+
+    // @media screen and (max-width: 990px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     width: 60%;
+    //     transition: all 0.5s ease;
+    // }
+
+    // @media screen and (max-width: 680px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     width: 70%;
+    //     transition: all 0.5s ease;
+    // }
+
+    // @media screen and (max-width: 530px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     width: 80%;
+    //     transition: all 0.5s ease;
+    // }
+
+    // @media screen and (max-width: 460px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr;
+    //     width: 90%;
+    //     transition: all 0.5s ease;
+    // }
 
     .table-column {
         position: relative;
@@ -81,6 +89,30 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transition: all 0.3s ease-in-out;
         background-color: #e5e4e2;
+        min-width: 250px;
+
+        @media screen and (max-width: 895px) {
+            min-width: 300px;
+            transition: all 0.5s ease;
+        }
+
+        .table-column-nav {
+            margin-bottom: 2em;
+            color: #238DC1;
+            text-decoration: underline;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+                color: #39a5af;
+            }
+        }
+
+        .table-column-everything {
+            color: #238DC1;
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
 
         .table-column-header {
             background: rgb(35,141,193);
@@ -103,6 +135,10 @@
                 font-family: 'Tilt Prism', cursive;
             }
 
+            &.lite {
+                padding-top: 6.1em;
+            }
+
             img {
                 width: 5em;
                 height: 5em;
@@ -114,7 +150,7 @@
             .table-row-item {
                 margin: 1em;
                 font-family: 'Montserrat', sans-serif;
-                height: 3em;
+                height: 3.5em;
                 font-weight: 500;
                 text-transform: uppercase;
     
@@ -139,6 +175,8 @@
                 @include reset-button-style;
                 background-color: $colorM;
                 color: white;
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
 
                 &:hover {
                     @include hover-btn;

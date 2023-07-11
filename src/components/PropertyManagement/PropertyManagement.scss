@@ -113,7 +113,6 @@
         background-color: #F0F8FF;
         transition: all 0.3s ease-in-out;
         min-width: 250px;
-        // animation: navbarExpand 0.5s ease forwards;
 
         &:hover {
             box-shadow: 0 0 10px 2px #ff9900;
@@ -179,6 +178,7 @@
         .property-learn-more {
             margin-bottom: 2em;
             color: #238DC1;
+            text-decoration: underline;
 
             img {
                 width: 0.5em;

@@ -19,9 +19,9 @@ const PropertyManagement = () => {
 
     const [activeSlide, setActiveSlide] = useState(0);
 
-    const [isBronzeCliked, setIsBronzeClicked] = useState(false)
-    const [isGoldCliked, setIsGoldClicked] = useState(false)
-    const [isPlatinumCliked, setIsPlatinumClicked] = useState(false)
+    const [isBronzeClicked, setIsBronzeClicked] = useState(false)
+    const [isGoldClicked, setIsGoldClicked] = useState(false)
+    const [isPlatinumClicked, setIsPlatinumClicked] = useState(false)
 
     //handling scroll to the section
     // const scrollToBronzeSection = () => {
@@ -134,23 +134,23 @@ const PropertyManagement = () => {
             </div>
             <div className='property-table-wrapper'>
             <section className='table-column'>
-                    <div className='property-icon-container bronze'>
-                        <img className='property-icon' src={BronzeHouse} alt='BronzeHouse' />
-                        <div className='table-section-header'>BRONZE</div>
-                    </div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    {isBronzeCliked ? (
-                        <>
-                            <div className='table-section-item'>Tenancy Renewal</div>
-                            <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
-                            <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
-                        </>
-                    ) : null}
-                    {/* <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
-                    {isBronzeCliked ? (<div className='property-learn-more' onClick={() => setIsBronzeClicked(false)}>Show Less </div>) :
-                    (<div className='property-learn-more' onClick={() => setIsBronzeClicked(true)}>View All</div>)}
+                <div className='property-icon-container bronze'>
+                    <img className='property-icon' src={BronzeHouse} alt='BronzeHouse' />
+                    <div className='table-section-header'>BRONZE</div>
+                </div>
+                <div className='table-section-item'>Tenant Sourcing</div>
+                <div className='table-section-item'>Rental Cheque Management</div>
+                <div className='table-section-item'>Move-in Services</div>
+                {isBronzeClicked ? (
+                    <>
+                        <div className='table-section-item'>Tenancy Renewal</div>
+                        <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
+                        <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
+                    </>
+                ) : null}
+                {/* <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                {isBronzeClicked ? (<div className='property-learn-more' onClick={() => setIsBronzeClicked(false)}>Show Less </div>) :
+                (<div className='property-learn-more' onClick={() => setIsBronzeClicked(true)}>View All</div>)}
                 </section>
                 <section className='table-column gold'>
                     <div className='ribbon'><span>Popular</span></div>
@@ -162,7 +162,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Move-out Services</div>
                     <div className='table-section-item'>Security Deposit Settlement</div>
                     <div className='table-section-item'>Bill Payment</div>
-                    {isGoldCliked ? (
+                    {isGoldClicked ? (
                         <>
                             <div className='table-section-item'>Maintenance Solution Liaison</div>
                             <div className='table-section-item'>Handover Assistance from Developer</div>
@@ -172,7 +172,7 @@ const PropertyManagement = () => {
                         </>
                     ) : null}
                     {/* <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
-                    {isGoldCliked ? (<div className='property-learn-more' onClick={() => setIsGoldClicked(false)}>Show Less </div>) :
+                    {isGoldClicked ? (<div className='property-learn-more' onClick={() => setIsGoldClicked(false)}>Show Less </div>) :
                     (<div className='property-learn-more' onClick={() => setIsGoldClicked(true)}>View All</div>)}               
                 </section>
                 <section className='table-column'>
@@ -185,14 +185,14 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
-                    {isPlatinumCliked ? (
+                    {isPlatinumClicked ? (
                         <>
                             <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
                             <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
                         </>
                     ) : null}
                     {/* <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
-                    {isPlatinumCliked ? (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(false)}>Show Less </div>) :
+                    {isPlatinumClicked ? (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(false)}>Show Less </div>) :
                     (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(true)}>View All</div>)}
                 </section>
             </div>
