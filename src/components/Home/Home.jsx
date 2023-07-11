@@ -10,7 +10,7 @@ import NavBar from '../common/NavBar/NavBar';
 const Home = () => {
     const navigate = useNavigate();
 
-    const [isPopupOpen, setPopupOpen] = useState(true);
+    const [isPopupOpen, setPopupOpen] = useState(false);
     const togglePopup = () => {
         setPopupOpen(!isPopupOpen);
     };
@@ -122,7 +122,7 @@ const Home = () => {
                 ref={myFirstIngRef}
                 >
                     <h1>Property Management</h1>
-                    <p className='home-services-caption'>Effortless Property Management Solutions: Leave the Hassle to Us</p>
+                    <p className='home-services-caption'>Your time is precious. Focus on what you do best and leave the rest to us.</p>
                     <div className="btns-container">
                         <button type="button" onClick={redirectToPropertyManagement}>Learn More</button>
                     </div>

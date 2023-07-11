@@ -61,6 +61,10 @@
 }
 
 .tiles-img {
+    perspective: 1000px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     
     .flip-card-inner {
         width: 100%;
@@ -68,9 +72,6 @@
         transform-style: preserve-3d;
         transition: transform 0.1s;
         position: relative;
-        perspective: 1000px;
-        position: relative;
-        background-color: transparent;
 
         display: flex;
         flex-direction: column;

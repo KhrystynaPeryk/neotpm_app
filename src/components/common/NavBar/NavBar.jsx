@@ -84,7 +84,7 @@ const NavBar = () => {
                         &times;
                     </div> :
                     <div className={isBurgerMenuVisible ? 'navbar-burger' : 'hidden' }>
-                        <img src={BurgerMenu} alt='BurgerMenu' onClick={ExpandNavBar}/>
+                        <img className='burger-img' src={BurgerMenu} alt='BurgerMenu' onClick={ExpandNavBar}/>
                     </div>
                 }
                 <div className={isNavExpanded ? 'hidden' : 'navbar-sections' }>
@@ -103,7 +103,7 @@ const NavBar = () => {
                                 </div> 
                             </div>
                         }
-                        <img src={Cart} alt='Cart' />
+                        <img className='cart-img' src={Cart} alt='Cart' />
                 </div>
             </div>
             {isNavExpanded &&
