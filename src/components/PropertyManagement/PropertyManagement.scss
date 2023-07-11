@@ -86,23 +86,15 @@
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
     gap: 1em;
     margin: 3em 0;
     padding: 0.5em;
+    transition: all 0.3s ease-in-out;
 
-    @media screen and (max-width: 1250px) {
-        width: 75%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1130px) {
-        width: 80%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1000px) {
-        justify-content: flex-start;
-        flex-wrap: wrap;
+    @media screen and (max-width: 400px) {
+        width: 90%;
         transition: all 0.5s ease;
     }
 
@@ -120,6 +112,8 @@
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         background-color: #F0F8FF;
         transition: all 0.3s ease-in-out;
+        min-width: 250px;
+        // animation: navbarExpand 0.5s ease forwards;
 
         &:hover {
             box-shadow: 0 0 10px 2px #ff9900;
@@ -159,6 +153,11 @@
             justify-content: center;
         }
 
+        .table-column-everything {
+            color: #238DC1;
+            margin-bottom: 1em;
+        }
+
         button {
             @include reset-button-style;
             color: white;
@@ -166,7 +165,7 @@
             font-size: large;
             font-weight: bolder;
             background-color: $colorT;
-            margin-top: 1em;
+            margin-top: 2em;
             margin-bottom: 2em;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             transition: box-shadow 0.3s ease;
@@ -204,8 +203,8 @@
             position: relative;
             display: inline-block;
             border-radius: 100% 0% 100% 0% / 44% 43% 57% 56%;
-            padding-top: 4em;
-            padding-bottom: 4em;
+            padding-top: 2em;
+            padding-bottom: 2em;
             margin-top: 1em;
             font-family: 'Tilt Prism', cursive;
             letter-spacing: 0.2em;
@@ -213,11 +212,11 @@
             &.bronze {
                 background: rgba(205, 128, 50, 0.651);
                 background: linear-gradient(90deg, rgba(205,127,50,1) 50%, rgba(240,248,255,1) 100%);
+                padding-top: 4.2em;
             }
 
             &.gold {
                 background: rgba(255, 217, 0, 0.856);
-                // background: linear-gradient(90deg, rgba(255,215,0,1) 50%, rgba(57,165,175,1) 100%);
                 background: linear-gradient(90deg, rgba(255,215,0,1) 50%, rgba(240,248,255,1) 100%);
                 color: black;
             }
@@ -297,23 +296,6 @@
 .maintenance-img {
     @include service-img-style;
     margin-bottom: 5em;
-
-    // &.first {
-    //     background-image: url('../../assets/images/img_5.jpg');
-    // }
-
-    // &.second {
-    //     background-image: url('../../assets/images/img_4.jpg');
-    // }
-
-    // &.third {
-    //     background-image: url('../../assets/images/img_1.jpg');
-    // }
-
-    // &.fourth {
-    //     background-image: url('../../assets/images/img_7.jpg');
-    //     margin-bottom:0;
-    // }
 }
 
 .property-after-table {

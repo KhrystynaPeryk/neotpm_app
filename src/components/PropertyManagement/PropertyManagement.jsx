@@ -8,7 +8,7 @@ import POAQuiz from '../common/POAQuiz/POAQuiz';
 import BronzeHouse from '../../assets/images/bronze-icon-white.png'
 import GoldHouse from '../../assets/images/gold-icon-white.png'
 import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
-import ArrowRight from '../../assets/images/arrow-right.png'
+// import ArrowRight from '../../assets/images/arrow-right.png'
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -19,18 +19,22 @@ const PropertyManagement = () => {
 
     const [activeSlide, setActiveSlide] = useState(0);
 
+    const [isBronzeCliked, setIsBronzeClicked] = useState(false)
+    const [isGoldCliked, setIsGoldClicked] = useState(false)
+    const [isPlatinumCliked, setIsPlatinumClicked] = useState(false)
+
     //handling scroll to the section
-    const scrollToBronzeSection = () => {
-        myFirstIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const scrollToBronzeSection = () => {
+    //     myFirstIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    // };
 
-    const scrollToGoldSection = () => {
-        mySecondIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const scrollToGoldSection = () => {
+    //     mySecondIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    // };
 
-    const scrollToPlatinumSection = () => {
-        myThirdIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const scrollToPlatinumSection = () => {
+    //     myThirdIngRef.current.scrollIntoView({ behavior: 'smooth' });
+    // };
 
     const redirectToDocumentsFormBronze = () => {
         navigate('/documents-form', {
@@ -119,7 +123,6 @@ const PropertyManagement = () => {
         };
     }, []);
 
-
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -130,7 +133,7 @@ const PropertyManagement = () => {
                 </div>
             </div>
             <div className='property-table-wrapper'>
-                <section className='table-column'>
+            <section className='table-column'>
                     <div className='property-icon-container bronze'>
                         <img className='property-icon' src={BronzeHouse} alt='BronzeHouse' />
                         <div className='table-section-header'>BRONZE</div>
@@ -138,40 +141,39 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Tenant Sourcing</div>
                     <div className='table-section-item'>Rental Cheque Management</div>
                     <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
-                    <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
-                    <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    {isBronzeCliked ? (
+                        <>
+                            <div className='table-section-item'>Tenancy Renewal</div>
+                            <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
+                            <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
+                        </>
+                    ) : null}
+                    {/* <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                    {isBronzeCliked ? (<div className='property-learn-more' onClick={() => setIsBronzeClicked(false)}>Show Less </div>) :
+                    (<div className='property-learn-more' onClick={() => setIsBronzeClicked(true)}>View All</div>)}
                 </section>
                 <section className='table-column gold'>
-                    <div className='ribbon'><span>HIT</span></div>
+                    <div className='ribbon'><span>Popular</span></div>
                     <div className='property-icon-container gold'>
                         <img className='property-icon' src={GoldHouse} alt='GoldHouse' />
                         <div className='table-section-header'>GOLD</div>
                     </div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
+                    <div className='table-column-everything'>Everything in Bronze, plus:</div>
                     <div className='table-section-item'>Move-out Services</div>
                     <div className='table-section-item'>Security Deposit Settlement</div>
                     <div className='table-section-item'>Bill Payment</div>
-                    <div className='table-section-item'>Maintenance Solution Liaison</div>
-                    <div className='table-section-item'>Handover Assistance from Developer</div>
-                    <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-item table-cross'>╳</div>
-                    <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
-                    <button type='button' onClick={redirectToDocumentsFormGold}>BUY</button>
-                    <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    {isGoldCliked ? (
+                        <>
+                            <div className='table-section-item'>Maintenance Solution Liaison</div>
+                            <div className='table-section-item'>Handover Assistance from Developer</div>
+                            <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
+                            <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
+                            <button type='button' onClick={redirectToDocumentsFormGold}>BUY</button>
+                        </>
+                    ) : null}
+                    {/* <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                    {isGoldCliked ? (<div className='property-learn-more' onClick={() => setIsGoldClicked(false)}>Show Less </div>) :
+                    (<div className='property-learn-more' onClick={() => setIsGoldClicked(true)}>View All</div>)}               
                 </section>
                 <section className='table-column'>
                     <div className='ribbon'><span>+POA</span></div>
@@ -179,24 +181,21 @@ const PropertyManagement = () => {
                         <img className='property-icon' src={PlatinumHouse} alt='PlatinumHouse' />
                         <div className='table-section-header'>PLATINUM</div>
                     </div>
-                    <div className='table-section-item'>Tenant Sourcing</div>
-                    <div className='table-section-item'>Rental Cheque Management</div>
-                    <div className='table-section-item'>Move-in Services</div>
-                    <div className='table-section-item'>Tenancy Renewal</div>
-                    <div className='table-section-item'>Move-out Services</div>
-                    <div className='table-section-item'>Security Deposit Settlement</div>
-                    <div className='table-section-item'>Bill Payment</div>
-                    <div className='table-section-item'>Maintenance Solution Liaison</div>
-                    <div className='table-section-item'>Handover Assistance from Developer</div>
+                    <div className='table-column-everything'>Everything in Gold, plus:</div>
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
-                    <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
-                    <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
-                    <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div>
+                    {isPlatinumCliked ? (
+                        <>
+                            <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
+                            <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
+                        </>
+                    ) : null}
+                    {/* <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                    {isPlatinumCliked ? (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(false)}>Show Less </div>) :
+                    (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(true)}>View All</div>)}
                 </section>
             </div>
-            {/* <div className="home-services-image maintenance-img first" /> */}
             <div className={`property-after-table ${myFirstElementVisible ? 'fade-in' : ''}`}
                 ref={myFirstIngRef}
             >
@@ -262,7 +261,6 @@ const PropertyManagement = () => {
                     </div>
                 </Carousel>
             </div>
-            {/* <div className="home-services-image maintenance-img second" /> */}
             <div id="gold-section" className={`property-after-table ${mySecondElementVisible ? 'fade-in' : ''}`}
                 ref={mySecondIngRef}
             >
@@ -383,7 +381,6 @@ const PropertyManagement = () => {
                     </div>
                 </Carousel>
             </div>
-            {/* <div className="home-services-image maintenance-img third" /> */}
             <div id="platinum-section" className={`property-after-table ${myThirdElementVisible ? 'fade-in' : ''}`}
                 ref={myThirdIngRef}
             >
