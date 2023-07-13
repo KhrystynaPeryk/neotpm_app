@@ -16,66 +16,6 @@
         transition: all 0.5s ease;
     }
 
-    // @media screen and (max-width: 1620px) {
-    //     width: 75%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 1550px) {
-    //     width: 80%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 1430px) {
-    //     width: 85%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 1340px) {
-    //     width: 90%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 1251px) {
-    //     width: 100%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 1200px) {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    //     width: 70%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 990px) {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     width: 60%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 680px) {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     width: 70%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 530px) {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     width: 80%;
-    //     transition: all 0.5s ease;
-    // }
-
-    // @media screen and (max-width: 460px) {
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     width: 90%;
-    //     transition: all 0.5s ease;
-    // }
-
     .table-column {
         position: relative;
         display: flex;
@@ -90,6 +30,11 @@
         transition: all 0.3s ease-in-out;
         background-color: #e5e4e2;
         min-width: 250px;
+
+        @media screen and (max-width: 1430px) {
+            min-width: 350px;
+            transition: all 0.5s ease;
+        }
 
         @media screen and (max-width: 895px) {
             min-width: 300px;
@@ -155,12 +100,12 @@
                 text-transform: uppercase;
     
                 // hide a cross on a table for max-width 491px
-                &.table-cross {
-                    @media screen and (max-width: 990px) {
-                        display: none;
-                        color: blue;
-                    }
-                }
+                // &.table-cross {
+                //     @media screen and (max-width: 990px) {
+                //         display: none;
+                //         color: blue;
+                //     }
+                // }
             }
         }
 
