@@ -11,6 +11,7 @@ const DocumentsRequestForm = () => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [isEmailValid, setIsEmailValid] = useState(true)
   const [message, setMessage] = useState('');
   const [newFileLink, setNewFileLink] = useState('');
   const [isSpinner, setIsSpinner] = useState(false)
@@ -20,6 +21,15 @@ const DocumentsRequestForm = () => {
       setMessage('Service: ' + location.state.service.type + ' ' + location.state.service.details)
     }
   }, [location.state])
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value)
+    if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(e.target.value) === false) {
+      return setIsEmailValid(false)
+    } else {
+      return setIsEmailValid(true)
+    }
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -78,12 +88,13 @@ const DocumentsRequestForm = () => {
             placeholder='Name'
           />
           <input
-            type='email'
+            type='text'
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleEmailChange}
             required
             placeholder='Email'
           />
+          {!isEmailValid && (<div className='email-error'>Please enter a valid email</div>) }
           <textarea
             value={message}
             maxLength={100}
@@ -98,7 +109,7 @@ const DocumentsRequestForm = () => {
             <button onClick={handleResetForm}>Reset</button>
           </div>
         ) : (
-          <button className='btn-upload-docs' type='submit' disabled={isSpinner}>Click to Upload Your Files</button>
+          <button className='btn-upload-docs' type='submit' disabled={isSpinner || !isEmailValid}>Click to Upload Your Files</button>
         )}
       </form>
       <div className='footer-wrapper'>

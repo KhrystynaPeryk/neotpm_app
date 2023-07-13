@@ -8,7 +8,6 @@ import POAQuiz from '../common/POAQuiz/POAQuiz';
 import BronzeHouse from '../../assets/images/bronze-icon-white.png'
 import GoldHouse from '../../assets/images/gold-icon-white.png'
 import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
-// import ArrowRight from '../../assets/images/arrow-right.png'
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -22,19 +21,6 @@ const PropertyManagement = () => {
     const [isBronzeClicked, setIsBronzeClicked] = useState(false)
     const [isGoldClicked, setIsGoldClicked] = useState(false)
     const [isPlatinumClicked, setIsPlatinumClicked] = useState(false)
-
-    //handling scroll to the section
-    // const scrollToBronzeSection = () => {
-    //     myFirstIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    // };
-
-    // const scrollToGoldSection = () => {
-    //     mySecondIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    // };
-
-    // const scrollToPlatinumSection = () => {
-    //     myThirdIngRef.current.scrollIntoView({ behavior: 'smooth' });
-    // };
 
     const redirectToDocumentsFormBronze = () => {
         navigate('/documents-form', {
@@ -141,14 +127,13 @@ const PropertyManagement = () => {
                 <div className='table-section-item'>Tenant Sourcing</div>
                 <div className='table-section-item'>Rental Cheque Management</div>
                 <div className='table-section-item'>Move-in Services</div>
-                {isBronzeClicked ? (
+                {isBronzeClicked && (
                     <>
                         <div className='table-section-item'>Tenancy Renewal</div>
                         <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
                         <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
                     </>
-                ) : null}
-                {/* <div className='property-learn-more' onClick={scrollToBronzeSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                )}
                 {isBronzeClicked ? (<div className='property-learn-more' onClick={() => setIsBronzeClicked(false)}>Show Less </div>) :
                 (<div className='property-learn-more' onClick={() => setIsBronzeClicked(true)}>View All</div>)}
                 </section>
@@ -162,7 +147,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Move-out Services</div>
                     <div className='table-section-item'>Security Deposit Settlement</div>
                     <div className='table-section-item'>Bill Payment</div>
-                    {isGoldClicked ? (
+                    {isGoldClicked && (
                         <>
                             <div className='table-section-item'>Maintenance Solution Liaison</div>
                             <div className='table-section-item'>Handover Assistance from Developer</div>
@@ -170,8 +155,7 @@ const PropertyManagement = () => {
                             <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
                             <button type='button' onClick={redirectToDocumentsFormGold}>BUY</button>
                         </>
-                    ) : null}
-                    {/* <div className='property-learn-more' onClick={scrollToGoldSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                    )}
                     {isGoldClicked ? (<div className='property-learn-more' onClick={() => setIsGoldClicked(false)}>Show Less </div>) :
                     (<div className='property-learn-more' onClick={() => setIsGoldClicked(true)}>View All</div>)}               
                 </section>
@@ -185,13 +169,12 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
-                    {isPlatinumClicked ? (
+                    {isPlatinumClicked && (
                         <>
                             <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
                             <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
                         </>
-                    ) : null}
-                    {/* <div className='property-learn-more' onClick={scrollToPlatinumSection}>Learn More <img src={ArrowRight} alt='arrow-right'/> </div> */}
+                    )}
                     {isPlatinumClicked ? (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(false)}>Show Less </div>) :
                     (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(true)}>View All</div>)}
                 </section>
