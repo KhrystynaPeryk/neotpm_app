@@ -4,6 +4,7 @@ import axios from 'axios';
 import './DocumentsRequestForm.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
+import Footer from '../common/Footer/Footer';
 
 const DocumentsRequestForm = () => {
   const location = useLocation();
@@ -100,6 +101,9 @@ const DocumentsRequestForm = () => {
           <button className='btn-upload-docs' type='submit' disabled={isSpinner}>Click to Upload Your Files</button>
         )}
       </form>
+      <div className='footer-wrapper'>
+        <Footer />
+      </div>
       {isSpinner ? (            
         <div className='spinner-container'>
           <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
