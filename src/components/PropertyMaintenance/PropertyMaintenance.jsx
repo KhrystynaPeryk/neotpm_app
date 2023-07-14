@@ -254,6 +254,10 @@ const PropertyMaintenance = () => {
                 <div className='property-header-wrapper'>
                     <p className='property-header'>Property Maintenance</p>
                 </div>
+                <div className='brochure-banner'>
+                    <p>Get our Property Maintenance Services brochure</p>
+                    <button className='brochure-banner-btn' type='button' onClick={handleDownload}>DOWNLOAD</button> 
+                </div>
             </div>
             <form className='property-features-wrapper' onSubmit={calculateQuote}>
                 <p className='property-features-wrapper-caption'>
@@ -342,9 +346,6 @@ const PropertyMaintenance = () => {
                     }
                 </div>
             </form>
-            <div className='brochure-banner'>
-                <button type='button' onClick={handleDownload}>Download</button>
-            </div>
             <div className='offer-list-wrapper'>
                 <h1 className='offer-list-header'>Our Maintenance Service offers:</h1>
                 <ul 

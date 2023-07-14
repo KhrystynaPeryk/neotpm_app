@@ -12,6 +12,8 @@ import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import { downloadFirebaseFile } from '../../firebaseStorage/downloadFirebaseFile';
+
 const PropertyManagement = () => {
 
     const navigate = useNavigate();
@@ -109,6 +111,10 @@ const PropertyManagement = () => {
         };
     }, []);
 
+    const handleDownloadManagement = () => {
+        downloadFirebaseFile('TPM Property Management Brochure.pdf')
+    }
+
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -116,6 +122,10 @@ const PropertyManagement = () => {
                 <Logo />
                 <div className='property-header-wrapper'>
                     <p className='property-header'>Property Management Packages</p>
+                </div>
+                <div className='brochure-banner'>
+                    <p>Get our Property Management Services brochure</p>
+                    <button className='brochure-banner-btn' type='button' onClick={handleDownloadManagement}>DOWNLOAD</button> 
                 </div>
             </div>
             <div className='property-table-wrapper'>
