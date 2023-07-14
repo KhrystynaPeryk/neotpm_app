@@ -248,61 +248,46 @@ export const maintenanceQuoteCalculator = (
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_2;
-                            break;
                         case 'gold':
                             return villaSaadiyatPackagePrices.gold.r_2;
-                            break;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_2;
-                            break;
                     }
                 } else if (roomsNumber === '3BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_3;
-                            break;
                         case 'gold':
                             return villaSaadiyatPackagePrices.gold.r_3;
-                            break;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_3;
-                            break; 
                     }
                 } else if (roomsNumber === '4BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_4;
-                            break;
                         case 'gold':
                             return villaSaadiyatPackagePrices.gold.r_4;
-                            break;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_4;
-                            break;
                     }
                 } else if (roomsNumber === '5BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_5;
-                            break;
                         case 'gold':
                             return villaSaadiyatPackagePrices.gold.r_5;
-                            break;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_5;
-                            break;
                     }
                 } else if (roomsNumber === '6BR') {
                     switch (villaPackages) {
                         case 'bronze':
                             return villaSaadiyatPackagePrices.bronze.r_6;
-                            break;
                         case 'gold':
                             return villaSaadiyatPackagePrices.gold.r_6;
-                            break;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_6;
-                            break;
                     }
                 }
             } else if (propertyLocation === 'OutOfAbuDhabi') {
