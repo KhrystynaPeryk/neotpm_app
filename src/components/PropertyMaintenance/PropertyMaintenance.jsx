@@ -8,6 +8,7 @@ import './PropertyMaintenance.scss'
 import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalculator'
 import { v4 as uuidv4 } from 'uuid';
 import { formatPriceInCart } from '../../helpers/formatPriceInCart';
+import { downloadFirebaseFile } from '../../firebaseStorage/downloadFirebaseFile';
 
 const PropertyMaintenance = () => {
     const dispatch = useDispatch();
@@ -241,6 +242,10 @@ const PropertyMaintenance = () => {
         };
     }, []);
 
+    const handleDownload = () => {
+        downloadFirebaseFile('TPM Property Maintenance Brochure.pdf')
+    }
+
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -337,6 +342,9 @@ const PropertyMaintenance = () => {
                     }
                 </div>
             </form>
+            <div className='brochure-banner'>
+                <button type='button' onClick={handleDownload}>Download</button>
+            </div>
             <div className='offer-list-wrapper'>
                 <h1 className='offer-list-header'>Our Maintenance Service offers:</h1>
                 <ul 
