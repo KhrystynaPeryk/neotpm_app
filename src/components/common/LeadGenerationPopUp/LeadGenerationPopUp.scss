@@ -93,6 +93,27 @@
                             box-shadow: 0 0 5px 1px #ff9900;
                         }
                     }
+
+                    .popup-form-inputs {
+                        padding-top: 3em;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        input {
+                            padding: 0.8em;
+                            border-radius: 5px;
+                            margin-bottom: 0.5em;
+                            border: 1px solid #238DC1;
+                            font-family: inherit;
+                            width: 220px;
+                        }
+
+                        button {
+                            background-color: #DBAD4A;
+                            color: white;
+                        }
+                    }
                 }
             }
         }
