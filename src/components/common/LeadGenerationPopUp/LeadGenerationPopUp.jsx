@@ -4,24 +4,49 @@ import './LeadGenerationPopUp.scss'
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [isEmailValid, setIsEmailValid] = useState(true)
-    const [message, setMessage] = useState('');
-    const [phone, setPhone] = useState('');
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [phone, setPhone] = useState();
     const [isSpinner, setIsSpinner] = useState(false)
+
+    const [errors, setErrors] = useState({});
+
+    const handleNameChange = (e) => {
+        setName(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, name: undefined }));
+    }
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value)
-        if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(e.target.value) === false) {
-          return setIsEmailValid(false)
-        } else {
-          return setIsEmailValid(true)
-        }
+        setErrors((prevErrors) => ({ ...prevErrors, email: undefined }));
+    }
+
+    const handlePhoneChange = (e) => {
+        setPhone(e.target.value)
+        setErrors((prevErrors) => ({ ...prevErrors, phone: undefined }));
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
+
+        // Form validation
+        const errors = {};
+        if (!name) {
+            errors.name = 'Please enter your name.';
+        }
+        if (!email || /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(email) === false) {
+            errors.email = 'Please enter your valid email';
+        }
+        if (!phone) {
+            errors.phone = 'Please enter your phone';
+        }
+
+        if (Object.keys(errors).length > 0) {
+            setErrors(errors);
+        } else {
+            // lOGIC TO SEND EMAIL
+            console.log('here')
+        }
     }
 
     return (
@@ -41,32 +66,29 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                     type='text'
                                     value={name}
                                     maxLength={100}
-                                    onChange={(e) => setName(e.target.value)}
-                                    required
+                                    onChange={handleNameChange}
                                     placeholder='Name'
+                                    className={errors.name ? 'popup-red-border' : ''}
                                     />
                                     <input
                                     type='text'
                                     value={email}
                                     onChange={handleEmailChange}
-                                    required
                                     placeholder='Email'
+                                    className={errors.email ? 'popup-red-border' : ''}
                                     />
-                                    {!isEmailValid && (<div className='email-error'>Please enter a valid email</div>) }
                                     <input
                                     type='tel'
                                     value={phone}
                                     maxLength={30}
-                                    onChange={(e) => setPhone(e.target.value)}
+                                    onChange={handlePhoneChange}
                                     placeholder='Phone'
+                                    className={errors.phone ? 'popup-red-border' : ''}
                                     />
                                     <input
                                     type='text'
-                                    value={message}
+                                    value={selectedOption.toLowerCase()}
                                     maxLength={100}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    required
-                                    placeholder={selectedOption.toLowerCase()}
                                     disabled={true}
                                     />
                                     <button type='submit'>GET YOURS NOW</button>

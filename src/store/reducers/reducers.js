@@ -11,7 +11,6 @@ export function changeCart(state = [], action) {
             return [...state, payload];
 
         case REMOVE_PRODUCT_FROM_CART:
-            console.log(state.products)
             const itemIdToRemove = payload;
             return state.filter((item) => item.id !== itemIdToRemove)
         default:
