@@ -1,9 +1,16 @@
 import React from 'react'
 import './LeadGenerationPopUp.scss'
 
-const LeadGenerationPopUp = () => {
+const LeadGenerationPopUp = ({ onClose }) => {
   return (
-    <div className='lead-popup-container'>LeadGenerationPopUp</div>
+    <div className='lead-popup-container'>
+        <form>
+
+        </form>
+        <div>
+            <button onClick={onClose}>Close</button>
+        </div>
+    </div>
   )
 }
 

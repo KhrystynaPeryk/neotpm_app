@@ -22,9 +22,13 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  }
+
   return (
     <div className={showPopup && 'overlay-popup'}>
-      {showPopup && <LeadGenerationPopUp />}
+      {showPopup && <LeadGenerationPopUp onClose={handleClosePopup} />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/property-management' element={<PropertyManagement />} />
