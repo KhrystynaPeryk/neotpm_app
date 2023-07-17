@@ -27,7 +27,7 @@ function App() {
   }
 
   return (
-    <div className={showPopup && 'overlay-popup'}>
+    <div className={showPopup ? 'overlay-popup' : ''}>
       {showPopup && <LeadGenerationPopUp onClose={handleClosePopup} />}
       <Routes>
         <Route path="/" element={<Home />} />

@@ -7,16 +7,23 @@
     z-index: 100;
     color: #CBC82D;
     background-color: #318697;
+    font-family: 'Comfortaa', cursive;
 
     display: flex;
     justify-content: center;
     width: 40em;
     height: 27em;
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 660px) {
         width: 20em;
         height: 20em;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
+    }
+
+    @media screen and (max-height: 440px) {
+        position: absolute;
+        overflow: auto;
+        transition: all 0.3s ease;
     }
 
     .select-options-section {
@@ -33,26 +40,35 @@
             background-color: #CBC82D;
             position: absolute;
             top: 6.5em;
-            height: 315px;
+            height: 19.8em;
+            width: 30em;
+
+            @media screen and (max-width: 660px) {
+                position: static;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                transition: all 0.3s ease;
+            }
+
             .select-options {
-                height: 300px;
+                height: 18.7em;
                 background-color: white;
                 padding-bottom: 1em;
                 padding-left: 1em;
     
-                -webkit-clip-path: polygon(0% 5%, 100% 0%, 80% 90%, 0% 100%);
-                clip-path: polygon(0% 7%, 100% 0%, 80% 90%, 0% 99%);
+                -webkit-clip-path: polygon(0% 8%, 100% 0%, 80% 90%, 0% 99%);
+                clip-path: polygon(0% 8%, 100% 0%, 80% 90%, 0% 99%);
     
                 display: flex;
-    
-                @media screen and (max-width: 780px) {
-                    position: static;
-                    transition: all 0.3 ease;
-                }
-                
-                @media screen and (min-width: 780px) {
-                    width: 30em;
-                    transition: all 0.3 ease;
+
+                @media screen and (max-width: 660px) {
+                    justify-content: center;
+                    padding-left: 0;
+                    height: 100%;
+                    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                    transition: all 0.3s ease;
                 }
     
                 .select-options-items {
@@ -60,6 +76,7 @@
                     flex-direction: column;
                     h4 {
                         color: black;
+                        padding-top: 1em;
                     }
         
                     button {
@@ -68,8 +85,13 @@
                         margin: 0.5em;
                         padding: 0.5em;
                         background-color: white;
-                        border: 1px solid #CBC82D;
-                        color: #CBC82D;
+                        border: 1px solid #DBAD4A;
+                        color: #DBAD4A;
+                        font-family: 'Montserrat', sans-serif;
+
+                        &:hover {
+                            box-shadow: 0 0 5px 1px #ff9900;
+                        }
                     }
                 }
             }
@@ -87,10 +109,11 @@
         -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 
-        @media screen and (max-width: 780px) {
+        @media screen and (max-width: 660px) {
             display: none;
-            transition: all 0.3 ease;
+            transition: all 0.3s ease;
         }
+
     }
 
     .close-btn {
@@ -100,5 +123,9 @@
         font-weight: 100;
         font-family: inherent;
         color: black;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
