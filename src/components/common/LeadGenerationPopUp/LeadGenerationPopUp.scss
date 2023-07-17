@@ -68,6 +68,10 @@
                     height: 100%;
                     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
                     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                    background-image: url('../../../assets/images/popup-img.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 70% 50%;
                     transition: all 0.3s ease;
                 }
     
@@ -107,11 +111,20 @@
                             border: 1px solid #238DC1;
                             font-family: inherit;
                             width: 220px;
+
+                            &:disabled {
+                                background-color: rgb(224, 224, 224);
+                            }
                         }
 
                         button {
                             background-color: #DBAD4A;
                             color: white;
+                        }
+
+                        .email-error {
+                            font-size: small;
+                            color: #E4A9A8;
                         }
                     }
                 }

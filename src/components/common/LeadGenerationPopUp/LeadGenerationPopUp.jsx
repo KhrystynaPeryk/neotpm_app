@@ -56,6 +56,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                     <input
                                     type='tel'
                                     value={phone}
+                                    maxLength={30}
                                     onChange={(e) => setPhone(e.target.value)}
                                     placeholder='Phone'
                                     />
@@ -64,6 +65,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                     value={message}
                                     maxLength={100}
                                     onChange={(e) => setMessage(e.target.value)}
+                                    required
                                     placeholder={selectedOption.toLowerCase()}
                                     disabled={true}
                                     />
