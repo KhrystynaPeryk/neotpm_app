@@ -1,10 +1,104 @@
+@import '../../../index.scss';
 .lead-popup-container {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    color: plum;
-    border: 1px solid black;
-    background-color: white;
+    color: #CBC82D;
+    background-color: #318697;
+
+    display: flex;
+    justify-content: center;
+    width: 40em;
+    height: 27em;
+
+    @media screen and (max-width: 780px) {
+        width: 20em;
+        height: 20em;
+        transition: all 0.3 ease;
+    }
+
+    .select-options-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            padding-left: 1em;
+        }
+
+        .select-options-wrapper {
+            background-color: #CBC82D;
+            position: absolute;
+            top: 6.5em;
+            height: 315px;
+            .select-options {
+                height: 300px;
+                background-color: white;
+                padding-bottom: 1em;
+                padding-left: 1em;
+    
+                -webkit-clip-path: polygon(0% 5%, 100% 0%, 80% 90%, 0% 100%);
+                clip-path: polygon(0% 7%, 100% 0%, 80% 90%, 0% 99%);
+    
+                display: flex;
+    
+                @media screen and (max-width: 780px) {
+                    position: static;
+                    transition: all 0.3 ease;
+                }
+                
+                @media screen and (min-width: 780px) {
+                    width: 30em;
+                    transition: all 0.3 ease;
+                }
+    
+                .select-options-items {
+                    display: flex;
+                    flex-direction: column;
+                    h4 {
+                        color: black;
+                    }
+        
+                    button {
+                        @include reset-button-style;
+                        border-radius: 5px;
+                        margin: 0.5em;
+                        padding: 0.5em;
+                        background-color: white;
+                        border: 1px solid #CBC82D;
+                        color: #CBC82D;
+                    }
+                }
+            }
+        }
+    }
+
+    .popup-img-section {
+        flex: 1.5;
+        height: 100%;
+        width: 100%;
+        background-image: url('../../../assets/images/popup-img.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 70% 50%;
+        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+
+        @media screen and (max-width: 780px) {
+            display: none;
+            transition: all 0.3 ease;
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 0.3em;
+        font-size: 30px;
+        font-weight: 100;
+        font-family: inherent;
+        color: black;
+    }
 }
