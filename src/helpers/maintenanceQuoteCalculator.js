@@ -252,6 +252,8 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.gold.r_2;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_2;
+                        default:
+                            throw new Error('Invalid villa package: ' + villaPackages);
                     }
                 } else if (roomsNumber === '3BR') {
                     switch (villaPackages) {
@@ -261,6 +263,8 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.gold.r_3;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_3;
+                            default:
+                                throw new Error('Invalid villa package: ' + villaPackages);
                     }
                 } else if (roomsNumber === '4BR') {
                     switch (villaPackages) {
@@ -270,6 +274,8 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.gold.r_4;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_4;
+                        default:
+                            throw new Error('Invalid villa package: ' + villaPackages);
                     }
                 } else if (roomsNumber === '5BR') {
                     switch (villaPackages) {
@@ -279,6 +285,8 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.gold.r_5;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_5;
+                        default:
+                            throw new Error('Invalid villa package: ' + villaPackages);
                     }
                 } else if (roomsNumber === '6BR') {
                     switch (villaPackages) {
@@ -288,6 +296,8 @@ export const maintenanceQuoteCalculator = (
                             return villaSaadiyatPackagePrices.gold.r_6;
                         case 'platinum':
                             return villaSaadiyatPackagePrices.platinum.r_6;
+                        default:
+                            throw new Error('Invalid villa package: ' + villaPackages);
                     }
                 }
             } else if (propertyLocation === 'OutOfAbuDhabi') {
