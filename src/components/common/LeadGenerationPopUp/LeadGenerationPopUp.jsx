@@ -6,9 +6,9 @@ import Spinner from '../Spinner/Spinner';
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
 
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [phone, setPhone] = useState();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [isSpinner, setIsSpinner] = useState(false)
 
     const [errors, setErrors] = useState({});
@@ -51,15 +51,15 @@ const LeadGenerationPopUp = ({ onClose }) => {
             try {
                 await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
                   content: `Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
-                  email: 'joshua.jamelo@transparentpm.ae',
+                  email: 'khrystyna.peryk@transparentpm.ae',
                   subject: 'FREE Property Management Guide Request'
                 });
                 setIsSpinner(false)
-              } catch (error) {
+            } catch (error) {
                 console.error('ZohoApi function error - cannot send email', error);
-                // setIsSpinner(false)
+                setIsSpinner(false)
                 return;
-              }
+            }
         }
     }
 
