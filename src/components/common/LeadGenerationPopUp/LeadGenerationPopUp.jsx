@@ -72,7 +72,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
             try {
                 await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
                   content: `A Free Property Management Guide Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
-                  email: 'kristik91@gmail.com',
+                  email: 'joshua.jamelo@transparentpm.ae',
                   subject: 'FREE Property Management Guide Request'
                 });
             } catch (error) {
