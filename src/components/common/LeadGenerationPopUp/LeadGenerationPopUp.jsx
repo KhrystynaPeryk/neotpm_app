@@ -67,15 +67,19 @@ const LeadGenerationPopUp = ({ onClose }) => {
         <div className='lead-popup-container'>
             <div className='select-options-section'>
                 {selectedOption.length > 0 ? (
-                    <h3>FREE Property Management Guide</h3>
+                    <div className='popup-header-2'>
+                        <small>We work on the best and updated property solutions like none other</small>
+                        <h3><span className='cursive'>Get your</span><br /> <span className='popup-word popup-word-1'>FREE</span> Property Management <span className='popup-word popup-word-2'>GUIDE</span> now</h3>
+                    </div>    
                 ) : (
-                    <h3>Click the button that most describes you:</h3>
+                    <h3 className='popup-header-1'>Click the button that <span className='cursive'>most describes</span> you</h3>
                 )}
                 <div className='select-options-wrapper'>
                     <div className='select-options'>
                         <div className='select-options-items'>
                             {selectedOption.length > 0 ? (
                                 <form onSubmit={handleSubmit} className='popup-form-inputs'>
+                                    <div className='popup-selected-option'>{selectedOption}</div>
                                     <input
                                     type='text'
                                     value={name}
@@ -98,12 +102,6 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                     onChange={handlePhoneChange}
                                     placeholder='Phone'
                                     className={errors.phone ? 'popup-red-border' : ''}
-                                    />
-                                    <input
-                                    type='text'
-                                    value={selectedOption.toLowerCase()}
-                                    maxLength={100}
-                                    disabled={true}
                                     />
                                     <button type='submit'>GET YOURS NOW</button>
                                 </form>
