@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import './LeadGenerationPopUp.scss'
+import axios from 'axios';
+import Spinner from '../Spinner/Spinner';
 
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
@@ -26,7 +28,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
         setErrors((prevErrors) => ({ ...prevErrors, phone: undefined }));
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         // Form validation
@@ -45,7 +47,19 @@ const LeadGenerationPopUp = ({ onClose }) => {
             setErrors(errors);
         } else {
             // lOGIC TO SEND EMAIL
-            console.log('here')
+            setIsSpinner(true)
+            try {
+                await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
+                  content: `Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
+                  email: 'joshua.jamelo@transparentpm.ae',
+                  subject: 'FREE Property Management Guide Request'
+                });
+                setIsSpinner(false)
+              } catch (error) {
+                console.error('ZohoApi function error - cannot send email', error);
+                // setIsSpinner(false)
+                return;
+              }
         }
     }
 
@@ -110,6 +124,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
             <div className='close-btn'>
                 <div onClick={onClose}>&times;</div>
             </div>
+            {isSpinner ? ( <Spinner /> ) : null}
         </div>
     )
 }
