@@ -13,6 +13,27 @@ const LeadGenerationPopUp = ({ onClose }) => {
 
     const [errors, setErrors] = useState({});
 
+    const activateSpinner = () => {
+        let timer;
+      
+        const startSpinner = () => {
+          setIsSpinner(true);
+          timer = setTimeout(() => {
+            setIsSpinner(false);
+            onClose();
+          }, 6000);
+        };
+      
+        const stopSpinner = () => {
+          clearTimeout(timer);
+          setIsSpinner(false);
+        };
+      
+        startSpinner();
+      
+        return stopSpinner;
+      };
+
     const handleNameChange = (e) => {
         setName(e.target.value)
         setErrors((prevErrors) => ({ ...prevErrors, name: undefined }));
@@ -47,17 +68,14 @@ const LeadGenerationPopUp = ({ onClose }) => {
             setErrors(errors);
         } else {
             // lOGIC TO SEND EMAIL
-            setIsSpinner(true)
+            activateSpinner()
             try {
                 await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-                  content: `Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
-                  email: 'khrystyna.peryk@transparentpm.ae',
+                  content: `A Free Property Management Guide Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
+                  email: 'kristik91@gmail.com',
                   subject: 'FREE Property Management Guide Request'
                 });
-                setIsSpinner(false)
             } catch (error) {
-                console.error('ZohoApi function error - cannot send email', error);
-                setIsSpinner(false)
                 return;
             }
         }
