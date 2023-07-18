@@ -16,13 +16,13 @@
 
     @media screen and (max-width: 660px) {
         width: 20em;
-        height: 20em;
+        height: 30em;
         transition: all 0.3s ease;
     }
 
-    @media screen and (max-height: 440px) {
-        position: absolute;
-        overflow: auto;
+    @media screen and (max-height: 550px) {
+        max-height: 90vh;
+        overflow-y: auto;
         transition: all 0.3s ease;
     }
 
@@ -196,7 +196,7 @@
 
     .popup-img-section {
         flex: 1.5;
-        height: 100%;
+        height: 544px;
         width: 100%;
         background-color: #318697;
         background-image: url('../../../assets/images/popup-img.jpg');
