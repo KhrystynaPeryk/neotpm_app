@@ -248,10 +248,6 @@
         justify-content: center;
         align-items: center;
 
-        &.compare {
-            margin-top: 1em;
-        }
-
         button {
             z-index: 1;
             @include reset-button-style;

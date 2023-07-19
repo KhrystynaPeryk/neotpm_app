@@ -6,6 +6,7 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer';
 import Spinner from '../common/Spinner/Spinner';
+import BrochureBanner from '../common/BrochureBanner/BrochureBanner';
 
 const DocumentsRequestForm = () => {
   const location = useLocation();
@@ -74,6 +75,7 @@ const DocumentsRequestForm = () => {
       <div className='property-before-table'>
         <NavBar />
         <Logo />
+        {location.state && location.state.service.type === 'Golden Visa' && (< BrochureBanner firestoreFileName='TPM Golden Visa Package.pdf' serviceName='Golden Visa Package' />)}
       </div>
       <form onSubmit={handleSubmit} className='document-form-container'>
         <div className='document-form-header'>Upload Form</div>

@@ -1,0 +1,25 @@
+@import '../../../index.scss';
+.brochure-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(203,200,45);
+    background: radial-gradient(circle, rgba(203,200,45,1) 0%, rgba(57,165,175,1) 100%);
+    padding: 0.4em 2em;
+    margin-top: 2em;
+    font-family:'Comfortaa', cursive;
+
+    .brochure-banner-btn {
+        @include reset-button-style;
+        margin: 0;
+        padding: 0.5em 1em;
+        background-color:rgba(57, 165, 175, 0.9);
+        color: white;
+        margin-left: 10px;
+
+        &:hover {
+            box-shadow: 0 0 10px 2px #ff9900;
+        }
+    }
+}    

@@ -8,7 +8,7 @@ import './PropertyMaintenance.scss'
 import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalculator'
 import { v4 as uuidv4 } from 'uuid';
 import { formatPriceInCart } from '../../helpers/formatPriceInCart';
-import { downloadFirebaseFile } from '../../firebaseStorage/downloadFirebaseFile';
+import BrochureBanner from '../common/BrochureBanner/BrochureBanner';
 
 const PropertyMaintenance = () => {
     const dispatch = useDispatch();
@@ -242,10 +242,6 @@ const PropertyMaintenance = () => {
         };
     }, []);
 
-    const handleDownload = () => {
-        downloadFirebaseFile('TPM Property Maintenance Brochure.pdf')
-    }
-
     return (
         <div className='property-container'>
             <div className='property-before-table'>
@@ -254,10 +250,7 @@ const PropertyMaintenance = () => {
                 <div className='property-header-wrapper'>
                     <p className='property-header'>Property Maintenance</p>
                 </div>
-                <div className='brochure-banner'>
-                    <p>Get our Property Maintenance Services brochure</p>
-                    <button className='brochure-banner-btn' type='button' onClick={handleDownload}>DOWNLOAD</button> 
-                </div>
+                <BrochureBanner firestoreFileName='TPM Property Maintenance Brochure.pdf' serviceName='Property Maintenance Services' />
             </div>
             <form className='property-features-wrapper' onSubmit={calculateQuote}>
                 <p className='property-features-wrapper-caption'>

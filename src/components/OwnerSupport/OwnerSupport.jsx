@@ -249,6 +249,7 @@ const OwnerSupport = () => {
             </div>
           </div>
           <div className='tiles-price'>
+            <p>AED 16,500.00</p>
             <div className='price-button-wrapper compare'>
               <button type='button' onClick={redirectToDocumentsFormGoldenVisa}>Send Your Details</button>
             </div>

@@ -2,9 +2,10 @@
 .document-form-container {
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
   margin-left: 3em;
   margin-right: 3em;
-  min-height: 46.7vh;
+  min-height: 45vh;
 
   .document-form-header {
     font-size: x-large;
