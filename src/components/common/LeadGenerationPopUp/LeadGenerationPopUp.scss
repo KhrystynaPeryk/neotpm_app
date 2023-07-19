@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    color: #CBC82D;
+    color: white;
     background-color: #318697;
     font-family: 'Comfortaa', cursive;
 
@@ -32,12 +32,6 @@
         flex-direction: column;
         justify-content: space-between;
 
-        .cursive {
-            font-family: 'Dancing Script', cursive;
-            text-transform: capitalize;
-            font-size: xx-large;
-        }
-
         .popup-header-1 {
             padding: 2em;
             text-align: center;
@@ -56,21 +50,6 @@
 
             h3 {
                 line-height: 1.4em;
-    
-                .popup-word {
-                    animation: color-animation-lead-popup 4s linear infinite;
-    
-                    &.popup-word-1 {
-                        --color-1: #DF8453;
-                        --color-2: #CBC82D;
-                        --color-3: #E4A9A8;
-                    }
-                    &.popup-word-2 {
-                        --color-1: #DBAD4A;
-                        --color-2: #ACCFCB;
-                        --color-3: #CBC82D;
-                    }
-                }
             }
         }
 
