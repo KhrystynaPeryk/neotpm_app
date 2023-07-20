@@ -107,10 +107,10 @@ const OwnerSupport = () => {
                     Without local representation, overseas owners who rent out property in the region face the expensive and time-consuming necessity of flying overseas to get things done in Abu Dhabi. We will help you with:
                   </p>
                   <ul>
-                    <li>issuing a Tawtheeq for your tenant</li>
-                    <li>collecting a title deed to settle a dispute</li>
-                    <li>a property handover</li>
-                    <li>buying and renting property in the UAE</li>
+                    <li>Issuing a Tawtheeq for your tenant</li>
+                    <li>Collecting a title deed to settle a dispute</li>
+                    <li>Property handover</li>
+                    <li>Buying and renting property in the UAE</li>
                   </ul>     
                 </div>
               </div>
@@ -245,14 +245,22 @@ const OwnerSupport = () => {
               <div className='flip-card-back golden-visa'>
                 <div className='flip-card-back-padding'>
                   <h1>Are you planning to apply for a UAE Golden Visa?</h1>
-                  <p className='flip-card-back-bottom'>Would you like to determine if you meet the eligibility criteria for this program?</p>
-                  <p className='flip-card-back-bottom'>Our team is ready to assist you in assessing your qualifications for the UAE Golden Visa and managing the application process, ensuring a smooth and convenient experience as you obtain your UAE Golden Visa.</p>
+                  <p className='flip-card-back-bottom'>Our team is ready to assist you in assessing your qualifications for the UAE Golden Visa and managing the application process, ensuring a smooth and convenient experience as you obtain your UAE Golden Visa. Our package includes:</p>
+                  <ul>
+                    <li>Evaluation certificate</li>
+                    <li>Application fees</li>
+                    <li>Medical screening</li>
+                    <li>Health insurance</li>
+                    <li>Visa and emirates ID processing</li>
+                    <li>Documentation</li>
+                    <li>Government liaison</li>
+                    <li>PRO services</li>
+                  </ul> 
                 </div>
               </div>
             </div>
           </div>
           <div className='tiles-price'>
-            <p>AED 16,500.00</p>
             <div className='price-button-wrapper compare'>
               <button type='button' onClick={redirectToDocumentsFormGoldenVisa}>Send Your Details</button>
               <button type='button' className='download-brochure' onClick={() => downloadFirebaseFile('TPM Golden Visa Package.pdf')}>DOWNLOAD brochure</button>
