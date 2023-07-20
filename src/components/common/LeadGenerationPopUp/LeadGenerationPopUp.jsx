@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './LeadGenerationPopUp.scss'
 import axios from 'axios';
 import Spinner from '../Spinner/Spinner';
+import FlyingEmail from '../../../assets/images/flying-email.png'
+import { downloadFirebaseFile } from '../../../firebaseStorage/downloadFirebaseFile';
 
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
@@ -12,6 +14,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
     const [isSpinner, setIsSpinner] = useState(false)
 
     const [errors, setErrors] = useState({});
+    const [isPopUpSubmitted, setIsPopUpSubmitted] = useState(false)
 
     const activateSpinner = () => {
         let timer;
@@ -20,7 +23,8 @@ const LeadGenerationPopUp = ({ onClose }) => {
           setIsSpinner(true);
           timer = setTimeout(() => {
             setIsSpinner(false);
-            onClose();
+            // onClose();
+            setIsPopUpSubmitted(true)
           }, 6000);
         };
       
@@ -69,11 +73,13 @@ const LeadGenerationPopUp = ({ onClose }) => {
         } else {
             // lOGIC TO SEND EMAIL
             activateSpinner()
+            //download a free guide
+            downloadFirebaseFile('FREE Property Management Guide.pdf')
             try {
                 await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-                  content: `A Free Property Management Guide Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
-                  email: 'joshua.jamelo@transparentpm.ae',
-                  subject: 'FREE Property Management Guide Request'
+                    content: `A Free Property Management Guide Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
+                    email: 'joshua.jamelo@transparentpm.ae',
+                    subject: 'FREE Property Management Guide Request'
                 });
             } catch (error) {
                 return;
@@ -83,7 +89,13 @@ const LeadGenerationPopUp = ({ onClose }) => {
 
     return (
         <div className='lead-popup-container'>
-            <div className='select-options-section'>
+            {isPopUpSubmitted ? (
+                <div className='lead-popup-submitted'>
+                    <img src={FlyingEmail} alt='email' className='lead-popup-submitted-img' />
+                    <h2>THANK YOU!</h2>
+                    <p>Cool stuff is on the way!</p>
+                </div>) : (
+                <div className='select-options-section'>
                 {selectedOption.length > 0 ? (
                     <div className='popup-header-2'>
                         <small>We work on the best and updated property solutions like none other</small>
@@ -136,6 +148,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                     </div>
                 </div>
             </div>
+            )}
             <div className='popup-img-section'></div>
             <div className='close-btn'>
                 <div onClick={onClose}>&times;</div>

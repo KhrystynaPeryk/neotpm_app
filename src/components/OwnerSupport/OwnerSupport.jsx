@@ -7,6 +7,7 @@ import Footer from '../common/Footer/Footer'
 import './OwnerSupport.scss'
 import { addProduct } from '../../store/actions/actions';
 import { v4 as uuidv4 } from 'uuid';
+import { downloadFirebaseFile } from '../../firebaseStorage/downloadFirebaseFile';
 
 const OwnerSupport = () => {
 
@@ -186,8 +187,10 @@ const OwnerSupport = () => {
         </div>
         <div className='tiles-row'>
           <div className='tiles-price'>
+            <p>AED 1,800.00</p>
             <div className='price-button-wrapper compare'>
               <button type='button' onClick={redirectToDocumentsFormHandover}>Send Your Details</button>
+              <button type='button' className='download-brochure' onClick={() => downloadFirebaseFile('TPM Property Handover Assistance.pdf')}>DOWNLOAD brochure</button>
             </div>
           </div>
           <div className='tiles-img' onClick={() => flipBack(3)}>
@@ -212,12 +215,12 @@ const OwnerSupport = () => {
                     We offer a complete suite of services to ensure a smooth, cost-effective transition in the shortest possible time:
                   </p>
                   <ul>
-                    <li>Hassle-free, stress-free handovers</li>
-                    <li>Smooth Property Transitions</li>
-                    <li>Get your property to market faster</li>
-                    <li>Cost-reductions/efficiencies</li>
-                    <li>Free up more time and money</li>
-                    <li>Ongoing management available</li>
+                    <li>Liaison with Developers</li>
+                    <li>UAE Pass & SmartHub setup</li>
+                    <li>Title Deed Issuance</li>
+                    <li>Utility Registration</li>
+                    <li>Snagging & De-snagging</li>
+                    <li>Key Handover</li>
                   </ul>
                 </div>
               </div>
@@ -252,6 +255,7 @@ const OwnerSupport = () => {
             <p>AED 16,500.00</p>
             <div className='price-button-wrapper compare'>
               <button type='button' onClick={redirectToDocumentsFormGoldenVisa}>Send Your Details</button>
+              <button type='button' className='download-brochure' onClick={() => downloadFirebaseFile('TPM Golden Visa Package.pdf')}>DOWNLOAD brochure</button>
             </div>
           </div>
         </div> 

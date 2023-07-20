@@ -26,6 +26,24 @@
         transition: all 0.3s ease;
     }
 
+    .lead-popup-submitted {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+
+        .lead-popup-submitted-img {
+            height: 10em;
+            width: 10em;
+            @media screen and (max-height: 350px) {
+                height: 5em;
+                width: 5em;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+
     .select-options-section {
         flex: 1;
         display: flex;
