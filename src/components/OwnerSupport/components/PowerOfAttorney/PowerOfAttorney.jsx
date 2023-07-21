@@ -45,9 +45,8 @@ const PowerOfAttorney = () => {
         }));
     }
 
-
-
     const redirectToDocumentsFormComprehensive = () => {
+        window.scrollTo(0, 0);
         navigate('/documents-form', {
             state: {
                 service: {

@@ -20,14 +20,17 @@ const Home = () => {
     };
 
     const redirectToPropertyManagement = () => {
+        window.scrollTo(0, 0);
       navigate('/property-management');
     };
 
     const redirectToPropertyMaintenance = () => {
+        window.scrollTo(0, 0);
         navigate('/property-maintenance');
       };
 
     const redirectToOwnerSupport = () => {
+        window.scrollTo(0, 0);
         navigate('/owner-support')
     }
 

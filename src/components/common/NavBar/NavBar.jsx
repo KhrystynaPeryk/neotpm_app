@@ -57,22 +57,27 @@ const NavBar = () => {
     }
 
     const redirectToPropertyManagement = () => {
+        window.scrollTo(0, 0);
         navigate('/property-management');
     };
 
     const redirectToPropertyMaintenance = () => {
+        window.scrollTo(0, 0);
         navigate('/property-maintenance');
       };
 
     const redirectToOwnerSupport = () => {
+        window.scrollTo(0, 0);
         navigate('/owner-support')
     }
 
     const redirectToCart = () => {
+        window.scrollTo(0, 0);
         navigate('/cart')
     }
 
     const redirectToHome = () => {
+        window.scrollTo(0, 0);
         navigate('/')
     }
 

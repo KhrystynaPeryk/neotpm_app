@@ -53,6 +53,7 @@ const OwnerSupport = () => {
   }
 
   const redirectToDocumentsFormGoldenVisa = () => {
+    window.scrollTo(0, 0);
     navigate('/documents-form', {
         state: {
             service: {
@@ -64,6 +65,7 @@ const OwnerSupport = () => {
   }
 
   const redirectToDocumentsFormHandover = () => {
+    window.scrollTo(0, 0);
     navigate('/documents-form', {
         state: {
             service: {

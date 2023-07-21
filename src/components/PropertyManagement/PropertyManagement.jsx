@@ -24,6 +24,7 @@ const PropertyManagement = () => {
     const [isPlatinumClicked, setIsPlatinumClicked] = useState(false)
 
     const redirectToDocumentsFormBronze = () => {
+        window.scrollTo(0, 0);
         navigate('/documents-form', {
             state: {
                 service: {
@@ -35,6 +36,7 @@ const PropertyManagement = () => {
     }
 
     const redirectToDocumentsFormGold = () => {
+        window.scrollTo(0, 0);
         navigate('/documents-form', {
             state: {
                 service: {
@@ -46,6 +48,7 @@ const PropertyManagement = () => {
     }
 
     const redirectToDocumentsFormPlatinum = () => {
+        window.scrollTo(0, 0);
         navigate('/documents-form', {
             state: {
                 service: {
