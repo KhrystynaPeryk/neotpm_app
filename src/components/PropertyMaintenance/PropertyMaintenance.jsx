@@ -33,10 +33,10 @@ const PropertyMaintenance = () => {
         setPropertyType(e.target.value)
 
         //handles a visibility of villapackages and maid/driver room on change of propertyType
-        if (propertyLocation === 'SaadiyatYas' && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
+        if ((propertyLocation === 'HiddAlSaadiyat' || propertyLocation === 'SaadiyatBeachVillas') && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
             setIsVillaPackagesVisible(true)
             setMaidDriverVisible(false)
-        } else if (propertyLocation !== 'SaadiyatYas' && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
+        } else if ((propertyLocation !== 'SaadiyatBeachVillas' || propertyLocation !== 'HiddAlSaadiyat') && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
             setIsVillaPackagesVisible(false)
             setMaidDriverVisible(false)
         } else {
@@ -62,10 +62,10 @@ const PropertyMaintenance = () => {
         setPropertyLocation(e.target.value)
 
         //handles a visibility of villapackages and maid/driver room on change of propertyLocation
-        if (e.target.value === 'SaadiyatYas' && (propertyType === 'villa' || propertyType === 'townhouse') ) {
+        if ((e.target.value === 'SaadiyatBeachVillas' || e.target.value === 'HiddAlSaadiyat') && (propertyType === 'villa' || propertyType === 'townhouse') ) {
             setIsVillaPackagesVisible(true)
             setMaidDriverVisible(false)
-        } else if (e.target.value !== 'SaadiyatYas' && (propertyType === 'villa' || propertyType === 'townhouse') ) {
+        } else if ((e.target.value !== 'SaadiyatBeachVillas' || e.target.value  === 'HiddAlSaadiyat') && (propertyType === 'villa' || propertyType === 'townhouse') ) {
             setIsVillaPackagesVisible(false)
             setMaidDriverVisible(false)
         } else {
@@ -118,18 +118,15 @@ const PropertyMaintenance = () => {
             errors.propertyLocation = 'Please select a property location.';
         }
         if (!maidRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
-            console.log('maidRoom should not be selected - ', maidRoom)
             errors.maidRoom = 'Please select an option above';
         }
         if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
             errors.driverRoom = 'Please select an option above';
         }
         if (!villaPackages && propertyType === 'villa' && propertyLocation === 'SaadiyatYas') {
-            console.log('villaPackages should not be selected - ', villaPackages)
             errors.villaPackages = 'Please select a package';
         }
         if (!villaPackages && propertyType === 'townhouse' && propertyLocation === 'SaadiyatYas' ) {
-            console.log('villaPackages should not be selected - ', villaPackages)
             errors.villaPackages = 'Please select a package';
         }
 
@@ -234,7 +231,6 @@ const PropertyMaintenance = () => {
             observer.observe(myList.current);
         }
     
-    
         return () => {
             if (myList.current) {
                 observer.unobserve(myList.current);
@@ -273,21 +269,35 @@ const PropertyMaintenance = () => {
                     <div className='select-container-item'>
                         <select className={propertyType === 'studio' ? 'select-container-element disabled' : 'select-container-element'} value={roomsNumber} name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
                             <option value="" defaultValue=''>-- Number of rooms --</option>
-                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="1BR">1 room</option>}
-                            <option value="2BR">2 rooms</option>
-                            <option value="3BR">3 rooms</option>
-                            <option value="4BR">4 rooms</option>
-                            {propertyType !== 'apartment' && <option value="5BR">5 rooms</option>}
-                            {propertyType !== 'apartment' && <option value="6BR">6 rooms</option>}
+                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="br1">1 room</option>}
+                            <option value="br2">2 rooms</option>
+                            <option value="br3">3 rooms</option>
+                            <option value="br4">4 rooms</option>
+                            {propertyType !== 'apartment' && <option value="br5">5 rooms</option>}
+                            {propertyType !== 'apartment' && <option value="br6">6 rooms</option>}
+                            {propertyType !== 'apartment' && <option value='br7'>7 rooms</option>}
                         </select>
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
                     <div className='select-container-item'>
                         <select className='select-container-element' value={propertyLocation} name="location" id="location" onChange={handlePropertyLocation}>
                             <option value="" defaultValue=''>-- Property Location --</option>
-                            <option value="AbuDhabiCityReem">Abu Dhabi City/Al Reem</option>
-                            <option value="SaadiyatYas">Saadiyat/Yas Island</option>
-                            <option value="OutOfAbuDhabi">Out of Abu Dhabi</option>
+                            {propertyType === 'apartment' || propertyType === 'studio' ?
+                                <>
+                                    <option value="AbuDhabiCityReem">Abu Dhabi City/Al Reem</option>
+                                    <option value="SaadiyatYas">Saadiyat/Yas Island</option>
+                                    <option value="OutOfAbuDhabi">Out of Abu Dhabi</option>
+                                </> : null
+                            }
+                            {propertyType === 'villa' || propertyType === 'townhouse' ?
+                                <>
+                                    <option value="AlReefVillas">Al Reef Villas</option>
+                                    <option value="BloomGardens">Bloom Gardens</option>
+                                    <option value="AlMuneera">Al Muneera</option>
+                                    <option value="SaadiyatBeachVillas">Saadiyat Beach Villas</option>
+                                    <option value="HiddAlSaadiyat">Hidd Al Saadiyat</option>
+                                </> : null
+                            }
                         </select>
                         {errors.propertyLocation && <div className="error-message">{errors.propertyLocation}</div>}
                     </div>
