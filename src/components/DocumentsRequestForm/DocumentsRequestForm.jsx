@@ -46,19 +46,25 @@ const DocumentsRequestForm = () => {
       window.open(response.data.newFileLink, '_blank')
       setIsSpinner(false)
 
-      try {
-        await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-          content: 'Hi, here is the link to your documents: ' + response.data.newFileLink, // Pass the name and email variable in the request payload
-          email: email,
-          subject: 'Transparent Property Management & Maintenance Notification'
-        });
-      } catch (error) {
-        //console.error('ZohoApi function error - cannot send email', error);
-        return;
-      }
-  
+      await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
+        content: `
+          <div style="margin-bottom: 20px;">Hi ${name},<div>
+          <div style="margin-bottom: 20px; margin-top: 20px;">
+            <div>Thank you for contacting us.</div>
+            <div>Feel free to upload your documents following the link below:</div>
+            <div>${response.data.newFileLink}</div>
+            <div>One of our representatives will contact you upon reviewing your documents.</div>
+          </div>
+          <div>
+              <div>Best regards,<div>
+              <div>Team of transparentpm.ae<div>
+          <div>
+        `,
+        email: email,
+        subject: 'Transparent Property Management & Maintenance Notification',
+        bcc: 'joshua.jamelo@transparentpm.ae'
+      }).catch((error) => console.log(error))
     } catch (error) {
-      //console.error('ZohoApi function error - cannot create file/link', error);
       return;
     }
   };

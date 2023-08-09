@@ -75,15 +75,25 @@ const LeadGenerationPopUp = ({ onClose }) => {
             activateSpinner()
             //download a free guide
             downloadFirebaseFile('FREE Property Management Guide.pdf')
-            try {
-                await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-                    content: `A Free Property Management Guide Request from ${name}, ${email}, ${phone}. Client selected: a '${selectedOption}' option`,
-                    email: 'joshua.jamelo@transparentpm.ae',
-                    subject: 'FREE Property Management Guide Request'
-                });
-            } catch (error) {
-                return;
-            }
+
+            await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
+                content: `
+                    <div style="margin-bottom: 20px;">Hi,<div>
+                    <div style="margin-bottom: 20px; margin-top: 20px;">
+                        <div>A Free Property Management Guide Request from ${name}</div>
+                        <div>Email: ${email}</div>
+                        <div>Client selected: a <b>'${selectedOption}'</b> option</div>
+                        <div>A free guide has been sent to the client</div>
+                    </div>
+                    <div>
+                        <div>Best regards,<div>
+                        <div>transparentpm.ae<div>
+                    <div>
+                `,
+                email: 'joshua.jamelo@transparentpm.ae',
+                subject: 'FREE Property Management Guide Request',
+                bcc: 'khrystyna.peryk@transparentpm.ae'
+            }).catch((error) => console.log(error))
         }
     }
 
