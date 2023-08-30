@@ -274,8 +274,8 @@ const PropertyMaintenance = () => {
                             <option value="br3">3 rooms</option>
                             <option value="br4">4 rooms</option>
                             {propertyType !== 'apartment' && <option value="br5">5 rooms</option>}
-                            {propertyType !== 'apartment' && <option value="br6">6 rooms</option>}
-                            {propertyType !== 'apartment' && <option value='br7'>7 rooms</option>}
+                            {propertyType !== 'apartment' && propertyLocation !== 'HydraVillage' && <option value="br6">6 rooms</option>}
+                            {propertyType !== 'apartment' && propertyLocation !== 'HydraVillage' && <option value='br7'>7 rooms</option>}
                         </select>
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
@@ -296,6 +296,7 @@ const PropertyMaintenance = () => {
                                     <option value="AlMuneera">Al Muneera</option>
                                     <option value="SaadiyatBeachVillas">Saadiyat Beach Villas</option>
                                     <option value="HiddAlSaadiyat">Hidd Al Saadiyat</option>
+                                    <option value="HydraVillage">Hydra Village</option>
                                 </> : null
                             }
                         </select>
