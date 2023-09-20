@@ -7,6 +7,7 @@ import { downloadFirebaseFile } from '../../../firebaseStorage/downloadFirebaseF
 
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
+    const [selectedRole, setSelectedRole] = useState('')
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -82,7 +83,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                     <div style="margin-bottom: 20px; margin-top: 20px;">
                         <div>A Free Property Management Guide Request from ${name}</div>
                         <div>Email: ${email}</div>
-                        <div>Client selected: a <b>'${selectedOption}'</b> option</div>
+                        <div>Client is a <b>'${selectedRole}'</b> and selected a <b>'${selectedOption}'</b> option</div>
                         <div>A free guide has been sent to the client</div>
                     </div>
                     <div>
@@ -90,7 +91,8 @@ const LeadGenerationPopUp = ({ onClose }) => {
                         <div>transparentpm.ae<div>
                     <div>
                 `,
-                email: 'joshua.jamelo@transparentpm.ae',
+                // email: 'joshua.jamelo@transparentpm.ae',
+                email: 'khrystyna.peryk@transparentpm.ae',
                 subject: 'FREE Property Management Guide Request',
                 bcc: 'khrystyna.peryk@transparentpm.ae'
             }).catch((error) => console.log(error))
@@ -148,10 +150,18 @@ const LeadGenerationPopUp = ({ onClose }) => {
                             ) : (
                                 <>
                                     <h4>Select Options:</h4>
-                                    <button type='button' onClick={() => setSelectedOption('LOOKING TO BUY')}>LOOKING TO BUY</button>
-                                    <button type='button' onClick={() => setSelectedOption('SELL YOUR HOME')}>SELL YOUR HOME</button>
-                                    <button type='button' onClick={() => setSelectedOption('RENT A PLACE')}>RENT A PLACE</button>
-                                    <button type='button' onClick={() => setSelectedOption('PROPERTY MANAGEMENT')}>PROPERTY MANAGEMENT</button>
+                                    {selectedRole.length > 0 ? (
+                                        <>
+                                            <button type='button' onClick={() => setSelectedOption('RENT A PLACE')}>RENT A PLACE</button>
+                                            <button type='button' onClick={() => setSelectedOption('PROPERTY MANAGEMENT')}>PROPERTY MANAGEMENT</button>
+                                            <button type='button' onClick={() => setSelectedOption('PROPERTY MAINTENANCE')}>PROPERTY MAINTENANCE</button>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <button type='button' className='selectedRoleWidth' onClick={() => setSelectedRole('Tenant')}>Tenant</button>
+                                            <button type='button' className='selectedRoleWidth' onClick={() => setSelectedRole('Landlord')}>Landlord</button>
+                                        </>
+                                    )}
                                 </>
                             )}
                         </div>
