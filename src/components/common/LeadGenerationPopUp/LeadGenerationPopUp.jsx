@@ -91,8 +91,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                         <div>transparentpm.ae<div>
                     <div>
                 `,
-                // email: 'joshua.jamelo@transparentpm.ae',
-                email: 'khrystyna.peryk@transparentpm.ae',
+                email: 'joshua.jamelo@transparentpm.ae',
                 subject: 'FREE Property Management Guide Request',
                 bcc: 'khrystyna.peryk@transparentpm.ae'
             }).catch((error) => console.log(error))
