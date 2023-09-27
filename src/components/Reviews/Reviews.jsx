@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
+import './Reviews.scss'
 import NavBar from '../common/NavBar/NavBar';
 import Logo from '../common/Logo/Logo';
 import Footer from '../common/Footer/Footer';
@@ -31,22 +32,22 @@ const Reviews = () => {
                 <p className='property-header'>Reviews</p>
             </div>
         </div>
-        <div className='review-wrapper'>
+        <div className='review-container'>
             {reviews.map((review, index) => {
                 const {
-                    name,
-                    photoUrl,
+                    author_name,
+                    profile_photo_url,
                     rating,
-                    relativeTimeAgo,
+                    relative_time_description,
                     text
                 } = review
                 return (
-                    <div key={index}>
+                    <div key={index} className='review-wrapper'>
                         <ReviewItem 
-                            name = {name}
-                            photoUrl = {photoUrl}
+                            name = {author_name}
+                            photoUrl = {profile_photo_url}
                             rating = {rating}
-                            relativeTimeAgo = {relativeTimeAgo}
+                            relativeTimeAgo = {relative_time_description}
                             text = {text}
                         />
                     </div>

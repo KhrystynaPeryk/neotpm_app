@@ -1,0 +1,15 @@
+.reviewItem-wrapper {
+    .header {
+        display: flex;
+        .header-img {
+            width: 5em;
+            height: 5em;
+        }
+        .header-meta {
+            font-weight: bold;
+            .header-stars {
+                color: #f9c02c;
+            }
+        }
+    }
+}
