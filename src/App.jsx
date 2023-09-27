@@ -10,6 +10,7 @@ import Cart from './components/Cart/Cart';
 import { Route, Routes } from 'react-router-dom';
 import LeadGenerationPopUp from './components/common/LeadGenerationPopUp/LeadGenerationPopUp';
 import Reviews from './components/Reviews/Reviews';
+import Articles from './components/Articles/Articles';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/owner-support/power-of-attorney' element={<PowerOfAttorney />} />
         <Route path='/owner-support' element={<OwnerSupport />} />
         <Route path='/reviews' element={<Reviews />} />
+        <Route path='/articles' element={<Articles />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/documents-form' element={<DocumentsRequestForm />} />
       </Routes>
