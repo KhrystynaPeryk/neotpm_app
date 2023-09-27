@@ -76,6 +76,11 @@ const NavBar = () => {
         navigate('/cart')
     }
 
+    const redirectToReviews = () => {
+        window.scrollTo(0, 0);
+        navigate('/reviews')
+    }
+
     const redirectToHome = () => {
         window.scrollTo(0, 0);
         navigate('/')
@@ -99,6 +104,7 @@ const NavBar = () => {
                     <div className='navbar-section' onClick={redirectToPropertyManagement}>Property Management</div>
                     <div className='navbar-section navbar-maintenance' onClick={redirectToPropertyMaintenance}>Property Maintenance</div>
                     <div className='navbar-section' onClick={redirectToOwnerSupport}>Owner Support</div>
+                    <div className='navbar-section' onClick={redirectToReviews}>Reviews</div>
                 </div>
                     <div className='navbar-cart' onClick={redirectToCart}>
                         {stateProducts.length !== 0 && 
@@ -117,6 +123,7 @@ const NavBar = () => {
                     <div className='navbar-section-expanded' onClick={redirectToPropertyManagement}>➔ Property Management</div>
                     <div className='navbar-section-expanded' onClick={redirectToPropertyMaintenance}>➔ Property Maintenance</div>
                     <div className='navbar-section-expanded' onClick={redirectToOwnerSupport}>➔ Owner Support</div>
+                    <div className='navbar-section-expanded' onClick={redirectToReviews}>➔ Reviews</div>
                 </div>
             }
         </div>
