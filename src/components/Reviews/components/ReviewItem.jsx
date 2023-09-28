@@ -27,6 +27,7 @@ const ReviewItem = ({
         }
     }
 
+    // on page load it converts urls into base64
     useEffect(() => {
         const urlToBase64 = async () => {
             try {

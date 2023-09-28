@@ -5,22 +5,26 @@ import NavBar from '../common/NavBar/NavBar';
 import Logo from '../common/Logo/Logo';
 import Footer from '../common/Footer/Footer';
 import ReviewItem from './components/ReviewItem';
+import Spinner from '../common/Spinner/Spinner';
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get('https://zohoapi-fxfj3ovifq-uc.a.run.app/get-google-reviews');
-          setReviews(response.data);
-          console.log(response.data)
-        } catch (error) {
-          console.error('Error fetching data:', error);
-        }
-      };
-  
-      fetchData();
+        setIsLoading(true)
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('https://zohoapi-fxfj3ovifq-uc.a.run.app/get-google-reviews');
+                setIsLoading(false)
+                setReviews(response.data);
+                console.log(response.data)
+            } catch (error) {
+                setIsLoading(false)
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
     }, []); 
 
   return (
@@ -32,28 +36,30 @@ const Reviews = () => {
                 <p className='property-header'>Reviews</p>
             </div>
         </div>
-        <div className='review-container'>
-            {reviews.map((review, index) => {
-                const {
-                    author_name,
-                    profile_photo_url,
-                    rating,
-                    relative_time_description,
-                    text
-                } = review
-                return (
-                    <div key={index} className='review-wrapper'>
-                        <ReviewItem 
-                            name = {author_name}
-                            photoUrl = {profile_photo_url}
-                            rating = {rating}
-                            relativeTimeAgo = {relative_time_description}
-                            text = {text}
-                        />
+            {isLoading ? <div className='review-spinner'><Spinner /></div> : (
+                        <div className='review-container'>
+                        {reviews.map((review, index) => {
+                            const {
+                                author_name,
+                                profile_photo_url,
+                                rating,
+                                relative_time_description,
+                                text
+                            } = review
+                            return (
+                                <div key={index} className='review-wrapper'>
+                                    <ReviewItem 
+                                        name = {author_name}
+                                        photoUrl = {profile_photo_url}
+                                        rating = {rating}
+                                        relativeTimeAgo = {relative_time_description}
+                                        text = {text}
+                                    />
+                                </div>
+                            )
+                        })}
                     </div>
-                )
-            })}
-        </div>
+            )}
         <div className='footer-wrapper'>
             <Footer />
         </div>
