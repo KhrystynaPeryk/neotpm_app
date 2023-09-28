@@ -51,13 +51,13 @@ const ReviewItem = ({
             <div className='header'>
                 <img className='header-img' src={base64Image} loading='lazy' alt='author' />
                 <div className='header-meta'>
-                    <div>{name}</div>
+                    <div className='header-name'>{name}</div>
                     <div className='header-stars'>{starsGenerator(rating)}</div>
                 </div>
             </div>
             <div className='body'>
-                <div>{text}</div>
-                <div><i>{relativeTimeAgo}</i></div>
+                <div className='body-text'>{text}</div>
+                <div className='body-ago'><i>{relativeTimeAgo}</i></div>
             </div>
         </div>
     )

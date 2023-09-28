@@ -37,28 +37,28 @@ const Reviews = () => {
             </div>
         </div>
             {isLoading ? <div className='review-spinner'><Spinner /></div> : (
-                        <div className='review-container'>
-                        {reviews.map((review, index) => {
-                            const {
-                                author_name,
-                                profile_photo_url,
-                                rating,
-                                relative_time_description,
-                                text
-                            } = review
-                            return (
-                                <div key={index} className='review-wrapper'>
-                                    <ReviewItem 
-                                        name = {author_name}
-                                        photoUrl = {profile_photo_url}
-                                        rating = {rating}
-                                        relativeTimeAgo = {relative_time_description}
-                                        text = {text}
-                                    />
-                                </div>
-                            )
-                        })}
-                    </div>
+                <div className='review-container'>
+                    {reviews.map((review, index) => {
+                        const {
+                            author_name,
+                            profile_photo_url,
+                            rating,
+                            relative_time_description,
+                            text
+                        } = review
+                        return (
+                             <div key={index} className='review-wrapper'>
+                                <ReviewItem 
+                                    name = {author_name}
+                                    photoUrl = {profile_photo_url}
+                                    rating = {rating}
+                                    relativeTimeAgo = {relative_time_description}
+                                    text = {text}
+                                />
+                            </div>
+                         )
+                    })}
+                </div>
             )}
         <div className='footer-wrapper'>
             <Footer />

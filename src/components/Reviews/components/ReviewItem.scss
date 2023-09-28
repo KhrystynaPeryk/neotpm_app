@@ -1,15 +1,33 @@
 .reviewItem-wrapper {
     .header {
         display: flex;
+        margin-bottom: 1em;
         .header-img {
-            width: 5em;
-            height: 5em;
+            width: 4em;
+            height: 4em;
         }
         .header-meta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             font-weight: bold;
+            margin-left: 1em;
+            font-family: 'Montserrat', sans-serif;
+            .header-name {
+                color: #238DC1;
+            }
             .header-stars {
                 color: #f9c02c;
             }
+        }
+    }
+    .body {
+        .body-text {
+            font-family: 'Comfortaa', cursive;
+            line-height: 1.5em;
+        }
+        .body-ago {
+            margin-top: 0.5em;
         }
     }
 }
