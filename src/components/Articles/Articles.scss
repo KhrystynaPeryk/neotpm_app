@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.articles-container {
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+    .article-card {
+        width: 400px;
+
+        @media screen and (max-width: 425px) {
+            width: 300px;
+            transition: all 0.5s ease;
+        }
+    
+        .card-img {
+            background-image: url('../../assets/images/articles/article1_main.jpg');
+            background-size: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 130px;
+            width: 100%;
+
+            @media screen and (max-width: 425px) {
+                height: 100px;
+                transition: all 0.5s ease;
+            }
+        }
+        .card-title {
+            font-size: 160%;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+    }
+    .article-btn {
+        @include reset-button-style;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgba(57,165,175,1) 100%);
+        width: 100%;
+
+        &:hover {
+            @include hover-btn;
+        }
+    }
+}
