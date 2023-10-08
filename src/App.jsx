@@ -11,6 +11,7 @@ import { Route, Routes } from 'react-router-dom';
 import LeadGenerationPopUp from './components/common/LeadGenerationPopUp/LeadGenerationPopUp';
 import Reviews from './components/Reviews/Reviews';
 import Articles from './components/Articles/Articles';
+import ArticleItem from './components/Articles/components/ArticleItem';
 
 function App() {
 
@@ -32,15 +33,16 @@ function App() {
     <div className={showPopup ? 'overlay-popup' : ''}>
       {showPopup && <LeadGenerationPopUp onClose={handleClosePopup} />}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/property-management' element={<PropertyManagement />} />
-        <Route path='/property-maintenance' element={<PropertyMaintenance />} />
-        <Route path='/owner-support/power-of-attorney' element={<PowerOfAttorney />} />
-        <Route path='/owner-support' element={<OwnerSupport />} />
-        <Route path='/reviews' element={<Reviews />} />
-        <Route path='/articles' element={<Articles />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/documents-form' element={<DocumentsRequestForm />} />
+          <Route path="/" element={<Home />} />
+          <Route path='/property-management' element={<PropertyManagement />} />
+          <Route path='/property-maintenance' element={<PropertyMaintenance />} />
+          <Route path='/owner-support/power-of-attorney' element={<PowerOfAttorney />} />
+          <Route path='/owner-support' element={<OwnerSupport />} />
+          <Route path='/reviews' element={<Reviews />} />
+          <Route path='/articles/:name' element={<ArticleItem />} />
+          <Route path='/articles' element={<Articles />} />
+          <Route path='/cart' element={<Cart />} />
+          <Route path='/documents-form' element={<DocumentsRequestForm />} />
       </Routes>
     </div>
   );

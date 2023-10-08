@@ -2,10 +2,10 @@
 
 .articles-container {
     display: flex;
-    //flex-wrap: wrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+    //flex-direction: column;
     width: 70%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     .article-card {
@@ -33,6 +33,7 @@
             font-size: 160%;
             font-weight: bold;
             margin-bottom: 0.5em;
+            height: 4em;
         }
     }
     .article-btn {
@@ -43,6 +44,7 @@
 
         &:hover {
             @include hover-btn;
+            color: white;
         }
     }
 }
