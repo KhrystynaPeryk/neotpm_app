@@ -4,7 +4,6 @@ import './ArticleItem.scss'
 import { articlesHTML } from '../articlesHTML'
 import NavBar from '../../common/NavBar/NavBar';
 import Footer from '../../common/Footer/Footer';
-import SEO from './SEO';
 import { Helmet } from 'react-helmet-async';
 
 const ArticleItem = () => {
@@ -15,26 +14,26 @@ const ArticleItem = () => {
     if (location.state) {
       const filteredArticles = articlesHTML.filter(article => article.id === location.state.id)
       const [filteredArticle] = filteredArticles
-
       setArticle(filteredArticle)
-      console.log(article)
-
     }
   }, [location.state, article]);
 
   // useEffect(() => {
   //   const metaDescription = document.querySelector('meta[name="description"]');
   //   if (metaDescription) {
-  //     metaDescription.setAttribute("content", "Discover the top 10 compelling reasons why hiring a property manager in Abu Dhabi is a game-changer for property owners. From faster rentals to stress reduction and legal expertise, find out how a professional property manager can maximize your investment and peace of mind.");
+  //     metaDescription.setAttribute('content', article.metaDescription);
   //   }
   // }, []);
 
   return (
     <div className='property-container'>
-      <SEO
-        title={article.title}
-        description={article.metaDescription}
-        type='article' />
+      <Helmet>
+        <title>{article.title}</title>
+        <meta name='description' content={article.metaDescription} />
+        <meta property='og:type' content='article' />
+        <meta property='og:title' content={article.title} />
+        <meta property='og:description' content={article.metaDescription} />
+      </Helmet>
       <div className='property-before-table'>
         <NavBar />
         <div className='articleItem-container'>
