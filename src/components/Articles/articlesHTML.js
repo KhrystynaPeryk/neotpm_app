@@ -3,6 +3,7 @@ export const articlesHTML = [
         id: 1,
         path: '10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi',
         title: '10 Reasons Why you Really Need a Property Manager in Abu Dhabi',
+        metaDescription: 'Discover the top 10 compelling reasons why hiring a property manager in Abu Dhabi is a game-changer for property owners. From faster rentals to stress reduction and legal expertise, find out how a professional property manager can maximize your investment and peace of mind.',
         published: 'September 27, 2023',
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFCSZIUrHAECQ/article-cover_image-shrink_423_752/0/1696337250690?e=1702512000&v=beta&t=gaG6PQGb0vr-Pc1Jt12J_K8Hj2fBq5p5i2zUbMxmIyQ' />
@@ -72,7 +73,7 @@ export const articlesHTML = [
                 Our advice? Choose a good property manager who is professional, integral, and proactive, and truly understands your property's needs. Trust us, it will be a game-changer for you.
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQG_Yr3LkFI8zg/article-inline_image-shrink_1000_1488/0/1695811813579?e=1702512000&v=beta&t=uBcfYRY4QIMZ6x_3E9ueZo4_oZ0Rfx4p2Fjimfspii4' class='article-img' alt='property' />
+                    <img src='https://media.licdn.com/dms/image/D4D12AQG_Yr3LkFI8zg/article-inline_image-shrink_1000_1488/0/1695811813579?e=1702512000&v=beta&t=uBcfYRY4QIMZ6x_3E9ueZo4_oZ0Rfx4p2Fjimfspii4' class='article-img' alt='property-manager' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <p>
@@ -85,6 +86,7 @@ export const articlesHTML = [
         id: 2,
         path: '7-tips-for-effective-maintenance-in-abu-dhabi',
         title: '7 Tips for Effective Maintenance in Abu Dhabi',
+        metaDescription: 'Unlock the secrets to successful property maintenance in Abu Dhabi with expert insights. Discover proactive strategies for addressing maintenance issues, choosing the right properties, and fostering positive tenant relationships. Learn how to avoid costly headaches and ensure property longevity with these essential tips.',
         published: 'September 28, 2023',
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHPdu9mS9seHw/article-cover_image-shrink_423_752/0/1696336964530?e=1702512000&v=beta&t=ktDcODv1k5SXJGuFHSVwTZj4Hoy-b7spCviOVpBzP5Q' />
@@ -177,7 +179,7 @@ export const articlesHTML = [
                     Though it adds up to your work load, encourage tenants to report even minor issues to prevent hidden problems."
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQEgQLDXPSE82Q/article-inline_image-shrink_1000_1488/0/1695907277001?e=1702512000&v=beta&t=P1c65soTon0hUipG5FXZQZxZx0bZhPE3s-t5OqU27Kg' class='article-img' alt='property' />
+                    <img src='https://media.licdn.com/dms/image/D4D12AQEgQLDXPSE82Q/article-inline_image-shrink_1000_1488/0/1695907277001?e=1702512000&v=beta&t=P1c65soTon0hUipG5FXZQZxZx0bZhPE3s-t5OqU27Kg' class='article-img' alt='property-maintenance' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <h3>Conclusion:</h3>
@@ -198,6 +200,7 @@ export const articlesHTML = [
         id: 3,
         path: 'solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager',
         title: 'Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager',
+        metaDescription: 'Learn valuable insights from seasoned Abu Dhabi property managers on resolving tenant disputes amicably and efficiently. Discover prevention strategies, maintenance solutions, and steps to avoid costly legal action. Explore expert advice for harmonious landlord-tenant relationships.',
         published: 'October 4, 2023',
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQF6f_-e2oNFfA/article-cover_image-shrink_423_752/0/1696424310498?e=1702512000&v=beta&t=Ug26_yJH8c63QWAMnq5WD6xB266JvaaTQaQLLmEERBk' />
@@ -295,7 +298,7 @@ export const articlesHTML = [
                 </li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4D12AQFYKrwZTArRmg/article-inline_image-shrink_1500_2232/0/1696424487396?e=1702512000&v=beta&t=tTRh860FDQZ93wIR1E33E5cjA-Bh4t2vU975yPR8A5w' class='article-img' alt='property' />
+                <img src='https://media.licdn.com/dms/image/D4D12AQFYKrwZTArRmg/article-inline_image-shrink_1500_2232/0/1696424487396?e=1702512000&v=beta&t=tTRh860FDQZ93wIR1E33E5cjA-Bh4t2vU975yPR8A5w' class='article-img' alt='property-manager-tips' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
