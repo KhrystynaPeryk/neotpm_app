@@ -5,6 +5,7 @@ export const articlesHTML = [
         title: '10 Reasons Why you Really Need a Property Manager in Abu Dhabi',
         metaDescription: 'Discover the top 10 compelling reasons why hiring a property manager in Abu Dhabi is a game-changer for property owners. From faster rentals to stress reduction and legal expertise, find out how a professional property manager can maximize your investment and peace of mind.',
         published: 'September 27, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQFCSZIUrHAECQ/article-cover_image-shrink_423_752/0/1696337250690?e=1702512000&v=beta&t=gaG6PQGb0vr-Pc1Jt12J_K8Hj2fBq5p5i2zUbMxmIyQ',
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFCSZIUrHAECQ/article-cover_image-shrink_423_752/0/1696337250690?e=1702512000&v=beta&t=gaG6PQGb0vr-Pc1Jt12J_K8Hj2fBq5p5i2zUbMxmIyQ' />
             <h1 class='article-title'>10 Reasons Why You Really Need a Property Manager in Abu Dhabi</h1>
@@ -88,6 +89,7 @@ export const articlesHTML = [
         title: '7 Tips for Effective Maintenance in Abu Dhabi',
         metaDescription: 'Unlock the secrets to successful property maintenance in Abu Dhabi with expert insights. Discover proactive strategies for addressing maintenance issues, choosing the right properties, and fostering positive tenant relationships. Learn how to avoid costly headaches and ensure property longevity with these essential tips.',
         published: 'September 28, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQHPdu9mS9seHw/article-cover_image-shrink_423_752/0/1696336964530?e=1702512000&v=beta&t=ktDcODv1k5SXJGuFHSVwTZj4Hoy-b7spCviOVpBzP5Q',
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHPdu9mS9seHw/article-cover_image-shrink_423_752/0/1696336964530?e=1702512000&v=beta&t=ktDcODv1k5SXJGuFHSVwTZj4Hoy-b7spCviOVpBzP5Q' />
             <h1 class='article-title'>7 Tips for Effective Maintenance in Abu Dhabi</h1>
@@ -202,6 +204,7 @@ export const articlesHTML = [
         title: 'Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager',
         metaDescription: 'Learn valuable insights from seasoned Abu Dhabi property managers on resolving tenant disputes amicably and efficiently. Discover prevention strategies, maintenance solutions, and steps to avoid costly legal action. Explore expert advice for harmonious landlord-tenant relationships.',
         published: 'October 4, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQF6f_-e2oNFfA/article-cover_image-shrink_423_752/0/1696424310498?e=1702512000&v=beta&t=Ug26_yJH8c63QWAMnq5WD6xB266JvaaTQaQLLmEERBk',
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQF6f_-e2oNFfA/article-cover_image-shrink_423_752/0/1696424310498?e=1702512000&v=beta&t=Ug26_yJH8c63QWAMnq5WD6xB266JvaaTQaQLLmEERBk' />
         <h1 class='article-title'>Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager</h1>
