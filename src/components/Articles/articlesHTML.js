@@ -14,7 +14,7 @@ export const articlesHTML = [
                 <h3>10 Reasons Why you Really Need a Property Manager in Abu Dhabi</h3>
                 <p>
                 Owning property is like having a gold mine. It can bring in money without you lifting a finger, especially if you think long-term. But managing that property? 
-                That's a full-time job, especially in Abu Dhabi. This is where a property manager can be your hero.
+                That's a full-time job, especially in Abu Dhabi. This is where a  <a style='text-decoration: none' href='https://transparentpm.ae/property-management'> property manager</a> can be your hero.
                 </p>
                 <p>Here's why:</p>
                 <h3>1. Get Your Place Rented Faster:</h3>
@@ -33,7 +33,7 @@ export const articlesHTML = [
                 </p>
                 <h3>4. Find Reliable Maintenance Solutions for You:</h3>
                 <p>
-                In Abu Dhabi, fixing things isn't always a walk in the park. You'll encounter structural issues, the challenge of sourcing parts, and the task of finding trustworthy technicians. Property managers come equipped with a trusted network of technicians and an in-house maintenance team ready to tackle these issues. 
+                In Abu Dhabi, fixing things isn't always a walk in the park. You'll encounter structural issues, the challenge of sourcing parts, and the task of finding trustworthy technicians. Property managers come equipped with a trusted network of technicians and an in-house <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance team </a> ready to tackle these issues. 
                 Having faced many "mysterious maintenance problems" in the past, they handle repairs efficiently. And the best part? You don't have to shoulder the stress of frustrated renters.
                 </p>
                 <h3>5. Stay On the Right Side of the Law:</h3>
@@ -98,7 +98,7 @@ export const articlesHTML = [
                 <h3>Proactive Property Management: 7 Tips for Effective Maintenance in Abu Dhabi </h3>
                 <p>
                 Few things frustrate tenants more than unresolved maintenance issues. They not only lead to tenancy disputes but also prompt tenants to seek alternative accommodations. 
-                These issues cause discomfort for tenants and can be a real headache for you, the landlord. Even with the best intentions, swift resolution of maintenance problems isn't always guaranteed, and as time goes by, tensions tend to rise.
+                These issues cause discomfort for tenants and can be a real headache for you, the landlord. Even with the best intentions, swift resolution of  <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance problems</a> isn't always guaranteed, and as time goes by, tensions tend to rise.
                 </p>
                 <p>In this article, we aim to share our insights on effectively handling maintenance issues, especially in the context of Abu Dhabi.</p>
                 <h3>1. Expect Maintenance Issues to Occur:</h3>
@@ -186,7 +186,7 @@ export const articlesHTML = [
                 </div>
                 <h3>Conclusion:</h3>
                 <p>
-                    Effective property maintenance and repair practices are the foundation of successful property management. 
+                    Effective property maintenance and repair practices are the foundation of successful  <a style='text-decoration: none' href='https://transparentpm.ae/property-management'>property management</a>. 
                     Beginning with the purchase of a properly constructed property, renting to qualified tenants, and responding promptly to maintenance requests, these practices are essential for tenant satisfaction and property longevity.
                 </p>
                 <p>
@@ -228,7 +228,7 @@ export const articlesHTML = [
             </p>
             <h3>1. Prevention is Always Better Than a Solution</h3>
             <p>
-                It may sound cliché, but it still holds true in property management. By taking the following steps, you can reduce the chances of encountering disputes with your tenants significantly.
+                It may sound cliché, but it still holds true in  <a style='text-decoration: none' href='https://transparentpm.ae/property-management'>property management</a>. By taking the following steps, you can reduce the chances of encountering disputes with your tenants significantly.
             </p>
             <ul>
                 <li>
@@ -257,7 +257,7 @@ export const articlesHTML = [
             </ul>
             <h3>2. Quick Solutions to Maintenance Problems</h3>
             <p>
-                Maintenance issues are often underestimated by landlords. Disagreements about maintenance and liability are another major source of tenancy dispute. Find tenants that will look after your place. 
+                <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>Maintenance issues</a> are often underestimated by landlords. Disagreements about maintenance and liability are another major source of tenancy dispute. Find tenants that will look after your place. 
                 Embrace tenant-reported maintenance requests as opportunities to maintain property quality and act on tenants' requests quickly if it's under your responsibility.
             </p>
             <h3>3. Resolving Tenancy Disputes Amicably</h3>
