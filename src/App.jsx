@@ -11,7 +11,10 @@ import { Route, Routes } from 'react-router-dom';
 import LeadGenerationPopUp from './components/common/LeadGenerationPopUp/LeadGenerationPopUp';
 import Reviews from './components/Reviews/Reviews';
 import Articles from './components/Articles/Articles';
-import ArticleItem from './components/Articles/components/ArticleItem';
+//import ArticleItem from './components/Articles/components/ArticleItem';
+import Article1 from './components/Articles/components/Article1';
+import Article2 from './components/Articles/components/Article2';
+import Article3 from './components/Articles/components/Article3';
 
 function App() {
 
@@ -39,7 +42,10 @@ function App() {
           <Route path='/owner-support/power-of-attorney' element={<PowerOfAttorney />} />
           <Route path='/owner-support' element={<OwnerSupport />} />
           <Route path='/reviews' element={<Reviews />} />
-          <Route path='/articles/:name' element={<ArticleItem />} />
+          {/* <Route path='/articles/:name' element={<ArticleItem />} /> */}
+          <Route path='/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi' element={<Article1/>} />
+          <Route path='/articles/7-tips-for-effective-maintenance-in-abu-dhabi' element={<Article2/>} />
+          <Route path='/articles/solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager' element={<Article3/>} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
