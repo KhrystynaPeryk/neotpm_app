@@ -10,6 +10,7 @@ import Cart from './components/Cart/Cart';
 import { Route, Routes } from 'react-router-dom';
 import LeadGenerationPopUp from './components/common/LeadGenerationPopUp/LeadGenerationPopUp';
 import Reviews from './components/Reviews/Reviews';
+import NotFound from './components/NotFound/NotFound';
 import Articles from './components/Articles/Articles';
 //import ArticleItem from './components/Articles/components/ArticleItem';
 import Article1 from './components/Articles/components/Article1';
@@ -49,6 +50,7 @@ function App() {
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
+          <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
