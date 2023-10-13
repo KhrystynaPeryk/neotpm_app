@@ -4,28 +4,11 @@ import './ReviewItem.scss'
 const ReviewItem = ({
     name,
     photoUrl,
-    rating,
     relativeTimeAgo,
     text
 }) => {
 
     const [base64Image, setBase64Image] = useState(null);
-
-    const starsGenerator = (num) => {
-        if (num > 4.5) {
-            return '★ ★ ★ ★ ★';
-        } else if (num > 3.5) {
-            return '★ ★ ★ ★ ☆';
-        } else if (num > 2.5) {
-            return '★ ★ ★ ☆ ☆';
-        } else if (num > 1.5) {
-            return '★ ★ ☆ ☆ ☆';
-        } else if (num > 0.5) {
-            return '★ ☆ ☆ ☆ ☆';
-        } else {
-            return '☆ ☆ ☆ ☆ ☆';
-        }
-    }
 
     // on page load it converts urls into base64
     useEffect(() => {
@@ -52,7 +35,7 @@ const ReviewItem = ({
                 <img className='header-img' src={base64Image} loading='lazy' alt='author' />
                 <div className='header-meta'>
                     <div className='header-name'>{name}</div>
-                    <div className='header-stars'>{starsGenerator(rating)}</div>
+                    <div className='header-stars'>★ ★ ★ ★ ★</div>
                 </div>
             </div>
             <div className='body'>
