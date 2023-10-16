@@ -1,21 +1,23 @@
-import React from 'react'
+import React, {useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Articles.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
-import Article1 from '../../assets/images/articles/article1_main.jpg'
-import Article2 from '../../assets/images/articles/article2.png'
-import Article3 from '../../assets/images/articles/article3.png'
+import { articlesHTML } from './articlesHTML'
 
 const Articles = () => {
+  const [articles, setArticles] = useState(articlesHTML)
   const navigate = useNavigate()
   const handleShowArticle = (articlePath) => {
-    // navigate(articlePath, {
-    //   state: {id}
-    // })
-    navigate(articlePath)
+    navigate(`/articles/${articlePath}`)
   }
+
+  useEffect(() => {
+    //for old non existing urls like /contacts from the old website
+    window.history.replaceState({}, '', '/articles');
+  }, []);
+
   return (
     <div className='property-container'>
       <div className='property-before-table'>
@@ -26,24 +28,16 @@ const Articles = () => {
         </div>
       </div>
       <div className='articles-container'>
-        <div className='article-card'>
-          <img className='card-img' src={Article1} alt='10 Reasons Why you Really Need a Property Manager in Abu Dhabi' />
-          <div className='card-title'>10 Reasons Why you Really Need a Property Manager in Abu Dhabi</div>
-          <div><i>Published on September 27, 2023</i></div>
-          <button className='article-btn' type='button' onClick={() => handleShowArticle('/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi')}>Read more</button>
-        </div>
-        <div className='article-card'>
-          <img className='card-img' src={Article2} alt='7 Tips for Effective Maintenance in Abu Dhabi' />
-          <div className='card-title'>7 Tips for Effective Maintenance in Abu Dhabi</div>
-          <div><i>Published on September 28, 2023</i></div>
-          <button className='article-btn' type='button' onClick={() => handleShowArticle('/articles/7-tips-for-effective-maintenance-in-abu-dhabi')}>Read more</button>
-        </div>
-        <div className='article-card'>
-          <img className='card-img' src={Article3} alt='Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager' />
-          <div className='card-title'>Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager</div>
-          <div><i>Published on October 4, 2023</i></div>
-          <button className='article-btn' type='button' onClick={() => handleShowArticle('/articles/solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager')}>Read more</button>
-        </div>
+        {articles.map(article => {
+          return (
+            <div key={article.id} className='article-card'>
+              <img className='card-img' src={article.headImg} alt={article.title} />
+              <div className='card-title'>{article.title}</div>
+              <div><i>Published on {article.published}</i></div>
+              <button className='article-btn' type='button' onClick={() => handleShowArticle(article.path)}>Read more</button>
+            </div>
+          )
+        })}
       </div>
       <div className='footer-wrapper'>
         <Footer />

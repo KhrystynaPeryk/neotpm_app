@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addProduct } from '../../../../store/actions/actions';
@@ -56,6 +56,12 @@ const PowerOfAttorney = () => {
             }
         });
     }
+
+    useEffect(() => {
+        //for old non existing urls like /contacts from the old website
+        window.history.replaceState({}, '', '/owner-support/power-of-attorney');
+    }, []);
+
     return (
         <div className='property-container'>
             <div className='property-before-table'>

@@ -313,5 +313,115 @@ export const articlesHTML = [
             </p>
         </div>
     </div>`,
+    },
+    {
+        id: 4,
+        path: 'leaving-the-uae-15-tips-to-not-have-any-headaches-after-you-are-gone-especially-for-property-owners',
+        title: 'Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners',
+        metaDescription: 'Leaving the UAE? Discover 15 essential tips for a seamless property transition. From Golden Visa strategies to managing Tawtheeq, settle debts, and choose between selling or renting. Ensure a headache-free departure with expert advice.',
+        published: 'October 12, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQFEVAb7tdmKJw/article-cover_image-shrink_720_1280/0/1697106450813?e=2147483647&v=beta&t=eKIHBrwPuoTPtGstcVO64QkplNSjgg6AT2Se_yhk5ro',
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFEVAb7tdmKJw/article-cover_image-shrink_720_1280/0/1697106450813?e=2147483647&v=beta&t=eKIHBrwPuoTPtGstcVO64QkplNSjgg6AT2Se_yhk5ro' />
+        <h1 class='article-title'>Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners</h1>
+        <div><i style='color: gray'>October 4, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                In my time at TPM, I've seen many property owners, mostly from overseas, grapple with the intricacies of departing the UAE. 
+                If you're on the brink of bidding Abu Dhabi adieu, either temporarily or permanently, here's a distilled guide to manage your property seamlessly.
+            </p>
+            <p>
+                A. Prior to Resigning, Equip Yourself with These Insights:
+            </p>
+            <h3>1. The Golden Visa Quest</h3>
+            <p>
+                Certain Golden Visa categories need an employment certificate for validation. If you're eligible, begin the application before your resignation. 
+                This not only retains your UAE residency but also streamlines future property-related dealings.
+            </p>
+        
+            <h3>2. The Re-mortgage Consideration</h3>
+            <p>
+                Considering a mortgage? Address it pre-resignation. Banks insist on employment certificates. 
+                Once you're overseas, your negotiation leverage with banks diminishes.
+            </p>
+            <h3>3. Diversify Bank Accounts</h3>
+            <p>
+                If your primary account is linked to a mortgage, open an additional one. 
+                Banks might sometimes freeze accounts of those leaving the UAE. Being prepared is prudent.
+            </p>
+            <h3>4. Stay EMID Updated</h3>
+            <p>
+                With a Golden Visa or EMID, keep your details updated across banks and service providers. 
+                It's about ensuring a continuous service experience.
+            </p>
+            <p>
+                B. Essentials to Tackle Before Departure:
+            </p>
+            <h3>5. Activate Your UAE Pass </h3>
+            <p>
+                Handle this while in the UAE. Retain your activation phone; It's essential for seamless UAE Pass operations from abroad. 
+                If you encounter any issues, refrain from adjusting any settings without expert guidance.
+            </p>
+            <h3>6. Property Decisions: Sell or Rent?</h3>
+            <p>
+                Selling can be a slow burn. If your property is jointly owned, it's wise to have a shared local bank account. 
+                Considering a contingency plan, like enlisting <a style='text-decoration: none' href='https://transparentpm.ae/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi'>a property manager</a> or securing <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>a POA</a>, is invaluable.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src='https://media.licdn.com/dms/image/D4D12AQHPoV1Gj8yo6Q/article-inline_image-shrink_1500_2232/0/1697106807408?e=1702512000&v=beta&t=dTrLmdp86b-evVhueEwRpY_I2jxN7MzC4HiVIy-cpb8' class='article-img' alt='property-manager-tips' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <h3>7. Tawtheeq Management </h3>
+            <p>
+                Maintain it under your name or a trusted manager's.
+                Challenges arise when developers discontinue their Tawtheeq services, and tackling this from overseas can be intricate.
+            </p>
+            <h3>8. Settle Debts </h3>
+            <p>
+                Clear all outstanding bills. Leave behind only memories, not dues.
+            </p>
+            <h3>9. Vehicle Matters </h3>
+            <p>
+                Decide between selling or exporting your vehicle before your residency concludes.
+            </p>
+            <h3>10. Stamped IBAN Letter </h3>
+            <p>
+                Seems small, but for those renting to government personnel, it's indispensable.
+            </p>
+            <p class='quote'>
+                "Maintain the Tawtheeq under your name or a trusted manager's. Challenges arise when developers discontinue their Tawtheeq services, and tackling this from overseas can be intricate."
+            </p>
+            <h3>11. Handling Rental Cheques and Tenancy Issues  </h3>
+            <p>
+                Keep communication channels open with tenants. Make sure you have means to continue receiving rent or to deposit rental cheques, addressing <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance</a> issues and renewals.
+            </p>
+            <h3>12. Re-evaluate Property Insurance </h3>
+            <p>
+                Review your policy. Ensure it remains intact once you're no longer UAE-based. 
+                You might be surprised many insurance providers don't extend their coverage to non-residential property owners.
+            </p>
+            <h3>13. Departure Dynamics </h3>
+            <p>
+                If you're on a tight schedule, getting professional help, either via a POA or a property manager, is a strategic move.
+            </p>
+            <h3>14. Trusted Property Managers </h3>
+            <p>
+                When leaving, an experienced, trustworthy property manager is worth their weight in gold. Choose wisely.
+            </p>
+            <h3>15. The POA Advantage</h3>
+            <p>
+                Even if you're not rushing, <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>a local POA</a> is a great asset. Understand the nuances based on your nationality and visa requirements.
+            </p>
+            <p class='quote'>
+                "If you're on a tight schedule, getting professional help, either via a POA or a property manager, is a strategic move."
+            </p>
+            <p>
+                Embarking on this journey, I genuinely hope this guide simplifies your property-related decisions as you transition from the UAE. For deeper insights or just a chat, reach out at <a style='text-decoration: none; color: black' href='tel:+971564420883'><b>+971-56-442-0883</b></a>
+            </p>
+            <p>
+                Here's to new beginnings! 🌍🏡
+            </p>
+        </div>
+    </div>`,
     }
 ];

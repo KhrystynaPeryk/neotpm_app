@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import NavBar from '../common/NavBar/NavBar'
@@ -75,6 +75,11 @@ const OwnerSupport = () => {
         }
     });
   }
+
+  useEffect(() => {
+    //for old non existing urls like /contacts from the old website
+    window.history.replaceState({}, '', '/owner-support');
+  }, []);
 
   return (
     <div className='property-container'>

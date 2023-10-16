@@ -16,6 +16,7 @@ import Articles from './components/Articles/Articles';
 import Article1 from './components/Articles/components/Article1';
 import Article2 from './components/Articles/components/Article2';
 import Article3 from './components/Articles/components/Article3';
+import Article4 from './components/Articles/components/Article4';
 
 function App() {
 
@@ -47,9 +48,37 @@ function App() {
           <Route path='/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi' element={<Article1/>} />
           <Route path='/articles/7-tips-for-effective-maintenance-in-abu-dhabi' element={<Article2/>} />
           <Route path='/articles/solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager' element={<Article3/>} />
+          <Route path='/articles/leaving-the-uae-15-tips-to-not-have-any-headaches-after-you-are-gone-especially-for-property-owners' element={<Article4 />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
+          {/* below urls from the old site that are indexed pages */}
+          <Route path='/contacts' element={<Home />} />
+          <Route path='/guide-to-renting-out-property-in-abudhabi' element={<Article1 />} />
+          <Route path='/6-things-pm-knows-that-will-eat-into-your-roi-when-buying-a-property' element={<Article1 />} />
+          <Route path='/things-to-know-before-investing-in-abudhabi' element={<Article1 />} />
+          <Route path='/maintenance' element={<PropertyMaintenance />} />
+          <Route path='/the-ultimate-guide-to-renting-in-abu-dhabi' element={<Article2/>} />
+          <Route path='/careers' element={<Home />} />
+          <Route path='/about-tawtheeq-in-abu-dhabi' element={<Article1 />} />
+          <Route path='/contacts' element={<Home />} />
+          <Route path='/about-power-of-attorney-in-abu-dhabi' element={<PowerOfAttorney />} />
+          <Route path='/commercial-real-estate-in-abudhabi' element={<Article1/>} />
+          <Route path='/property-handover-assistance' element={<OwnerSupport />}  />
+          <Route path='/power-of-attorney' element={<PowerOfAttorney />} />
+          <Route path='/tawtheeq-services' element={<PowerOfAttorney />} />
+          <Route path='/will-service' element={<PowerOfAttorney />} />
+          <Route path='/about' element={<Home />} />
+          <Route path='/essential-role-of-a-property-manager' element={<Article1 />} />
+          <Route path='/you-should-hire-a-property-maintenance-company-as' element={<Article2/>} />
+          <Route path='/do-property-management-companies-find-tenants' element={<Article1 />} />
+          <Route path='/fast-tenant-sourcing-in-abu-dhabi' element={<Article1 />} />
+          <Route path='/category/helpful-tips' element={<Home />} />
+          <Route path='/blog' element={<Articles />} />
+          <Route path='/category/helpful-tips' element={<Articles />} />
+          <Route path='/category/real-estate' element={<Articles />} />
+          <Route path='/leaving-uae-services' element={<Article4 />} />
+
           <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
@@ -57,3 +86,32 @@ function App() {
 }
 
 export default App;
+
+// Disallow: /guide-to-renting-out-property-in-abudhabi
+// Disallow: /6-things-pm-knows-that-will-eat-into-your-roi-when-buying-a-property
+// Disallow: /things-to-know-before-investing-in-abudhabi
+// Disallow: /maintenance
+// Disallow: /the-ultimate-guide-to-renting-in-abu-dhabi
+// Disallow: /careers
+// Disallow: /about-tawtheeq-in-abu-dhabi
+// Disallow: /commercial-real-estate-in-abudhabi
+// Disallow: /about-power-of-attorney-in-abu-dhabi
+// Disallow: /property-handover-assistance
+// Disallow: /services/
+// Disallow: /power-of-attorney
+// Disallow: /tawtheeq-services
+// Disallow: /will-service
+// Disallow: /about
+// Disallow: /essential-role-of-a-property-manager
+// Disallow: /blog
+// Disallow: /do-property-management-companies-find-tenants
+// Disallow: /you-should-hire-a-property-maintenance-company-as
+// Disallow: /fast-tenant-sourcing-in-abu-dhabi
+// Disallow: /category/helpful-tips
+// Disallow: /category/real-estate
+// Disallow: /leaving-uae-services
+
+// Disallow: /2022/03
+// Disallow: /2022/06
+// Disallow: /2022/10
+// Disallow: /2022/08

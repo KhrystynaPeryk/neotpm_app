@@ -8,6 +8,11 @@ import Footer from '../../common/Footer/Footer';
 const Article1 = () => {
     const thisArticleNumber = 1
     const [article, setArticle] = useState({ title: '', metaDescription: '', headImg: '', htmlBody: '' });
+
+    useEffect(() => {
+        //for old non existing urls like /contacts from the old website
+        window.history.replaceState({}, '', '/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi');
+    }, []);
     useEffect(() => {
         const filteredArticles = articlesHTML.filter(article => article.id === thisArticleNumber)
         const [filteredArticle] = filteredArticles

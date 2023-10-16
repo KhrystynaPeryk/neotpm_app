@@ -43,6 +43,11 @@ const Home = () => {
     const [myThirdElementVisible, setMyThirdElementVisible] = useState(false);
 
     useEffect(() => {
+        //for old non existing urls like /contacts from the old website
+        window.history.replaceState({}, '', '/');
+    }, []);
+
+    useEffect(() => {
         const handleIntersection = (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
