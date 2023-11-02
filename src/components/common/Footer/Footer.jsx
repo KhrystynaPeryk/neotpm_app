@@ -4,6 +4,7 @@ import WhatsAppIcon from '../../../assets/images/whatsapp-icon.png'
 import InstaIcon from '../../../assets/images/instagram-icon.png'
 import Crompton from '../../../assets/images/cp.webp'
 import Google from '../../../assets/images/google.png'
+import LinkedIn from '../../../assets/images/linkedin.png'
 
 const Footer = () => {
 
@@ -44,6 +45,9 @@ const Footer = () => {
                         </a>
                         <a href="https://www.instagram.com/transparentpm_auh/?fbclid=IwAR1aiMtOIfc8ThmLDSNeO8D3sTiKHGky8kmRPUhqZEx5lJDdIMAg1vXcr0w" target="_blank" rel="noopener noreferrer">
                             <img src={InstaIcon} alt="InstagramApp" />
+                        </a>
+                        <a href="https://ky.linkedin.com/company/transparent-property-management-uae?trk=public_post_share-update_actor-image" target="_blank" rel="noopener noreferrer">
+                            <img src={LinkedIn} alt="InstagramApp" />
                         </a>
                     </div>
                 </div>

@@ -423,5 +423,112 @@ export const articlesHTML = [
             </p>
         </div>
     </div>`,
+    },
+    {
+        id: 5,
+        path: 'avoid-these-5-common-mistakes-to-prevent-losses-on-your-investment',
+        title: 'Avoid These 5 Common Mistakes to Prevent Losses on Your Investment',
+        metaDescription: 'Explore the essential factors to consider beyond location when making a real estate investment in the thriving UAE market.',
+        published: 'October 27, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQHWo3R34Ta8iw/article-cover_image-shrink_423_752/0/1698383513617?e=1704326400&v=beta&t=e0qqzHkTXyzTknzjRArYI0HmI7lck5DnzyRBfkGDHLA',
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHWo3R34Ta8iw/article-cover_image-shrink_423_752/0/1698383513617?e=1704326400&v=beta&t=e0qqzHkTXyzTknzjRArYI0HmI7lck5DnzyRBfkGDHLA' />
+        <h1 class='article-title'>Avoid These 5 Common Mistakes to Prevent Losses on Your Investment</h1>
+        <div><i style='color: gray'>October 27, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                While many emphasize the importance of "<b>location, location, location</b>" in real estate, the truth is that there's a world of considerations beyond this mantra.
+            </p>
+            <p>
+                The UAE's property market is not just thriving; it's a global beacon of safety and luxury, attracting investors from all corners of the world. 
+                As <a style='text-decoration: none' href='https://transparentpm.ae/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi'>a property manager</a> in this thriving market, we've witnessed properties evolve throughout their lifecycles, granting us unique insights that often elude sales and leasing agents.
+            </p>
+            <p>
+                Today, we're here to provide you with a property manager's perspective on the pivotal factors to consider when making a real estate investment - factors that go far beyond the obvious elements of location, price, and rental returns.
+            </p>
+            <h3>1. The Foundation of Your Investment - Build Quality Matters</h3>
+            <p>
+                When you're stepping into the realm of real estate, the foundation is everything. It's not just about four walls and a roof; it's about the quality of those walls and the integrity of that roof. Common issues like waterproofing is not pleasant but can still be dealt with effectively. However, some problems are more insidious, like foundation issues. 
+                That's often beyond the capability of individual property owners. If you're eyeing a villa, take the time to explore the community. Watch for signs of landslides or cracks in exterior walls.
+            </p>
+    
+            <h3>2. Community Management's Impact on Your Investment</h3>
+            <p>
+                Real estate isn't just a transaction; it's a long-term commitment. 
+                Many buyers don't consider, but the quality of community <a style='text-decoration: none' href='https://transparentpm.ae/property-management'>management</a> is a pivotal factor that can significantly impact your property's value.  A reputable community manager can enhance your investment, while a lackluster one can erode it.
+                <p>When evaluating community management, consider the following:</p>
+                <ul>
+                    <li>Assess the reputation of the community manager and their track record with other projects.</li>
+                    <li>Scrutinize the service charge collection rate. A community can't be effectively managed if a substantial number of owners default on their service charge payments. Stay away from those with high default rates.</li>
+                </ul>
+            </p>
+            <h3>3. Balancing Uniqueness and Maintenance Costs - The Price of Unique Design</h3>
+            <p>
+                In the pursuit of your real estate dreams, you might be drawn to properties with unique features. They stand out, grab your attention, and promise to set your investment apart. However, unique designs often come with a price tag. 
+                They usually require more frequent <a style='text-decoration: none' href='https://transparentpm.ae/articles/7-tips-for-effective-maintenance-in-abu-dhabi'>maintenance</a>, harder to find qualified technicians and can be significantly more costly to replace any defective parts. 
+                As you consider such properties, ensure you factor in potential <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance costs</a> - uniqueness should enhance your investment, not drain it.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src='https://media.licdn.com/dms/image/D4D12AQF5uOMXqong-g/article-inline_image-shrink_1500_2232/0/1698383720894?e=1704326400&v=beta&t=0BlQ1dPfcELx61ZkUJloBt7vly0X6kTVLzIzvAvR8Dc' class='article-img' alt='property-manager-tips' />
+            </div>
+            <h3>4. Beyond Handover - Your Ongoing Relationship with Developers - Developer Commitment Post-Purchase</h3>
+            <p>
+                Your relationship with a property developer doesn't end with the handover. A real estate investment is a long-term endeavor, and you'll likely have ongoing interactions with the developer for matters such as the defect liability period (DLP), sales transfers, or addressing major issues. It's about responsiveness, reliability, and resolving issues that crop up, and developers' commitment post-purchase can make all the difference. 
+                Conduct thorough research into the developer's reputation for post-purchase customer service to avoid unpleasant surprises. Buying from a developer who cares after you make your purchase would really save you a lot of headaches down the road.
+            </p>
+            <h3>5. Navigating the Excitement of Off-Plan Projects - The Off-Plan Risk Equation</h3>
+            <p>
+                While investor enthusiasm for off-plan projects is often sky-high, it's crucial not to overlook the associated risks. Since you can't physically inspect the property, your investment relies on research and analysis. 
+                In addition to seeking information about build quality, community management, and unique designs, you must answer three critical questions:
+            </p>
+            <ul>
+                <li>How confident are you that the project will be completed on time? What's the likelihood of project delays or worst-case scenario, being completely stalled?</li>
+                <li>What is the developer's cash flow stability, and how likely are they to encounter financial difficulties before project completion?</li>
+                <li>Is there a contingency plan in case the project cannot be delivered as promised, to safeguard your investment?</li>
+            </ul>
+            <p class='quote'>
+                Your relationship with a property developer doesn't end with the handover. 
+                A real estate investment is a long-term endeavor, and you'll likely have ongoing interactions with the developer for matters such as the defect liability period (DLP), sales transfers, or addressing major issues.
+            </p>
+            <p>
+                Scrutinize the developer's financial reports as if you were evaluating a company's stock for investment.
+            </p>
+            <p>
+                And don't be afraid to approach owners who bought from the same developer previously, or someone who knows real estate well but is impartial to your purchasing decision—like us, property managers, who don't have a stake in your real estate purchasing decision.
+            </p>
+            <p>
+                Remember, your real estate investment is substantial, and in-depth research is time well spent.
+            </p>
+            <p class='quote'>
+                Scrutinize the developer's financial reports as if you were evaluating a company's stock for investment.
+            </p>
+            <p>
+                <b>Conclusion: Navigating the Real Estate Landscape</b>
+            <p>
+            <p>
+                In the realm of real estate, success goes beyond just the right location. 
+                It's about understanding the intricacies, avoiding unnecessary risks, and nurturing it for long-term prosperity. As property managers, we've gone through many challenges, and we're here to share our insights.
+            </p>
+            <p>
+                If you're contemplating a property investment, we encourage you to reach out to us for <a style='text-decoration: none' href='https://transparentpm.ae/owner-support'>advice</a>. 
+                Your journey into real estate matters to us. We've been in your shoes, and we understand the significance of every decision you make. 
+            </p>
+            <p>
+                Connect with us on <a href="https://ky.linkedin.com/company/transparent-property-management-uae?trk=public_post_share-update_actor-image" target="_blank" rel="noopener noreferrer">LinkedIn</a> for more industry insights and personalized guidance.
+            </p>
+            <p>
+                Article written by: Meara He
+            </p>
+            <p>
+                Director of Transparent Property Management
+            </p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p>
+                <a href="https://ky.linkedin.com/company/crompton-partners-estate-agents?trk=public_post_share-update_actor-image" target="_blank" rel="noopener noreferrer">Crompton Partners Estate Agents</a>
+            </p>
+        </div>
+    </div>`,
     }
 ];

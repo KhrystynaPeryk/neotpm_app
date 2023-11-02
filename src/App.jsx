@@ -17,6 +17,7 @@ import Article1 from './components/Articles/components/Article1';
 import Article2 from './components/Articles/components/Article2';
 import Article3 from './components/Articles/components/Article3';
 import Article4 from './components/Articles/components/Article4';
+import Article5 from './components/Articles/components/Article5';
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
           <Route path='/articles/7-tips-for-effective-maintenance-in-abu-dhabi' element={<Article2/>} />
           <Route path='/articles/solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager' element={<Article3/>} />
           <Route path='/articles/leaving-the-uae-15-tips-to-not-have-any-headaches-after-you-are-gone-especially-for-property-owners' element={<Article4 />} />
+          <Route path='/articles/avoid-these-5-common-mistakes-to-prevent-losses-on-your-investment' element={<Article5 />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
