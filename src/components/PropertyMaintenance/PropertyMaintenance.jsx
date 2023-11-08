@@ -20,9 +20,8 @@ const PropertyMaintenance = () => {
     const [driverRoom, setDriverRoom] = useState();
     const [maidRoom, setMaidRoom] = useState();
     const [villaPackages, setVillaPackages] = useState();
-    // handles a view villa/townhouse packages or maid/driver room
+    // handles a view villa/townhouse packages
     const [isVillaPackagesVisible, setIsVillaPackagesVisible] = useState(false);
-    const [isMaidDriverVisible, setMaidDriverVisible] = useState(true);
 
     const [quote, setQuote] = useState(0)
 
@@ -32,16 +31,13 @@ const PropertyMaintenance = () => {
     const handlePropertyType = (e) => {
         setPropertyType(e.target.value)
 
-        //handles a visibility of villapackages and maid/driver room on change of propertyType
-        if ((propertyLocation === 'HiddAlSaadiyat' || propertyLocation === 'SaadiyatBeachVillas') && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
+        //handles a visibility of villapackages on change of propertyType
+        if ((propertyLocation === 'SaadiyatBeachVillas' || propertyLocation === 'HiddAlSaadiyat' || propertyLocation === 'YasIslandAlRaha' || propertyLocation === 'BloomGardens') && (e.target.value === 'villa') ) {
             setIsVillaPackagesVisible(true)
-            setMaidDriverVisible(false)
-        } else if ((propertyLocation !== 'SaadiyatBeachVillas' || propertyLocation !== 'HiddAlSaadiyat') && (e.target.value === 'villa' || e.target.value === 'townhouse') ) {
-            setIsVillaPackagesVisible(false)
-            setMaidDriverVisible(false)
+        } else if ((propertyLocation === 'SaadiyatBeachVillas' || propertyLocation === 'HiddAlSaadiyat' || propertyLocation === 'YasIslandAlRaha') && (e.target.value === 'townhouse') ) {
+            setIsVillaPackagesVisible(true)
         } else {
             setIsVillaPackagesVisible(false)
-            setMaidDriverVisible(true)
         }
 
         setRoomsNumber('')
@@ -61,16 +57,13 @@ const PropertyMaintenance = () => {
     const handlePropertyLocation = (e) => {
         setPropertyLocation(e.target.value)
 
-        //handles a visibility of villapackages and maid/driver room on change of propertyLocation
-        if ((e.target.value === 'SaadiyatBeachVillas' || e.target.value === 'HiddAlSaadiyat') && (propertyType === 'villa' || propertyType === 'townhouse') ) {
+        //handles a visibility of villapackages on change of propertyLocation
+        if ((e.target.value === 'SaadiyatBeachVillas' || e.target.value === 'HiddAlSaadiyat' || e.target.value === 'YasIslandAlRaha' || e.target.value === 'BloomGardens') && (propertyType === 'villa') ) {
             setIsVillaPackagesVisible(true)
-            setMaidDriverVisible(false)
-        } else if ((e.target.value !== 'SaadiyatBeachVillas' || e.target.value  === 'HiddAlSaadiyat') && (propertyType === 'villa' || propertyType === 'townhouse') ) {
-            setIsVillaPackagesVisible(false)
-            setMaidDriverVisible(false)
+        } else if ((e.target.value === 'SaadiyatBeachVillas' || e.target.value  === 'HiddAlSaadiyat' || e.target.value === 'YasIslandAlRaha') && (propertyType === 'townhouse') ) {
+            setIsVillaPackagesVisible(true)
         } else {
             setIsVillaPackagesVisible(false)
-            setMaidDriverVisible(true)
         } 
 
         setErrors((prevErrors) => ({ ...prevErrors, propertyLocation: undefined }));
@@ -123,82 +116,51 @@ const PropertyMaintenance = () => {
         if (!driverRoom && propertyType !== 'villa' && propertyType !== 'townhouse') {
             errors.driverRoom = 'Please select an option above';
         }
-        if (!villaPackages && propertyType === 'villa' && propertyLocation === 'SaadiyatYas') {
-            errors.villaPackages = 'Please select a package';
+        if (!villaPackages && propertyType === 'villa' && (
+            propertyLocation === 'SaadiyatBeachVillas' || 
+            propertyLocation === 'HiddAlSaadiyat' || 
+            propertyLocation === 'YasIslandAlRaha' || 
+            propertyLocation === 'BloomGardens'
+            ) ) {
+                errors.villaPackages = 'Please select a package';
         }
-        if (!villaPackages && propertyType === 'townhouse' && propertyLocation === 'SaadiyatYas' ) {
-            errors.villaPackages = 'Please select a package';
+        if (!villaPackages && propertyType === 'townhouse' && (
+            propertyLocation === 'SaadiyatBeachVillas' || 
+            propertyLocation === 'HiddAlSaadiyat' || 
+            propertyLocation === 'YasIslandAlRaha' 
+            ) ) {
+                errors.villaPackages = 'Please select a package';
         }
 
         if (Object.keys(errors).length > 0) {
             setErrors(errors);
         } else {
             // lOGIC TO CALCULATE THE QUOTE
-            setQuote(maintenanceQuoteCalculator(propertyType, propertyLocation, roomsNumber, maidRoom, driverRoom, villaPackages))           
+            setQuote(maintenanceQuoteCalculator(propertyType, propertyLocation, roomsNumber, maidRoom, driverRoom, villaPackages))        
         }
     }
 
     //ADD a product to cart
     const addMaintenanceToCart = () => {
-        if (propertyType === 'apartment') {
-            dispatch(addProduct({
-                id: uuidv4(),
-                service: {
-                    type: 'Property Maintenance',
-                    details: {
-                        propertyType,
-                        roomsNumber,
-                        propertyLocation,
-                        maidRoom,
-                        driverRoom
-                    }
-                },
-                price: quote
-            }));
-        } else if (propertyType === 'studio') {
-            dispatch(addProduct({
-                id: uuidv4(),
-                service: {
-                    type: 'Property Maintenance',
-                    details: {
-                        propertyType,
-                        propertyLocation,
-                        maidRoom,
-                        driverRoom
-                    }
-                },
-                price: quote
-            }));
-        } else if (propertyType === 'villa' || propertyType === 'townhouse') {
-            if (propertyLocation === 'SaadiyatYas') {
-                dispatch(addProduct({
-                    id: uuidv4(),
-                    service: {
-                        type: 'Property Maintenance',
-                        details: {
-                            propertyType,
-                            roomsNumber,
-                            propertyLocation,
-                            villaPackages
-                        }
-                    },
-                    price: quote
-                }));
-            } else {
-                dispatch(addProduct({
-                    id: uuidv4(),
-                    service: {
-                        type: 'Property Maintenance',
-                        details: {
-                            propertyType,
-                            roomsNumber,
-                            propertyLocation,
-                        }
-                    },
-                    price: quote
-                }));
-            }
-        }
+        const dispatchDriverRoom = driverRoom ? driverRoom : ''
+        const dispatchMaidRoom = maidRoom ? maidRoom : ''
+        const dispatchVillaPackages = villaPackages ? villaPackages : ''
+
+        dispatch(addProduct({
+            id: uuidv4(),
+            service: {
+                type: 'Property Maintenance',
+                details: {
+                    propertyType,
+                    propertyLocation,
+                    roomsNumber,
+                    driverRoom: dispatchDriverRoom,
+                    maidRoom: dispatchMaidRoom,
+                    package: dispatchVillaPackages
+                }
+            },
+            price: quote
+        }))
     }
 
     // unordered list appearing animation
@@ -274,13 +236,12 @@ const PropertyMaintenance = () => {
                     <div className='select-container-item'>
                         <select className={propertyType === 'studio' ? 'select-container-element disabled' : 'select-container-element'} value={roomsNumber} name="rooms" id="rooms" onChange={handleRoomNumber} disabled={propertyType === 'studio'}>
                             <option value="" defaultValue=''>-- Number of rooms --</option>
-                            {propertyType !== 'villa' && propertyType !== 'townhouse' && <option value="br1">1 room</option>}
-                            <option value="br2">2 rooms</option>
+                            {propertyType === 'apartment' && <option value="br1">1 room</option>}
+                            {propertyType !== 'townhouse' && propertyLocation !== 'HiddAlSaadiyat' && <option value="br2">2 rooms</option>}
                             <option value="br3">3 rooms</option>
                             <option value="br4">4 rooms</option>
                             {propertyType !== 'apartment' && <option value="br5">5 rooms</option>}
                             {propertyType !== 'apartment' && propertyLocation !== 'HydraVillage' && <option value="br6">6 rooms</option>}
-                            {propertyType !== 'apartment' && propertyLocation !== 'HydraVillage' && <option value='br7'>7 rooms</option>}
                         </select>
                         {errors.roomsNumber && <div className="error-message">{errors.roomsNumber}</div>}
                     </div>
@@ -289,19 +250,31 @@ const PropertyMaintenance = () => {
                             <option value="" defaultValue=''>-- Property Location --</option>
                             {propertyType === 'apartment' || propertyType === 'studio' ?
                                 <>
-                                    <option value="AbuDhabiCityReem">Abu Dhabi City/Al Reem</option>
-                                    <option value="SaadiyatYas">Saadiyat/Yas Island</option>
-                                    <option value="OutOfAbuDhabi">Out of Abu Dhabi</option>
+                                    <option value="AbuDhabiCityReem">Abu Dhabi City / Al Reem</option>
+                                    <option value="SaadiyatYas">Saadiyat / Yas Island / Al Raha / Al Reef</option>
+                                    <option value="OutOfAbuDhabi">Out of Abu Dhabi - others</option>
                                 </> : null
                             }
-                            {propertyType === 'villa' || propertyType === 'townhouse' ?
+                            {propertyType === 'villa' ?
                                 <>
                                     <option value="AlReefVillas">Al Reef Villas</option>
                                     <option value="BloomGardens">Bloom Gardens</option>
                                     <option value="AlMuneera">Al Muneera</option>
                                     <option value="SaadiyatBeachVillas">Saadiyat Beach Villas</option>
+                                    <option value="HiddAlSaadiyat">Hidd Al Saadiyat / Yas Acres</option>
+                                    <option value="YasIslandAlRaha">Al Raha / Yas Island</option>
+                                    <option value="HydraVillage">Hydra Village</option>
+                                    <option value="OutOfAbuDhabi">Out of Abu Dhabi - others</option>
+                                </> : null
+                            }
+                            {propertyType === 'townhouse' ?
+                                <>
+                                    <option value="AlReefVillas">Al Reef Villas</option>
+                                    <option value="SaadiyatBeachVillas">Saadiyat Beach Villas</option>
+                                    <option value="YasIslandAlRaha">Al Raha / Yas Island</option>
                                     <option value="HiddAlSaadiyat">Hidd Al Saadiyat</option>
                                     <option value="HydraVillage">Hydra Village</option>
+                                    <option value="OutOfAbuDhabi">Out of Abu Dhabi - others</option>
                                 </> : null
                             }
                         </select>
@@ -311,36 +284,38 @@ const PropertyMaintenance = () => {
                         <div className='select-container-item'>
                             <select className='select-container-element' value={villaPackages} name="villaPckgs" id="villaPckgs" onChange={handlevillaPckgs}>
                                 <option value="" defaultValue=''>-- Choose a package* --</option>
-                                <option value="bronze">Bronze package*</option>
+                                {propertyLocation !== 'BloomGardens' && <option value="bronze">Bronze package*</option>}
                                 <option value="gold">Gold package*</option>
-                                <option value="platinum">Platinum package*</option>
+                                {propertyLocation !== 'YasIslandAlRaha' && <option value="platinum">Platinum package*</option>}
                             </select>
                             {errors.villaPackages && <div className="error-message">{errors.villaPackages}</div>}
                         </div>
                         <div className='packages-description'>
-                            <div className='packages-description-item bronze'>*<b>BRONZE:</b> 2 PPM a year</div>
-                            <div className='packages-description-item gold'>*<b>GOLD:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning</div>
-                            <div className='packages-description-item platinum'>*<b>PLATINUM:</b> 2 PPM a year + 4 pest control + 2 external glass cleaning</div>
+                            {propertyLocation !== 'BloomGardens' && <div className='packages-description-item bronze'>*<b>BRONZE:</b> 2 PPM a year</div>}
+                            <div className='packages-description-item gold'>*<b>GOLD:</b> 2 PPM a year + 1 pest control + 1 external glass cleaning</div>
+                            {propertyLocation !== 'YasIslandAlRaha' && <div className='packages-description-item platinum'>*<b>PLATINUM:</b> 2 PPM a year + 2 pest control + 2 external glass cleaning + 1 water tank cleaning</div>}
                         </div>
                     </div>
-                    <div className='select-container' style={isMaidDriverVisible ? {'display' : 'flex'} : {'display' : 'none'} }>
-                        <div className='select-container-item'>
-                            <select className='select-container-element' value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
-                                <option value="" defaultValue=''>-- Maid Room --</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                            {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
-                        </div>
-                        <div className='select-container-item'>
-                            <select className='select-container-element' value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
-                                <option value="" defaultValue=''>-- Driver Room --</option>
-                                <option value="yes">Yes</option>
-                                <option value="no">No</option>
-                            </select>
-                            {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
-                        </div>
-                    </div>     
+                    {(propertyType === 'apartment' || propertyType === 'studio') && (
+                        <div className='select-container'>
+                            <div className='select-container-item'>
+                                <select className='select-container-element' value={maidRoom} name="maid" id="maid" onChange={handleMaidRoom}>
+                                    <option value="" defaultValue=''>-- Maid Room --</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                                {errors.maidRoom && <div className="error-message">{errors.maidRoom}</div>}
+                            </div>
+                            <div className='select-container-item'>
+                                <select className='select-container-element' value={driverRoom} name="driver" id="driver" onChange={handleDriverRoom}>
+                                    <option value="" defaultValue=''>-- Driver Room --</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                                {errors.driverRoom && <div className="error-message">{errors.driverRoom}</div>}
+                            </div>
+                        </div>  
+                    )}
                 </div>
                 <div className='quote-container'>
                     {quote ? 
