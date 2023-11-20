@@ -530,5 +530,109 @@ export const articlesHTML = [
             </p>
         </div>
     </div>`,
+    },
+    {
+        id: 6,
+        path: 'how-to-get-a-poa-done-with-no-title-deed',
+        title: 'How to Get a POA Done With NO Title Deed?',
+        metaDescription: 'Navigate the UAE Power of Attorney (POA) process without a title deed. Follow our concise guide for overseas attestation, ensuring a seamless application from appointment to certification.',
+        published: 'November 17, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4E12AQEAlyB0hSWqsg/article-cover_image-shrink_423_752/0/1700223557166?e=1706140800&v=beta&t=Hm0Q4Bh_X_v8EVShc_zAof1Wp6JNxvi6FX6xapisphk',
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4E12AQEAlyB0hSWqsg/article-cover_image-shrink_423_752/0/1700223557166?e=1706140800&v=beta&t=Hm0Q4Bh_X_v8EVShc_zAof1Wp6JNxvi6FX6xapisphk' />
+        <h1 class='article-title'>How to Get a POA Done With NO Title Deed?</h1>
+        <div><i style='color: gray'>November 17, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                The UAE offers convenient virtual <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>Power of Attorney</a> (POA) attestation services. However, in some situations, the online route may not be feasible, and the embassy route becomes necessary.
+            </p>
+            <p>
+                This is especially relevant if you require a POA before your properties receive their title deeds. Such a need is common if you require assistance with property handover, applying for title deeds, or managing properties where title deeds are not available. 
+                In these cases, it's impossible to have the POA done either through virtual attestation or a physical visit to a notary public.
+            </p>
+            <p>
+                So, what's the solution?
+            </p>
+            <p>
+                The answer is to have it attested overseas.
+            </p>
+            <p>
+                In this article, I will outline the procedure for overseas attestation.
+            </p>
+            <p>
+                <b>Step 1</b>: Appoint a POA in the UAE
+            </p>
+            <p>
+                Finding a trustworthy individual with the knowledge to assist with the POA procedure in the UAE is crucial. This person should be capable of completing the tasks you assign.
+            </p>
+            <p>
+                <b>Step 2</b>: Draft the POA
+            </p>
+            <p>
+                A highly critical step. Many reasons can make a POA fail to work. Make sure the one you got is bullet-proof and is guaranteed to work
+            </p>
+            <p>
+                <b>[In your Residing Country]</b>
+            </p>
+            <p>
+                <b>Step 3</b>: In your residing country, all principals should sign the POA in the presence of a notary public.
+            </p>
+            <p>
+                <b>Step 4</b>: Get the POA document attested by the Ministry of Foreign Affairs in your residing country. This process is also known as legalization or apostille. 
+                (For UK residents, some clients have used this <a href='https://www.apostille.org.uk/'>company</a> for assistance with the legalization process.)
+            </p>
+            <p>
+                <b>Step 5</b>: Have the POA certified by the UAE embassy or consulate in your residing country.
+            </p>
+            <p>
+                <b>Step 6</b>: Courier the legalized and certified POA document to the UAE, and have your appointed POA assist with the subsequent steps.
+            </p>
+            <p>
+                <b>[In UAE]</b>
+            </p>
+            <p>
+                <b>Step 7</b>: Get the POA stamped by the UAE Ministry of Foreign Affairs.
+            </p>
+            <p>
+                <b>Step 8</b>: Have the POA translated into Arabic by a licensed translator.
+            </p>
+            <p>
+                <b>Step 9</b>: Have the POA certified by the UAE Ministry of Justice online through the UAE Pass.
+            </p>
+            <p>
+                <i>
+                    Before starting your POA application process, it is advisable to consult with us. 
+                    Our advise is <b>totally free</b>. But we will guide you through the best application process and will save you from unnecessary complications.
+                </i>
+            </p>
+            <p>
+                Regardless of the method used for attesting the POA, drafting it accurately is a critical step. The effectiveness of your POA largely depends on the quality of the draft. Law firms, translation companies, and notary publics can draft the POA for you. However, it's highly recommended to go for companies with actual experiences using POAs for the specific transaction you intend to undertake. 
+                There are too many reasons why a POA can be rejected by the authority.
+            </p>
+            <p class='quote'>
+                Regardless of the method used for attesting the POA, drafting it accurately is a critical step.
+            </p>
+            <p>
+                For instance, our clients entrust us with POAs for buying, selling, receiving title deeds, or <a style='text-decoration: none' href='https://transparentpm.ae/property-management'>managing their properties</a>. 
+                Our experience with various POA drafts, including those that have failed but were so well-written by law firms, has enabled us to develop a foolproof draft that is guaranteed to be accepted by the authorities.
+            <p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src='https://media.licdn.com/dms/image/D4E12AQH4eUhPZjkxlg/article-inline_image-shrink_1000_1488/0/1700223883804?e=1706140800&v=beta&t=4To5AdvFuPXZ1EUtPRaRG7289nRl84ROZofnE0m5BqY' class='article-img' alt='property-manager' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                You want a POA that can guarantee to work? Check in with us.
+            </p>
+            <p>
+                written by: Meara He
+            </p>
+            <p>
+                Director of Transparent Property Management
+            </p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>
+    </div>`,
     }
 ];
