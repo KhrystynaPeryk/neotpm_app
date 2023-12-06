@@ -19,6 +19,7 @@ import Article3 from './components/Articles/components/Article3';
 import Article4 from './components/Articles/components/Article4';
 import Article5 from './components/Articles/components/Article5';
 import Article6 from './components/Articles/components/Article6';
+import Article7 from './components/Articles/components/Article7';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
           <Route path='/articles/leaving-the-uae-15-tips-to-not-have-any-headaches-after-you-are-gone-especially-for-property-owners' element={<Article4 />} />
           <Route path='/articles/avoid-these-5-common-mistakes-to-prevent-losses-on-your-investment' element={<Article5 />} />
           <Route path='/articles/how-to-get-a-poa-done-with-no-title-deed' element={<Article6 />} />
+          <Route path='/articles/top-11-questions-answered-on-property-golden-visa-application-in-abu-dhabi' element={<Article7 />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />

@@ -634,5 +634,98 @@ export const articlesHTML = [
             </p>
         </div>
     </div>`,
+    },
+    {
+        id: 7,
+        path: 'top-11-questions-answered-on-property-golden-visa-application-in-abu-dhabi',
+        title: 'Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi',
+        metaDescription: 'Discover Abu Dhabi\'s Property Golden Visa FAQs with expert insights from Transparent Property Management UAE. Your essential guide to a successful UAE residency journey.',
+        published: 'December 5, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQHMNKzJD3-j-Q/article-cover_image-shrink_600_2000/0/1701753370316?e=1707350400&v=beta&t=MLFz5XmYuXvVtARO2tEtyIP3aqzr66KMVbkqUa805aM',
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHMNKzJD3-j-Q/article-cover_image-shrink_600_2000/0/1701753370316?e=1707350400&v=beta&t=MLFz5XmYuXvVtARO2tEtyIP3aqzr66KMVbkqUa805aM' />
+        <h1 class='article-title'>Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi</h1>
+        <div><i style='color: gray'>December 5, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                Since the introduction of the golden visa scheme in 2019, hundreds of thousands of applications have been submitted. 
+                Among all categories, the golden visa application through property investment has been most enticing to foreign investors. 
+                It offers an excellent opportunity to own an asset in the UAE while securing a 10-year residency.
+            </p>
+            <p>
+                As many know, there are significant differences between these two emirates, as is likely the case with all emirates.
+            </p>
+            <p>
+                Below, I answer several common questions our clients ask about the application process.
+            </p>
+            <p>
+                <b>FAQ:</b>
+            </p>
+            <ol>
+                <li><b>Do I qualify for a Property Golden Visa Application?</b> You qualify if you own one or more properties in Abu Dhabi with a combined value of at least 2 million dirhams.</li>
+                <li><b>Is the property value the same as my purchase price?</b> No, it's based on the current market value, not the original purchase price.</li>
+                <li><b>How do I know if my properties meet the 2 million dirhams requirement?</b> The true value is confirmed once you receive an evaluation certificate from Abu Dhabi Municipality. The cost for each certificate is AED 1,053, and each property requires its own certificate.</li>
+                <li>
+                    <b>How can I estimate the market value of my property?</b> There are several methods, such as checking PropertyFinder for average sales prices. 
+                    However, remember these figures are based on advertised, not actual, transaction prices. Real estate agents with recent local transactions can provide insights.
+                    Or our favorite is DARI's portal (<a href='https://www.dari.ae/'>www.dari.ae</a>) to check the real transactions value. <b>Log into Dari using your UAE Pass</b> and search for market data. 
+                    You can then filter by location, community, and property type. This should provide a graph similar to the one below, displaying the total number of transactions per quarter and the total sales value. To estimate the sales price per transaction, simply perform this calculation: (total sales value) /(total transaction count) = Averaged transaction price.
+                </li>
+                <div style='display: flex; flex-direction: column; align-items: center'>
+                    <img src='https://media.licdn.com/dms/image/D4D12AQGxz17K6qZ4DA/article-inline_image-shrink_1000_1488/0/1701752880310?e=1707350400&v=beta&t=9_f8zma-dQT5fzGlwHmWJttPjW4drLfdOA1forSG5Kw' class='article-img' alt='dari' />
+                    <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.dari.ae/'>www.dari.ae</a></div>
+                </div>
+                <li><b>If my property is jointly owned, can both owners apply for the Golden Visa?</b> Yes, but the property's minimum value must be AED 2 million per owner. So, a property owned by two people must be worth at least AED 4 million.</li>
+                <li><b>What if my jointly owned property doesn't meet the AED 2 million requirement per owner?</b> Spouses or first-degree relatives can consolidate ownership for the application. Once one person receives the Golden Visa, they can sponsor the other owner and dependents.</li>
+                <li><b>How can I consolidate ownership?</b> For spouses or first-degree relatives, "gifting" at ADM allows transfer of ownership. This incurs a fixed fee of AED 2,750* rather than the 2% sales transfer fee. Note that NOCs from developers and other entities are still required, with costs similar to a standard transfer. (*Subject to ADM's changes)</li>
+                <li><b>Can I combine properties in Abu Dhabi and Dubai for the application?</b> No, properties and applications must be under the same jurisdiction.</li>
+                <li><b>Can I apply for the Golden Visa if my property is mortgaged?</b> Yes, as long as the property value minus the outstanding mortgage is over AED 2 million.</li>
+                <li>
+                    <b>What is the general process for a Golden Visa application?</b>
+                    <div>Step 1: Obtain an evaluation certificate from ADM.</div>
+                    <div>Step 2: Submit the application in person.</div>
+                    <div>Step 3: Receive approval.</div>
+                    <div>Step 4: Change your visa status to investor.</div>
+                    <div>Step 5: Undergo a medical test.</div>
+                    <div>Step 6: Visit the Federal Authority for Identity, Citizenship, Customs & Port Security (ICP) for fingerprinting.</div>
+                    <div>Step 7: Purchase insurance.</div>
+                    <div>Step 8: Apply for an Emirates ID.</div>
+                    <div>Step 9: Apply for your visa.</div>
+                </li>
+                <p class='quote'>
+                    <b>If my property is jointly owned, can both owners apply for the Golden Visa?</b> Yes, but the property's minimum value must be AED 2 million per owner. 
+                    So, a property owned by two people must be worth at least AED 4 million.
+                </p>
+                <div style='display: flex; flex-direction: column; align-items: center'>
+                    <img src='https://media.licdn.com/dms/image/D4D12AQHAaesHwxE6JA/article-inline_image-shrink_1000_1488/0/1701753209130?e=1707350400&v=beta&t=ZHKjkZLei9qmJmtYkfU_tA-f1ALLYmiNwamaTZTAPNY' class='article-img' alt='dari' />
+                    <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+                </div>
+                <li><b>Can I use an off-plan property for my Golden Visa application?</b> Yes, if you've paid AED 2 million or more toward it.</li>
+            </ol>
+            <div>
+                Here are the top 11 questions that we are often asked about. If you have more, let us know, we will update it here.
+            </div>
+            <div><b>Your Thoughts?</b></div>
+            <div>
+                Have you considered applying for a Golden Visa, or do you know someone who has? What has been your experience? Share your thoughts and stories in the comments. 
+                Let's create a resourceful community discussion around this topic!
+            </div>
+            <div><b>Need Expert Guidance?</b></div>
+            <div>
+                Navigating the <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/'>Golden Visa process</a> can be complex. 
+                If you're seeking professional advice or have more specific questions, feel free to reach out to our Golden Visa specialist, Omar Alsayes (📞+971 58 599 6258 <a href="mailto:omar.alsayes@transparentpm.ae">📧omar.alsayes@transparentpm.ae</a>) 
+                He's here to help you with tailored solutions for your investment and residency plans in the UAE.
+            </div>
+            <div><b>Let's Connect and Learn Together!</b></div>
+            <div>
+                If you found this post informative, please like, share, and comment. Sharing knowledge is how we all grow! And don't forget to follow me for more insights and updates on UAE investment opportunities and residency programs.
+            </div>
+            <div>Written by: Meara He</div>
+            <div>Director of Transparent Property Management</div>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
     }
 ];
