@@ -727,5 +727,79 @@ export const articlesHTML = [
             </p>
         </div>    
     </div>`,
+    },
+    {
+        id: 8,
+        path: 'discover-truth-behind-property-management-myths',
+        title: 'Discover the Truth Behind Property Management Myths',
+        metaDescription: 'Bust property management myths with Transparent PM—your partner in transparent, efficient, and expert services for a stress-free investment journey.',
+        published: 'November 27, 2023',
+        headImg: 'https://media.licdn.com/dms/image/D4D12AQFTtVd697jgVw/article-cover_image-shrink_600_2000/0/1701087738247?e=1707955200&v=beta&t=n8TM5b8RyisDaI-5pbx3HwdaQujQsooMqmHpJ9NXkG8',
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFTtVd697jgVw/article-cover_image-shrink_600_2000/0/1701087738247?e=1707955200&v=beta&t=n8TM5b8RyisDaI-5pbx3HwdaQujQsooMqmHpJ9NXkG8' />
+        <h1 class='article-title'>Discover the Truth Behind Property Management Myths</h1>
+        <div><i style='color: gray'>November 27, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                Investing in rental properties is a rewarding endeavor, but it's no secret—it comes with its own set of challenges. 
+                However, fear not! A property management company acts as your ultimate guide, ensuring your investments flourish while you enjoy a worry-free experience.
+            </p>
+            <p>
+                Let's debunk some of the myths surrounding property management that might be holding you back. 
+                As your local property management consultants, Transparent is on a mission to unravel these misconceptions and arm you with the insights needed to make wise and informed decisions for your property.
+            </p>
+            <p><b>Myth 1: Property Management Is Only for Big Properties</b></p>
+            <p>
+                Don't be misled by the notion that <a style='text-decoration: none' href='https://transparentpm.ae/property-management/'>property management</a> is exclusive to massive property portfolios. 
+                Whether you own one unit or a dozen, professional management alleviates stress and skyrockets your investment's profitability.
+            </p>
+            <p><b>Myth 2: Property Management Companies Are Pricy</b></p>
+            <p>
+                Contrary to popular belief, professional management is a sound investment. 
+                It's not a cost but a strategic move that saves money in the long haul by optimizing income and slashing vacancy rates.
+            </p>
+            <p><b>Myth 3: I Can Handle Maintenance Myself</b></p>
+            <p>
+                While DIY seems tempting, property managers leverage networks of reliable professionals, ensuring swift and effective repairs. 
+                At Transparent PM, our extensive network secures <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance/'>cost-effective solutions</a>, saving you time and safeguarding your property's value.
+            </p>
+            <p><b>Myth 4: Property Managers Are Indifferent</b></p>
+            <p>
+                Far from it! At Transparent, we're deeply invested in your property's well-being. 
+                With roots in the local community, our commitment transcends managing properties—we nurture communities.
+            </p>
+            <p><b>Myth 5: Rental Property Doesn't Need Management</b></p>
+            <p>
+                Once leased, it's an ongoing journey. 
+                Property management ensures your investment thrives, handling tenant concerns and legal obligations year-round.
+            </p>
+            <p><b>Myth 6: I Don't Need a Manager for One Property</b></p>
+            <p>
+                A property manager's expertise is invaluable, even for a single unit. 
+                They tackle complexities, letting you relish ownership minus the stress.
+            </p>
+            <p><b>Myth 7: All Managers Are the Same</b></p>
+            <p>
+                Not true! Transparent PM stands out with tailored strategies, transparent communication, and years of industry expertise, ensuring your property gets the attention it deserves.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src='https://media.licdn.com/dms/image/D4D12AQEtfX5XjkDZBw/article-inline_image-shrink_1000_1488/0/1701088026024?e=1707955200&v=beta&t=z1_rvWdanJ_zlkBhFLevLQ_ZR4OJSbeZOVREYl-NBNQ' class='article-img' alt='dari' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p class='quote'>
+                A property manager's expertise is invaluable, even for a single unit. 
+                They tackle complexities, letting you relish ownership minus the stress.
+            </p>
+            <p><b>Rethink Property Management with Transparent PM</b></p>
+            <p>
+                With a proven track record, Transparent PM is your partner & expert consultant in the property management space. 
+                Whether a seasoned investor or a newbie, our team pledges transparent, efficient, and expert services.
+            </p>
+            <div>Want to learn more? Give us a call or WhatsApp, happy to serve you!</div>
+            <div>Written by: Joshua Jamelo</div>
+            <div>Deputy Director - Transparent Property Management & Maintenance</div>
+            <div>📞+971 56 442 0883</div>
+        </div>    
+    </div>`,
     }
 ];

@@ -34,7 +34,8 @@ const Footer = () => {
                 </div>
                 <div className='footer-content-block'>
                     <h1>CONTACT US</h1>
-                    Phone: <a href="tel:+971564420883" className='footer-link'>+971 56 442 0883</a> <br />
+                    Phone: <a href="tel:+971564420883" className='footer-link'>+971 56 442 0883,</a> <br />
+                    <a href="tel:+97126453888" className='footer-link'>+971 (2) 645 3888</a> <br />
                     Email: <a className="footer-link" href="mailto:joshua.jamelo@transparentpm.ae">joshua.jamelo@transparentpm.ae</a>
                 </div>
                 <div className='footer-content-block'>
