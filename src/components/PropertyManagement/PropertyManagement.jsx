@@ -176,7 +176,7 @@ const PropertyManagement = () => {
                     <div className='table-section-item'>Sales & Post Sales Assistance</div>
                     {isPlatinumClicked && (
                         <>
-                            <div className='table-section-price'>From AED 6,500 or 8% of the rent</div>
+                            <div className='table-section-price'>From AED 7,500 or 8% of the rent</div>
                             <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
                         </>
                     )}
