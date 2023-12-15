@@ -1,3 +1,23 @@
+import article1Header from '../../assets/images/articlesImg/Article1/header.png'
+import article1BodyImg1 from '../../assets/images/articlesImg/Article1/bodyImg1.png'
+import article2Header from '../../assets/images/articlesImg/Article2/header.png'
+import article2BodyImg1 from '../../assets/images/articlesImg/Article2/bodyImg1.png'
+import article3Header from '../../assets/images/articlesImg/Article3/header.png'
+import article3BodyImg1 from '../../assets/images/articlesImg/Article3/bodyImg1.png'
+import article4Header from '../../assets/images/articlesImg/Article4/header.png'
+import article4BodyImg1 from '../../assets/images/articlesImg/Article4/bodyImg1.png'
+import article5Header from '../../assets/images/articlesImg/Article5/header.png'
+import article5BodyImg1 from '../../assets/images/articlesImg/Article5/bodyImg1.png'
+import article6Header from '../../assets/images/articlesImg/Article6/header.png'
+import article6BodyImg1 from '../../assets/images/articlesImg/Article6/bodyImg1.png'
+import article7Header from '../../assets/images/articlesImg/Article7/header.png'
+import article7BodyImg1 from '../../assets/images/articlesImg/Article7/bodyImg1.png'
+import article7BodyImg2 from '../../assets/images/articlesImg/Article7/bodyImg2.png'
+import article8Header from '../../assets/images/articlesImg/Article8/header.png'
+import article8BodyImg1 from '../../assets/images/articlesImg/Article8/bodyImg1.png'
+import article9Header from '../../assets/images/articlesImg/Article9/header.png'
+import article9BodyImg1 from '../../assets/images/articlesImg/Article9/bodyImg1.png'
+import article9BodyImg2 from '../../assets/images/articlesImg/Article9/bodyImg2.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -5,9 +25,9 @@ export const articlesHTML = [
         title: '10 Reasons Why you Really Need a Property Manager in Abu Dhabi',
         metaDescription: 'Discover the top 10 compelling reasons why hiring a property manager in Abu Dhabi is a game-changer for property owners. From faster rentals to stress reduction and legal expertise, find out how a professional property manager can maximize your investment and peace of mind.',
         published: 'September 27, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQFCSZIUrHAECQ/article-cover_image-shrink_423_752/0/1696337250690?e=1702512000&v=beta&t=gaG6PQGb0vr-Pc1Jt12J_K8Hj2fBq5p5i2zUbMxmIyQ',
+        headImg: article1Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-            <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFCSZIUrHAECQ/article-cover_image-shrink_423_752/0/1696337250690?e=1702512000&v=beta&t=gaG6PQGb0vr-Pc1Jt12J_K8Hj2fBq5p5i2zUbMxmIyQ' />
+            <img class='article-img' alt='property-manager' src=${article1Header} />
             <h1 class='article-title'>10 Reasons Why You Really Need a Property Manager in Abu Dhabi</h1>
             <div><i style='color: gray'>September 27, 2023</i></div>
             <div class='article-body'>
@@ -74,7 +94,7 @@ export const articlesHTML = [
                 Our advice? Choose a good property manager who is professional, integral, and proactive, and truly understands your property's needs. Trust us, it will be a game-changer for you.
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQG_Yr3LkFI8zg/article-inline_image-shrink_1000_1488/0/1695811813579?e=1702512000&v=beta&t=uBcfYRY4QIMZ6x_3E9ueZo4_oZ0Rfx4p2Fjimfspii4' class='article-img' alt='property-manager' />
+                    <img src=${article1BodyImg1} class='article-img' alt='property-manager' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <p>
@@ -89,9 +109,9 @@ export const articlesHTML = [
         title: '7 Tips for Effective Maintenance in Abu Dhabi',
         metaDescription: 'Unlock the secrets to successful property maintenance in Abu Dhabi with expert insights. Discover proactive strategies for addressing maintenance issues, choosing the right properties, and fostering positive tenant relationships. Learn how to avoid costly headaches and ensure property longevity with these essential tips.',
         published: 'September 28, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQHPdu9mS9seHw/article-cover_image-shrink_423_752/0/1696336964530?e=1702512000&v=beta&t=ktDcODv1k5SXJGuFHSVwTZj4Hoy-b7spCviOVpBzP5Q',
+        headImg: article2Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-            <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHPdu9mS9seHw/article-cover_image-shrink_423_752/0/1696336964530?e=1702512000&v=beta&t=ktDcODv1k5SXJGuFHSVwTZj4Hoy-b7spCviOVpBzP5Q' />
+            <img class='article-img' alt='property-manager' src=${article2Header} />
             <h1 class='article-title'>7 Tips for Effective Maintenance in Abu Dhabi</h1>
             <div><i style='color: gray'>September 28, 2023</i></div>
             <div class='article-body'>
@@ -180,8 +200,8 @@ export const articlesHTML = [
                     "Establishing a clear process for tenants to report maintenance issues and ensuring they know how to contact you is essential. 
                     Though it adds up to your work load, encourage tenants to report even minor issues to prevent hidden problems."
                 </p>
-                <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQEgQLDXPSE82Q/article-inline_image-shrink_1000_1488/0/1695907277001?e=1702512000&v=beta&t=P1c65soTon0hUipG5FXZQZxZx0bZhPE3s-t5OqU27Kg' class='article-img' alt='property-maintenance' />
+                <div style='display: flex; flex-direction: column; align-items: center;'>
+                    <img src=${article2BodyImg1} alt='maintenance' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <h3>Conclusion:</h3>
@@ -204,9 +224,9 @@ export const articlesHTML = [
         title: 'Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager',
         metaDescription: 'Learn valuable insights from seasoned Abu Dhabi property managers on resolving tenant disputes amicably and efficiently. Discover prevention strategies, maintenance solutions, and steps to avoid costly legal action. Explore expert advice for harmonious landlord-tenant relationships.',
         published: 'October 4, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQF6f_-e2oNFfA/article-cover_image-shrink_423_752/0/1696424310498?e=1702512000&v=beta&t=Ug26_yJH8c63QWAMnq5WD6xB266JvaaTQaQLLmEERBk',
+        headImg: article3Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQF6f_-e2oNFfA/article-cover_image-shrink_423_752/0/1696424310498?e=1702512000&v=beta&t=Ug26_yJH8c63QWAMnq5WD6xB266JvaaTQaQLLmEERBk' />
+        <img class='article-img' alt='property-manager' src=${article3Header} />
         <h1 class='article-title'>Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager</h1>
         <div><i style='color: gray'>October 4, 2023</i></div>
         <div class='article-body'>
@@ -301,7 +321,7 @@ export const articlesHTML = [
                 </li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4D12AQFYKrwZTArRmg/article-inline_image-shrink_1500_2232/0/1696424487396?e=1702512000&v=beta&t=tTRh860FDQZ93wIR1E33E5cjA-Bh4t2vU975yPR8A5w' class='article-img' alt='property-manager-tips' />
+                <img src=${article3BodyImg1} class='article-img' alt='property-manager-tips' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -320,9 +340,9 @@ export const articlesHTML = [
         title: 'Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners',
         metaDescription: 'Leaving the UAE? Discover 15 essential tips for a seamless property transition. From Golden Visa strategies to managing Tawtheeq, settle debts, and choose between selling or renting. Ensure a headache-free departure with expert advice.',
         published: 'October 12, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQFEVAb7tdmKJw/article-cover_image-shrink_720_1280/0/1697106450813?e=2147483647&v=beta&t=eKIHBrwPuoTPtGstcVO64QkplNSjgg6AT2Se_yhk5ro',
+        headImg: article4Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFEVAb7tdmKJw/article-cover_image-shrink_720_1280/0/1697106450813?e=2147483647&v=beta&t=eKIHBrwPuoTPtGstcVO64QkplNSjgg6AT2Se_yhk5ro' />
+        <img class='article-img' alt='property-manager' src=${article4Header} />
         <h1 class='article-title'>Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners</h1>
         <div><i style='color: gray'>October 4, 2023</i></div>
         <div class='article-body'>
@@ -368,7 +388,7 @@ export const articlesHTML = [
                 Considering a contingency plan, like enlisting <a style='text-decoration: none' href='https://transparentpm.ae/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi'>a property manager</a> or securing <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>a POA</a>, is invaluable.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4D12AQHPoV1Gj8yo6Q/article-inline_image-shrink_1500_2232/0/1697106807408?e=1702512000&v=beta&t=dTrLmdp86b-evVhueEwRpY_I2jxN7MzC4HiVIy-cpb8' class='article-img' alt='property-manager-tips' />
+                <img src=${article4BodyImg1} class='article-img' alt='property-manager-tips' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <h3>7. Tawtheeq Management </h3>
@@ -430,9 +450,9 @@ export const articlesHTML = [
         title: 'Avoid These 5 Common Mistakes to Prevent Losses on Your Investment',
         metaDescription: 'Explore the essential factors to consider beyond location when making a real estate investment in the thriving UAE market.',
         published: 'October 27, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQHWo3R34Ta8iw/article-cover_image-shrink_423_752/0/1698383513617?e=1704326400&v=beta&t=e0qqzHkTXyzTknzjRArYI0HmI7lck5DnzyRBfkGDHLA',
+        headImg: article5Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHWo3R34Ta8iw/article-cover_image-shrink_423_752/0/1698383513617?e=1704326400&v=beta&t=e0qqzHkTXyzTknzjRArYI0HmI7lck5DnzyRBfkGDHLA' />
+        <img class='article-img' alt='property-manager' src=${article5Header} />
         <h1 class='article-title'>Avoid These 5 Common Mistakes to Prevent Losses on Your Investment</h1>
         <div><i style='color: gray'>October 27, 2023</i></div>
         <div class='article-body'>
@@ -469,7 +489,7 @@ export const articlesHTML = [
                 As you consider such properties, ensure you factor in potential <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance costs</a> - uniqueness should enhance your investment, not drain it.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4D12AQF5uOMXqong-g/article-inline_image-shrink_1500_2232/0/1698383720894?e=1704326400&v=beta&t=0BlQ1dPfcELx61ZkUJloBt7vly0X6kTVLzIzvAvR8Dc' class='article-img' alt='property-manager-tips' />
+                <img src=${article5BodyImg1} />
             </div>
             <h3>4. Beyond Handover - Your Ongoing Relationship with Developers - Developer Commitment Post-Purchase</h3>
             <p>
@@ -537,9 +557,9 @@ export const articlesHTML = [
         title: 'How to Get a POA Done With NO Title Deed?',
         metaDescription: 'Navigate the UAE Power of Attorney (POA) process without a title deed. Follow our concise guide for overseas attestation, ensuring a seamless application from appointment to certification.',
         published: 'November 17, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4E12AQEAlyB0hSWqsg/article-cover_image-shrink_423_752/0/1700223557166?e=1706140800&v=beta&t=Hm0Q4Bh_X_v8EVShc_zAof1Wp6JNxvi6FX6xapisphk',
+        headImg: article6Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4E12AQEAlyB0hSWqsg/article-cover_image-shrink_423_752/0/1700223557166?e=1706140800&v=beta&t=Hm0Q4Bh_X_v8EVShc_zAof1Wp6JNxvi6FX6xapisphk' />
+        <img class='article-img' alt='property-manager' src=${article6Header} />
         <h1 class='article-title'>How to Get a POA Done With NO Title Deed?</h1>
         <div><i style='color: gray'>November 17, 2023</i></div>
         <div class='article-body'>
@@ -617,7 +637,7 @@ export const articlesHTML = [
                 Our experience with various POA drafts, including those that have failed but were so well-written by law firms, has enabled us to develop a foolproof draft that is guaranteed to be accepted by the authorities.
             <p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4E12AQH4eUhPZjkxlg/article-inline_image-shrink_1000_1488/0/1700223883804?e=1706140800&v=beta&t=4To5AdvFuPXZ1EUtPRaRG7289nRl84ROZofnE0m5BqY' class='article-img' alt='property-manager' />
+                <img src=${article6BodyImg1} />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -641,9 +661,9 @@ export const articlesHTML = [
         title: 'Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi',
         metaDescription: 'Discover Abu Dhabi\'s Property Golden Visa FAQs with expert insights from Transparent Property Management UAE. Your essential guide to a successful UAE residency journey.',
         published: 'December 5, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQHMNKzJD3-j-Q/article-cover_image-shrink_600_2000/0/1701753370316?e=1707350400&v=beta&t=MLFz5XmYuXvVtARO2tEtyIP3aqzr66KMVbkqUa805aM',
+        headImg: article7Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQHMNKzJD3-j-Q/article-cover_image-shrink_600_2000/0/1701753370316?e=1707350400&v=beta&t=MLFz5XmYuXvVtARO2tEtyIP3aqzr66KMVbkqUa805aM' />
+        <img class='article-img' alt='property-manager' src=${article7Header} />
         <h1 class='article-title'>Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi</h1>
         <div><i style='color: gray'>December 5, 2023</i></div>
         <div class='article-body'>
@@ -672,7 +692,7 @@ export const articlesHTML = [
                     You can then filter by location, community, and property type. This should provide a graph similar to the one below, displaying the total number of transactions per quarter and the total sales value. To estimate the sales price per transaction, simply perform this calculation: (total sales value) /(total transaction count) = Averaged transaction price.
                 </li>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQGxz17K6qZ4DA/article-inline_image-shrink_1000_1488/0/1701752880310?e=1707350400&v=beta&t=9_f8zma-dQT5fzGlwHmWJttPjW4drLfdOA1forSG5Kw' class='article-img' alt='dari' />
+                    <img src=${article7BodyImg1} class='article-img' alt='dari' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.dari.ae/'>www.dari.ae</a></div>
                 </div>
                 <li><b>If my property is jointly owned, can both owners apply for the Golden Visa?</b> Yes, but the property's minimum value must be AED 2 million per owner. So, a property owned by two people must be worth at least AED 4 million.</li>
@@ -697,7 +717,7 @@ export const articlesHTML = [
                     So, a property owned by two people must be worth at least AED 4 million.
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src='https://media.licdn.com/dms/image/D4D12AQHAaesHwxE6JA/article-inline_image-shrink_1000_1488/0/1701753209130?e=1707350400&v=beta&t=ZHKjkZLei9qmJmtYkfU_tA-f1ALLYmiNwamaTZTAPNY' class='article-img' alt='dari' />
+                    <img src=${article7BodyImg2} class='article-img' alt='transparentpm.ae' />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <li><b>Can I use an off-plan property for my Golden Visa application?</b> Yes, if you've paid AED 2 million or more toward it.</li>
@@ -734,9 +754,9 @@ export const articlesHTML = [
         title: 'Discover the Truth Behind Property Management Myths',
         metaDescription: 'Bust property management myths with Transparent PM—your partner in transparent, efficient, and expert services for a stress-free investment journey.',
         published: 'November 27, 2023',
-        headImg: 'https://media.licdn.com/dms/image/D4D12AQFTtVd697jgVw/article-cover_image-shrink_600_2000/0/1701087738247?e=1707955200&v=beta&t=n8TM5b8RyisDaI-5pbx3HwdaQujQsooMqmHpJ9NXkG8',
+        headImg: article8Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src='https://media.licdn.com/dms/image/D4D12AQFTtVd697jgVw/article-cover_image-shrink_600_2000/0/1701087738247?e=1707955200&v=beta&t=n8TM5b8RyisDaI-5pbx3HwdaQujQsooMqmHpJ9NXkG8' />
+        <img class='article-img' alt='property-manager' src=${article8Header} />
         <h1 class='article-title'>Discover the Truth Behind Property Management Myths</h1>
         <div><i style='color: gray'>November 27, 2023</i></div>
         <div class='article-body'>
@@ -783,7 +803,7 @@ export const articlesHTML = [
                 Not true! Transparent PM stands out with tailored strategies, transparent communication, and years of industry expertise, ensuring your property gets the attention it deserves.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src='https://media.licdn.com/dms/image/D4D12AQEtfX5XjkDZBw/article-inline_image-shrink_1000_1488/0/1701088026024?e=1707955200&v=beta&t=z1_rvWdanJ_zlkBhFLevLQ_ZR4OJSbeZOVREYl-NBNQ' class='article-img' alt='dari' />
+                <img src=${article8BodyImg1} class='article-img' alt='transparentpm.ae' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p class='quote'>
@@ -799,6 +819,136 @@ export const articlesHTML = [
             <div>Written by: Joshua Jamelo</div>
             <div>Deputy Director - Transparent Property Management & Maintenance</div>
             <div>📞+971 56 442 0883</div>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 9,
+        path: 'is-having-a-poa-in-abu-dhabi-really-going-to-help-you-with-your-property',
+        title: 'Is having a POA in Abu Dhabi really going to help you with your property?',
+        metaDescription: 'Discover the impact of a Power of Attorney (POA) on property matters in Abu Dhabi.',
+        published: 'November 27, 2023',
+        headImg: article9Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article9Header} />
+        <h1 class='article-title'>Is having a POA in Abu Dhabi really going to help you with your property?</h1>
+        <div><i style='color: gray'>December 15, 2023</i></div>
+        <div class='article-body'>
+            <p>
+                Recently, we assisted an overseas client who wanted us to act as his <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>Power of Attorney</a> (POA) for purchasing a property in Abu Dhabi. 
+                While drafting the document, he inquired whether the POA was still necessary after completing the sales transfer.
+            </p>
+            <p>
+                That's a good question.
+            </p>
+            <p>
+                We often take for granted the things we can do locally. 
+                For overseas owners, however, everything can be more challenging.
+            </p>
+            <p>
+                So, if you are an overseas owner, how can a POA assist you?
+            </p>
+            <ul>
+                <li> 
+                    <b>Handover/Sales/Purchase Assistance</b>:
+                    If property owners cannot travel to the UAE to sign documents for handover and receive the keys, a POA can do it on their behalf.
+                </li>
+                <li> 
+                    <b>ADDC Liaison</b>:
+                    For tasks like registering utility accounts, updating ownership information, or dealing with tenants who refuse to close their own ADDC accounts, a POA - and strictly a POA (as ADDC has become very strict) - can assist.
+                </li>
+                <li> 
+                    <b>Continuity in Issuing Tawtheeq</b>:
+                    Many owners lose their UAE phone number after leaving the UAE, making it difficult to access their UAE pass to issue tawtheeq. However, having a local POA can bypass this issue, ensuring continuous issuance of your tawtheeq.
+                </li>
+                <li> 
+                    <b>Receiving Rent from Governmental Entities</b>:
+                    Some government agencies pay rent directly to the landlord's UAE bank account. 
+                    This isn't usually a problem for local owners, but it can be difficult for overseas owners, especially if they don't have local bank accounts. 
+                    A local POA can resolve this issue.
+                </li>
+                <li> 
+                    <b>Complying with Government Requirements</b>:
+                    When the government introduces changes to property ownership or legal requirements, having a POA in town means your POA can immediately assist you with compliance.
+                </li>
+                <li> 
+                    <b>Legal Representation</b>:
+                    In case of any disputes, your POA can represent you in court.
+                </li>
+            </ul>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article9BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                <b>Limitations of a POA in the UAE:</b>
+            </p>
+            <p>
+                It might seem obvious, but there are situations in the UAE where a POA offers no benefits:
+            </p>
+            <ul>
+                <li> 
+                    <b>Fingerprint Requirements</b>:
+                    In many cases where the owner's fingerprints are required (like verifying your UAE pass or canceling or registering telecom accounts), a POA is limited.
+                </li>
+                <li> 
+                    <b>Signing Mortgage Documents</b>:
+                    Most banks require the loan applicant to physically sign mortgage documents in their presence. 
+                    A POA cannot assist with this.
+                </li>
+                <li> 
+                    <b>Opening Bank Accounts</b>:
+                    Similarly, a POA cannot open bank accounts on your behalf.
+                </li>
+            </ul>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article9BodyImg2} class='article-img' alt='Things to Watch Out' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                <b>Things to Watch Out for When Making a POA:</b>
+            </p>
+            <ul>
+                <li> 
+                    <b>Trustworthiness</b>:
+                    The most crucial factor in choosing a POA is trustworthiness.
+                </li>
+                <li> 
+                    <b>Professional Knowledge</b>:
+                    You want your POA to take care of things for you. 
+                    Your POA should have the necessary professional knowledge for the tasks they are required to do.
+                </li>
+                <li> 
+                    <b>Scope and Duration</b>:
+                    Carefully read the scope and duration of the POA to control the power you delegate.
+                </li>
+                <li> 
+                    <b>Drafting and Testing the POA</b>:
+                    Ensure the POA draft has been thoroughly tested, so you are confident your POA can execute tasks successfully under the attested POA.
+                </li>
+                <li> 
+                    <b>General vs. Special POA</b>:
+                    Consider whether you need a General POA or a Special POA. A Special POA is property-specific and offers more protection, but a General POA might be necessary for maximum flexibility.
+                </li>
+            </ul>
+            <p>
+                If you want to find out whether POA is the thing for you, or you need professional assistance with property-related POA drafting, attestation, or representation, please get in touch. Our POA specialist, Omar Alsayes (📞+971 58 599 6258, <a href="mailto:omar.alsayes@transparentpm.ae">📧omar.alsayes@transparentpm.ae</a>), is here to help.
+            </p>
+            <p>
+                <b>Let's Connect and Learn Together!</b>
+            </p>
+            <p>
+                If you found this post informative, please like, share, and comment. Sharing knowledge is how we all grow!
+            </p>
+            <p>
+                Written by: Meara He
+            </p>
+            <p>
+                Director of Transparent Property Management
+            </p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
         </div>    
     </div>`,
     }

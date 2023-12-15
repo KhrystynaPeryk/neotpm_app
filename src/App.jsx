@@ -21,6 +21,7 @@ import Article5 from './components/Articles/components/Article5';
 import Article6 from './components/Articles/components/Article6';
 import Article7 from './components/Articles/components/Article7';
 import Article8 from './components/Articles/components/Article8';
+import Article9 from './components/Articles/components/Article9';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
           <Route path='/articles/how-to-get-a-poa-done-with-no-title-deed' element={<Article6 />} />
           <Route path='/articles/top-11-questions-answered-on-property-golden-visa-application-in-abu-dhabi' element={<Article7 />} />
           <Route path='/articles/discover-truth-behind-property-management-myths' element={<Article8 />} />
+          <Route path='/articles/is-having-a-poa-in-abu-dhabi-really-going-to-help-you-with-your-property' element={<Article9 />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
