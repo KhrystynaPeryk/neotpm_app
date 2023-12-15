@@ -30,11 +30,10 @@ const Articles = () => {
       <div className='articles-container'>
         {articles.map(article => {
           return (
-            <div key={article.id} className='article-card'>
+            <div key={article.id} className='article-card' onClick={() => handleShowArticle(article.path)}>
               <img className='card-img' src={article.headImg} alt={article.title} />
               <div className='card-title'>{article.title}</div>
               <div><i>Published on {article.published}</i></div>
-              <button className='article-btn' type='button' onClick={() => handleShowArticle(article.path)}>Read more</button>
             </div>
           )
         })}
