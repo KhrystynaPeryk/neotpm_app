@@ -1,6 +1,6 @@
 // not used so far
 import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import './ArticleItem.scss'
 import { articlesHTML } from '../articlesHTML'
 import NavBar from '../../common/NavBar/NavBar';
@@ -8,16 +8,14 @@ import Footer from '../../common/Footer/Footer';
 import { Helmet } from 'react-helmet-async';
 
 const ArticleItem = () => {
-  const location = useLocation()
+  const {path} = useParams()
   const [article, setArticle] = useState({ title: '', metaDescription: '', headImg: '', htmlBody: '' });
 
   useEffect(() => {
-    if (location.state) {
-      const filteredArticles = articlesHTML.filter(article => article.id === location.state.id)
-      const [filteredArticle] = filteredArticles
-      setArticle(filteredArticle)
-    }
-  }, [location.state, article]);
+    const filteredArticles = articlesHTML.filter((article) => article.path === path);
+    const [filteredArticle] = filteredArticles;
+    setArticle(filteredArticle || {});
+  }, [path]);
 
   return (
     <div className='property-container'>
