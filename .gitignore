@@ -29,3 +29,4 @@ yarn-error.log*
 firebase.json
 ui-debug.log
 firebase-debug.log
+# Switched from node version 16.13.1 to 18.17.0. Switch back if any issues nvm use 16.13.1

@@ -11,6 +11,8 @@ const DocumentsRequestForm = () => {
   const location = useLocation();
 
   const [name, setName] = useState('');
+  const [phone, setPhone] = useState('')
+  const [isPhoneValid, setIsPhoneValid] = useState(true)
   const [email, setEmail] = useState('');
   const [isEmailValid, setIsEmailValid] = useState(true)
   const [message, setMessage] = useState('');
@@ -25,10 +27,23 @@ const DocumentsRequestForm = () => {
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value)
-    if (/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(e.target.value) === false) {
-      return setIsEmailValid(false)
+    if (e.target.value === '') {
+      setIsEmailValid(true)
+    } else if (/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(e.target.value) === false) {
+      setIsEmailValid(false)
     } else {
-      return setIsEmailValid(true)
+      setIsEmailValid(true)
+    }
+  }
+  
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value)
+    if (e.target.value === '') {
+      setIsPhoneValid(true)
+    } else if (/^(\+[0-9]+)?[0-9]+$/g.test(e.target.value) === false) {
+      setIsPhoneValid(false)
+    } else {
+      setIsPhoneValid(true)
     }
   }
 
@@ -53,6 +68,11 @@ const DocumentsRequestForm = () => {
             <div>Thank you for contacting us.</div>
             <div>Feel free to upload your documents following the link below:</div>
             <div>${response.data.newFileLink}</div>
+            <div style="margin-bottom: 20px; margin-top: 20px;">
+              Your contact details: <br/>
+              <b>Phone: </b>${phone} <br/>
+              <b>Email: </b>${email}
+            </div>
             <div>One of our representatives will contact you upon reviewing your documents.</div>
           </div>
           <div>
@@ -72,6 +92,7 @@ const DocumentsRequestForm = () => {
   const handleResetForm = () => {
     setName('')
     setEmail('')
+    setPhone('')
     setNewFileLink('')
   }
 
@@ -96,6 +117,15 @@ const DocumentsRequestForm = () => {
             placeholder='Name'
           />
           <input
+            type='tel'
+            value={phone}
+            maxLength={20}
+            onChange={handlePhoneChange}
+            required
+            placeholder='Phone'
+          />
+          {!isPhoneValid && (<div className='email-error'>Please enter a valid phone</div>) }
+          <input
             type='text'
             value={email}
             onChange={handleEmailChange}
@@ -104,6 +134,7 @@ const DocumentsRequestForm = () => {
           />
           {!isEmailValid && (<div className='email-error'>Please enter a valid email</div>) }
           <textarea
+            className={location.state ? 'disabled' : null}
             value={message}
             maxLength={100}
             onChange={(e) => setMessage(e.target.value)}

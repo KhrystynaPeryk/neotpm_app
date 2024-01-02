@@ -139,7 +139,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                     <input
                                     type='tel'
                                     value={phone}
-                                    maxLength={30}
+                                    maxLength={20}
                                     onChange={handlePhoneChange}
                                     placeholder='Phone'
                                     className={errors.phone ? 'popup-red-border' : ''}
