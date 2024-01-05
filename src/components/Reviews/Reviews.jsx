@@ -49,4 +49,6 @@ const Reviews = () => {
     )
 }
 
+// refreshing reviews on https://developers.google.com/oauthplayground/, press gear, choose client-side, paste client id: 992109642155-gllh0un55pskcg7hadq7mb2g37uq0bva.apps.googleusercontent.com
+
 export default Reviews
