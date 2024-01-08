@@ -5,7 +5,6 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import BrochureBanner from '../common/BrochureBanner/BrochureBanner';
-import POAQuiz from '../common/POAQuiz/POAQuiz';
 import BronzeHouse from '../../assets/images/bronze-icon-white.png'
 import GoldHouse from '../../assets/images/gold-icon-white.png'
 import PlatinumHouse from '../../assets/images/platinum-icon-white.png'
@@ -514,7 +513,6 @@ const PropertyManagement = () => {
                     </div>
                 </Carousel>
             </div>
-                <POAQuiz />
             <div className='footer-wrapper'>
                 <Footer />
             </div>
