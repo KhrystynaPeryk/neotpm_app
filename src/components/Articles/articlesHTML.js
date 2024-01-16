@@ -18,6 +18,8 @@ import article8BodyImg1 from '../../assets/images/articlesImg/Article8/bodyImg1.
 import article9Header from '../../assets/images/articlesImg/Article9/header.png'
 import article9BodyImg1 from '../../assets/images/articlesImg/Article9/bodyImg1.png'
 import article9BodyImg2 from '../../assets/images/articlesImg/Article9/bodyImg2.png'
+import article10Header from '../../assets/images/articlesImg/Article10/header.png'
+import article10BodyImg1 from '../../assets/images/articlesImg/Article10/bodyImg1.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -344,7 +346,7 @@ export const articlesHTML = [
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article4Header} />
         <h1 class='article-title'>Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners</h1>
-        <div><i style='color: gray'>October 4, 2023</i></div>
+        <div><i style='color: gray'>October 12, 2023</i></div>
         <div class='article-body'>
             <p>
                 In my time at TPM, I've seen many property owners, mostly from overseas, grapple with the intricacies of departing the UAE. 
@@ -832,7 +834,7 @@ export const articlesHTML = [
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article9Header} />
         <h1 class='article-title'>Is having a POA in Abu Dhabi really going to help you with your property?</h1>
-        <div><i style='color: gray'>December 15, 2023</i></div>
+        <div><i style='color: gray'>November 27, 2023</i></div>
         <div class='article-body'>
             <p>
                 Recently, we assisted an overseas client who wanted us to act as his <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>Power of Attorney</a> (POA) for purchasing a property in Abu Dhabi. 
@@ -942,6 +944,84 @@ export const articlesHTML = [
             </p>
             <p>
                 Written by: Meara He
+            </p>
+            <p>
+                Director of Transparent Property Management
+            </p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 10,
+        path: 'where-are-we-now-in-abu-dhabis-real-estate-cycle-will-prices-continue-to-rise-in-2024',
+        title: 'Where Are We Now in Abu Dhabi`s Real Estate Cycle? Will Prices Continue to Rise in 2024?',
+        metaDescription: 'Navigate Abu Dhabi`s 2024 real estate outlook with Transparent Property Management UAE for expert insights on growth, off-plan challenges, population dynamics, and potential hyper supply risks.',
+        published: 'January 14, 2024',
+        headImg: article10Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article10Header} />
+        <h1 class='article-title'>Where Are We Now in Abu Dhabi's Real Estate Cycle? Will Prices Continue to Rise in 2024?</h1>
+        <div><i style='color: gray'>January 14, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                I believe the answer is 'yes,' at least until we encounter the "reality check" accompanying the handover of off-plan properties. 
+                Only then will we truly understand whether the Abu Dhabi market can sustain itself or will need to undergo a level of correction.
+            </p>
+            <p>
+                In 2022 and 2023, Abu Dhabi's property market experienced significant growth. 
+                The Property Finder Annual Market Watch 2023 report, citing the Department of Municipalities and Transport (DMT), revealed a record high in transactions, with 13,298 in a year, compared to 7,957 in 2022. 
+                This reflects a substantial 75% increase, of which 97% were residential transactions. 
+                The total transaction value also soared to AED 44 billion, marking a remarkable 120% increase from 2022's AED 19.9 billion, with 85% of this value attributed to residential properties.
+            </p>
+            <p>
+                Furthermore, with strong predictions of economic growth in 2024 (the UAE Central Bank forecasts a rise of up to 4.3% for 2024, and the IMF expects the UAE's GDP to grow by 4% in the same year), and considering the regional turmoil globally, the UAE's market appears more favorable. 
+                Oil prices have stabilized, and further loosening of restrictions in oil production is expected. 
+                Thus, the property market outlook for Abu Dhabi in 2024 remains optimistic.
+            </p>
+            <p>
+                <b>But will the prices continue to rise, and for how much longer? What should we watch out for? 
+                Is what I want to explore in this article.</b>
+            </p>
+            <p>
+                <b>1. Delayed Reality Check: </b>: Since the onset of Covid in 2020, Abu Dhabi's real estate market has seen a surge, particularly in off-plan properties. In 2023, 76% of sales transactions were from off-plan properties. For investors not planning to occupy these properties themselves, assessing achievable rental prices will be critical. 
+                But with off-plan projects, there will always be a delay in answering the most crucial question to all property investors: <i>how much rent can these off-plan properties command when they are finally handed over?</i>
+            </p>
+            <p>
+                Considering many off-plan projects in Abu Dhabi's asking price can be as high as 50% more than their neighboring properties per sqf, there is a question of whether there will be strong enough rental demand to support the high asking prices of off-plan properties. 
+                We will gain more insight as the market heads towards a handover boom from 2025 onwards.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article10BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p> 
+                <b>2. Population Growth: </b>In comparison to Dubai, which saw its population grow by nearly 1 million from 2013 to 2023, reaching a current level of 3,051,000, Abu Dhabi's population growth has been more moderate, currently reaching nearly 1.6 million. 
+                Between 2022 and 2023, the population increased by 27,000. Stronger population growth would provide more robust support for the real estate market, significantly impacting the duration of this property expansion cycle.
+            </p>
+            <p> 
+                <b>3. Reliance on Oil, Even for Non-Oil Sectors: </b>Anyone involved in Abu Dhabi's real estate market in 2015 will vividly remember the "oil recession," when the market plummeted, losing about 10% in property prices each year from 2015 onwards. 
+                Many properties saw their rental and sales prices halved during this recession. While the government is certainly moving in the right direction by diversifying the economy, it's important to pay attention to whether the non-oil industries are actually funded by oil revenue or benefit from it. 
+                For instance, technically, real estate is a non-oil industry, but when oil prices affect nearly all companies' revenues and their staff's ability to rent properties, oil prices alone can greatly affect the real estate market.
+            </p>
+            <p> 
+                <b>4. Potential Hyper Supply Phase: </b>Viewing real estate investment as a cycle through recovery, expansion, hyper supply, and recession phases, 2023 is undoubtedly a year of expansion. 
+                The critical question is how long this expansion phase will last, or whether we are approaching a hyper supply phase. 
+                It might still be a bit too early to judge, but clearly understanding the current phase of the cycle and anticipating future trends is crucial for adopting effective strategies and ensuring profitable investments.
+            </p>
+            <p class='quote'>
+                Real estate is a non-oil industry, but when oil prices affect nearly all companies' revenues and their staff's ability to rent properties, oil prices alone can greatly affect the real estate market.
+            </p>
+            <p>
+                As a final point, you can make money from real estate in different cycle, but understanding where we are and the potential risks and outlook can help you prepare and tailor your real estate strategy to increase your odds of success.
+            </p>
+            <p>
+                If you want to speak to a good property manager, contact us today. We are the best you’ll find in Abu Dhabi!
+            </p>
+            <p>
+                Meara He
             </p>
             <p>
                 Director of Transparent Property Management
