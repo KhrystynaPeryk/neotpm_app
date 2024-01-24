@@ -20,6 +20,8 @@ import article9BodyImg1 from '../../assets/images/articlesImg/Article9/bodyImg1.
 import article9BodyImg2 from '../../assets/images/articlesImg/Article9/bodyImg2.png'
 import article10Header from '../../assets/images/articlesImg/Article10/header.png'
 import article10BodyImg1 from '../../assets/images/articlesImg/Article10/bodyImg1.png'
+import article11Header from '../../assets/images/articlesImg/Article11/header.png'
+import article11BodyImg1 from '../../assets/images/articlesImg/Article11/bodyImg1.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -1028,6 +1030,85 @@ export const articlesHTML = [
             </p>
             <p>
                 <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 11,
+        path: 'what-to-do-next-to-receive-your-property',
+        title: 'What to do next to receive your property? (and a FREE offer!)',
+        metaDescription: 'Prepare for a seamless Abu Dhabi property handover with our concise guide',
+        published: 'January 22, 2024',
+        headImg: article10Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article11Header} />
+        <h1 class='article-title'>What to do next to receive your property? (and a FREE offer!)</h1>
+        <div><i style='color: gray'>January 22, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                The Abu Dhabi property market is gaining momentum, and with numerous properties nearing handover, you, as a property owner, might be anticipating the next steps. To secure the best rental price, it's essential to be among the earliest to receive your property, especially before similar ones hit the market. 
+                While I can't promise that the process will be quick or simple, understanding and methodically following the necessary steps will definitely ease your journey to property ownership.
+            </p>
+            <p>
+                The good news is, if you're looking for assistance to check every little defect in your property before the handover (the most tedious but unfortunately crucial part of the handover in my opinion), we are offering: <b>FREE</b> 1-hour snagging services for the first 5 owners who let us know you need assistance with snagging. That's right, completely <b>FREE</b>! So, if you are on the brink of receiving your property and would like to have some free help, just let us know. We are only a WhatsApp message away at <b>+971(0)56 442 0883</b>.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article11BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                If you are based overseas and needs a POA to help you with handover, you might find this article helpful: <i>How to Get a POA Done With NO Title Deed?</i>
+            </p>
+            <p>
+                Are you eagerly awaiting the handover of your property in Abu Dhabi?
+            </p>
+            <p>
+                The bustling property market is reaching new heights, and being proactive in the handover process can ensure you secure the best rental price for your property. 
+                To guide you through this exciting journey, we've outlined 10 essential steps for a seamless handover experience.
+            </p>
+            <p> 
+                <b>1. Claim All Your Perks: </b>Before the handover, make sure your property is fully paid, and all agreed-upon perks, rebates, and discounts are considered. 
+                Clear communication is key to keeping everyone involved on the same page.
+            </p>
+            <p> 
+                <b>2. Engage a Financial Broker: </b>Secure favorable mortgage rates by engaging a reliable financial broker. 
+                Beyond financing, consider the bank's customer service quality, as this relationship extends beyond the handover.
+            </p>
+            <p> 
+                <b>3. Pre-handover Snagging: </b>Take advantage of our free 1-hour snagging service for the first 5 property owners. 
+                Identifying and addressing defects before handover is crucial to avoid challenges during the warranty period.
+            </p>
+            <p> 
+                <b>4. Settle Full Payment & First Year Service Charge: </b>Understand the developer's terms regarding the first year's service charges. 
+                Complying with these terms is essential to proceed with the handover.
+            </p>
+            <p> 
+                <b>5. Receive Your Title Deed: </b>Obtain your title deed by checking with your developer for specific guidance and any necessary fees. This step varies, so stay informed.
+            </p>
+            <p> 
+                <b>6. Change ADDC Ownership Name: </b>Request a NOC from the developer post-financial settlement to change the property's ownership name with ADDC. Be prepared for potential delays from ADDC.
+            </p>
+            <p> 
+                <b>7. Handover Appointment: </b>Schedule a key handover appointment with the developer. 
+                Be ready to sign additional agreements such as the Master Community Rule and Facility Management Agreement.
+            </p>
+            <p> 
+                <b>8. Set Up Chilled Water & Gas Account: </b>Verify the specific requirements for your property type with your developer. This step varies, so ensure compliance.
+            </p>
+            <p> 
+                <b>9. Register Property's Tawtheeq under Your UAE Pass: </b>Essential for renting out your property, register your property's Tawtheeq under your UAE Pass. Non-residents or those without an Emirates ID may require assistance.
+            </p>
+            <p> 
+                <b>10. De-snag: </b>After initial snagging, conduct thorough de-snagging checks to ensure all reported issues are rectified before occupancy.
+            </p>
+            <p class='quote'>
+                <b>Receive Your Title Deed: </b>Obtain your title deed by checking with your developer for specific guidance and any necessary fees. This step varies, so stay informed.
+            </p>
+            <p>
+                Don't miss the opportunity to be among the first 5 owners to avail of our 1-hour <b>FREE</b> Handover snagging service. 
+                If you have any questions or need guidance on your property handover, contact us at <b>+971(0)56 442 0883</b> or <b><a href="mailto:joshua.jamelo@transparentpm.ae">joshua.jamelo@transparentpm.ae</a></b>. 
+                We're here to provide expert advice for a smooth handover process.
             </p>
         </div>    
     </div>`,
