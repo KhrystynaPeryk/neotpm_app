@@ -41,22 +41,10 @@
             transition: all 0.5s ease;
         }
 
-        .table-column-nav {
-            margin-bottom: 2em;
-            color: #238DC1;
-            text-decoration: underline;
-            font-weight: bold;
-
-            &:hover {
-                cursor: pointer;
-                color: #39a5af;
-            }
-        }
-
         .table-column-everything {
             color: #238DC1;
             margin-bottom: 1em;
-            font-weight: bold;
+            font-weight: bolder;
         }
 
         .table-column-header {
@@ -92,29 +80,31 @@
         .table-column-body {
             background-color: #e5e4e2;
             padding: 0 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
             .table-row-item {
-                margin: 1em;
                 font-family: 'Montserrat', sans-serif;
                 height: 3.5em;
                 font-weight: 500;
-                text-transform: uppercase;
-    
-                // hide a cross on a table for max-width 491px
-                // &.table-cross {
-                //     @media screen and (max-width: 990px) {
-                //         display: none;
-                //         color: blue;
-                //     }
-                // }
+                & p:first-child {
+                    font-weight: bold;
+                    margin-bottom: 0.1em;
+                }
+
+                & p:nth-child(2) {
+                    margin-top: 0.2em;
+                    font-size: small;
+                }
             }
         }
 
         .table-column-footer {
             margin: 2em 0;
             .table-column-price {
-                height: 3em;
-                padding: 0 3em;
+                padding: 1em 3em;
                 font-size: large;
+                color: #238DC1;
             }
             button {
                 @include reset-button-style;
@@ -192,5 +182,27 @@
             box-shadow: 0 0 10px 2px #ff9900;
             transform: scale(1.01);
         }
+    }
+}
+
+.poa-note {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 160%;
+    width: 50%;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #89d1f5;
+
+    & p {
+        border: 1px solid white;
+        padding: 1em 1em;
+    }
+
+    @media screen and (max-width: 1430px) {
+        position: relative;
+        width: 100%;
+        transition: all 0.5s ease;
     }
 }

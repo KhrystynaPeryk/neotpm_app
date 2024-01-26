@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { addProduct } from '../../../../store/actions/actions';
@@ -16,10 +16,6 @@ const PowerOfAttorney = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const [isLiteClicked, setIsLiteClicked] = useState(false)
-    const [isProperClicked, setIsProperClicked] = useState(false)
-    const [isComprehensiveClicked, setIsComprehensiveClicked] = useState(false)
-
     //ADD Lite PACKAGE TO CART
     const addLiteToCart = () => {
         dispatch(addProduct({
@@ -28,7 +24,7 @@ const PowerOfAttorney = () => {
                 type: 'Power of Attorney',
                 details: 'Lite package',
             },
-            price: 2500
+            price: 3500
         }));
     }
 
@@ -38,9 +34,9 @@ const PowerOfAttorney = () => {
             id: uuidv4(),
             service: {
                 type: 'Power of Attorney',
-                details: 'Proper package',
+                details: 'Premium package',
             },
-            price: 4500
+            price: 5500
         }));
     }
 
@@ -78,45 +74,38 @@ const PowerOfAttorney = () => {
                         <div>POA Assistance</div>
                     </div>
                     <div className='table-column-body'>
-                        <div className='table-row-item'>POA Drafting in English</div>
-                        <div className='table-row-item'>Unlimited Amendments</div>
-                        {isLiteClicked ? (
-                            <>
-                                <div className='table-row-item'>Apply Online Attestation for Approval (Fees included)</div>
-                                <div className='table-row-item'>Assist Online Attestation Appointment Setting (Fees included)</div>
-                                <div className='table-row-item'>Translate the POA into Arabic (Fees included)</div>
-                            </>
-                        ) : null}
-                    </div>
-                    {isLiteClicked ? (
-                        <div className='table-column-footer'>
-                            <div className='table-column-price'>AED 2,500.00</div>
-                            <button type='button' onClick={addLiteToCart}>BUY</button>
+                        <div className='table-row-item'>
+                            <p>POA DRAFTING</p>
+                            <p>Drafting in English language, Unlimited Amendments, POA Arabic Translation</p>
                         </div>
-                    ) : null}
-                    {isLiteClicked ? (<div className='table-column-nav' onClick={() => setIsLiteClicked(false)}>Show Less </div>) :
-                    (<div className='table-column-nav' onClick={() => setIsLiteClicked(true)}>View All</div>)}
+                        <div className='table-row-item'>
+                            <p>ONLINE ATTESTATION</p>
+                            <p>Applying for Approval online, Assisting in Online Attestation Appointment setting</p>
+                        </div>
+                    </div>
+                    <div className='table-column-footer'>
+                        <div className='table-column-price'>AED 3,500.00</div>
+                        <button type='button' onClick={addLiteToCart}>BUY</button>
+                    </div>
                 </div>
                 <div className='table-column proper'>
                     <div className='ribbon'><span>POPULAR</span></div>
                     <div className='table-column-header'>
                         <img src={Proper} alt='proper'></img>
-                        <div className='package-name'>PROPER</div>
-                        <div>POA + POA Assistance</div>
+                        <div className='package-name'>PREMIUM</div>
+                        <div>POA + POA Documentation</div>
                     </div>
                     <div className='table-column-everything'>Everything in Lite, plus:</div>
                     <div className='table-column-body'>
-                        <div className='table-row-item'>Be the POA on the POA Document (3 years)</div>
-                        <div className='table-row-item'>Sign Documents as the POA</div>
-                    </div>
-                    {isProperClicked ? (
-                        <div className='table-column-footer'>
-                            <div className='table-column-price'>AED 4,500.00</div>
-                            <button type='button' onClick={addProperToCart}>BUY</button>
+                        <div className='table-row-item'>
+                            <p>POA DOCUMENTATION</p>
+                            <p>Be the POA in the POA document, Sign documents as the POA</p>
                         </div>
-                    ) : null}
-                    {isProperClicked ? (<div className='table-column-nav' onClick={() => setIsProperClicked(false)}>Show Less </div>) :
-                    (<div className='table-column-nav' onClick={() => setIsProperClicked(true)}>View All</div>)}
+                    </div>
+                    <div className='table-column-footer'>
+                        <div className='table-column-price'>AED 5,500.00</div>
+                        <button type='button' onClick={addProperToCart}>BUY</button>
+                    </div>
                 </div>
                 <div className='table-column'>
                     <div className='ribbon'><span>+PM</span></div>
@@ -125,35 +114,50 @@ const PowerOfAttorney = () => {
                         <div className='package-name'>COMPREHENSIVE</div>
                         <div>PM with POA</div>
                     </div>
-                    <div className='table-column-everything'>Everything in Proper, plus:</div>
+                    <div className='table-column-everything'>Everything in Premium, plus:</div>
                     <div className='table-column-body'>
-                        <div className='table-row-item'>Fix Issues Relating to the Property (tawtheeq, title deed, leasing etc)</div>
-                        <div className='table-row-item'>Fix Any Roadblocks Relating to Getting the POA Approved</div>
-                        {isComprehensiveClicked ? (
-                            <>
-                                <div className='table-row-item'>Tenant Sourcing with a Dedicated PM to Promote</div>
-                                <div className='table-row-item'>Lease Management</div>
-                                <div className='table-row-item'>Move-in/out Documentation Permission and Clearances, Inspection</div>
-                                <div className='table-row-item'>Maintenance Liaison</div>
-                                <div className='table-row-item'>Tawtheeq Management</div>
-                                <div className='table-row-item'>Lease Renewal Management</div>
-                                <div className='table-row-item'>Cheque Deposit Services</div>
-                                <div className='table-row-item'>Security Deposit Settlement</div>
-                                <div className='table-row-item'>Tenant Management</div>
-                                <div className='table-row-item'>Ensure the Property Complies with Governmental Requirement</div>
-                            </>
-                        ) : null}
-                    </div>
-                    {isComprehensiveClicked ? (
-                        <div className='table-column-footer'>
-                            <div className='table-column-price'>6% of the Rent with a Minimum Annual Fee of AED 6,500.00</div>
-                            <button type='button' onClick={redirectToDocumentsFormComprehensive}>BUY</button>
+                        <div className='table-row-item'>
+                            <p>TAWTHEEQ, TITLE DEED & LEASING</p>
+                            <p>Tawtheeq application, fixing issues relating to the property and to getting the POA approved</p>
                         </div>
-                    ) : null}
-                    {isComprehensiveClicked ? (<div className='table-column-nav' onClick={() => setIsComprehensiveClicked(false)}>Show Less </div>) :
-                    (<div className='table-column-nav' onClick={() => setIsComprehensiveClicked(true)}>View All</div>)}
+                        <div className='table-row-item'>
+                            <p>TENANT SOURCING</p>
+                            <p>Finding tenants for your properties with a dedicated Property Manager to promote</p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>MOVE IN/OUT DOCUMENTATION</p>
+                            <p>Managing permission, Clearances, Inspection of Property for wear and tear with full report</p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>MAINTENANCE SOLUTION LIAISON</p>
+                            <p>Maintenance liaison, obtain quotation, ensure quality of maintenance work </p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>SECURITY DEPOSIT SETTLEMENT</p>
+                            <p>Managing cheque deposits, billing reports and payment settlements with the bank</p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>TENANT MANAGEMENT</p>
+                            <p>Liaise with tenants & external agents, negotiate prices, rental dispute settlement, communicate to Tenant in behalf of the Owner</p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>GOVERNMENTAL COMPLIANCE</p>
+                            <p>Bounced cheques collection, sign or collect legal documentation, ensuring the Property complies with governmental requirements</p>
+                        </div>
+                        <div className='table-row-item'>
+                            <p>SALES ASSISTANCE</p>
+                            <p>Sales viewing arrangement, sales liaison, post-sales settlement, settlement of utility account/s after the sale transfer</p>
+                        </div>
+                    </div>
+                    <div className='table-column-footer'>
+                        <div className='table-column-price'>AED 7,500.00 or 8% of annual Rent whichever is higher</div>
+                        <button type='button' onClick={redirectToDocumentsFormComprehensive}>BUY</button>
+                    </div>
                 </div>
             </div>
+            <div className='poa-note'>
+                <p><b>Note: </b>For additional Principals of more than 1, an additional fee of AED 1,000 per Principal or Signatory will be added on top of the standard fees and for Properties more than 1, please inquire directly to get a custom quote.</p>
+            </div>  
             <div className='footer-wrapper'>
                 <Footer />
             </div>
