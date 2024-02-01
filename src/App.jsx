@@ -13,6 +13,7 @@ import Reviews from './components/Reviews/Reviews';
 import NotFound from './components/NotFound/NotFound';
 import Articles from './components/Articles/Articles';
 import ArticleItem from './components/Articles/components/ArticleItem';
+import About from './components/About/About';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/documents-form' element={<DocumentsRequestForm />} />
+          <Route path='/about-us' element={<About />} />
           {/* below urls from the old site that are indexed pages */}
           <Route path='/contacts' element={<Home />} />
           <Route path='/guide-to-renting-out-property-in-abudhabi' element={<Articles />} />
@@ -60,7 +62,7 @@ function App() {
           <Route path='/power-of-attorney' element={<PowerOfAttorney />} />
           <Route path='/tawtheeq-services' element={<PowerOfAttorney />} />
           <Route path='/will-service' element={<PowerOfAttorney />} />
-          <Route path='/about' element={<Home />} />
+          <Route path='/about' element={<About />} />
           <Route path='/essential-role-of-a-property-manager' element={<Articles />} />
           <Route path='/you-should-hire-a-property-maintenance-company-as' element={<Articles/>} />
           <Route path='/do-property-management-companies-find-tenants' element={<Articles />} />

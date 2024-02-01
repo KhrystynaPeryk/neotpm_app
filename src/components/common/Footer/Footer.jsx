@@ -2,7 +2,7 @@ import React from 'react'
 import './Footer.scss'
 import WhatsAppIcon from '../../../assets/images/whatsapp-icon.png'
 import InstaIcon from '../../../assets/images/instagram-icon.png'
-import Crompton from '../../../assets/images/cp.webp'
+import Crompton from '../../../assets/images/CP.png'
 import Google from '../../../assets/images/google.png'
 import LinkedIn from '../../../assets/images/linkedin.png'
 

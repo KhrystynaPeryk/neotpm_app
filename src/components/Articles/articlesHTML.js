@@ -205,7 +205,7 @@ export const articlesHTML = [
                     Though it adds up to your work load, encourage tenants to report even minor issues to prevent hidden problems."
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center;'>
-                    <img src=${article2BodyImg1} alt='maintenance' />
+                    <img src=${article2BodyImg1} alt='maintenance' class='article-img' alt='article-img'/>
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <h3>Conclusion:</h3>
@@ -493,7 +493,7 @@ export const articlesHTML = [
                 As you consider such properties, ensure you factor in potential <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance costs</a> - uniqueness should enhance your investment, not drain it.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article5BodyImg1} />
+                <img src=${article5BodyImg1} class='article-img' alt='article-img'/>
             </div>
             <h3>4. Beyond Handover - Your Ongoing Relationship with Developers - Developer Commitment Post-Purchase</h3>
             <p>
@@ -641,7 +641,7 @@ export const articlesHTML = [
                 Our experience with various POA drafts, including those that have failed but were so well-written by law firms, has enabled us to develop a foolproof draft that is guaranteed to be accepted by the authorities.
             <p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article6BodyImg1} />
+                <img src=${article6BodyImg1} class='article-img' alt='image' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -996,7 +996,7 @@ export const articlesHTML = [
                 We will gain more insight as the market heads towards a handover boom from 2025 onwards.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article10BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <img src=${article10BodyImg1} class='article-img' alt='article-img' />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p> 
