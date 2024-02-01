@@ -18,7 +18,7 @@ const Reviews = () => {
         <div className='property-container'>
             <div className='property-before-table'>
                 <NavBar />
-                <Logo />
+                <Logo isCPlogoVisible={true}/>
                 <div className='property-header-wrapper'>
                     <p className='property-header'>Reviews</p>
                 </div>

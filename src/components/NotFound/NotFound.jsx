@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <div className='property-container'>
         <div className='property-before-table'>
-            <Logo />
+            <Logo isCPlogoVisible={true}/>
         </div>
         <div className='notfound-container'>
             <h1>Sorry, the page you were trying to access was not found...</h1>

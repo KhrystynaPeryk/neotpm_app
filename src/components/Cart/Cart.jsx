@@ -19,7 +19,7 @@ const Cart = () => {
         <div className='property-container'>
             <div className='property-before-table'>
                 <NavBar />
-                <Logo />
+                <Logo isCPlogoVisible={true}/>
             </div>
             {stateProducts.length === 0 ?
                 <div className='cart-header empty'>Your Cart is empty...😟</div> :

@@ -100,7 +100,7 @@ const DocumentsRequestForm = () => {
     <div className='property-container'>
       <div className='property-before-table'>
         <NavBar />
-        <Logo />
+        <Logo isCPlogoVisible={true}/>
       </div>
       <form onSubmit={handleSubmit} className='document-form-container'>
         <div className='document-form-header'>Upload Form</div>

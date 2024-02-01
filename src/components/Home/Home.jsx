@@ -88,7 +88,7 @@ const Home = () => {
         <div className="home-container">
             <section className="home-image">
                 <NavBar />
-                <Logo />
+                <Logo isCPlogoVisible={false}/>
                 <Main />
                 <a href="https://api.whatsapp.com/send?phone=971564420883" target="_self" rel="noopener noreferrer">
                 <div className="whatsapp-icon">

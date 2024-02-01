@@ -116,7 +116,7 @@ const PropertyManagement = () => {
         <div className='property-container'>
             <div className='property-before-table'>
                 <NavBar />
-                <Logo />
+                <Logo isCPlogoVisible={true}/>
                 <div className='property-header-wrapper'>
                     <p className='property-header'>Property Management Packages</p>
                 </div>
