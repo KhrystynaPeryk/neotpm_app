@@ -6,7 +6,6 @@ import cp from '../../../assets/images/CP.png'
 
 const Logo = ({isCPlogoVisible}) => {
   const navigate = useNavigate();
-  console.log("isCPlogoVisible:", isCPlogoVisible)
   const redirectToHome = () => {
     navigate('/');
   }

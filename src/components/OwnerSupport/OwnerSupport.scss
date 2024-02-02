@@ -7,57 +7,57 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
 
-.tiles-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
-    width: 70%;
-
-    @media screen and (max-width: 1400px) {
-        width: 75%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1260px) {
-        width: 85%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 1110px) {
-        width: 95%;
-        transition: all 0.5s ease;
-    }
-
-    @media screen and (max-width: 830px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px;
-        transition: all 0.5s ease;
-        width: 100%;
-        // order: -1 enables tiles.img to be positioned before .tiles-price
-        .tiles-img {
-            order: -1;
+    .tiles-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px;
+        width: 70%;
+    
+        @media screen and (max-width: 1400px) {
+            width: 75%;
             transition: all 0.5s ease;
         }
+    
+        @media screen and (max-width: 1260px) {
+            width: 85%;
+            transition: all 0.5s ease;
+        }
+    
+        @media screen and (max-width: 1110px) {
+            width: 95%;
+            transition: all 0.5s ease;
+        }
+    
+        @media screen and (max-width: 830px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 300px;
+            transition: all 0.5s ease;
+            width: 100%;
+            // order: -1 enables tiles.img to be positioned before .tiles-price
+            .tiles-img {
+                order: -1;
+                transition: all 0.5s ease;
+            }
+        }
+    
+        @media screen and (max-width: 540px) {
+            grid-template-rows: 350px;
+        }
+    
+        @media screen and (max-width: 460px) {
+            grid-template-rows: 400px;
+        }
+    
+        @media screen and (max-width: 330px) {
+            grid-template-rows: 450px;
+        }
+    
+        @media screen and (max-width: 300px) {
+            grid-template-rows: 500px;
+        }
+    
     }
-
-    @media screen and (max-width: 540px) {
-        grid-template-rows: 350px;
-    }
-
-    @media screen and (max-width: 460px) {
-        grid-template-rows: 400px;
-    }
-
-    @media screen and (max-width: 330px) {
-        grid-template-rows: 450px;
-    }
-
-    @media screen and (max-width: 300px) {
-        grid-template-rows: 500px;
-    }
-
 }
 
 .tiles-img {
