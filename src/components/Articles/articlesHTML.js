@@ -22,6 +22,8 @@ import article10Header from '../../assets/images/articlesImg/Article10/header.pn
 import article10BodyImg1 from '../../assets/images/articlesImg/Article10/bodyImg1.png'
 import article11Header from '../../assets/images/articlesImg/Article11/header.png'
 import article11BodyImg1 from '../../assets/images/articlesImg/Article11/bodyImg1.png'
+import article12Header from '../../assets/images/articlesImg/Article12/header.gif'
+import article12BodyImg1 from '../../assets/images/articlesImg/Article12/bodyImg1.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -1040,7 +1042,7 @@ export const articlesHTML = [
         title: 'What to do next to receive your property? (and a FREE offer!)',
         metaDescription: 'Prepare for a seamless Abu Dhabi property handover with our concise guide',
         published: 'January 22, 2024',
-        headImg: article10Header,
+        headImg: article11Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article11Header} />
         <h1 class='article-title'>What to do next to receive your property? (and a FREE offer!)</h1>
@@ -1109,6 +1111,107 @@ export const articlesHTML = [
                 Don't miss the opportunity to be among the first 5 owners to avail of our 1-hour <b>FREE</b> Handover snagging service. 
                 If you have any questions or need guidance on your property handover, contact us at <b>+971(0)56 442 0883</b> or <b><a href="mailto:joshua.jamelo@transparentpm.ae">joshua.jamelo@transparentpm.ae</a></b>. 
                 We're here to provide expert advice for a smooth handover process.
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 12,
+        path: 'abu-dhabi-or-dubai-comparing-2023-real-estate-markets',
+        title: 'Abu Dhabi or Dubai? Comparing 2023 Real Estate Markets',
+        metaDescription: 'Real estate markets comparison in UAE in 2023',
+        published: 'February 12, 2024',
+        headImg: article12Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article12Header} />
+        <h1 class='article-title'>Abu Dhabi or Dubai? Comparing 2023 Real Estate Markets</h1>
+        <div><i style='color: gray'>February 12, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Last week, we summarized ValuStrat's report on Abu Dhabi's market in 2023. This week, we would like to compare Abu Dhabi and Dubai.
+            </p>
+            <p><b>1. Overview</b></p>
+            <p>
+                In 2023, both Abu Dhabi and Dubai's real estate markets showcased resilience and growth, albeit with distinct characteristics. 
+                Abu Dhabi maintained steady progress with a focus on sustainability and strategic expansion, while Dubai experienced robust demand and dynamic growth, driven by its economic diversification efforts and strategic infrastructural developments.
+            </p>
+            <p><b>2. Residential Market Performance</b></p>
+            <p><b>Abu Dhabi</b></p>
+            <ul>
+                <li>Capital Values: Witnessed a moderate increase, growing by 4.2% year-over-year (YoY) in Q4 2023.</li>
+                <li>Rental Values: Also saw a rise, with residential rental values up by 6.4% YoY in the same period.</li>
+                <li>Off-plan v.s. Ready Sales (Sales volume): 34.9% v.s. 36.5% (YoY in Q4)</li>
+                <li>Off-plan v.s. Ready Sales (Ticket size): -10% v.s. -14.1% (YoY in Q4)</li>
+            </ul>
+            <p><b>Dubai</b></p>
+            <ul>
+                <li>Capital Values: Experienced a more significant increase, up by 19.9% YoY, surpassing the 100-point mark of ValueStrat Price Index from its base in January 2014, in Q4 2023.</li>
+                <li>Rental Values: Experienced a 12.8% YoY increase, indicating a strong demand for rental properties, in Q4 2023.</li>
+                <li>Off-plan v.s. Ready Sales (Sales volume): -50% v.s. 25.5% (YoY in Q4)</li>
+                <li>Off-plan v.s. Ready Sales (Ticket size): 68.8% v.s. -5.6% (YoY in Q4)</li>
+            </ul>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article12BodyImg1} class='article-img' alt='Residential Market Performance' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>3. Office Market Dynamics</b></p>
+            <p><b>Abu Dhabi</b></p>
+            <ul>
+                <li>Sales Price: The office sales price in Abu Dhabi observed a substantial increase, indicating a recovering office market. In Q4 2023, the YoY increased by 38.7%, reaching 14,767 AED/SQM.</li>
+                <li>Asking Rents: Office asking rents in Abu Dhabi also witnessed growth, reflecting an improving demand for office spaces. In Q4 2023, the YoY increased by 13.3%.</li>                
+            </ul>
+            <p><b>Dubai</b></p>
+            <ul>
+                <li>Sales Price: Office capital values in Dubai saw significant gains, with a 31.6% YoY increase in Q4 2023, demonstrating strong market confidence.</li>
+                <li>Asking Rents: Office asking rents surged by 35% YoY, highlighting Dubai's appeal as a business hub.</li>
+            </ul>
+            <p><b>4. Hospitality and Tourism</b></p>
+            <p>
+                Both emirates experienced growth in their hospitality sectors, with increasing occupancy rates, average daily rates (ADR), and revenue per available room (RevPAR). 
+                Dubai, in particular, saw a surge in international guests, underlining its status as a premier global tourist destination.
+            </p>
+            <p><b>5. Economic Indicators</b></p>
+            <p>
+                The economic outlook for both emirates remains positive, with projections indicating continued growth. 
+                The UAE's strategic initiatives, including visa reforms and investment in infrastructure, are expected to further boost economic activity and attract foreign investment.
+            </p>
+            <p><b>6. Key Takeaways</b></p>
+            <p>
+                <b>Abu Dhabi:</b> The emirate's real estate market is characterized by steady growth, with a focus on sustainability and strategic expansion. 
+                The government's initiatives to diversify the economy away from oil are expected to support the real estate sector's continued growth.
+            </p>
+            <p>
+                <b>Dubai:</b> Exhibits dynamic growth driven by strong demand, significant capital value increases, and a robust tourism sector. 
+                Dubai's strategic infrastructural developments and economic diversification efforts are key drivers of its real estate market's performance.
+            </p>
+            <p class='quote'>
+                The emirate's real estate market is characterized by steady growth, with a focus on sustainability and strategic expansion. 
+                The government's initiatives to diversify the economy away from oil are expected to support the real estate sector's continued growth.
+            </p>
+            <p>
+                In conclusion, both Abu Dhabi and Dubai exhibited growth in their real estate markets in 2023, though the nature and scale of this growth varied. 
+                Dubai's market saw more significant increases in residential capital and rental values, driven by strong demand and strategic developments. 
+                In contrast, Abu Dhabi's growth was more moderate, with a focus on sustainability and strategic economic diversification
+            </p>
+            <p>
+                Both emirates are poised for continued growth, underpinned by positive economic indicators and strategic initiatives aimed at attracting foreign investment and boosting economic activity. 
+                We believe the market will continue to grow in the near future in both emirates, but both markets should be closely monitored as off-plan units are handed over. 
+                This will determine whether there is sufficient demand to sustain this growth.
+            </p>
+            <p>
+                Before you buy a property, make sure you check the honest opinions of a property manager that sales agents don’t tell you:
+            </p>
+            <p>
+                <b><a style='text-decoration: none' href='https://transparentpm.ae/articles/avoid-these-5-common-mistakes-to-prevent-losses-on-your-investment'>✔️ Avoid These 5 Common Mistakes to Prevent Losses on Your Investment</a></b>
+            </p>
+            <p>
+                <b><a style='text-decoration: none' href='https://transparentpm.ae/articles/where-are-we-now-in-abu-dhabis-real-estate-cycle-will-prices-continue-to-rise-in-2024'>✔️ Where Are We Now in Abu Dhabi's Real Estate Cycle? Will Prices Continue to Rise in 2024?</a></b>
+            </p>
+            <p>Or contact us directly to know what we think.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
             </p>
         </div>    
     </div>`,

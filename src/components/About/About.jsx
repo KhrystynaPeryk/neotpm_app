@@ -51,8 +51,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className='team-container'>
-                    <h2>Meet the team</h2>
+                <h2>Meet the team</h2>
                     <div className='team-members-container'>
                         <div className='member'>
                             <img src={Omar} alt='Omar'></img>
@@ -72,15 +71,14 @@ const About = () => {
                         <div className='member'>
                             <img src={Jaypee} alt='Jaypee'></img>
                             <div className='name'>Jaypee</div>
-                            <div className='occupation'></div>
+                            <div className='occupation'>Property Maintenance Team Lead</div>
                         </div>
                         <div className='member'>
                             <img src={Angel} alt='Angel'></img>
                             <div className='name'>Angel</div>
-                            <div className='occupation'></div>
+                            <div className='occupation'>Accountant</div>
                         </div>
                     </div>
-                </div>
             </main>
         </div>
     )

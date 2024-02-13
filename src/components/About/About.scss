@@ -40,6 +40,7 @@
     }
     .services-container {
         padding-top: 2em;
+        padding-bottom: 5em;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -49,7 +50,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 400px;
-            // width: 70%;
 
             .img-container {
 
@@ -89,27 +89,45 @@
             }
         }
     }
-    .team-container {
-        margin-top: 5em;
-        display: flex;
-        h2 {
-            font-size: 40px;
-            font-weight: normal;
-        }
+
+    h2 {
+        font-size: 40px;
+        font-weight: normal;
+    }
 
         .team-members-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 5em;
+            flex-wrap: wrap;
+            gap: 6em;
+            margin-top: 4em;
             .member {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
                 img {
                     height: 200px;
                     width: auto;
                     clip-path: circle(48%);
                     object-fit: cover; 
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+
+                .name {
+                    font-family: inherit;
+                    font-size: 22px;
+                }
+
+                .occupation {
+                    font-family: inherit;
+                    font-size: 18px;
+                    color: rgb(154, 154, 154);
                 }
             }
         }
-    }
+
 }
