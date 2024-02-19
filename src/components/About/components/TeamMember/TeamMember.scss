@@ -1,0 +1,30 @@
+.member {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 4em;
+    img {
+        height: 200px;
+        width: auto;
+        clip-path: circle(48%);
+        object-fit: cover; 
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .name {
+        font-family: inherit;
+        font-size: 22px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .occupation {
+        font-family: inherit;
+        font-size: 18px;
+        color: rgb(154, 154, 154);
+        text-align: center;
+    }
+}

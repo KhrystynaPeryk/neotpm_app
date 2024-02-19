@@ -60,6 +60,7 @@
             }
 
             .text-container {
+                margin-right: 3em;
                 h2 {
                     font-size: 40px;
                     font-weight: normal;
@@ -95,39 +96,79 @@
         font-weight: normal;
     }
 
-        .team-members-container {
+    .team-members-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4em;
+    }
+
+    button {
+        @include reset-button-style;
+        margin: 0;
+        margin-top: 1em;
+        margin-bottom: 3em;
+        padding: 1em 5em;
+        border-radius: 100px;
+        background-color: $colorM;
+        font-family: inherit;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        transform: scale(1);
+        display: inline-block;
+
+        &:hover {
+            transform: scale(1.1, 1);
+        }
+    }
+
+    .circle-container {
+        .circle{
+            border-radius: 50%;
+            background-color: $colorP;
+            width: 1000px;
+            height: 1000px;
             display: flex;
+            gap: 5em;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 6em;
-            margin-top: 4em;
-            .member {
-                width: 200px;
+            
+            position: relative;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+    
+            .together-img {
+                img {
+                    height: 300px;
+                    width: auto;
+                    object-fit: cover; 
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+            .socials {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                box-sizing: border-box;
-                img {
-                    height: 200px;
-                    width: auto;
-                    clip-path: circle(48%);
-                    object-fit: cover; 
-                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 400px;
+                text-align: center;
+                color: white;
+
+                p {
+                    line-height: 1.6;
+                    margin-bottom: 30px;
                 }
 
-                .name {
-                    font-family: inherit;
-                    font-size: 22px;
-                }
-
-                .occupation {
-                    font-family: inherit;
-                    font-size: 18px;
-                    color: rgb(154, 154, 154);
+                .social-icons {
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
                 }
             }
         }
-
+    }
 }
