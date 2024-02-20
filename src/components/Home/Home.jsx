@@ -92,7 +92,7 @@ const Home = () => {
                 <Main />
                 <a href="https://api.whatsapp.com/send?phone=971564420883" target="_self" rel="noopener noreferrer">
                 <div className="whatsapp-icon">
-                    <img src={WhatsAppIcon} alt="WhatsApp" />
+                    <img src={WhatsAppIcon} alt="WhatsApp" loading="lazy"/>
                 </div>
                 </a>
             </section>

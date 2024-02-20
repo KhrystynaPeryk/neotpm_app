@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './NavBar.scss'
 import BurgerMenu from '../../../assets/images/burger-menu.png'
@@ -7,6 +7,9 @@ import Cart from '../../../assets/images/cart.png'
 
 const NavBar = () => {
     const navigate = useNavigate();
+    const location = useLocation()
+    const isPageActive = (path) => location.pathname === path;
+
     const stateProducts = useSelector((state) => state.products)
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -75,12 +78,12 @@ const NavBar = () => {
                 <div className={isNavExpanded ? 'hidden' : '' }>
                     <div className='navbar-section nav-logo' onClick={() => redirectTo('/')}></div>
                     <div className='navbar-sections' >
-                        <div className='navbar-section' onClick={() => redirectTo('/property-management')}>Property Management</div>
-                        <div className='navbar-section navbar-maintenance' onClick={() => redirectTo('/property-maintenance')}>Property Maintenance</div>
-                        <div className='navbar-section' onClick={() => redirectTo('/owner-support')}>Owner Support</div>
-                        <div className='navbar-section' onClick={() => redirectTo('/reviews')}>Reviews</div>
-                        <div className='navbar-section' onClick={() => redirectTo('/articles')}>Articles</div>
-                        <div className='navbar-section' onClick={() => redirectTo('/about')}>About</div>
+                        <div className={isPageActive('/property-management') ? 'navbar-section active' : 'navbar-section'} onClick={() => redirectTo('/property-management')}>Property Management</div>
+                        <div className={isPageActive('/property-maintenance') ? 'navbar-section navbar-maintenance active' : 'navbar-section navbar-maintenance'} onClick={() => redirectTo('/property-maintenance')}>Property Maintenance</div>
+                        <div className={isPageActive('/owner-support') ? 'navbar-section active' : 'navbar-section'} onClick={() => redirectTo('/owner-support')}>Owner Support</div>
+                        <div className={isPageActive('/reviews') ? 'navbar-section active' : 'navbar-section'} onClick={() => redirectTo('/reviews')}>Reviews</div>
+                        <div className={isPageActive('/articles') ? 'navbar-section active' : 'navbar-section'} onClick={() => redirectTo('/articles')}>Articles</div>
+                        <div className={isPageActive('/about') ? 'navbar-section active' : 'navbar-section'} onClick={() => redirectTo('/about')}>About</div>
                     </div>
                 </div>
                 <div className='navbar-cart' onClick={() => redirectTo('/cart')}>

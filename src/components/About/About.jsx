@@ -44,14 +44,14 @@ const About = () => {
                             <p>Our team is committed to ensuring transparency and trust in every interaction.</p>
                         </div>
                         <div className='sphere-container'>
-                            <img src={Sphere} alt='house'/>
+                            <img src={Sphere} alt='house' loading="lazy"/>
                         </div>
                     </div>
                     <h1>Why You'll Trust Us</h1>
                     <div className='services-container'>
                         <div className='grid-row'>
                             <div className='img-container'>
-                                <img src={UniqueApproach} alt='house'/>
+                                <img src={UniqueApproach} alt='house' loading="lazy"/>
                             </div>
                             <div className='text-container'>
                                 <h2>Unique Approach</h2>
@@ -67,7 +67,7 @@ const About = () => {
                                 <button type='button' onClick={() => navigate('/property-management')}>See our Services</button>
                             </div>
                             <div className='img-container'>
-                                <img src={ServiceMix} alt='house'/>
+                                <img src={ServiceMix} alt='house' loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const About = () => {
                     <div className='circle-container'>
                         <div className='circle'>
                             <div className='together-img'>
-                                <img src={All} alt='all'></img>
+                                <img src={All} alt='all' loading="lazy"></img>
                             </div>
                             <div className='socials'>
                                 <h2>Follow us on Social</h2>

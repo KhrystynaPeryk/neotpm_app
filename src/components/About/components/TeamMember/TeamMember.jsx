@@ -4,7 +4,7 @@ import './TeamMember.scss'
 const TeamMember = ({image, name, occupation}) => {
     return (
         <div className='member'>
-            <img src={image} alt={name}></img>
+            <img src={image} alt={name} loading="lazy"></img>
             <div className='name'>{name}</div>
             <div className='occupation'>{occupation}</div>
         </div>

@@ -1,3 +1,5 @@
+@import '../../../index.scss';
+
 .navbar-container-wrapper {
     position: fixed;
     width: 100%;
@@ -81,7 +83,11 @@
         @media screen and (max-width: 768px) {
             visibility:hidden;
         }
-
+        .active {
+            color: $colorM;
+            font-weight: bold;
+            text-shadow: $colorT 5px 0 10px;
+        }
     }
 
     .navbar-section:hover {
