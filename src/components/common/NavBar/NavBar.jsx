@@ -58,29 +58,7 @@ const NavBar = () => {
 
     const redirectTo = (page) => {
         window.scrollTo(0, 0);
-        switch (page) {
-            case 'propertyManagement':
-                navigate('/property-management');
-                break
-            case 'propertyMaintenance':
-                navigate('/property-maintenance');
-                break
-            case 'ownerSupport':
-                navigate('/owner-support');
-                break
-            case 'reviews':
-                navigate('/reviews');
-                break
-            case 'articles':
-                navigate('/articles');
-                break
-            case 'cart':
-                navigate('/cart');
-                break               
-            default:
-                navigate('/');
-                break
-        }
+        navigate(page);
     }
 
     return (
@@ -95,34 +73,36 @@ const NavBar = () => {
                     </div>
                 }
                 <div className={isNavExpanded ? 'hidden' : '' }>
-                    <div className='navbar-section nav-logo' onClick={() => redirectTo('home')}></div>
+                    <div className='navbar-section nav-logo' onClick={() => redirectTo('/')}></div>
                     <div className='navbar-sections' >
-                        <div className='navbar-section' onClick={() => redirectTo('propertyManagement')}>Property Management</div>
-                        <div className='navbar-section navbar-maintenance' onClick={() => redirectTo('propertyMaintenance')}>Property Maintenance</div>
-                        <div className='navbar-section' onClick={() => redirectTo('ownerSupport')}>Owner Support</div>
-                        <div className='navbar-section' onClick={() => redirectTo('reviews')}>Reviews</div>
-                        <div className='navbar-section' onClick={() => redirectTo('articles')}>Articles</div>
+                        <div className='navbar-section' onClick={() => redirectTo('/property-management')}>Property Management</div>
+                        <div className='navbar-section navbar-maintenance' onClick={() => redirectTo('/property-maintenance')}>Property Maintenance</div>
+                        <div className='navbar-section' onClick={() => redirectTo('/owner-support')}>Owner Support</div>
+                        <div className='navbar-section' onClick={() => redirectTo('/reviews')}>Reviews</div>
+                        <div className='navbar-section' onClick={() => redirectTo('/articles')}>Articles</div>
+                        <div className='navbar-section' onClick={() => redirectTo('/about')}>About</div>
                     </div>
                 </div>
-                <div className='navbar-cart' onClick={() => redirectTo('cart')}>
+                <div className='navbar-cart' onClick={() => redirectTo('/cart')}>
                     {stateProducts.length !== 0 && 
                         <div className='navbar-cart-qty-container'>
                             <div className='navbar-cart-qty'>
                                 {stateProducts.length}
                             </div> 
-                         </div>
+                        </div>
                     }
                     <img className='cart-img' src={Cart} alt='Cart' />
                 </div>
             </div>
             {isNavExpanded &&
                 <div ref={expandedNavbarRef} className={`navbar-container-expanded ${isAnimating ? 'animate' : ''}`}>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('home')}>➔ Home</div>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('propertyManagement')}>➔ Property Management</div>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('propertyMaintenance')}>➔ Property Maintenance</div>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('ownerSupport')}>➔ Owner Support</div>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('reviews')}>➔ Reviews</div>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('articles')}>➔ Articles</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/home')}>➔ Home</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/property-management')}>➔ Property Management</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/property-maintenance')}>➔ Property Maintenance</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/owner-support')}>➔ Owner Support</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/reviews')}>➔ Reviews</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/articles')}>➔ Articles</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/about')}>➔ About</div>
                 </div>
             }
         </div>
