@@ -24,14 +24,15 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='review-container'>
-                {reviews.map((review, index) => {
+                {reviews.map((review) => {
                     const {
                         reviewer,
                         createTime,
-                        comment
+                        comment,
+                        reviewId
                     } = review
                     return (
-                        <div key={index} className='review-wrapper'>
+                        <div key={reviewId} className='review-wrapper'>
                             <ReviewItem 
                                 name = {reviewer.displayName}
                                 photoUrl = {reviewer.profilePhotoUrl}
