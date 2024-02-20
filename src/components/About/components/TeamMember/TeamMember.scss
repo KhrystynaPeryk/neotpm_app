@@ -6,12 +6,22 @@
     align-items: center;
     box-sizing: border-box;
     margin-bottom: 4em;
+
+    @media screen and (max-width: 645px) {
+        height: 200px;
+        transition: all 0.5s ease;
+    }
     img {
         height: 200px;
         width: auto;
         clip-path: circle(48%);
         object-fit: cover; 
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        @media screen and (max-width: 645px) {
+            height: 150px;
+            transition: all 0.5s ease;
+        }
     }
 
     .name {

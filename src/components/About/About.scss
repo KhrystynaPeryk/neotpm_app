@@ -8,17 +8,35 @@
     line-height: 1.2;
     width: 65%;
 
+    
+    @media screen and (max-width: 1182px) {
+        width: 75%;
+        transition: all 0.5s ease;
+    }
+
     .head-container {
         display: flex;
         align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 645px) {
+            flex-direction: column;
+            transition: all 0.5s ease;
+        }
+
         .text-container {
-            flex: 1;
+            // flex: 1;
     
             h1 {
-                margin-top: 20px;
-                margin-bottom: 10px;
+                margin-top: 2em;
                 font-weight: 500;
                 font-size: 60px;
+
+                @media screen and (max-width: 991px) {
+                    font-weight: 400;
+                    font-size: 40px;
+                    transition: all 0.5s ease;
+                }
             }
     
             p {
@@ -27,17 +45,50 @@
         }
     
         .sphere-container {
-            flex: 1;
-            padding: 8em 3em;
+            padding: 8em 2em 0em 2em;
             display: flex;
             justify-content: center;
             align-items: center; 
+
+            @media screen and (max-width: 1340px) {
+                padding: 8em 1em 0em 1em;
+                transition: all 0.5s ease;
+            }
+
+            @media screen and (max-width: 645px) {
+                padding: 0em;
+                transition: all 0.5s ease;
+            }
             img {
                 height: 400px;
                 width: 400px;
+
+                @media screen and (max-width: 991px) {
+                    height: 300px;
+                    width: 300px;
+                    transition: all 0.5s ease;
+                }
+
+                @media screen and (max-width: 645px) {
+                    height: 200px;
+                    width: 200px;
+                    transition: all 0.5s ease;
+                }
             }
         }
     }
+
+    h1 {
+        font-weight: 500;
+        font-size: 60px;
+
+        @media screen and (max-width: 991px) {
+            font-size: 40px;
+            font-weight: 400;
+            transition: all 0.5s ease;
+        }
+    }
+
     .services-container {
         padding-top: 2em;
         padding-bottom: 5em;
@@ -47,23 +98,70 @@
         align-items: center;
         flex-direction: column;
         .grid-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 400px;
+            display: flex;
+            margin-top: 3em;
+            gap: 2em;
+
+            @media screen and (max-width: 900px) {
+                flex-direction: column;
+                transition: all 0.5s ease;
+            }
 
             .img-container {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 900px) {
+                    order: -1;
+                    transition: all 0.5s ease;
+                }
 
                 img {
                     height: 400px;
                     width: 500px;
+
+                    @media screen and (max-width: 1350px) {
+                        height: 300px;
+                        width: 400px;
+                        transition: all 0.5s ease;
+                    }
+
+                    @media screen and (max-width: 1225px) {
+                        height: 200px;
+                        width: 300px;
+                        transition: all 0.5s ease;
+                    }
+
+                    @media screen and (max-width: 900px) {
+                        height: 350px;
+                        width: 450px;
+                        transition: all 0.5s ease;
+                    }
+
+                    @media screen and (max-width: 645px) {
+                        height: 200px;
+                        width: 300px;
+                        transition: all 0.5s ease;
+                    }
                 }
             }
 
             .text-container {
-                margin-right: 3em;
+                flex: 1;
+                
+                @media screen and (max-width: 1225px) {
+                    flex: 2;
+                    transition: all 0.5s ease;
+                }
                 h2 {
                     font-size: 40px;
                     font-weight: normal;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 30px;
+                        transition: all 0.5s ease;
+                    }
                 }
 
                 p {
@@ -124,6 +222,9 @@
     }
 
     .circle-container {
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
         .circle{
             border-radius: 50%;
             background-color: $colorP;
@@ -146,6 +247,11 @@
                     width: auto;
                     object-fit: cover; 
                     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                    @media screen and (max-width: 545px) {
+                        height: 200px;
+                        transition: all 0.5s ease;
+                    }
                 }
             }
             .socials {
@@ -156,6 +262,11 @@
                 width: 400px;
                 text-align: center;
                 color: white;
+
+                @media screen and (max-width: 430px) {
+                    width: 300px;
+                    transition: all 0.5s ease;
+                }
 
                 p {
                     line-height: 1.6;
