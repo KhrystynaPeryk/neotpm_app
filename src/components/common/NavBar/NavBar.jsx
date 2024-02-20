@@ -96,7 +96,7 @@ const NavBar = () => {
             </div>
             {isNavExpanded &&
                 <div ref={expandedNavbarRef} className={`navbar-container-expanded ${isAnimating ? 'animate' : ''}`}>
-                    <div className='navbar-section-expanded' onClick={() => redirectTo('/home')}>➔ Home</div>
+                    <div className='navbar-section-expanded' onClick={() => redirectTo('/')}>➔ Home</div>
                     <div className='navbar-section-expanded' onClick={() => redirectTo('/property-management')}>➔ Property Management</div>
                     <div className='navbar-section-expanded' onClick={() => redirectTo('/property-maintenance')}>➔ Property Maintenance</div>
                     <div className='navbar-section-expanded' onClick={() => redirectTo('/owner-support')}>➔ Owner Support</div>

@@ -54,15 +54,15 @@ const About = () => {
                             </div>
                             <div className='text-container'>
                                 <h2>Unique Approach</h2>
-                                <p>Any good agency can deliver on the challenge you bring them. But, a strategic agency works with you to uncover the true reason behind your challenge, the one that is blocking your business's growth.</p>
-                                <p>At Major Tom, you’ll benefit from our four-phased approach. This method shows us your whole organization, allowing us to identify the best strategy, the tactics that will bring you success, and how you can improve upon that success.</p>
+                                <p>Any competent agency can address the immediate needs you present. However, a strategic partner delves deeper to discover the root cause of your challenges, those that impede your property management success.</p>
+                                <p>At Transparent Property Management, you'll benefit from our comprehensive approach tailored to the unique dynamics of UAE property market. With a focus on transparency and diligent communication, we not only promise but deliver exceptional services. Our method involves a deep dive into your property management requirements, enabling us to devise the most effective strategies, implement the right tactics for success, and guide you on how to enhance this success further.</p>
                             </div>
                         </div>
                         <div className='grid-row'>
                             <div className='text-container'>
                                 <h2>Service Mix</h2>
-                                <p>Consistency breeds confidence — make every touchpoint your audience experiences the same with our suite of service offerings. From Creative, to Strategy, Development and Marketing, take care of your holistic digital marketing needs in one place.</p>
-                                <p>Just looking for one, specific digital service? You can invest in one at a time, obligation-free.</p>
+                                <p>Consistency is the cornerstone of trust — and at Transparent Property Management, we understand that every interaction matters in building that trust. Our comprehensive suite of services ensures a seamless experience for both tenants and landlords.</p>
+                                <p>Whether you're seeking a specific service or require a comprehensive solution, our flexible approach allows you to choose exactly what you need, when you need it, without any obligation. Our aim is to simplify property management, making it a transparent, efficient, and hassle-free process for every client we serve.</p>
                                 <button type='button' onClick={() => navigate('/property-management')}>See our Services</button>
                             </div>
                             <div className='img-container'>
