@@ -4,6 +4,7 @@ import axios from 'axios';
 import Spinner from '../Spinner/Spinner';
 import FlyingEmail from '../../../assets/images/flying-email.png'
 import { downloadFirebaseFile } from '../../../firebaseStorage/downloadFirebaseFile';
+import { leadGenerationEmailTemplate } from '../../../emailTemplates/emailTemplates';
 
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
@@ -77,23 +78,13 @@ const LeadGenerationPopUp = ({ onClose }) => {
             //download a free guide
             downloadFirebaseFile('FREE Property Management Guide.pdf')
 
+            const bodyObj = selectedOption === 'POWER OF ATTORNEY' ? 
+                leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'omar.alsayes@transparentpm.ae', 'joshua.jamelo@transparentpm.ae')
+                :
+                leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'joshua.jamelo@transparentpm.ae', 'khrystyna.peryk@transparentpm.ae');
+
             await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-                content: `
-                    <div style="margin-bottom: 20px;">Hi,<div>
-                    <div style="margin-bottom: 20px; margin-top: 20px;">
-                        <div>A Free Property Management Guide Request from ${name}</div>
-                        <div>Email: ${email}</div>
-                        <div>Client is a <b>'${selectedRole}'</b> and selected a <b>'${selectedOption}'</b> option</div>
-                        <div>A free guide has been sent to the client</div>
-                    </div>
-                    <div>
-                        <div>Best regards,<div>
-                        <div>transparentpm.ae<div>
-                    <div>
-                `,
-                email: 'joshua.jamelo@transparentpm.ae',
-                subject: 'FREE Property Management Guide Request',
-                bcc: 'khrystyna.peryk@transparentpm.ae'
+                ...bodyObj
             }).catch((error) => console.log(error))
         }
     }
@@ -154,6 +145,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
                                             <button type='button' onClick={() => setSelectedOption('RENT A PLACE')}>RENT A PLACE</button>
                                             <button type='button' onClick={() => setSelectedOption('PROPERTY MANAGEMENT')}>PROPERTY MANAGEMENT</button>
                                             <button type='button' onClick={() => setSelectedOption('PROPERTY MAINTENANCE')}>PROPERTY MAINTENANCE</button>
+                                            <button type='button' onClick={() => setSelectedOption('POWER OF ATTORNEY')}>POWER OF ATTORNEY</button>
                                         </>
                                     ) : (
                                         <>
