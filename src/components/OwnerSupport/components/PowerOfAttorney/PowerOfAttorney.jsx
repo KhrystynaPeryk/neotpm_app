@@ -42,7 +42,7 @@ const PowerOfAttorney = () => {
 
     const redirectToDocumentsFormComprehensive = () => {
         window.scrollTo(0, 0);
-        navigate('/documents-form', {
+        navigate('/contact-form', {
             state: {
                 service: {
                     type: 'Power of Attorney',

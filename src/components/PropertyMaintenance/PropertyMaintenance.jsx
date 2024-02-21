@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react'
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { addProduct } from '../../store/actions/actions';
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
@@ -9,9 +10,11 @@ import { maintenanceQuoteCalculator } from '../../helpers/maintenanceQuoteCalcul
 import { v4 as uuidv4 } from 'uuid';
 import { formatPriceInCart } from '../../helpers/formatPriceInCart';
 import BrochureBanner from '../common/BrochureBanner/BrochureBanner';
+import { formatPropertyLocation } from '../../helpers/formatPropertyLocation';
 
 const PropertyMaintenance = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate()
 
     //stating values from the form
     const [propertyType, setPropertyType] = useState();
@@ -140,7 +143,7 @@ const PropertyMaintenance = () => {
         }
     }
 
-    //ADD a product to cart
+    //ADD a product to cart and navigate to a form
     const addMaintenanceToCart = () => {
         const dispatchDriverRoom = driverRoom ? driverRoom : ''
         const dispatchMaidRoom = maidRoom ? maidRoom : ''
@@ -161,6 +164,15 @@ const PropertyMaintenance = () => {
             },
             price: quote
         }))
+
+        navigate('/contact-form', {
+            state: {
+                service: {
+                    type: 'Property Maintenance',
+                    details: `| Property type: ${propertyType}; location: ${formatPropertyLocation(propertyLocation)}; rooms: ${propertyType === 'studio' ? 'n/a': roomsNumber.substring(2)}; diver's room: ${driverRoom ? driverRoom : 'n/a'}; maid's room: ${maidRoom ? maidRoom : 'n/a'}; package: ${!villaPackages ? 'n/a' : villaPackages}.`,
+                },
+            }
+        });
     }
 
     // unordered list appearing animation

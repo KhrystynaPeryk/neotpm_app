@@ -1,4 +1,21 @@
 @import '../../index.scss';
+
+.document-form-header {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+}
+
+.document-form-caption {
+  font-size: large;
+  margin-bottom: 1em;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .document-form-container {
   display: flex;
   flex-direction: column;
@@ -6,21 +23,19 @@
   margin-left: 3em;
   margin-right: 3em;
   min-height: 45vh;
+  font-family: 'Open Sans', sans-serif;
+  width: 35em;
 
-  .document-form-header {
-    font-size: x-large;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1em;
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 0.2em;
-  }
+  @media screen and (max-width: 600px) {
+    width: 20em;
+    transition: all 0.5s ease;
+}
 
-  .document-form-caption {
-    font-size: large;
-    margin-bottom: 1em;
-    text-align: center;
-  }
+@media screen and (max-width: 350px) {
+  width: 15em;
+  transition: all 0.5s ease;
+}
+
   .form-inputs {
     display: flex;
     flex-direction: column;
@@ -30,11 +45,11 @@
       border-radius: 15px;
       margin: 0.5em;
       border: 2px solid #238DC1;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Open Sans', sans-serif;
     }
 
     textarea {
-      height: 30px;
+      height: 40px;
     }
 
     .disabled {
@@ -57,6 +72,7 @@
       margin: 1em;
       cursor: pointer;
       color: purple;
+      font-family: 'Open Sans', sans-serif;
     }
 
     button {
@@ -73,6 +89,7 @@
   .btn-upload-docs {
     @include reset-button-style;
     border: 2px solid #CBC82D;
+    font-family: 'Open Sans', sans-serif;
 
     &:hover {
       @include hover-btn;

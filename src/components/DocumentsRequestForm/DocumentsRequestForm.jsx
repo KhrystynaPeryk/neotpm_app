@@ -6,6 +6,7 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer';
 import Spinner from '../common/Spinner/Spinner';
+import { documentsRequestEmailTemplate } from '../../emailTemplates/emailTemplates';
 
 const DocumentsRequestForm = () => {
   const location = useLocation();
@@ -61,28 +62,10 @@ const DocumentsRequestForm = () => {
       window.open(response.data.newFileLink, '_blank')
       setIsSpinner(false)
 
+      const bodyObj = documentsRequestEmailTemplate(name, email, phone, response.data.newFileLink, constructFolderName)
+
       await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
-        content: `
-          <div style="margin-bottom: 20px;">Hi ${name},<div>
-          <div style="margin-bottom: 20px; margin-top: 20px;">
-            <div>Thank you for contacting us.</div>
-            <div>Feel free to upload your documents following the link below:</div>
-            <div>${response.data.newFileLink}</div>
-            <div style="margin-bottom: 20px; margin-top: 20px;">
-              Your contact details: <br/>
-              <b>Phone: </b>${phone} <br/>
-              <b>Email: </b>${email}
-            </div>
-            <div>One of our representatives will contact you upon reviewing your documents.</div>
-          </div>
-          <div>
-              <div>Best regards,<div>
-              <div>Team of transparentpm.ae<div>
-          <div>
-        `,
-        email: email,
-        subject: 'Transparent Property Management & Maintenance Notification',
-        bcc: 'joshua.jamelo@transparentpm.ae'
+        ...bodyObj
       }).catch((error) => console.log(error))
     } catch (error) {
       return;
@@ -102,11 +85,11 @@ const DocumentsRequestForm = () => {
         <NavBar />
         <Logo isCPlogoVisible={true}/>
       </div>
+      <div className='document-form-header'>Contact Form</div>
+      <div className='document-form-caption'>
+        Submit the form below to receive a custom quote from us. <br/> Feel free to upload any relevant documents if you wish.
+      </div>
       <form onSubmit={handleSubmit} className='document-form-container'>
-        <div className='document-form-header'>Upload Form</div>
-        <div className='document-form-caption'>
-          Upload your documents and we will get back to you with a custom quote
-        </div>
         <div className='form-inputs'>
           <input
             type='text'
@@ -148,7 +131,7 @@ const DocumentsRequestForm = () => {
             <button onClick={handleResetForm}>Reset</button>
           </div>
         ) : (
-          <button className='btn-upload-docs' type='submit' disabled={isSpinner || !isEmailValid}>Click to Upload Your Files</button>
+          <button className='btn-upload-docs' type='submit' disabled={isSpinner || !isEmailValid}>SUBMIT</button>
         )}
       </form>
       <div className='footer-wrapper'>

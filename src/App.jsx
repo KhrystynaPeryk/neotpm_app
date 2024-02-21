@@ -44,7 +44,7 @@ function App() {
           <Route path='/articles/:path' element={<ArticleItem />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/documents-form' element={<DocumentsRequestForm />} />
+          <Route path='/contact-form' element={<DocumentsRequestForm />} />
           <Route path='/about-us' element={<About />} />
           {/* below urls from the old site that are indexed pages */}
           <Route path='/contacts' element={<Home />} />

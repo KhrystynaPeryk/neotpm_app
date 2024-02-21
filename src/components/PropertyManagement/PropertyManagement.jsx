@@ -22,37 +22,13 @@ const PropertyManagement = () => {
     const [isGoldClicked, setIsGoldClicked] = useState(false)
     const [isPlatinumClicked, setIsPlatinumClicked] = useState(false)
 
-    const redirectToDocumentsFormBronze = () => {
+    const redirectToDocumentsForm = (serviceDetails) => {
         window.scrollTo(0, 0);
-        navigate('/documents-form', {
+        navigate('/contact-form', {
             state: {
                 service: {
                     type: 'Property Management',
-                    details: 'Bronze package',
-                },
-            }
-        });
-    }
-
-    const redirectToDocumentsFormGold = () => {
-        window.scrollTo(0, 0);
-        navigate('/documents-form', {
-            state: {
-                service: {
-                    type: 'Property Management',
-                    details: 'Gold package',
-                },
-            }
-        });
-    }
-
-    const redirectToDocumentsFormPlatinum = () => {
-        window.scrollTo(0, 0);
-        navigate('/documents-form', {
-            state: {
-                service: {
-                    type: 'Property Management',
-                    details: 'Platinum package',
+                    details: serviceDetails,
                 },
             }
         });
@@ -135,7 +111,7 @@ const PropertyManagement = () => {
                     <>
                         <div className='table-section-item'>Tenancy Renewal</div>
                         <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
-                        <button type='button' onClick={redirectToDocumentsFormBronze}>BUY</button>
+                        <button type='button' onClick={() => redirectToDocumentsForm('Bronze Package')}>BUY</button>
                     </>
                 )}
                 {isBronzeClicked ? (<div className='property-learn-more' onClick={() => setIsBronzeClicked(false)}>Show Less </div>) :
@@ -157,7 +133,7 @@ const PropertyManagement = () => {
                             <div className='table-section-item'>Handover Assistance from Developer</div>
                             <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
                             <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
-                            <button type='button' onClick={redirectToDocumentsFormGold}>BUY</button>
+                            <button type='button' onClick={() => redirectToDocumentsForm('Gold Package')}>BUY</button>
                         </>
                     )}
                     {isGoldClicked ? (<div className='property-learn-more' onClick={() => setIsGoldClicked(false)}>Show Less </div>) :
@@ -176,7 +152,7 @@ const PropertyManagement = () => {
                     {isPlatinumClicked && (
                         <>
                             <div className='table-section-price'>From AED 7,500 or 8% of the rent</div>
-                            <button type='button' onClick={redirectToDocumentsFormPlatinum}>BUY</button>
+                            <button type='button' onClick={() => redirectToDocumentsForm('Platinum Package')}>BUY</button>
                         </>
                     )}
                     {isPlatinumClicked ? (<div className='property-learn-more' onClick={() => setIsPlatinumClicked(false)}>Show Less </div>) :
@@ -194,7 +170,7 @@ const PropertyManagement = () => {
                     <b>The Bronze Package</b> offers <span>essential</span> services to assist you in <span>managing your rental property</span>. It includes features such as advising market prices, professional photography, online marketing, promotion through internal and external agents, monitoring weekly viewing numbers, strategizing property promotion, rental cheque management, move-in services, and tenancy renewal.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button' onClick={redirectToDocumentsFormBronze}>Send Your Details</button>
+                    <button type='button' onClick={() => redirectToDocumentsForm('Bronze Package')}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container bronze">
@@ -259,7 +235,7 @@ const PropertyManagement = () => {
                     Upgrade to the <b>Gold Package</b> for <span>comprehensive property management</span> services. In addition to the features provided in the Bronze Package, it offers <span>other benefits</span> like move-out services, security deposit settlement, bill payment assistance, maintenance solution liaison, handover assistance from the developer, governmental compliance support, ad hoc assistance, and more.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button' onClick={redirectToDocumentsFormGold}>Send Your Details</button>
+                    <button type='button' onClick={() => redirectToDocumentsForm('Gold Package')}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container gold">
@@ -379,7 +355,7 @@ const PropertyManagement = () => {
                     Experience the utmost convenience with our <b>Platinum Package</b>. It encompasses all the features of the Gold Package and goes a step further by <span>providing legal representation</span>, including bounced cheques collection and rental dispute settlement. It also offers sales and post-sales assistance, making it an all-inclusive package for property owners seeking hassle-free management.
                 </p>
                 <div className='property-button-wrapper'>
-                    <button type='button' onClick={redirectToDocumentsFormPlatinum}>Send Your Details</button>
+                    <button type='button' onClick={() => redirectToDocumentsForm('Platinum Package')}>Send Your Details</button>
                 </div>
             </div>
             <div className="carousel-container platinum">
