@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react'
+import React, {useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Articles.scss'
 import NavBar from '../common/NavBar/NavBar'
@@ -7,7 +7,6 @@ import Footer from '../common/Footer/Footer'
 import { articlesHTML } from './articlesHTML'
 
 const Articles = () => {
-  const [articles, setArticles] = useState(articlesHTML)
   const navigate = useNavigate()
   const handleShowArticle = (articlePath) => {
     navigate(`/articles/${articlePath}`)
@@ -28,12 +27,12 @@ const Articles = () => {
         </div>
       </div>
       <div className='articles-container'>
-        {articles.map(article => {
+        {articlesHTML.map(article => {
           return (
             <div key={article.id} className='article-card' onClick={() => handleShowArticle(article.path)}>
               <img className='card-img' src={article.headImg} alt={article.title} />
               <div className='card-title'>{article.title}</div>
-              <div><i>Published on {article.published}</i></div>
+              <div className='card-caption'><i>Published on {article.published}</i></div>
             </div>
           )
         })}

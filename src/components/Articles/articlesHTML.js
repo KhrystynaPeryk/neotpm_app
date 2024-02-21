@@ -24,6 +24,8 @@ import article11Header from '../../assets/images/articlesImg/Article11/header.pn
 import article11BodyImg1 from '../../assets/images/articlesImg/Article11/bodyImg1.png'
 import article12Header from '../../assets/images/articlesImg/Article12/header.gif'
 import article12BodyImg1 from '../../assets/images/articlesImg/Article12/bodyImg1.png'
+import article13Header from '../../assets/images/articlesImg/Article13/header.gif'
+import article13BodyImg1 from '../../assets/images/articlesImg/Article13/bodyImg1.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -1208,6 +1210,93 @@ export const articlesHTML = [
                 <b><a style='text-decoration: none' href='https://transparentpm.ae/articles/where-are-we-now-in-abu-dhabis-real-estate-cycle-will-prices-continue-to-rise-in-2024'>✔️ Where Are We Now in Abu Dhabi's Real Estate Cycle? Will Prices Continue to Rise in 2024?</a></b>
             </p>
             <p>Or contact us directly to know what we think.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 13,
+        path: 'spotting-troublesome-tenants-a-property-managers-guide-to-red-flags-in-tenant -screening',
+        title: `Spotting Troublesome Tenants: A Property Manager's Guide to Red Flags in Tenant Screening`,
+        metaDescription: 'Learn how to identify red flags in tenant screening with expert insights from Transparent Property Management UAE',
+        published: 'February 19, 2024',
+        headImg: article13Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article13Header} />
+        <h1 class='article-title'>Spotting Troublesome Tenants: A Property Manager's Guide to Red Flags in Tenant Screening</h1>
+        <div><i style='color: gray'>February 19, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Recently, my team and I experienced a bit of a rollercoaster with a tenant who has been with us for a hefty six years. 
+                It's funny how time flies, but some challenges just stick with you, don't they? 
+                Every single rental payment with this tenant turned into a mini-drama, culminating in the peak moment before the finale: settling the security deposit and maintenance deductions.
+            </p>
+            <p>
+                The amount of effort, time, emotion, and brainpower that went into settling issues with one troublesome tenant really made me reflect on the commonalities among the "bad tenants" we've encountered in our company. 
+                Apart from a salary certificate, can we become more attuned to those "not-so-obvious" 🚩red flags before handing over the keys?
+            </p>
+            <p>
+                Let's dive into some friendly advice, gathered from our own bumps along the property management road, on how to spot a potential misfit tenant—because, let's face it, a happy tenant-landlord relationship is what we're all after!
+            </p>
+            <p>
+                1. <b>Promises, Promises: </b>
+                Ever dealt with someone who's all talk but no action? If so, it's best to immediately cut that offer off. 
+                There's a good chance the person is unreliable, making everything ten times harder to handle.
+            </p>
+            <p>
+                2. <b>"It's a Matter of Principle": </b>
+                Seriously, when anyone says that, what it truly means is it's either my way or no way. 
+                Often, their "principle" even surpasses black and white contracts, making it impossible to come to terms.
+            </p>
+            <p>
+                3. <b>"Trust Me, I'm...": </b>
+                What I've realized is that truly trustworthy people don't say such things; they just do. 
+                Only those who are unreliable try to convince you of how integral and trustworthy they are with their words.
+            </p>
+            <p>
+                4. <b>The Blame Game: </b>
+                With these kinds of people, even if you confront them with their own signed contract, they would still argue that they were forced to sign it. 
+                It's always someone else's fault but theirs. It's safe to assume your property won't be in safe hands with someone who cannot even own up to their behavior. 
+                Better to part ways sooner rather than later.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article13BodyImg1} class='article-img' alt='colleagues' />
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                5. <b>Unwilling to Cooperate: </b>
+                If someone is difficult to deal with during the happy time of signing up for a new property, the chances that the relationship will go sour when we have to settle the security deposit during the move-out is very high.
+            </p>
+            <p>
+                6. <b>“I will call the police”: </b>
+                I agree that there will be disputes requiring resolution through police intervention or courts, but that should be a last resort. 
+                Anyone who spits out threats so casually is likely to be highly emotional and lack the ability to resolve problems through negotiation or discourse. 
+                They can be tiring to deal with.
+            </p>
+            <p>
+                7. <b>Loopholes of Laws: </b>
+                It's good to have knowledge of the law, but knowing how to circumvent the law is a different thing. 
+                Be mindful of such people; if they have the knowledge plus any sign of untrustworthiness, it's better to steer clear of them.
+            </p>
+            <p>
+                8. <b>Nationality Matters: </b>
+                People from different nations have communication styles they are accustomed to. Intercultural communication isn't always easy. 
+                If you tend to misunderstand certain nationalities or feel dread when dealing with behaviors from certain nationalities, then it's better to avoid them.
+            </p>
+            <p class='quote'>
+                What I've realized is that truly trustworthy people don't say such things such as "Trust me, I'm.."; they just do. 
+                Only those who are unreliable try to convince you of how integral and trustworthy they are with their words.
+            </p>
+            <p>
+                What other behaviors give you a no-go sign immediately? Share with us. We would love to find out. 
+            </p>
+            <p>
+                While there's no one-size-fits-all approach to finding the perfect tenant, these reflections guide us in our journey to keep both our property owners and tenants smiling.
+            </p>
             <p>Meara He</p>
             <p>Director of Transparent Property Management</p>
             <p>
