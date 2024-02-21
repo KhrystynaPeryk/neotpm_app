@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home-image {
@@ -86,7 +87,6 @@
     transform: rotate(360deg);
     color: white;
     font-size: x-large;
-    font-family: 'Domine', serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
     @media screen and (max-height: 530px) {
@@ -185,16 +185,11 @@
     h1 {
         font-size: xx-large;
         margin-top: 1em;
-        font-family: 'Abril Fatface', cursive;
 
         @media screen and (max-height: 750px) {
             font-size: large;
             transition: font-size 0.5s ease;
         }
-    }
-
-    p {
-        font-family: 'Domine', serif;
     }
 
     span {
@@ -204,7 +199,6 @@
     button {
         @include reset-button-style;
         color: white;
-        font-family: 'Domine', serif;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         transition: box-shadow 0.5s ease;
     }
@@ -282,7 +276,6 @@
     display: inline-grid;
     grid-template-columns: auto auto;
     gap: 1em;
-    font-family: 'Domine', serif;
 
     @media screen and (max-width: 300px) {
         grid-template-columns: auto;
@@ -298,12 +291,7 @@
     margin-bottom: 1em;
 
     h1 {
-        font-family: 'Abril Fatface', cursive;
         letter-spacing: 2px;
-    }
-
-    p {
-        font-family: 'Domine', serif;
     }
 }
 

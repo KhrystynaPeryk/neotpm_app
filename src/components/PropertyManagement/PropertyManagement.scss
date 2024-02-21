@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .property-before-table {
@@ -37,7 +38,6 @@
         border-bottom: 1px solid $colorM;
         margin-bottom: 1em;
         color: black;
-        font-family: 'Comfortaa', cursive;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
@@ -106,7 +106,6 @@
         align-items: center;
         flex: 1;
         text-align: center;
-        font-family: 'Domine', serif;
         font-weight: bold;
         border-radius: 15px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -128,7 +127,6 @@
 
         .table-section-item {
             margin: 1em;
-            font-family: 'Montserrat', sans-serif;
             height: 3em;
             font-weight: 500;
             text-transform: uppercase;
@@ -144,7 +142,6 @@
 
         .table-section-price {
             margin: 2em;
-            font-family: 'Domine', serif;
             font-size: large;
             font-weight: bolder;
             height: 2em;
@@ -201,6 +198,7 @@
             width: 100%;
             position: relative;
             display: inline-block;
+            height: 275px;
             border-radius: 100% 0% 100% 0% / 44% 43% 57% 56%;
             padding-top: 2em;
             padding-bottom: 2em;
@@ -211,7 +209,7 @@
             &.bronze {
                 background: rgba(205, 128, 50, 0.651);
                 background: linear-gradient(90deg, rgba(205,127,50,1) 50%, rgba(240,248,255,1) 100%);
-                padding-top: 4.2em;
+                margin-bottom: 2.4em;
             }
 
             &.gold {
@@ -321,11 +319,10 @@
     }
 
     .property-package-caption {
-        font-family: 'Domine', serif;
         font-weight: bold;
         font-size: larger;
         line-height: 2em;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.1em;
         text-align: center;
 
         span {
@@ -334,7 +331,6 @@
     }
 
     .property-package-description {
-        font-family: 'Domine', serif;
         line-height: 2em;
         text-align: justify;
         letter-spacing: 0.1em;
@@ -434,7 +430,6 @@
             font-size: large;
             font-weight: bolder;
             text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
         }
     }
 }

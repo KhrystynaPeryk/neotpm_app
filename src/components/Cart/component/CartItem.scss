@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    font-family: 'Domine', serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid rgba(203, 200, 45, 0.5);
@@ -13,11 +13,9 @@
     .cart-item-name-service {
         width: 80%;
         padding-right: 2em;
-        font-family: 'Montserrat', sans-serif;
 
         .cart-item-name {
             margin-bottom: 0.5em;
-            font-family: 'Domine', serif;
         }
     }
     .cart-item-price {
@@ -26,7 +24,6 @@
     }
     .cart-item-remove {
         color: #238DC1;
-        font-family: 'Montserrat', sans-serif;
         &:hover {
             cursor: pointer;
             color: #39a5af;

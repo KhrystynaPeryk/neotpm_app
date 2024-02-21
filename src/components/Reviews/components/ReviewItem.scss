@@ -1,4 +1,5 @@
 .reviewItem-wrapper {
+    font-family: 'Open Sans', sans-serif;
     .header {
         display: flex;
         margin-bottom: 1em;
@@ -12,7 +13,6 @@
             justify-content: center;
             font-weight: bold;
             margin-left: 1em;
-            font-family: 'Montserrat', sans-serif;
             .header-name {
                 color: #238DC1;
             }
@@ -23,7 +23,6 @@
     }
     .body {
         .body-text {
-            font-family: 'Comfortaa', cursive;
             line-height: 1.5em;
         }
         .body-ago {

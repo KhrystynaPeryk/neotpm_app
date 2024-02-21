@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
 
     .tiles-row {
         display: grid;
@@ -187,10 +188,6 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-
-            p {
-                font-family: 'Montserrat', sans-serif;
-            }
         }
 
         h1 {
@@ -199,13 +196,11 @@
 
         ul {
             margin: 0;
-            font-family: 'Montserrat', sans-serif;
         }
     }
 
     h1 {
         z-index: 1;
-        font-family: 'Abril Fatface', cursive;
         font-weight: lighter;
     }
 }
@@ -221,7 +216,7 @@
     button {
         @include reset-button-style;
         color: white;
-        font-family:'Comfortaa', cursive;
+        font-family: 'Open Sans', sans-serif;
     }
 
     button:hover {
@@ -238,7 +233,6 @@
     align-items: center;
 
     p {
-        font-family: 'Domine', serif;
         font-size: x-large;
     }
 
