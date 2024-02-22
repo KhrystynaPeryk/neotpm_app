@@ -75,7 +75,7 @@ const About = () => {
                     <div className='team-members-container'>
                         <TeamMember image={Omar} name={'Omar'} occupation={'Property Manager'} />
                         <TeamMember image={Trisha} name={'Trisha'} occupation={'Property Manager'} />
-                        <TeamMember image={Maria} name={'Maria'} occupation={'Head of Property Manager'} />
+                        <TeamMember image={Maria} name={'Maria'} occupation={'Head of Property Management'} />
                         <TeamMember image={Jaypee} name={'Jaypee'} occupation={'Property Maintenance Team Lead'} />
                         <TeamMember image={Angel} name={'Angel'} occupation={'Accountant'} />
                     </div>
