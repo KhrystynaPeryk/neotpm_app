@@ -6,7 +6,7 @@ import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer';
 import Spinner from '../common/Spinner/Spinner';
-import { documentsRequestEmailTemplate } from '../../emailTemplates/emailTemplates';
+import { documentsRequestEmailTemplate } from '../../helpers/emailTemplates';
 
 const DocumentsRequestForm = () => {
   const location = useLocation();

@@ -35,7 +35,7 @@ export const articlesHTML = [
         published: 'September 27, 2023',
         headImg: article1Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-            <img class='article-img' alt='property-manager' src=${article1Header} />
+            <img class='article-img' alt='property-manager' src=${article1Header} loading="lazy"/>
             <h1 class='article-title'>10 Reasons Why You Really Need a Property Manager in Abu Dhabi</h1>
             <div><i style='color: gray'>September 27, 2023</i></div>
             <div class='article-body'>
@@ -102,7 +102,7 @@ export const articlesHTML = [
                 Our advice? Choose a good property manager who is professional, integral, and proactive, and truly understands your property's needs. Trust us, it will be a game-changer for you.
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src=${article1BodyImg1} class='article-img' alt='property-manager' />
+                    <img src=${article1BodyImg1} class='article-img' alt='property-manager' loading="lazy"/>
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <p>
@@ -119,7 +119,7 @@ export const articlesHTML = [
         published: 'September 28, 2023',
         headImg: article2Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-            <img class='article-img' alt='property-manager' src=${article2Header} />
+            <img class='article-img' alt='property-manager' src=${article2Header} loading="lazy"/>
             <h1 class='article-title'>7 Tips for Effective Maintenance in Abu Dhabi</h1>
             <div><i style='color: gray'>September 28, 2023</i></div>
             <div class='article-body'>
@@ -209,7 +209,7 @@ export const articlesHTML = [
                     Though it adds up to your work load, encourage tenants to report even minor issues to prevent hidden problems."
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center;'>
-                    <img src=${article2BodyImg1} alt='maintenance' class='article-img' alt='article-img'/>
+                    <img src=${article2BodyImg1} alt='maintenance' class='article-img' alt='article-img' loading="lazy"/>
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <h3>Conclusion:</h3>
@@ -234,7 +234,7 @@ export const articlesHTML = [
         published: 'October 4, 2023',
         headImg: article3Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article3Header} />
+        <img class='article-img' alt='property-manager' src=${article3Header} loading="lazy"/>
         <h1 class='article-title'>Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager</h1>
         <div><i style='color: gray'>October 4, 2023</i></div>
         <div class='article-body'>
@@ -329,7 +329,7 @@ export const articlesHTML = [
                 </li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article3BodyImg1} class='article-img' alt='property-manager-tips' />
+                <img src=${article3BodyImg1} class='article-img' alt='property-manager-tips' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -350,7 +350,7 @@ export const articlesHTML = [
         published: 'October 12, 2023',
         headImg: article4Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article4Header} />
+        <img class='article-img' alt='property-manager' src=${article4Header} loading="lazy"/>
         <h1 class='article-title'>Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners</h1>
         <div><i style='color: gray'>October 12, 2023</i></div>
         <div class='article-body'>
@@ -396,7 +396,7 @@ export const articlesHTML = [
                 Considering a contingency plan, like enlisting <a style='text-decoration: none' href='https://transparentpm.ae/articles/10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi'>a property manager</a> or securing <a style='text-decoration: none' href='https://transparentpm.ae/owner-support/power-of-attorney'>a POA</a>, is invaluable.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article4BodyImg1} class='article-img' alt='property-manager-tips' />
+                <img src=${article4BodyImg1} class='article-img' alt='property-manager-tips' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <h3>7. Tawtheeq Management </h3>
@@ -460,7 +460,7 @@ export const articlesHTML = [
         published: 'October 27, 2023',
         headImg: article5Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article5Header} />
+        <img class='article-img' alt='property-manager' src=${article5Header} loading="lazy"/>
         <h1 class='article-title'>Avoid These 5 Common Mistakes to Prevent Losses on Your Investment</h1>
         <div><i style='color: gray'>October 27, 2023</i></div>
         <div class='article-body'>
@@ -497,7 +497,7 @@ export const articlesHTML = [
                 As you consider such properties, ensure you factor in potential <a style='text-decoration: none' href='https://transparentpm.ae/property-maintenance'>maintenance costs</a> - uniqueness should enhance your investment, not drain it.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article5BodyImg1} class='article-img' alt='article-img'/>
+                <img src=${article5BodyImg1} class='article-img' alt='article-img' loading="lazy"/>
             </div>
             <h3>4. Beyond Handover - Your Ongoing Relationship with Developers - Developer Commitment Post-Purchase</h3>
             <p>
@@ -567,7 +567,7 @@ export const articlesHTML = [
         published: 'November 17, 2023',
         headImg: article6Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article6Header} />
+        <img class='article-img' alt='property-manager' src=${article6Header} loading="lazy"/>
         <h1 class='article-title'>How to Get a POA Done With NO Title Deed?</h1>
         <div><i style='color: gray'>November 17, 2023</i></div>
         <div class='article-body'>
@@ -645,7 +645,7 @@ export const articlesHTML = [
                 Our experience with various POA drafts, including those that have failed but were so well-written by law firms, has enabled us to develop a foolproof draft that is guaranteed to be accepted by the authorities.
             <p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article6BodyImg1} class='article-img' alt='image' />
+                <img src=${article6BodyImg1} class='article-img' alt='image' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -671,7 +671,7 @@ export const articlesHTML = [
         published: 'December 5, 2023',
         headImg: article7Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article7Header} />
+        <img class='article-img' alt='property-manager' src=${article7Header} loading="lazy"/>
         <h1 class='article-title'>Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi</h1>
         <div><i style='color: gray'>December 5, 2023</i></div>
         <div class='article-body'>
@@ -700,7 +700,7 @@ export const articlesHTML = [
                     You can then filter by location, community, and property type. This should provide a graph similar to the one below, displaying the total number of transactions per quarter and the total sales value. To estimate the sales price per transaction, simply perform this calculation: (total sales value) /(total transaction count) = Averaged transaction price.
                 </li>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src=${article7BodyImg1} class='article-img' alt='dari' />
+                    <img src=${article7BodyImg1} class='article-img' alt='dari' loading="lazy" />
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.dari.ae/'>www.dari.ae</a></div>
                 </div>
                 <li><b>If my property is jointly owned, can both owners apply for the Golden Visa?</b> Yes, but the property's minimum value must be AED 2 million per owner. So, a property owned by two people must be worth at least AED 4 million.</li>
@@ -725,7 +725,7 @@ export const articlesHTML = [
                     So, a property owned by two people must be worth at least AED 4 million.
                 </p>
                 <div style='display: flex; flex-direction: column; align-items: center'>
-                    <img src=${article7BodyImg2} class='article-img' alt='transparentpm.ae' />
+                    <img src=${article7BodyImg2} class='article-img' alt='transparentpm.ae' loading="lazy"/>
                     <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
                 </div>
                 <li><b>Can I use an off-plan property for my Golden Visa application?</b> Yes, if you've paid AED 2 million or more toward it.</li>
@@ -764,7 +764,7 @@ export const articlesHTML = [
         published: 'November 27, 2023',
         headImg: article8Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article8Header} />
+        <img class='article-img' alt='property-manager' src=${article8Header} loading="lazy"/>
         <h1 class='article-title'>Discover the Truth Behind Property Management Myths</h1>
         <div><i style='color: gray'>November 27, 2023</i></div>
         <div class='article-body'>
@@ -811,7 +811,7 @@ export const articlesHTML = [
                 Not true! Transparent PM stands out with tailored strategies, transparent communication, and years of industry expertise, ensuring your property gets the attention it deserves.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article8BodyImg1} class='article-img' alt='transparentpm.ae' />
+                <img src=${article8BodyImg1} class='article-img' alt='transparentpm.ae' loading="lazy" />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p class='quote'>
@@ -838,7 +838,7 @@ export const articlesHTML = [
         published: 'November 27, 2023',
         headImg: article9Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article9Header} />
+        <img class='article-img' alt='property-manager' src=${article9Header} loading="lazy"/>
         <h1 class='article-title'>Is having a POA in Abu Dhabi really going to help you with your property?</h1>
         <div><i style='color: gray'>November 27, 2023</i></div>
         <div class='article-body'>
@@ -885,7 +885,7 @@ export const articlesHTML = [
                 </li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article9BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <img src=${article9BodyImg1} class='article-img' alt='Limitations of a POA' loading="lazy" />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -910,7 +910,7 @@ export const articlesHTML = [
                 </li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article9BodyImg2} class='article-img' alt='Things to Watch Out' />
+                <img src=${article9BodyImg2} class='article-img' alt='Things to Watch Out' loading="lazy" />
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -968,7 +968,7 @@ export const articlesHTML = [
         published: 'January 14, 2024',
         headImg: article10Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article10Header} />
+        <img class='article-img' alt='property-manager' src=${article10Header} loading="lazy"/>
         <h1 class='article-title'>Where Are We Now in Abu Dhabi's Real Estate Cycle? Will Prices Continue to Rise in 2024?</h1>
         <div><i style='color: gray'>January 14, 2024</i></div>
         <div class='article-body'>
@@ -1000,7 +1000,7 @@ export const articlesHTML = [
                 We will gain more insight as the market heads towards a handover boom from 2025 onwards.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article10BodyImg1} class='article-img' alt='article-img' />
+                <img src=${article10BodyImg1} class='article-img' alt='article-img' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p> 
@@ -1046,7 +1046,7 @@ export const articlesHTML = [
         published: 'January 22, 2024',
         headImg: article11Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article11Header} />
+        <img class='article-img' alt='property-manager' src=${article11Header} loading="lazy"/>
         <h1 class='article-title'>What to do next to receive your property? (and a FREE offer!)</h1>
         <div><i style='color: gray'>January 22, 2024</i></div>
         <div class='article-body'>
@@ -1058,7 +1058,7 @@ export const articlesHTML = [
                 The good news is, if you're looking for assistance to check every little defect in your property before the handover (the most tedious but unfortunately crucial part of the handover in my opinion), we are offering: <b>FREE</b> 1-hour snagging services for the first 5 owners who let us know you need assistance with snagging. That's right, completely <b>FREE</b>! So, if you are on the brink of receiving your property and would like to have some free help, just let us know. We are only a WhatsApp message away at <b>+971(0)56 442 0883</b>.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article11BodyImg1} class='article-img' alt='Limitations of a POA' />
+                <img src=${article11BodyImg1} class='article-img' alt='Limitations of a POA' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>
@@ -1125,7 +1125,7 @@ export const articlesHTML = [
         published: 'February 12, 2024',
         headImg: article12Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article12Header} />
+        <img class='article-img' alt='property-manager' src=${article12Header} loading="lazy"/>
         <h1 class='article-title'>Abu Dhabi or Dubai? Comparing 2023 Real Estate Markets</h1>
         <div><i style='color: gray'>February 12, 2024</i></div>
         <div class='article-body'>
@@ -1153,7 +1153,7 @@ export const articlesHTML = [
                 <li>Off-plan v.s. Ready Sales (Ticket size): 68.8% v.s. -5.6% (YoY in Q4)</li>
             </ul>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article12BodyImg1} class='article-img' alt='Residential Market Performance' />
+                <img src=${article12BodyImg1} class='article-img' alt='Residential Market Performance' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p><b>3. Office Market Dynamics</b></p>
@@ -1226,7 +1226,7 @@ export const articlesHTML = [
         published: 'February 19, 2024',
         headImg: article13Header,
         htmlBody: `<div style='margin-top: 2.5em'>
-        <img class='article-img' alt='property-manager' src=${article13Header} />
+        <img class='article-img' alt='property-manager' src=${article13Header} loading="lazy"/>
         <h1 class='article-title'>Spotting Troublesome Tenants: A Property Manager's Guide to Red Flags in Tenant Screening</h1>
         <div><i style='color: gray'>February 19, 2024</i></div>
         <div class='article-body'>
@@ -1264,7 +1264,7 @@ export const articlesHTML = [
                 Better to part ways sooner rather than later.
             </p>
             <div style='display: flex; flex-direction: column; align-items: center'>
-                <img src=${article13BodyImg1} class='article-img' alt='colleagues' />
+                <img src=${article13BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
                 <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
             </div>
             <p>

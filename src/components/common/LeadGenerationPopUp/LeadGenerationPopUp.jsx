@@ -4,7 +4,7 @@ import axios from 'axios';
 import Spinner from '../Spinner/Spinner';
 import FlyingEmail from '../../../assets/images/flying-email.png'
 import { downloadFirebaseFile } from '../../../firebaseStorage/downloadFirebaseFile';
-import { leadGenerationEmailTemplate } from '../../../emailTemplates/emailTemplates';
+import { leadGenerationEmailTemplate } from '../../../helpers/emailTemplates';
 
 const LeadGenerationPopUp = ({ onClose }) => {
     const [selectedOption, setSelectedOption] = useState('')
@@ -20,25 +20,21 @@ const LeadGenerationPopUp = ({ onClose }) => {
 
     const activateSpinner = () => {
         let timer;
-      
         const startSpinner = () => {
-          setIsSpinner(true);
-          timer = setTimeout(() => {
+            setIsSpinner(true);
+            timer = setTimeout(() => {
             setIsSpinner(false);
             // onClose();
             setIsPopUpSubmitted(true)
           }, 6000);
         };
-      
         const stopSpinner = () => {
           clearTimeout(timer);
           setIsSpinner(false);
         };
-      
         startSpinner();
-      
         return stopSpinner;
-      };
+    };
 
     const handleNameChange = (e) => {
         setName(e.target.value)
@@ -93,7 +89,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
         <div className='lead-popup-container'>
             {isPopUpSubmitted ? (
                 <div className='lead-popup-submitted'>
-                    <img src={FlyingEmail} alt='email' className='lead-popup-submitted-img' />
+                    <img src={FlyingEmail} alt='email' className='lead-popup-submitted-img' loading="lazy"/>
                     <h2>THANK YOU!</h2>
                     <p>Cool stuff is on the way!</p>
                 </div>) : (

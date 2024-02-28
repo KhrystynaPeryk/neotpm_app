@@ -10,20 +10,10 @@ import NavBar from '../common/NavBar/NavBar';
 const Home = () => {
     const navigate = useNavigate();
 
-    const redirectToPropertyManagement = () => {
+    const redirectTo = (route) => {
         window.scrollTo(0, 0);
-      navigate('/property-management');
+        navigate(route);
     };
-
-    const redirectToPropertyMaintenance = () => {
-        window.scrollTo(0, 0);
-        navigate('/property-maintenance');
-      };
-
-    const redirectToOwnerSupport = () => {
-        window.scrollTo(0, 0);
-        navigate('/owner-support')
-    }
 
     //below const and useEffect for handling of fade-in animation for .home-services-content
     const myFirstIngRef = useRef();
@@ -59,27 +49,33 @@ const Home = () => {
     
         const observer = new IntersectionObserver(handleIntersection, options);
     
-        if (myFirstIngRef.current) {
-            observer.observe(myFirstIngRef.current);
+        // Capture current values of refs
+        const firstElement = myFirstIngRef.current;
+        const secondElement = mySecondIngRef.current;
+        const thirdElement = myThirdIngRef.current;
+
+        if (firstElement) {
+            observer.observe(firstElement);
         }
-    
-        if (mySecondIngRef.current) {
-            observer.observe(mySecondIngRef.current);
+
+        if (secondElement) {
+            observer.observe(secondElement);
         }
-    
-        if (myThirdIngRef.current) {
-            observer.observe(myThirdIngRef.current);
+
+        if (thirdElement) {
+            observer.observe(thirdElement);
         }
-    
+
+        // Use captured values for cleanup
         return () => {
-            if (myFirstIngRef.current) {
-                observer.unobserve(myFirstIngRef.current);
+            if (firstElement) {
+                observer.unobserve(firstElement);
             }
-            if (mySecondIngRef.current) {
-                observer.unobserve(mySecondIngRef.current);
+            if (secondElement) {
+                observer.unobserve(secondElement);
             }
-            if (myThirdIngRef.current) {
-                observer.unobserve(myThirdIngRef.current);
+            if (thirdElement) {
+                observer.unobserve(thirdElement);
             }
         };
     }, []);
@@ -104,7 +100,7 @@ const Home = () => {
                     <h1>Property Management</h1>
                     <p className='home-services-caption'>Your time is precious. Focus on what you do best and leave the rest to us.</p>
                     <div className="btns-container">
-                        <button type="button" onClick={redirectToPropertyManagement}>Learn More</button>
+                        <button type="button" onClick={() => redirectTo('/property-management')}>Learn More</button>
                     </div>
                 </div>
                 <div className="home-services-image first-service-img" />
@@ -115,7 +111,7 @@ const Home = () => {
                     <h1>Property Maintenance</h1>
                     <p className='home-services-caption'>Maintain and Enhance Your Property: Expert Property Maintenance Services for Lasting Value</p>
                     <div className="btns-container">
-                        <button type="button" onClick={redirectToPropertyMaintenance}>Learn More</button>
+                        <button type="button" onClick={() => redirectTo('/property-maintenance')}>Learn More</button>
                     </div>
                 </div>
                 <div className="home-services-image second-service-img" />
@@ -126,7 +122,7 @@ const Home = () => {
                     <h1>Owner Support</h1>
                     <p className='home-services-caption'>Simplify Property Processes with Expert Support</p>
                     <div className="btns-container">
-                        <button type="button" onClick={redirectToOwnerSupport}>Learn More</button>
+                        <button type="button" onClick={() => redirectTo('/owner-support')}>Learn More</button>
                     </div>
                 </div>
                 <div className="home-services-image third-service-img" />

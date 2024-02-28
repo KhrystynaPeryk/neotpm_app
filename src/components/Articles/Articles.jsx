@@ -30,7 +30,7 @@ const Articles = () => {
         {articlesHTML.map(article => {
           return (
             <div key={article.id} className='article-card' onClick={() => handleShowArticle(article.path)}>
-              <img className='card-img' src={article.headImg} alt={article.title} />
+              <img className='card-img' src={article.headImg} alt={article.title} loading='lazy' />
               <div className='card-title'>{article.title}</div>
               <div className='card-caption'><i>Published on {article.published}</i></div>
             </div>

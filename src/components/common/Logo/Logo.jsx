@@ -14,7 +14,7 @@ const Logo = ({isCPlogoVisible}) => {
     <div className='logo-container'>
       <img className='logo' src={logo} alt='logo' onClick={redirectToHome}/>
         <p style={isCPlogoVisible ? null : {'display' : 'none'}}><b>PART OF</b></p>
-        <img className='cp' style={isCPlogoVisible ? null : {'display' : 'none'}} src={cp} alt='cp-logo' />
+        <img className='cp' loading='lazy' style={isCPlogoVisible ? null : {'display' : 'none'}} src={cp} alt='cp-logo' />
     </div>
   )
 }

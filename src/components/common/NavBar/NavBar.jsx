@@ -44,7 +44,7 @@ const NavBar = () => {
             window.removeEventListener('resize', handleResize);
             window.removeEventListener('mousedown', handleClickOutsideNavBar);
         };
-      }, []);
+    }, []);
 
     const ExpandNavBar = () => {
         setIsNavExpanded(true)
