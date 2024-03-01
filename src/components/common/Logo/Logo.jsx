@@ -1,7 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Logo.scss'
-import logo from '../../../assets/images/Transparent_Logo_resized.png'
 import cp from '../../../assets/images/CP.png'
 
 const Logo = ({isCPlogoVisible}) => {
@@ -9,6 +8,8 @@ const Logo = ({isCPlogoVisible}) => {
   const redirectToHome = () => {
     navigate('/');
   }
+
+  const logo = `${process.env.PUBLIC_URL}/Transparent_Logo_resized.png`;
 
   return (
     <div className='logo-container'>
