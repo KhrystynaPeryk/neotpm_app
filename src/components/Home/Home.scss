@@ -316,16 +316,19 @@
     background-image: url('../../assets/images/img_3.jpg');
     @include service-img-style;
     margin-bottom: 3em;
+    aspect-ratio: 100 / 20;
 }
 
 .second-service-img {
     background-image: url('../../assets/images/img_2.jpg');
     @include service-img-style;
     margin-bottom: 3em;
+    aspect-ratio: 100 / 20;
 }
 
 .third-service-img {
     background-image: url('../../assets/images/img_6.jpg');
     @include service-img-style;
     margin-bottom: 0;
+    aspect-ratio: 100 / 20;
 }
