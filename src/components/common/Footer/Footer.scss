@@ -58,6 +58,15 @@
     margin-left: 6em;
     margin-right: 6em;
 
+    .privacy-policy {
+        text-decoration: none;
+        color: #CBC82D;
+        font-weight: 600;
+        &:hover {
+            color: white;
+        }
+    }
+
     @media screen and (max-width: 805px) {
         margin-left: 5em;
         margin-right: 5em;

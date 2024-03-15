@@ -14,6 +14,7 @@ import NotFound from './components/NotFound/NotFound';
 import Articles from './components/Articles/Articles';
 import ArticleItem from './components/Articles/components/ArticleItem';
 import About from './components/About/About';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
           <Route path='/contact-form' element={<DocumentsRequestForm />} />
           <Route path='/about-us' element={<About />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           {/* below urls from the old site that are indexed pages */}
           <Route path='/contacts' element={<Home />} />
           <Route path='/guide-to-renting-out-property-in-abudhabi' element={<Articles />} />

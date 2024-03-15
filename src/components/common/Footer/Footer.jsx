@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Footer.scss'
 import Crompton from '../../../assets/images/CP.png'
 import Google from '../../../assets/images/google.png'
@@ -36,13 +37,16 @@ const Footer = () => {
                         Mon – Fri
                         <br />
                         8:30 am til 5:30pm
-                        </p>
+                    </p>
                 </div>
                 <div className='footer-content-block'>
                     <h1>CONTACT US</h1>
                     Phone: <a href="tel:+971564420883" className='footer-link'>+971 56 442 0883,</a> <br />
                     <a href="tel:+97126453888" className='footer-link'>+971 (2) 645 3888</a> <br />
                     Email: <a className="footer-link" href="mailto:joshua.jamelo@transparentpm.ae">joshua.jamelo@transparentpm.ae</a>
+                    <p>
+                        <Link className='privacy-policy' to='/privacy-policy'>Privacy Policy</Link>
+                    </p>
                 </div>
                 <div className='footer-content-block'>
                     <h1>CONNECT WITH US</h1>
