@@ -28,6 +28,11 @@ import article13Header from '../../assets/images/articlesImg/Article13/header.gi
 import article13BodyImg1 from '../../assets/images/articlesImg/Article13/bodyImg1.png'
 import article14Header from '../../assets/images/articlesImg/Article14/header.png'
 import article14BodyImg1 from '../../assets/images/articlesImg/Article14/bodyImg1.png'
+import article15Header from '../../assets/images/articlesImg/Article15/header.gif'
+import article15BodyImg1 from '../../assets/images/articlesImg/Article15/bodyImg1.png'
+import article15BodyImg2 from '../../assets/images/articlesImg/Article15/bodyImg2.png'
+import article16Header from '../../assets/images/articlesImg/Article16/header.gif'
+import article16BodyImg1 from '../../assets/images/articlesImg/Article16/bodyImg1.png'
 export const articlesHTML = [
     {
         id: 1,
@@ -1372,6 +1377,177 @@ export const articlesHTML = [
             </p>
             <p>
                 If you're unsure where to find a reliable property manager in Abu Dhabi, why not start by chatting with us?
+            </p>
+            <p>Warm regards,</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 15,
+        path: 'how-to-screen-for-your-next-tenant',
+        title: `How to Screen for Your Next Tenant?`,
+        metaDescription: 'Unlock the secrets to effective tenant screening in Abu Dhabi with practical insights and strategies from Transparent Property Management UAE, guiding landlords towards finding the ideal tenants who respect and value their properties.',
+        published: 'March 19, 2024',
+        headImg: article15Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article15Header} loading="lazy"/>
+        <h1 class='article-title'>How to Screen for Your Next Tenant? A Property Manager's Practical Guide to Tenant Screening in Abu Dhabi</h1>
+        <div><i style='color: gray'>March 19, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Navigating the complexities of the Abu Dhabi rental market has been a profound journey for me, filled with lessons learned and insights gained. Today, I want to share a piece of that journey with you, focusing on a topic that's close to the heart of every landlord: tenant screening. 
+                This isn't just about finding a tenant; it's about finding the right tenant who respects and values your property as much as you do.
+            </p>
+            <p><b>Reevaluating Traditional Screening Methods</b></p>
+            <p>
+                The traditional tenant screening playbook often see in other markets—requesting employment certificates, bank statements, and reference letters—often don’t work so well in Abu Dhabi. In a market brimming with options, demanding extensive documentation can only push prospective tenants away, ultimately causing our clients to suffer. 
+                It's a delicate balance we always have to maintain between due diligence and practicality, and the truth is, those documents don't always reveal the full story.
+            </p>
+            <p>
+                Tenant screening is akin to hiring the right employees for your company. 
+                Even if you hire the best candidates on paper or from an interview, in reality, they can still turn out to be full of disappointment.
+            </p>
+            <p>
+                I've come to realize that a tenant's paper profile is not a very good indicator of their real-world behavior. From our company history, all the troublesome tenants, i.e., runaways, defaults on rental payments, property damage during their tenancy, subleases, or just don’t do what they promise, surprisingly come from prestigious positions with professional backgrounds. (But in no way am I saying tenants from prestigious positions are troublesome tenants; in fact, the majority of them are very well-behaved.) 
+                This insight has been pivotal in reshaping our approach to tenant screening, moving beyond the conventional metrics to something more intuitive and nuanced.
+            </p>
+            <p><b>Adapting to the Market's Realities</b></p>
+            <p>
+                So, how do we adapt? How do we screen tenants in a way that's both effective and mindful of the market's dynamics? 
+                Here are a few strategies that have made a difference for us:
+            </p>
+            <p><b>1.       The Role of Real Estate Agencies</b></p>
+            <p>
+                Often overlooked by many landlords, choosing the right agencies to work with is a game-changer. Agencies with a solid reputation tend to attract tenants who are reliable and respectful of your property. These agencies have lower churn rates for their agents and are more inclined to step in and assist when you face challenges with your tenants in the future. 
+                It's about aligning with partners who understand your values and market expectations.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article15BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>2.       Understanding Payment Dynamics</b></p>
+            <p>
+                The number of payments can be a critical filter. At one point, many landlords and property management companies opened up to 12 payments, but the default rate soared. It’s not only a hassle but a disaster. Opting for fewer payments (we only accept maximum 4 payments) has proven to significantly reduce the risk of rental defaults. It's a strategy that speaks volumes about a tenant's financial stability and commitment. 
+                And it's a strategy that you can still play in Abu Dhabi without suffering marketability.
+            </p>
+            <p class='quote'>
+                Tenant screening is akin to hiring the right employees for your company. 
+                Even if you hire the best candidates on paper or from an interview, in reality, they can still turn out to be full of disappointment.
+            </p>
+            <p><b>3.       Setting a Realistic Security Deposit</b></p>
+            <p>
+                The security deposit is not just a formality; it's a safeguard. Many landlords believe they can only ask for 5%, which is not true. Imagine the annual rent for your property is only 50k AED, with 5% of the security deposit, that’s only 2,500 AED, which is just about enough to repaint and deep clean. It’s not enough protection for your properties. We suggest keeping at least AED 5,000. 
+                A meaningful deposit ensures that tenants have a stake in maintaining the property, bridging the gap between carelessness and responsibility.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article15BodyImg2} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>4.       Beyond the Surface: Looking at Nationality and Culture</b></p>
+            <p>
+                While it's essential to navigate this aspect sensitively, understanding cultural backgrounds can offer insights into potential tenant behaviors. 
+                It's about cultural compatibility and mutual respect, not stereotypes.
+            </p>
+            <p><b>5.       The Importance of Direct Interactions</b></p>
+            <p>
+                Finally, the direct interaction with potential tenants can be incredibly telling. It's an opportunity to gauge their expectations, their demeanor, and how they might treat your property. 
+                Trust your instincts or your property manager's here—they're often right.
+            </p>
+            <p><b>Reflecting on Our Approach</b></p>
+            <p>
+                These strategies are more than just policies; they're a reflection of our commitment to ensuring that both landlords and tenants embark on a rental relationship that's based on mutual respect and understanding. 
+                It's about protecting your investment and ensuring that your property remains a place of value and pride.
+            </p>
+            <p class='quote'>
+                While it's essential to navigate this aspect sensitively, understanding cultural backgrounds can offer insights into potential tenant behaviors. It's about cultural compatibility and mutual respect, not stereotypes.
+            </p>
+            <p>
+                As I share these insights, I hope they offer you a new perspective on tenant screening, one that goes beyond conventional wisdom to embrace the unique dynamics of the Abu Dhabi rental market. 
+                Whether you're a seasoned landlord or new to the game, remember that the right approach can turn challenges into opportunities.
+            </p>
+            <p>
+                If you're ever in need of further guidance or simply wish to discuss more about property management and tenant screening, just shoot us an email, WhatsApp, or a call. 
+                We are open to sharing whatever we know with you.
+            </p>
+            <p>Warm regards,</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 16,
+        path: 'short-term-lease-vs-annual-lease-which-one-is-for-you',
+        title: `Short-Term Lease vs. Annual Lease: Which One is for You?`,
+        metaDescription: 'Discover the pros and cons of short-term leasing versus annual leasing in Abu Dhabi`s real estate market.',
+        published: 'March 26, 2024',
+        headImg: article16Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article16Header} loading="lazy"/>
+        <h1 class='article-title'>Short-Term Lease vs. Annual Lease: Which One is for You?</h1>
+        <div><i style='color: gray'>March 26, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Recently, a landlord asked me about buying a property in Abu Dhabi. She was curious whether to opt for Airbnb-style leasing or a standard annual lease. Since Abu Dhabi legalized short-term leases, this is a dilemma many landlords face, especially given the premium prices short-term properties can command per day. It's tempting to see this path as a guaranteed way to increase profits. 
+                However, like any significant endeavor, a higher return usually involves higher risks. I want to share some considerations to help you make an informed decision.
+            </p>
+            <p><b>Investing in Your Space</b></p>
+            <p>
+                First, let's discuss preparing your property. Choosing short-term leasing means your property needs to be visually appealing to attract potential renters. 
+                It's not just about adding a comfortable bed and a plush sofa; it's about creating a space that stands out and makes guests fall in love at first sight.
+            </p>
+            <p>
+                Typically, furnishing a one-bedroom (1B) can cost about 15-18k AED with all white goods. 
+                But it's not enough to just have the furniture; making everything look good and ensuring your property stands out is crucial.
+            </p>
+            <p><b>The Nitty-Gritty of Operations</b></p>
+            <p>The operational side of running a short-term rental, as opposed to an annual lease, involves higher costs. Here are the fees you need to consider:</p>
+            <ul>
+                <li><b>Government license fee:</b> About AED 950/year</li>
+                <li><b>Property insurance:</b> For a one-bedroom, that's about AED 200-300</li>
+                <li><b>Booking platform's fee:</b> Typically 3% for Airbnb</li>
+                <li><b>Cleaning and supplies:</b> You need a cleaner to clean, do laundry, and replenish supplies. Coordinating the cleaner's schedule to turn over the property as quickly as possible can be challenging.</li>
+                <li><b>Property Manager's fee:</b> High tenant turnover means more work for the property manager. Typically, the PM fee can be 5-7 times more than that of a standard yearly lease. It might be high, but it's worth considering if you need someone to help manage your property.</li>
+            </ul>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article16BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>Dealing with Vacancies</b></p>
+            <p>A significant challenge with short-term leasing is vacancies. Seeing others charge high prices doesn't guarantee instant success.</p>
+            <p>Here's a personal story: I once ran a quaint bed and breakfast in London. Over two years, I think I received only one booking from Airbnb. The rest of my guests came from my personal blog.</p>
+            <p class='quote'>
+                Choosing short-term leasing means your property needs to be visually appealing to attract potential renters. 
+                It's not just about adding a comfortable bed and a plush sofa; it's about creating a space that stands out and makes guests fall in love at first sight.
+            </p>
+            <p>
+                This experience taught me the importance of finding ways to attract prospective tenants. Most real estate agencies can't help with sourcing tenants for short-term leases, so it's up to you to find alternative methods to outcompete hotel rooms and other listings. 
+                Can you withstand the time it takes to build up reviews on platforms like Airbnb or Booking.com? Do you have other channels for driving bookings?
+            </p>
+            <p>
+                Remember, Abu Dhabi's market experiences specific high and low seasons. During the low season, it can be very quiet. You need to consider these factors as well.
+            </p>
+            <p><b>Wrapping It Up</b></p>
+            <p>
+                Both <i><b>short-term leases</b></i> and <i><b>standard one-year leases</b></i> are legitimate options. 
+                However, opting for a short-term lease requires more costs, more investment, and a more hands-on approach. 
+                I hope this article provides useful information to help you make the right decision for you and your property. 
+                So, next time you see those premium prices advertised on booking sites, you won't be easily misled.
+            </p>
+            <p class='quote'>
+                Remember, Abu Dhabi's market experiences specific high and low seasons. 
+                During the low season, it can be very quiet. You need to consider these factors as well.
+            </p>
+            <p>
+                If you have any questions or want to know more about real estate in Abu Dhabi, let me know.
             </p>
             <p>Warm regards,</p>
             <p>Meara He</p>

@@ -216,7 +216,7 @@ const OwnerSupport = () => {
               </div>
               <div className='flip-card-back handover'>
                 <div className='flip-card-back-padding'>
-                  <h1>Transparency Handover Services</h1>
+                  <h1>Transparent Handover Services</h1>
                   <p>
                     The handover of property in Abu Dhabi can be a lengthy and complex undertaking. 
                     We offer a complete suite of services to ensure a smooth, cost-effective transition in the shortest possible time:
