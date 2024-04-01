@@ -33,6 +33,8 @@ import article15BodyImg1 from '../../assets/images/articlesImg/Article15/bodyImg
 import article15BodyImg2 from '../../assets/images/articlesImg/Article15/bodyImg2.png'
 import article16Header from '../../assets/images/articlesImg/Article16/header.gif'
 import article16BodyImg1 from '../../assets/images/articlesImg/Article16/bodyImg1.png'
+import article17Header from '../../assets/images/articlesImg/Article17/header.png'
+import article17BodyImg1 from '../../assets/images/articlesImg/Article17/bodyImg1.gif'
 export const articlesHTML = [
     {
         id: 1,
@@ -1555,6 +1557,90 @@ export const articlesHTML = [
             <p>
                 <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
             </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 17,
+        path: 'how-to-move-a-tenant-out-of-a-property-without-causing-too-much-backlash',
+        title: `How to Move a Tenant Out of a Property Without Causing Too Much Backlash?`,
+        metaDescription: 'Learn effective strategies for managing tenant move-outs smoothly and reducing friction by setting clear expectations, conducting thorough inspections, and staying proactive in communication to navigate the process seamlessly.',
+        published: 'March 29, 2024',
+        headImg: article17Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article17Header} loading="lazy"/>
+        <h1 class='article-title'>How to Move a Tenant Out of a Property Without Causing Too Much Backlash?</h1>
+        <div><i style='color: gray'>March 29, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Let's face it, welcoming a new tenant is akin to experiencing a honeymoon period, but the hardest part usually arises when you need to remove a tenant from your property. 
+                I think it's definitely one of the top three most stressful moments in the life of a property manager.
+            </p>
+            <p>
+                This situation can truly test a tenant's character (and our patience), especially their willingness to take responsibility for any damages they've caused.
+            </p>
+            <p>
+                Although most tenants are great, friction during move-out is almost inevitable. 
+                However, if you follow these steps correctly, the move-out process with your tenant can be much smoother:
+            </p>
+            <p>
+                1.       <b>Start with the Tenancy Contract:</b> Be specific about what you expect from tenants upon move-out. It's standard to ask tenants to restore the property to its original condition, but this often proves too vague. Being specific in the contract helps to manage expectations and responsibilities upon move-out more effectively. 
+                For instance, specify whether you expect the tenant to repaint, deep clean, or conduct pest control. You don't need to go overboard, but clarity is key.
+            </p>
+            <p>
+                2.       <b>Insist on a Move-In Inspection Report: </b> It might seem that only tenants need the move-in inspection report, but you'd be surprised how many arguments it can prevent as a landlord. This document is crucial for protecting both parties in the event of a maintenance dispute. Don't overlook the importance of the inspection report. 
+                If you can't conduct one yourself, consider hiring a professional (our services include this—contact us for more information). This report is essential for determining responsibilities upon move-out.
+            </p>
+            <p>
+                3.       <b>Clearly Communicate the Move-Out Procedure and Your Expectations: </b> Inform tenants about the move-out process, including any clearances they need to provide, their intended move-out date, your quality expectations for any maintenance work they undertake themselves (especially painting), 
+                and when they can expect to receive their security deposit back.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article17BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                4.       <b>Conduct a Pre-Move-Out Check: </b> If possible, inspect the property before the tenant moves out. Pay special attention to expensive items like carpentry, masonry, furniture, and appliances. 
+                If you notice damages that exceed the security deposit, discuss with your tenant how these will be addressed before they leave.
+            </p>
+            <div style='margin-left: 20%; margin-right: 20%; text-align: center; font-size: larger;'>
+                <i>
+                    It might seem that only tenants need the move-in inspection report, but you'd be surprised how many arguments it can prevent as a landlord. 
+                    This document is crucial for protecting both parties in the event of a maintenance dispute. Don't overlook the importance of the inspection report.
+                </i>
+            </div>
+            <p>
+                5.       <b>Assist Your Tenant with Getting Permission to Move Out: </b> Some community managements require your No Objection Certificate (NOC) for tenants to move out. 
+                Ensure your tenant isn't stranded because they couldn't obtain move-out permission from the community management.
+            </p>
+            <p>
+                6.       <b>Stay in Touch with Tenants After They Move Out: </b> Often, there's work to be done even after a tenant has left your property. 
+                Discuss the best way to keep in contact, especially if they plan to leave the country or move to another community. Having a conversation can make concluding the move-out process smoother.
+            </p>
+            <p>
+                7.       <b>Prepare for the Worst-Case Scenario: </b> The biggest challenge you might face is a tenant refusing to move out. 
+                Remember, it's better to resolve the situation, even if it means a slight financial loss, than to face the complexities of legal eviction.
+            </p>
+            <div style='margin-left: 20%; margin-right: 20%; text-align: center; font-size: larger;'>
+                <i>
+                    <b>Conduct a Pre-Move-Out Check: </b>If possible, inspect the property before the tenant moves out. Pay special attention to expensive items like carpentry, masonry, furniture, and appliances. 
+                    If you notice damages that exceed the security deposit, discuss with your tenant how these will be addressed before they leave.
+                </i>
+            </div>
+            <p>
+                These tips can help manage tenant move-outs smoothly. 
+                Setting clear expectations from the start, keeping all information handy, informing tenants about the move-out process and what's expected, trying to avoid unexpected expenses that exceed the security deposit, assisting your tenants with their move-out, and staying in touch are all crucial steps.
+            </p>
+            <p>
+                Though these tips may seem like common sense, the quality of execution makes all the difference. 
+                If there's anything you'd like to know, or if you're interested in our move-in snagging service or property management services, just let us know.
+            </p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p>+971 56 442 0883</p>
         </div>    
     </div>`,
     }

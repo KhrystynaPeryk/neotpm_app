@@ -1,6 +1,175 @@
 {
   "reviews": [
     {
+      "comment": "Omar is real professional person who knows how to provide high profile service and understand tenant requirements, I hope all transparent employees were as Omar, many things would have been changed, thanks Omar for your support and help", 
+      "updateTime": "2024-03-28T23:02:39.740262Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqkZn5W43a7JsXtkj-y57rmlrsC-xF0KudLBZCekqN3yOUa3pXa-wzJv6jiW2rl5JQxuwoN5nA", 
+      "reviewId": "AbFvOqkZn5W43a7JsXtkj-y57rmlrsC-xF0KudLBZCekqN3yOUa3pXa-wzJv6jiW2rl5JQxuwoN5nA", 
+      "starRating": "FOUR", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIHM8pyV11XTvyDIxBhOyBSbR_htBeDKvnMxRQMSWSH=s120-c-rp-mo-br100", 
+        "displayName": "ahmed nasr"
+      }, 
+      "reviewReply": {
+        "comment": "Thank you Ahmed! We appreciate your feedback for Omar and for our team as a whole. We aim to improve our customer service approach and will definitely apply changes on how we can better serve you and other customers. All the best!", 
+        "updateTime": "2024-03-29T07:48:04.640732Z"
+      }, 
+      "createTime": "2024-03-28T23:02:39.740262Z"
+    }, 
+    {
+      "updateTime": "2024-03-12T13:18:10.648480Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqlRg4Yd-Ur3WwY5zGLHKyXOf1jtqv_JRsgcxToaVlsUXCn4j-R4ZEXDXA_Gz9qyBeJdIwDBfg", 
+      "reviewId": "AbFvOqlRg4Yd-Ur3WwY5zGLHKyXOf1jtqv_JRsgcxToaVlsUXCn4j-R4ZEXDXA_Gz9qyBeJdIwDBfg", 
+      "starRating": "THREE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjX8PRG9Pc8n_hUlFTg1I80jTNX3EO-ON10R5nvccoX1AdYX=s120-c-rp-mo-br100", 
+        "displayName": "Swati Patil"
+      }, 
+      "createTime": "2024-03-12T13:18:10.648480Z"
+    }, 
+    {
+      "comment": "Trisha has been excellent relationship manager. She communicates clearly and regularly. She has been a great help for me managing day to day stuff. Really pleased with the overall service.", 
+      "updateTime": "2024-03-08T09:26:19.629426Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqkaZjdPMle0es4d8OIKYUDSedydJCka6yj2HR7_cZcy0A7P8nTFapJrhDhgtNsDIB_WbpNHxw", 
+      "reviewId": "AbFvOqkaZjdPMle0es4d8OIKYUDSedydJCka6yj2HR7_cZcy0A7P8nTFapJrhDhgtNsDIB_WbpNHxw", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjVodrIhuiygwIToOVVjbH9QiUMfLuz73tg7En3sRzFn8OY=s120-c-rp-mo-br100", 
+        "displayName": "Hariraj SL"
+      }, 
+      "reviewReply": {
+        "comment": "Thank you for your feedback Hariraj!", 
+        "updateTime": "2024-03-10T06:13:51.349033Z"
+      }, 
+      "createTime": "2024-03-08T09:26:19.629426Z"
+    }, 
+    {
+      "comment": "Hi, I had an happy experience dealing with Transparent Property Management. For me Ms. Trisha is the face of the company and she has been extremely professional dealing with me and my clients.", 
+      "updateTime": "2024-03-05T16:56:55.049478Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqkSmbjQa0UKjgQltIB4onD-siBDqzh6eil0nYZ25aZlIAUZ8Zaz8aQOga7BsLxtRUc63i12rg", 
+      "reviewId": "AbFvOqkSmbjQa0UKjgQltIB4onD-siBDqzh6eil0nYZ25aZlIAUZ8Zaz8aQOga7BsLxtRUc63i12rg", 
+      "starRating": "FOUR", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKh_wXwggOZQz3d3AJLLj1MPRgd8U9xZDMp6MS9ryPf=s120-c-rp-mo-br100", 
+        "displayName": "Mehrez Kerawalla"
+      }, 
+      "reviewReply": {
+        "comment": "Hi Mehrez! thank you so much for your positive feedback, we appreciate it. We will continue to strive to be the best in what we do. All the best!", 
+        "updateTime": "2024-03-07T06:14:29.631917Z"
+      }, 
+      "createTime": "2024-03-05T16:56:30.959421Z"
+    }, 
+    {
+      "comment": "\"Trisha, the property manager at TPM, has been incredibly helpful and professional. Her dedication to ensuring tenant satisfaction and smooth operations is commendable. I highly recommend TPM for their quality services and Trisha's exceptional management skills.\"", 
+      "updateTime": "2024-03-01T07:38:55.981732Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqnGM9CS0uMz5peHBoDXewGRhk0N4vOQfjC8adQf21uvR6xOO9dIVulSrbTU4KB_jt25a11IWw", 
+      "reviewId": "AbFvOqnGM9CS0uMz5peHBoDXewGRhk0N4vOQfjC8adQf21uvR6xOO9dIVulSrbTU4KB_jt25a11IWw", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWKZ6p9UkEtoiZUjUMZNgxFVOOY2TdiTTz-BVJriEDfJlaU=s120-c-rp-mo-br100", 
+        "displayName": "idhsaine mohammed"
+      }, 
+      "createTime": "2024-03-01T07:38:55.981732Z"
+    }, 
+    {
+      "comment": "The best experience and service ever.. Very kind and supportive : Omar Alsayes.\ngreat person, clear in communication, guided thoroughly on each step. loved the conversation throughout. wish him a great success!!\nThank you Omar \ud83d\ude4f", 
+      "updateTime": "2024-02-26T11:16:08.312181Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqmNg1aZQ_zwgzpW8jb9xM6KbZtz3oiaYFyZ60doqogcBRtwPrbpGALiju3-5kNlBTFrHPQZ1w", 
+      "reviewId": "AbFvOqmNg1aZQ_zwgzpW8jb9xM6KbZtz3oiaYFyZ60doqogcBRtwPrbpGALiju3-5kNlBTFrHPQZ1w", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWyY5TTFaWAh1OAbocrakwEIPgJN9ppAY9JcDfSa9oGqdI=s120-c-rp-mo-br100", 
+        "displayName": "umar jamil"
+      }, 
+      "reviewReply": {
+        "comment": "Dear Umar, thank you\ud83d\ude4ffor your kind words. We value your feedback for Omar, highly appreciated. We wish you all the best!", 
+        "updateTime": "2024-02-28T13:23:38.408534Z"
+      }, 
+      "createTime": "2024-02-26T11:16:08.312181Z"
+    }, 
+    {
+      "comment": "I have been dealing with TPM for more than 2 years now. They have helped me navigate through the recent Abu Dhabi government linked regulation and system changes. They have a large team with properties split amongst each. Josh is their team leader who is very professional and has provided me very good service whenever I have approached him. I wish them all the best to establish themselves as a leading service provider in this area.", 
+      "updateTime": "2024-02-01T12:55:02.829591Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqk5fERMSveLubum7qp6LlTfjDixFp_DdEbWLOfrDWO7o0P84Uvy1UstsCHaN2dkv84iVpcNeg", 
+      "reviewId": "AbFvOqk5fERMSveLubum7qp6LlTfjDixFp_DdEbWLOfrDWO7o0P84Uvy1UstsCHaN2dkv84iVpcNeg", 
+      "starRating": "FOUR", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjWPbp9rPI7FxkFQ3uPMyJK9418ewvM_FNMhxum10rNCnQ=s120-c-rp-mo-br100", 
+        "displayName": "Rajiv Ghildiyal"
+      }, 
+      "reviewReply": {
+        "comment": "We thank you for your confidence in TPM and what we offer Rajiv! It's our pleasure to serve you and your property management needs. We will work harder in providing great satisfaction for you as our valued client. God bless you.-TPM Management Team.", 
+        "updateTime": "2024-02-05T06:59:10.194726Z"
+      }, 
+      "createTime": "2024-02-01T12:55:02.829591Z"
+    }, 
+    {
+      "updateTime": "2024-01-30T12:28:28.796777Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqmrVsjJ_oKjPotvugY78o_xlG4k7UYdqXFcgfuY53ZQl6MhXtZI0_2t3mKhRVA7KiCKhAeDhg", 
+      "reviewId": "AbFvOqmrVsjJ_oKjPotvugY78o_xlG4k7UYdqXFcgfuY53ZQl6MhXtZI0_2t3mKhRVA7KiCKhAeDhg", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKC9AonawrwVn-LaU3EI3itcWECxYI3o3xi4eiFkA8x=s120-c-rp-mo-br100", 
+        "displayName": "Amr El Awaad"
+      }, 
+      "createTime": "2024-01-30T12:28:28.796777Z"
+    }, 
+    {
+      "comment": "I highly recommend Transparent Property management to my clients and tenants as the team is very responsive, helpful and professional in dealing with them. All my tenant's house maintenance issues are sorted out as quickly as possible.\n\nAnd for my landlords who is looking to manage his/her property, Transparent is very well-experienced on this too.", 
+      "updateTime": "2024-01-30T08:30:25.771290Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqmtgXwBhnvywRXxmUh5H2GO-akOS3gfgFP3aJszsN44s_yo-kPYX3XPhayQTv-_ft0LXQO8Og", 
+      "reviewId": "AbFvOqmtgXwBhnvywRXxmUh5H2GO-akOS3gfgFP3aJszsN44s_yo-kPYX3XPhayQTv-_ft0LXQO8Og", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXNnggypHf9xjAJkNBTGBSoJ0obQDrl3b0wsBMAHyrdQ-gU=s120-c-rp-mo-br100", 
+        "displayName": "Hershe - your Estate Agent in Abu Dhabi"
+      }, 
+      "reviewReply": {
+        "comment": "Thank you \ud83d\ude4ffor your review Hershe! greatly appreciated. We strive to perform our services to the best of our ability, professionally and with clear viable property management solutions for our landlords.", 
+        "updateTime": "2024-02-09T10:13:21.722019Z"
+      }, 
+      "createTime": "2024-01-30T08:30:25.771290Z"
+    }, 
+    {
+      "comment": "Ms Trisha was very cooperative", 
+      "updateTime": "2024-01-26T06:36:48.353014Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqk3lcFqC9oSLdNxPrBvEG0yz-FLaJhkDBe267xnOlTpOlXyOIi2IWIhY15DAOQqTY-OQbXOxQ", 
+      "reviewId": "AbFvOqk3lcFqC9oSLdNxPrBvEG0yz-FLaJhkDBe267xnOlTpOlXyOIi2IWIhY15DAOQqTY-OQbXOxQ", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLVv4nvcu-zk8zppFfOJRRuB_RF_psGSpmRhuc4gzRQ=s120-c-rp-mo-br100", 
+        "displayName": "Khaled Aziz"
+      }, 
+      "reviewReply": {
+        "comment": "Thank you\ud83d\ude4fso much for your feedback Khaled! It is high appreciated by the team. All the best!", 
+        "updateTime": "2024-02-28T13:24:27.138594Z"
+      }, 
+      "createTime": "2024-01-26T06:36:48.353014Z"
+    }, 
+    {
+      "comment": "Excellent property management services in Abu Dhabi! \ud83d\udc4d\ud83c\udffb", 
+      "updateTime": "2024-01-26T05:44:23.250566Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqkxR8GObdj08YIrdffarmloamy7ffoM-ONxpsVjkIpuuDTj_5ojXOjdskXos6YyTa_RJbaYsA", 
+      "reviewId": "AbFvOqkxR8GObdj08YIrdffarmloamy7ffoM-ONxpsVjkIpuuDTj_5ojXOjdskXos6YyTa_RJbaYsA", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJvsZ2e3IESFf6xbxJcXJh-VgC2NlqVjVEoiI18dF5F=s120-c-rp-mo-br100", 
+        "displayName": "Trisha lorraine Bautista"
+      }, 
+      "createTime": "2024-01-25T11:50:12.752065Z"
+    }, 
+    {
+      "updateTime": "2024-01-12T10:40:35.960648Z", 
+      "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqmcZoAlPLwQwiVtU70QypU60wkqh4xYTkej_tipKxYFW1QsykJQ5uWN3NjbslF6iOt6I-T0sA", 
+      "reviewId": "AbFvOqmcZoAlPLwQwiVtU70QypU60wkqh4xYTkej_tipKxYFW1QsykJQ5uWN3NjbslF6iOt6I-T0sA", 
+      "starRating": "FIVE", 
+      "reviewer": {
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIr1njQ0QwePP56Z72KRXZA9xkgtdfP1cN2GgOvyDcV=s120-c-rp-mo-br100", 
+        "displayName": "Jaypee Pantia"
+      }, 
+      "createTime": "2024-01-12T10:40:35.960648Z"
+    }, 
+    {
       "comment": "I requested POA Services for Property Management from Transparent Property Management. Their service was absolutely excellant. The fees were reasonable, TPM were flexible and the process with the public notary completed online flawlessly within 3 days. Approved POA was received just minutes after the video call. Super performance Joshua and Omar, many thanks. John and Ingrid Codd.", 
       "updateTime": "2023-12-19T17:04:01.227810Z", 
       "name": "accounts/116486932869397590083/locations/720535007847434328/reviews/AbFvOqkZZJkkcHC27lOBpuOKiRXMruiWcp3WzCyA7gepJjUhUDikB0eNWorhXUtth5zTEEyU3IBR", 
@@ -9,6 +178,10 @@
       "reviewer": {
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKYsCCiYOABwqe9ZLoPWSsfZouRuKo5I5QDHENsiBnT=s120-c-rp-mo-br100", 
         "displayName": "John Codd"
+      }, 
+      "reviewReply": {
+        "comment": "Excellent review! We sincerely appreciate your trust in us John and Ingrid. Our promise is that we will continue to improve our services to achieve high satisfaction from customers like you. Thank you for the wonderful words you've shared about our staff. All the best!-TPM Management", 
+        "updateTime": "2024-01-12T10:35:16.801425Z"
       }, 
       "createTime": "2023-12-19T17:04:01.227810Z"
     }, 
@@ -32,6 +205,10 @@
       "reviewer": {
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a-/ALV-UjXflYqLcCPUzroMaVSBzSZPnDMFHIXUZGW8q8VSKryBpNQ=s120-c-rp-mo-br100", 
         "displayName": "Jorge Garces"
+      }, 
+      "reviewReply": {
+        "comment": "Hi Jorge! Thank you \ud83d\ude4f for your feedback to the team. We really appreciate it. We will strive to find more ways to improve our service and ensure 100% customer satisfaction in all we do. All the best!", 
+        "updateTime": "2024-02-28T13:25:41.511489Z"
       }, 
       "createTime": "2023-01-20T08:07:11.374606Z"
     }, 
@@ -80,6 +257,10 @@
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJzVAyXpOLhTYP4TBTuT_au4l3AOz_ZIy1IUyOtE1WS=s120-c-rp-mo-br100", 
         "displayName": "Ramona S"
       }, 
+      "reviewReply": {
+        "comment": "Thank you \ud83d\ude4f Ramona for your feedback to the team! it is greatly appreciated. We will continue to work hard in improving our systems and processes to provide professional services to you. All the best!", 
+        "updateTime": "2024-02-28T13:29:11.531539Z"
+      }, 
       "createTime": "2023-04-26T05:52:40.306331Z"
     }, 
     {
@@ -89,7 +270,7 @@
       "reviewId": "AbFvOqkTtofXyAVPBPCpPBcma1nbOhvOcV6xUjvdmyHwrvLRSuoARp0ILBGpWtm_YdfQ-PEAt1F08w", 
       "starRating": "FIVE", 
       "reviewer": {
-        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsfeUjTAJ-FFToCmzmqk-qjln6zxUWj-GjEryQYZAR=s120-c-rp-mo-ba2-br100", 
+        "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocLsfeUjTAJ-FFToCmzmqk-qjln6zxUWj-GjEryQYZAR=s120-c-rp-mo-ba3-br100", 
         "displayName": "Simon Rickman"
       }, 
       "createTime": "2023-03-20T09:35:55.793328Z"
@@ -103,6 +284,10 @@
       "reviewer": {
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocItTgJZmFA2kfGphO6eOmbbMe-gVDqr_UGUuhpHfl-V=s120-c-rp-mo-br100", 
         "displayName": "V J"
+      }, 
+      "reviewReply": {
+        "comment": "We thank you \ud83d\ude4ffor your continuous trust in our services and look forward to deliver added value and quality as we grow! Your feedback to us is invaluable.", 
+        "updateTime": "2024-03-11T05:01:57.988345Z"
       }, 
       "createTime": "2023-02-20T13:08:14.812585Z"
     }, 
@@ -159,6 +344,10 @@
       "reviewer": {
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocIztM0D39smyhFKAv7qZlPQXIgrJ2je3AP4QltMQrkw=s120-c-rp-mo-br100", 
         "displayName": "bosun fatoki"
+      }, 
+      "reviewReply": {
+        "comment": "Thank you Bosun! It's our pleasure to work with you in the past few years. We wish you and your team all the best!-TPM Management", 
+        "updateTime": "2024-01-12T12:18:07.741957Z"
       }, 
       "createTime": "2023-01-13T06:55:21.191947Z"
     }, 
@@ -305,9 +494,13 @@
         "profilePhotoUrl": "https://lh3.googleusercontent.com/a/ACg8ocKicvWsOV0ajHCil0TBeIdwRqbnY_G9OdFmHSQTy_e7=s120-c-rp-mo-br100", 
         "displayName": "Henry Ugo"
       }, 
+      "reviewReply": {
+        "comment": "Thank you so much Henry! we appreciate your feedback and trust. We love working with you and your team at Crest Range and wish you all the best!", 
+        "updateTime": "2024-03-11T05:02:53.289605Z"
+      }, 
       "createTime": "2022-07-29T09:42:49.773886Z"
     }
   ], 
-  "totalReviewCount": 24, 
-  "averageRating": 5
+  "totalReviewCount": 36, 
+  "averageRating": 4.900000095367432
 }

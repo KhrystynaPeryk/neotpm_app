@@ -51,5 +51,7 @@ const Reviews = () => {
 }
 
 // refreshing reviews on https://developers.google.com/oauthplayground/, press gear, choose client-side, paste client id: 992109642155-gllh0un55pskcg7hadq7mb2g37uq0bva.apps.googleusercontent.com
+// https://www.googleapis.com/auth/business.manage in Authorize APIs in Step 1
+// Request URL in Step 2 https://mybusinessaccountmanagement.googleapis.com/v4/accounts/116486932869397590083/locations/720535007847434328/reviews
 
 export default Reviews
