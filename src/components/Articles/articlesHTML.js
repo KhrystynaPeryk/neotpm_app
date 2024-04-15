@@ -35,6 +35,9 @@ import article16Header from '../../assets/images/articlesImg/Article16/header.gi
 import article16BodyImg1 from '../../assets/images/articlesImg/Article16/bodyImg1.png'
 import article17Header from '../../assets/images/articlesImg/Article17/header.png'
 import article17BodyImg1 from '../../assets/images/articlesImg/Article17/bodyImg1.gif'
+import article18Header from '../../assets/images/articlesImg/Article18/header.png'
+import article18BodyImg1 from '../../assets/images/articlesImg/Article18/bodyImg1.png'
+
 export const articlesHTML = [
     {
         id: 1,
@@ -1641,6 +1644,74 @@ export const articlesHTML = [
                 <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
             </p>
             <p>+971 56 442 0883</p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 18,
+        path: '8-lessons-i-learned-being-a-property-manager-in-abu-dhabi',
+        title: `8 Lessons I Learned Being a Property Manager in Abu Dhabi`,
+        metaDescription: '8 Lessons Learned as a Property Manager in Abu Dhabi: From navigating unexpected changes to valuing problem solvers and prioritizing action over words, these insights highlight the importance of adaptability and resilience in property management.',
+        published: 'April 5, 2024',
+        headImg: article18Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article18Header} loading="lazy"/>
+        <h1 class='article-title'>8 Lessons I Learned Being a Property Manager in Abu Dhabi. How Many Apply to Your Work?</h1>
+        <div><i style='color: gray'>April 5, 2024</i></div>
+        <div class='article-body'>
+            <p>
+                Since the beginning of this year, we have been contemplating how to strengthen our company's corporate culture. 
+                And many that we found valuable to us are actually based from our experiences of being property managers in Abu Dhabi.
+            </p>
+            <p>
+                Here, I am going to share with you the <b>8 lessons</b> that we learned as being property managers in Abu Dhabi. If any resonate with you, let us know!
+            </p>
+            <p>
+                1. <b>Things never go according to plan</b> - We know things usually don't go as planned, but here, they never do. This includes even routine tasks that one day, out of no more, procedures or requirements just change. Planning ahead, allowing plenty of buffers, setting the right expectations early on from all parties, and being almost a control freak to manage every step of the way are crucial for a higher chance of successful delivery.
+            </p>
+            <p>
+                2. <b>Treasure those who can deliver and solve problems</b> - Most people can do their routine work, but immediately feel out of depth when face with unexpected and you find yourself going in circles. However, if you encounter someone who truly understands their role, can solve problems, and deliver results, treasure them; such individuals are rare.
+            </p>
+            <p>
+                3. <b>Don't take no for an answer; there's always a solution</b> - As property managers, we've frequently encountered problems I had no idea how to solve. Many situations are truly bizarre. Yet, to help our clients, we've developed a belief that no matter how challenging a situation, there is always a solution. Being resilient and persistent will lead to a breakthrough.
+            </p>
+            <p>
+                4. <b>See beyond people's emotions</b> - How people handle disagreement and disputes are highly cultural. Being in Abu Dhabi where people are from diverse backgrounds meaning everyone handles it differently, some resolve based on contracts, some shout, some coerce, some insult. Being a property manager has taught me to see beyond what people say but focus on what they truly need and bring them back to paths to problem resolution.
+            </p>
+            <p>
+                5. <b>Words are cheap; only actions matter</b> - In our line of work, we often encounter “sure deals” and “guaranteed promises.” However experiences have taught us that sure thing is never sure when that person actually has a skin in the game. Especially when we handle the situations for our clients' interest, we have to be very careful and make sure we have plan B when those promises fall through.
+            </p>
+            <p class='quote'>
+                Don't take no for an answer; there's always a solution
+            </p>
+            <p>
+                6. <b>Treasure those who call you back</b> - It might seem simple, but many people make empty promises without keeping them. If you come across one who follows through, even with something as simple as returning a call, is rare and should be valued.
+            </p>
+            <p>
+                7. <b>Think outside the box</b> - Problem-solving is a critical skill in Abu Dhabi. Being a property manager here guarantees a never-ending stream of problems and mysteries to solve. You must piece information together and come up with solutions on your own. Patience, resilience, and the ability to think outside the box are essential qualities for a property manager here.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article18BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                8. <b>Be Very Methodical with Documentation</b> - Agents often part ways with a property once a deal is completed, but for property managers like us, our relationship with a property can last for years. If we're not methodical with documentation and don't maintain clear records of all communications with tenants, landlords, or other parties, it will definitely come back to haunt us for something overlooked years ago! And since our skins are not thick enough to turn a blind eyes on our mistakes or ignore inquiries, we have to make sure all documentation and communication are meticulously recorded and organized.
+            </p>
+            <p class='quote'>
+                See beyond people's emotions - How people handle disagreement and disputes are highly cultural.
+            </p>
+            <p>
+                These are the <b>8 lessons</b> I've learned from being a property manager in Abu Dhabi. If any of these resonate with you, or if you have thoughts or contributions to share, please let me know.
+            </p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p>+971 56 442 0883</p>
+            <p>
+                <a href="https://ae.linkedin.com/company/crompton-partners-estate-agents?trk=article-ssr-frontend-pulse_little-mention">Crompton Partners Estate Agents</a>
+            </p>
         </div>    
     </div>`,
     }
