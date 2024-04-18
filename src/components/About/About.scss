@@ -6,7 +6,7 @@
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.2;
-    width: 65%;
+    width: 55%;
 
     
     @media screen and (max-width: 1182px) {
@@ -98,9 +98,9 @@
         align-items: center;
         flex-direction: column;
         .grid-row {
-            display: flex;
-            margin-top: 3em;
-            gap: 2em;
+            // display: flex;
+            // margin-top: 3em;
+            // gap: 2em;
 
             @media screen and (max-width: 900px) {
                 flex-direction: column;
