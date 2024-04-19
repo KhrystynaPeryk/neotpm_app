@@ -3,7 +3,7 @@ import './LeadGenerationPopUp.scss'
 import axios from 'axios';
 import Spinner from '../Spinner/Spinner';
 import FlyingEmail from '../../../assets/images/flying-email.png'
-import { downloadFirebaseFile } from '../../../firebaseStorage/downloadFirebaseFile';
+import { downloadFirebaseFile, saveLeadToFirestore } from '../../../firebaseStorage/downloadFirebaseFile';
 import { leadGenerationEmailTemplate } from '../../../helpers/emailTemplates';
 
 const LeadGenerationPopUp = ({ onClose }) => {
@@ -26,11 +26,11 @@ const LeadGenerationPopUp = ({ onClose }) => {
             setIsSpinner(false);
             // onClose();
             setIsPopUpSubmitted(true)
-          }, 6000);
+        }, 6000);
         };
         const stopSpinner = () => {
-          clearTimeout(timer);
-          setIsSpinner(false);
+            clearTimeout(timer);
+            setIsSpinner(false);
         };
         startSpinner();
         return stopSpinner;
@@ -73,6 +73,9 @@ const LeadGenerationPopUp = ({ onClose }) => {
             activateSpinner()
             //download a free guide
             downloadFirebaseFile('FREE Property Management Guide.pdf')
+
+            const lead = {name, email, phone, request: `Client is a ${selectedRole}, interested in ${selectedOption}`}
+            await saveLeadToFirestore(lead, 'pop up form')
 
             const bodyObj = selectedOption === 'POWER OF ATTORNEY' ? 
                 leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'omar.alsayes@transparentpm.ae', 'joshua.jamelo@transparentpm.ae')

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LessVacancies from '../../../../assets/images/about-us/lessVacancies.svg'
 import BetterTenants from '../../../../assets/images/about-us/betterTenants.svg'
 import LessDamage from '../../../../assets/images/about-us/LessDamage.svg'
@@ -8,20 +8,12 @@ import ServiceMix from '../../../../assets/images/about-us/serviceMix.svg'
 import './Cards.scss';
 
 const Cards = () => {
-    // const [flippedIndex, setFlippedIndex] = useState(null);
-
-    // const handleFlip = index => {
-    //     setFlippedIndex(flippedIndex === index ? null : index);
-    // };
-
     return (
         <div className='cards-container'>
-            {['LESS VACANCIES', 'BETTER TENANTS', 'LESS DAMAGE', 'PEACE OF MIND', 'SERVICE MIX'].map((title, index) => (
+            {['LESS VACANCIES', 'BETTER TENANTS', 'LESS DAMAGE', 'PEACE OF MIND', 'SERVICE MIX'].map((title) => (
                 <div
-                    // className={`cards-container-item ${flippedIndex === index ? 'flipped' : ''}`}
                     className='cards-container-item'
                     key={title}
-                    // onClick={() => handleFlip(index)}
                 >
                     <div className='front'>
                         <img src={

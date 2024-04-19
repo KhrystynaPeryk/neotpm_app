@@ -7,6 +7,7 @@ import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer';
 import Spinner from '../common/Spinner/Spinner';
 import { documentsRequestEmailTemplate } from '../../helpers/emailTemplates';
+import { saveLeadToFirestore } from '../../firebaseStorage/downloadFirebaseFile';
 
 const DocumentsRequestForm = () => {
   const location = useLocation();
@@ -63,6 +64,9 @@ const DocumentsRequestForm = () => {
       setIsSpinner(false)
 
       const bodyObj = documentsRequestEmailTemplate(name, email, phone, response.data.newFileLink, constructFolderName)
+
+      const lead = {name, email, phone, request: constructFolderName}
+      await saveLeadToFirestore(lead, 'contact form')
 
       await axios.post('https://zohoapi-fxfj3ovifq-uc.a.run.app/send-emails', {
         ...bodyObj
