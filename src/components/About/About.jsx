@@ -1,10 +1,7 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
 import './About.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Sphere from '../../assets/images/about-us/abstract-about.png'
-// import ServiceMix from '../../assets/images/about-us/service-mix.png'
-// import UniqueApproach from '../../assets/images/about-us/unique-approach.png'
 import Omar from '../../assets/photos/Omar.png'
 import Trisha from '../../assets/photos/Trisha.png'
 import Maria from '../../assets/photos/Maria.png'
@@ -17,8 +14,6 @@ import { faFacebookSquare, faLinkedin, faSquareInstagram } from '@fortawesome/fr
 import Cards from './components/Cards/Cards';
 
 const About = () => {
-
-    const navigate = useNavigate()
 
     const redirectToSocialPage = (url) => {
         window.location.href = url;

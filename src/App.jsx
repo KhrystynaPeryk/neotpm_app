@@ -7,7 +7,7 @@ import OwnerSupport from './components/OwnerSupport/OwnerSupport';
 import DocumentsRequestForm from './components/DocumentsRequestForm/DocumentsRequestForm';
 import PowerOfAttorney from './components/OwnerSupport/components/PowerOfAttorney/PowerOfAttorney';
 import Cart from './components/Cart/Cart';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation  } from 'react-router-dom';
 import LeadGenerationPopUp from './components/common/LeadGenerationPopUp/LeadGenerationPopUp';
 import Reviews from './components/Reviews/Reviews';
 import NotFound from './components/NotFound/NotFound';
@@ -15,19 +15,21 @@ import Articles from './components/Articles/Articles';
 import ArticleItem from './components/Articles/components/ArticleItem';
 import About from './components/About/About';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import Admin from './components/Admin/Admin';
 
 function App() {
 
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 15000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+    if (location.pathname !== '/admin') {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 15000);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]); 
   const handleClosePopup = () => {
     setShowPopup(false);
   }
@@ -48,6 +50,7 @@ function App() {
           <Route path='/contact-form' element={<DocumentsRequestForm />} />
           <Route path='/about-us' element={<About />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='/admin' element={<Admin />} />
           {/* below urls from the old site that are indexed pages */}
           <Route path='/contacts' element={<Home />} />
           <Route path='/guide-to-renting-out-property-in-abudhabi' element={<Articles />} />

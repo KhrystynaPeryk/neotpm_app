@@ -1,0 +1,18 @@
+@import '../../../../index.scss';
+
+.downloadLeadsBtn {
+    @include reset-button-style;
+    margin: 2rem 0 2rem 0;
+    padding: 1em 1.8em;
+    border-radius: 100px;
+    background-color:rgba(57, 165, 175, 0.9);
+    font-family: inherit;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    transform: scale(1);
+    display: inline-block;
+
+    &:hover {
+        transform: scale(1.1, 1);
+    }
+}

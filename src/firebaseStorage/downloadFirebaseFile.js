@@ -33,10 +33,18 @@ export const downloadFirebaseFile = (fileName) => {
 export const fetchLeadsfromFirestore = async() => {
     const app = initializeApp(firebaseConfig)
     const db = getFirestore(app)
-    const leadsCol = collection(db, 'leads')
-    const leadsSnapshot = await getDocs(leadsCol);
-    const leadsList = leadsSnapshot.docs.map(doc => doc.data());
-    return leadsList;
+    try {
+        const leadsCol = collection(db, 'leads')
+        const leadsSnapshot = await getDocs(leadsCol);
+        const leadsList = leadsSnapshot.docs.map(doc => ({
+            id: doc.id,
+            ...doc.data()
+        }));
+        return leadsList;
+    } catch (e) {
+        console.error("Error fetching leads:", e);
+        throw e
+    }
 }
 
 // date for saving the lead into Cloud Firestore

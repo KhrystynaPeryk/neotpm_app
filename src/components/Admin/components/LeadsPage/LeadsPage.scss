@@ -1,0 +1,25 @@
+.leadsPageContainer {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-left: 0;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: rgb(61, 61, 61);
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        padding: 1rem;
+    }
+}
+
+.leadsPageContainer-title {
+    font-size: xx-large;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+}
