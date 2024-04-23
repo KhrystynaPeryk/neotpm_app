@@ -28,6 +28,7 @@ const LeadsPage = () => {
                     ) : (
                         <>
                             <div className='leadsPageContainer-title'>Leads starting from 22-Apr-2024</div>
+                            <DownLoadLeadsButton leads={leads}/>
                             <ul className='leadsPageContainer'>
                                 {leads.map(detail => (
                                     <li key={detail.id}>
@@ -35,7 +36,6 @@ const LeadsPage = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <DownLoadLeadsButton leads={leads}/>
                         </>
                     )}
                 </>
