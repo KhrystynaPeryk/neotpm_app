@@ -1,6 +1,6 @@
 @import '../../index.scss';
 
-@keyframes zoomingBackground {
+@keyframes zoomingBackgroundMaintenance {
     0% {
       background-size: 100% 100%;
     }
@@ -36,7 +36,6 @@
     }
 }
 .property-features-wrapper {
-    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -53,7 +52,12 @@
     height: 800px;
     background-attachment: fixed;
     background-image: url('../../assets/images/img_9_dark.jpg');
-    animation: zoomingBackground 10s ease-in-out infinite;
+    animation: zoomingBackgroundMaintenance 10s ease-in-out infinite;
+
+    @media screen and (max-width: 850px) {
+        animation: none;
+        transition: all 0.5s ease;
+    }
 
     .property-features-wrapper-caption {
         width: 80%;

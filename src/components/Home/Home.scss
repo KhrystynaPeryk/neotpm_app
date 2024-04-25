@@ -35,6 +35,11 @@
     background-position: center;
     background-color: rgba(0, 0, 0, 0.6);
     animation: zoomingBackground 10s ease-in-out infinite;
+
+    @media screen and (max-width: 850px) {
+        animation: none;
+        transition: all 0.5s ease;
+    }
 }  
 
 .home-image:before {
