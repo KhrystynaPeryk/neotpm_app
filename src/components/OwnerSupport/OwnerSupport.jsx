@@ -28,48 +28,23 @@ const OwnerSupport = () => {
     return flippedTileIndex === index;
   };
 
-  // ADD tawtheeq issuance to cart
-  const addTawtheeqIssuanceToCart = () => {
+  const addToCart = (serviceType, price) => {
     dispatch(addProduct({
       id: uuidv4(),
       service: {
-          type: 'Tawtheeq Issuance',
+          type: serviceType,
           details: '',
       },
-      price: 630
+      price: price
     }));
   }
 
-  // ADD tawtheeq assistance to cart
-  const addTawtheeqAssistanceToCart = () => {
-    dispatch(addProduct({
-      id: uuidv4(),
-      service: {
-          type: 'Tawtheeq Assistance',
-          details: '',
-      },
-      price: 1500
-    }));
-  }
-
-  const redirectToDocumentsFormGoldenVisa = () => {
+  const redirectToContactForm = (serviceType) => {
     window.scrollTo(0, 0);
     navigate('/contact-form', {
         state: {
             service: {
-                type: 'Golden Visa',
-                details: 'Assistance',
-            },
-        }
-    });
-  }
-
-  const redirectToDocumentsFormHandover = () => {
-    window.scrollTo(0, 0);
-    navigate('/contact-form', {
-        state: {
-            service: {
-                type: 'Property Handover',
+                type: serviceType,
                 details: 'Assistance',
             },
         }
@@ -133,7 +108,7 @@ const OwnerSupport = () => {
           <div className='tiles-price'>
             <p>AED 630.00</p>
             <div className='price-button-wrapper'>
-              <button type='button' onClick={addTawtheeqIssuanceToCart}>BUY</button>
+              <button type='button' onClick={() => addToCart('Tawtheeq Issuance', 630)}>BUY</button>
             </div>
           </div>
           <div className='tiles-img' onClick={() => flipBack(1)}>
@@ -188,7 +163,7 @@ const OwnerSupport = () => {
           <div className='tiles-price'>
             <p>AED 1,500.00</p>
             <div className='price-button-wrapper'>
-              <button type='button' onClick={addTawtheeqAssistanceToCart}>BUY</button>
+              <button type='button' onClick={() => addToCart('Tawtheeq Assistance', 1500)}>BUY</button>
             </div>
           </div>
         </div>
@@ -196,7 +171,7 @@ const OwnerSupport = () => {
           <div className='tiles-price'>
             <p>AED 1,800.00</p>
             <div className='price-button-wrapper compare'>
-              <button type='button' onClick={redirectToDocumentsFormHandover}>Send Your Details</button>
+              <button type='button' onClick={() => redirectToContactForm('Property Handover')}>Send Your Details</button>
               <button type='button' className='download-brochure' onClick={() => downloadFirebaseFile('TPM Property Handover Assistance.pdf')}>DOWNLOAD brochure</button>
             </div>
           </div>
@@ -269,7 +244,7 @@ const OwnerSupport = () => {
           </div>
           <div className='tiles-price'>
             <div className='price-button-wrapper compare'>
-              <button type='button' onClick={redirectToDocumentsFormGoldenVisa}>Send Your Details</button>
+              <button type='button' onClick={() => redirectToContactForm('Golden Visa')}>Send Your Details</button>
               <button type='button' className='download-brochure' onClick={() => downloadFirebaseFile('TPM Golden Visa Package.pdf')}>DOWNLOAD brochure</button>
             </div>
           </div>
