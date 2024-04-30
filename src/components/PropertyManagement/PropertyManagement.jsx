@@ -105,12 +105,16 @@ const PropertyManagement = () => {
                     <div className='table-section-header'>BRONZE</div>
                 </div>
                 <div className='table-section-item'>Tenant Sourcing</div>
-                <div className='table-section-item'>Rental Cheque Management</div>
-                <div className='table-section-item'>Move-in Services</div>
                 {isBronzeClicked && (
                     <>
+                        <div className='table-section-item'>Rental Cheque Management</div>
+                        <div className='table-section-item'>Move-in Services</div>
                         <div className='table-section-item'>Tenancy Renewal</div>
-                        <div className='table-section-price'>From AED 3,500 or 3% of the rent</div>
+                        <div className='table-section-item'>Security Deposit Settlement</div>
+                        <div className='table-section-item'>Bill Payment</div>
+                        <div className='table-section-item'>Maintenance Solution Liaison</div>
+                        <div className='table-section-item'>Government Compliance</div>
+                        <div className='table-section-price'>From AED 4,000 or 3% of the rent</div>
                         <button type='button' onClick={() => redirectToDocumentsForm('Bronze Package')}>BUY</button>
                     </>
                 )}
@@ -125,12 +129,8 @@ const PropertyManagement = () => {
                     </div>
                     <div className='table-column-everything'>Everything in Bronze, plus:</div>
                     <div className='table-section-item'>Move-out Services</div>
-                    <div className='table-section-item'>Security Deposit Settlement</div>
-                    <div className='table-section-item'>Bill Payment</div>
                     {isGoldClicked && (
                         <>
-                            <div className='table-section-item'>Maintenance Solution Liaison</div>
-                            <div className='table-section-item'>Handover Assistance from Developer</div>
                             <div className='table-section-item'>Ad Hoc Assistance (4h credit/annum)</div>
                             <div className='table-section-price'>From AED 5,000 or 5% of the rent</div>
                             <button type='button' onClick={() => redirectToDocumentsForm('Gold Package')}>BUY</button>
@@ -146,11 +146,11 @@ const PropertyManagement = () => {
                         <div className='table-section-header'>PLATINUM</div>
                     </div>
                     <div className='table-column-everything'>Everything in Gold, plus:</div>
-                    <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                     <div className='table-section-item'>Legal Representation (POA)</div>
-                    <div className='table-section-item'>Sales & Post Sales Assistance</div>
                     {isPlatinumClicked && (
                         <>
+                            <div className='table-section-item'>Sales & Post Sales Assistance</div>
+                            <div className='table-section-item'>Ad Hoc Assistance (10h credit/annum)</div>
                             <div className='table-section-price'>From AED 7,500 or 8% of the rent</div>
                             <button type='button' onClick={() => redirectToDocumentsForm('Platinum Package')}>BUY</button>
                         </>
