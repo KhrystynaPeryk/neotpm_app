@@ -37,6 +37,13 @@ import article17Header from '../../assets/images/articlesImg/Article17/header.pn
 import article17BodyImg1 from '../../assets/images/articlesImg/Article17/bodyImg1.gif'
 import article18Header from '../../assets/images/articlesImg/Article18/header.png'
 import article18BodyImg1 from '../../assets/images/articlesImg/Article18/bodyImg1.png'
+import article19Header from '../../assets/images/articlesImg/Article19/header.gif'
+import article19BodyImg1 from '../../assets/images/articlesImg/Article19/bodyImg1.png'
+import article20Header from '../../assets/images/articlesImg/Article20/header.gif'
+import article20BodyImg1 from '../../assets/images/articlesImg/Article20/bodyImg1.png'
+import article21Header from '../../assets/images/articlesImg/Article21/header.gif'
+import article21BodyImg1 from '../../assets/images/articlesImg/Article21/bodyImg1.png'
+
 
 export const articlesHTML = [
     {
@@ -1712,6 +1719,160 @@ export const articlesHTML = [
             <p>
                 <a href="https://ae.linkedin.com/company/crompton-partners-estate-agents?trk=article-ssr-frontend-pulse_little-mention">Crompton Partners Estate Agents</a>
             </p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 19,
+        path: 'crowdfunding-uae-real-estate-a-game-changer-or-a-gamble',
+        title: `Crowdfunding UAE Real Estate: A Game Changer or a Gamble?`,
+        metaDescription: 'The article weighs the pros and cons of real estate crowdfunding in the UAE, advising cautious consideration due to its higher risks compared to traditional investment avenues like REITs, but acknowledging its potential for diversification.',
+        published: 'April 22, 2024',
+        headImg: article19Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article19Header} loading="lazy"/>
+        <h1 class='article-title'>Crowdfunding UAE Real Estate: A Game Changer or a Gamble?</h1>
+        <div><i style='color: gray'>April 22, 2024</i></div>
+        <div class='article-body'>
+            <p>UAE property investment is certainly a hot topic!</p>
+            <p>
+                Recently, a British friend of mine, nearing retirement, asked me a question about the possibility of investing in UAE properties through crowdsourcing. This question caught me off guard, as I hadn't heard much about crowdsourced investment options in Abu Dhabi, though they're gaining traction in Dubai with companies like Stake and SmartCrowd leading the way.
+            </p>
+            <p>Prompted by her curiosity, I delved into the subject. Here's what I suggested to her, and if you are also considering to buy properties in the UAE, you need to give it a read.</p>
+            <ul>
+                <li>To know our verdict à point 4</li>
+                <li>Pros & Cons with crowdfunding (risks you need to know) à point 3</li>
+                <li>How crowdfunding work à point 1& 2</li>
+            </ul>
+            <p><b>1. What is crowdfunding in real estate?</b></p>
+            <p>
+                Typically, buying a property equates to direct ownership, right? When purchasing with others, you can become joint owners, each listed on the title deed. However, in the UAE, joint ownership is capped at four parties. So, what happens if you wish to share ownership with more than four individuals?
+            </p>
+            <p>
+                The answer lies in establishing a company that owns the property. In this arrangement, investors seeking to own a portion of the property would instead own a corresponding share of the company. For example, if ten individuals aim to invest in a villa, rather than being directly listed on the villa's title deed—a practice not allowed—they can create a company to own the villa. Consequently, they would possess shares in this company. This approach mirrors the operational model of crowdfunding companies. These entities establish a <b>Special Purpose Vehicle</b> (SPV) for each property, thereby making investors the shareholders of the SPV, because compared to the normal type of companies, an SPV is a distinct legal entity designed exclusively for acquiring and financing a specific asset, such as a property in this context. Importantly, the SPV remains unaffected even if the parent companies face bankruptcy. Thus, investors, as shareholders of the SPV, become the official owners of the property.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article19BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>2. How does crowdfunding work in the UAE?</b></p>
+            <p>Crowdfunding companies manage the SPVs, each owning a property. These companies source attractive investment opportunities, establishing an SPV and registering it with the Dubai International Financial Centre (DIFC) once enough funding is secured. If they fail to attract sufficient investment, the money is returned to investors.</p>
+            <p class='quote'>
+                An SPV is a distinct legal entity designed exclusively for acquiring and financing a specific asset, such as a property in this context.
+            </p>
+            <p><b>3. The pros and cons of crowdfunding investment</b></p>
+            <p><b>The Pros:</b></p>
+            <ul>
+                <li><b>Low Capital Requirement</b>: The major appeal is that the capital requirement for you to start building up your property investment is as little as only Dh500.</li>
+                <li><b>Saves Time</b>: It saves a significant amount of time for investors—they take care of property sourcing, property purchase paperwork, leasing, management headaches, and selling the property.</li>
+                <li><b>Risk Diversification</b>: A great way to diversify your risk—property investment is expensive, but with crowdfunding, you can easily diversify your risk into different properties with a small amount of investment.</li>
+                <li><b>Potentially High Returns</b>: I use “potential” because it's not clear on the average ROI, but on crowdfunding sites, they usually highlight returns starting from 35% ROI over the entire investment period to as high as 68% or more!</li>
+            </ul>
+            <p><b>The Cons:</b></p>
+            <ul>
+                <li><b>Liquidity Issues</b>: SPV is not publicly listed, therefore you can only sell it through the crowdfunding company, which means you have a much smaller pool of investors to sell to, and very little control to crowdfunding companies' mechanism in promoting the sales of your shares.</li>
+                <li><b>Legal Protection</b>: Although there's a legal framework protecting the shareholders of an SPV, but given it's a relatively new things in the UAE, it's not entirely clear on how each shareholder can protect his or her rights if the crowdfunding companies go under or shareholders have a dispute with the crowdfunding companies.</li>
+                <li><b>Lack of Transparency in Money Management</b>: We saw how crypto tycoon be charged frauds for misleading investors and illegally using investors' monies. Not saying crowdfunding companies will do the same, but there is certainly very little each investor can do to protect their money once it's with crowdfunding companies. </li>
+                <li><b>Higher Fees</b>: It's more expensive to purchase properties through crowdfunding companies. Compared to normal sales agents' 2% commission, crowdfunding companies usually charge a 1.5% purchasing fee, an annual administration (management) fee of 0.5%, and an exit fee of typically 2.5%. Some of them also charge for KYC, AML, or capital appreciation fees etc.</li>
+            </ul>
+            <p><b>4. Our Verdict: Overall, is it worth consideration?</b></p>
+            <p>Yes, if you can manage your risk carefully and only use an amount that won't cause you too much pain even if you lose it all!</p>
+            <p>Crowdfunding poses higher risks in terms of liquidation and legal protection; however, it can be a great tool for diversifying risk by spreading it across your property investment portfolio instead of locking a huge chunk into just one property. It all depends on how you use it.</p>
+            <p>Saying that, if you do consider the crowdfunding option, make sure you also research Real Estate Investment Trusts (REITs). REITs has been around for longer time, so it offer clearer legal protections. Plus, many REITs are also publicly traded, which makes it much easier to liquidate. Although prices of your share can fluctuate more with market sentiment, but you might appreciate the ease of liquidation and protection more. See which one is your cup of tea.</p>
+            <p>Fundamentally, I think crowdfunding is a great way to dip your toes into real estate investment in the UAE, especially in Dubai without costing your bank. However, if I were to do it, or advise anyone to do so, it wouldn't be my major investment source, but rather the icing on the cake. And always, do it with caution and plan for the worst case scenario.</p>
+            <p>That's it for today's article. If you ever need an expert's opinion on Abu Dhabi real estate, property management, and maintenance, you know where to reach us!</p>
+            <p>Written by: Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p>+971 56 442 0883</p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 20,
+        path: 'best-mathematical-strategy-to-find-your-best-property-to-invest-in',
+        title: `Property Commitment Issue? Best Mathematical Strategy to Find Your Best Property to Invest in`,
+        metaDescription: 'Discover the Optimal Stopping Theory as a strategic solution to the "commitment issue" in property investment, guiding buyers on when to act amidst infinite options, offered by Transparent Property Management UAE.',
+        published: 'May 6, 2024',
+        headImg: article20Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article20Header} loading="lazy"/>
+        <h1 class='article-title'>Property Commitment Issue? Best Mathematical Strategy to Find Your Best Property to Invest in</h1>
+        <div><i style='color: gray'>May 6, 2024</i></div>
+        <div class='article-body'>
+            <p>If buying a property is like finding your Mr. or Ms. Right to marry, then many definitely suffer from the "commitment" issue. For some, the best one is always the next one, and the decision to buy a property is delayed until it's too late to enter the market.</p>
+            <p>
+                Granted, buying a property involves a large sum of money, and the consequence of making a wrong decision seems huge, especially if this is your first purchase. However, what you don't realize is that the time spent finding the best option may cost you even more, and the best option may never come. What you need instead is not to rely on your gut but a clear strategy that shows you when it's time to make that offer, no matter how scary it seems.
+            </p>
+            <p>So, what's the strategy? Perhaps the 37% principle is just what you need! Also known as the Optimal Stopping Theory, it aims to show us when the best timing is to take an action which will give us the maximized return in a situation with infinite options. Sounds like finding your best property to buy? 😉</p>
+            <p>To break free from your perfectionism and fear, here is how you can use it in your property hunt:</p>
+            <p>
+                1. Set a timeframe for purchasing a property. You absolutely have to buy one within this timeframe.
+            </p>
+            <p>
+                2. Define your criteria for filtering properties, such as location, ROI, or other essential factors. Surely, you don't want to waste your time viewing anything that doesn't meet those requirements, right?
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article20BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>3. Divide your timeframe into two periods: a viewing period and a selection period. Allocate 37% of the time for viewing and the rest for taking action. During the viewing period, only view properties that meet your criteria but refrain from making any purchases. It's purely property window shopping. But once you are done with the viewing period, you have to take action and snatch the first property you encounter that surpasses all previously viewed options!</p>
+            <p>For example, if you aim to purchase a property with a gross ROI above 6% within three months, which is 91 days, then the first 34 days is your viewing period. During this period, you only view properties. Once you complete your 34-day-viewing period, on day 36, if you find a property that surpasses all the previously viewed ones, then that's the one for you to act on! Forget about all the rest you haven't viewed.</p>
+            <p class='quote'>
+                Define your criteria for filtering properties, such as location, ROI, or other essential factors. Surely, you don't want to waste your time viewing anything that doesn't meet those requirements.
+            </p>
+            <p>Obviously, the best property might be the next property, but the likelihood of “the best property is the next property” NOT happening is statistically higher. Ultimately, we live in a world with uncertainty and without perfect information. To pursue the slimmer chance of finding the next best property, the only thing you guarantee yourself is wasted time, effort, and opportunity cost. (Plus, you can always introduce more filtering criteria to alleviate some worries).</p>
+            <p>So next time, if you suffer from the “commitment issue” again with your property purchase, try adopting the Optimal Stopping Theory. It might be just what you need to push yourself to make the best decision.</p>
+            <p>If you would like to help you with your property, from property management, golden visa, maintenance, or any hiccups you face with your properties in Abu Dhabi, just let us know.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 21,
+        path: 'why-the-uae-property-market-is-not-for-conservative-investors',
+        title: `Why the UAE Property Market Is Not for Conservative Investors?`,
+        metaDescription: 'Explore the unparalleled volatility of the UAE property market, advising potential investors to approach it with caution and robust portfolio management akin to cryptocurrency investment, as detailed by Transparent Property Management UAE.',
+        published: 'April 30, 2024',
+        headImg: article21Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article21Header} loading="lazy"/>
+        <h1 class='article-title'>Why the UAE Property Market Is Not for Conservative Investors?</h1>
+        <div><i style='color: gray'>April 30, 2024</i></div>
+        <div class='article-body'>
+            <p>As we witnessed a significant surge in UAE real estate prices in 2022, the UAE has recorded some of the highest increases in housing prices globally, trailing only behind Turkey, according to a Q3 2023 report by the Bank for International Settlements.</p>
+            <p>
+                Such rapid growth sparks inevitable concerns: Are we approaching a market crash, or is the bubble about to burst? My research aligns with the consensus that while growth may slow, the trend is likely to continue upward. For a detailed analysis, I recommend an insightful summary by SmartCrowd(1), which I will not duplicate here.
+            </p>
+            <p>However, what I do want to highlight is the stark volatility of the UAE property market. Take a look at the graph below. Its volatility surpasses that of all mature economies. While the US was recovering from the crash in 2008, the UAE had already gone through another round of highs and lows. What took roughly 14 years to recover from in the US, the UAE managed in just 5 years and recovered from the second crash.</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article21BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em; text-decoration: none; color: gray; font-size: small'>BIS Residential Property Price Database</div>
+            </div>
+            <p>
+                Real estate typically attracts conservative investors looking for long-term holdings. However, those interested in the UAE market should adopt a different approach, treating it more like Bitcoin than a conventional ETF. This market is not for the faint-hearted—it offers substantial returns during peak periods but demands robust portfolio management to mitigate risks and cashflow issue during downturns is the key to successfully investing in UAE's real estate. Certainly there are differences when it comes to investing in Dubai v.s. Abu Dhabi or Ras Al Khaimah, but the markets remain very volatile even comparing to most of the emerging markets.
+            </p>
+            <p>
+                On top of that, to invest in the UAE property markets, investors should keep a vigilant eye on external factors such as oil price fluctuations and 'black swan' events, which can either prompt foreign investors to withdraw their funds or pour heavily into the market. We saw this in the 2008 crash and the recent rise in property prices driven by Russian investors. These factors, largely outside the UAE government's control, play a crucial role in the real estate price dynamics.
+            </p>
+            <p class='quote'>
+                This market is not for the faint-hearted—it offers substantial returns during peak periods but demands robust portfolio management to mitigate risks and cashflow issue during downturns is the key to successfully investing in UAE's real estate
+            </p>
+            <p>That said, if you understand the risks you are taking and are prepared for unexpected market corrections, the UAE real estate markets can certainly be the jewel in your real estate investment portfolio.</p>
+            <p>If you would like to help you with your property, from Property Management, Golden Visa, Maintenance, or any hiccups you face with your properties in Abu Dhabi, just let us know.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
         </div>    
     </div>`,
     }
