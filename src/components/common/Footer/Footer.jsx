@@ -5,6 +5,8 @@ import Crompton from '../../../assets/images/CP.png'
 import Google from '../../../assets/images/google.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faLinkedin, faSquareInstagram, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons'
+import PlayStoreLogo from '../../../assets/images/logo_playstore.svg'
+import AppStoreLogo from '../../../assets/images/logo_appstore.svg'
 
 const Footer = () => {
     const redirectToSocialPage = (url) => {
@@ -66,6 +68,15 @@ const Footer = () => {
                     <div className='google-container'>
                         <img src={Google} alt='google' onClick={() => redirectToSocialPage('https://g.page/r/Cef06Q5ohuvdEBM/review')} loading="lazy"/>
                     </div>
+                </div>
+                <div className='footer-content-block'>
+                    <h1>DISCOVER OUR APP</h1>
+                    <a href='https://play.google.com/store/apps/details?id=ae.transparent.pmm'>
+                        <img src={PlayStoreLogo} alt='playtore logo' className='storeImg' />
+                    </a>
+                    <a href='https://apps.apple.com/ae/app/transparent-property/id6470392291'>
+                        <img src={AppStoreLogo} alt='appstore logo' className='storeImg'/>
+                    </a>
                 </div>
             </div>
         </div>

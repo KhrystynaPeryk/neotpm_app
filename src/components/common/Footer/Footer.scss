@@ -134,6 +134,20 @@
         }
     }
 
+    .storeImg {
+        width: 200px;
+        height: 100px;
+
+        &:first-of-type {
+            margin-right: 2em;
+
+            @media screen and (max-width: 520px) {
+                margin-right: 0;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+
     .google-container {
 
         img {
