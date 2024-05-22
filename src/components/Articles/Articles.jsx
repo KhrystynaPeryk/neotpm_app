@@ -1,12 +1,15 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Articles.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import { articlesHTML } from './articlesHTML'
+import SearchInput from './components/SearchInput';
 
 const Articles = () => {
+  const [searchKeyword, setSearchKeyword] = useState('')
+  const [articles, setArticles] = useState(articlesHTML)
   const navigate = useNavigate()
   const handleShowArticle = (articlePath) => {
     navigate(`/articles/${articlePath}`)
@@ -17,6 +20,16 @@ const Articles = () => {
     window.history.replaceState({}, '', '/articles');
   }, []);
 
+  const inputSearchHandler = (e) => {
+    setSearchKeyword(e.target.value)
+    if (e.target.value.length === 0) {
+      setArticles(articlesHTML)
+    } else {
+      const filteredArticles = articlesHTML.filter((article) => article.htmlBody.toLowerCase().includes(e.target.value.toLowerCase()))
+      setArticles(filteredArticles)
+    }
+  }
+
   return (
     <div className='property-container'>
       <div className='property-before-table'>
@@ -26,8 +39,9 @@ const Articles = () => {
           <p className='property-header'>Articles</p>
         </div>
       </div>
+      <SearchInput keyword={searchKeyword} handlerFunction={inputSearchHandler} />
       <div className='articles-container'>
-        {articlesHTML.map(article => {
+        {articles.map(article => {
           return (
             <div key={article.id} className='article-card' onClick={() => handleShowArticle(article.path)}>
               <img className='card-img' src={article.headImg} alt={article.title} loading='lazy' />

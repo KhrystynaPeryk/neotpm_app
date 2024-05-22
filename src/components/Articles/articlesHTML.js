@@ -43,7 +43,8 @@ import article20Header from '../../assets/images/articlesImg/Article20/header.gi
 import article20BodyImg1 from '../../assets/images/articlesImg/Article20/bodyImg1.png'
 import article21Header from '../../assets/images/articlesImg/Article21/header.gif'
 import article21BodyImg1 from '../../assets/images/articlesImg/Article21/bodyImg1.png'
-
+import article22Header from '../../assets/images/articlesImg/Article22/header.gif'
+import article22BodyImg1 from '../../assets/images/articlesImg/Article22/bodyImg1.png'
 
 export const articlesHTML = [
     {
@@ -1873,6 +1874,51 @@ export const articlesHTML = [
                 <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
             </p>
             <p><b>+971 56 442 0883</b></p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 22,
+        path: 'where-to-move-to-when-the-world-is-getting-crazier',
+        title: `Where to move to when the world is getting crazier?`,
+        metaDescription: 'Considering global instability and increasing risks, obtaining a UAE Golden Visa is a prudent strategy for ensuring safety and security for you and your family.',
+        published: 'May 14, 2024',
+        headImg: article22Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article22Header} loading="lazy"/>
+        <h1 class='article-title'>Where to move to when the world is getting crazier?</h1>
+        <div><i style='color: gray'>May 14, 2024</i></div>
+        <div class='article-body'>
+            <p>I know most of us think of a Golden Visa as merely a nice-to-have item, but it might very well become a necessity that everyone should seriously consider. Why? The answer is simple—risk management.</p>
+            <p>You might ask, 'What risk are you talking about? I see no risk around me; what should I be managing?' If this is your thought, then think again.</p>
+            <p>In 2021, Chinese President Xi Jinping predicted that the trend of the world is 'chaos.' This message was reiterated to Russian President Vladimir Putin on March 22, 2023, when President Xi stated, 'Right now, we're seeing a change we haven't seen in 100 years, and we are driving this change together.' This statement came a year and a month after Russia invaded Ukraine.</p>
+            <p>With the wars that have broken out between Israel and Palestine, Israel and Iran, and the intensified tensions over the Taiwan Strait and between North and South Korea, I believe we have sufficient evidence to validate President Xi's prediction.</p>
+            <p>Prominent figures like Bridgewater's Ray Dalio have also discussed the likely fall of the US empire in the foreseeable future, which will inevitably lead to more conflicts and chaos.</p>
+            <p>So, with so much turmoil ahead of us, what are you doing now to protect yourself and your family in the future? What measures are you taking to protect your wealth and assets? Diversification and having a place where you and your family can quickly and safely relocate is no longer a luxury, but a real necessity. This applies not just to Taiwanese folks like me but to everyone.</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article22BodyImg1} class='article-img' alt='colleagues' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                One useful strategy is to obtain a second passport from a safe country, providing a place of residence in times of turmoil. However, obtaining a second passport is not always possible, as many countries do not allow their citizens to hold dual nationality, and the process can be lengthy, costly, and challenging.
+            </p>
+            <p>
+                That's why, in my opinion, the UAE's Golden Visa is such a good alternative option to consider. Granted, it's not citizenship, but it functions similarly, allowing you to have a visa for 10 years, which is easily renewable. You can also sponsor your family with it. The fact that it is not citizenship actually works in favor of many where dual nationalities are not allowed. Plus, it's quick and easy to obtain. Providing that you meet the criteria, you can get your Golden Visa in as little as two weeks to a month.
+            </p>
+            <p class='quote'>
+                Diversification and having a place where you and your family can quickly and safely relocate is no longer a luxury, but a real necessity
+            </p>
+            <p>Additionally, with benefits like no income tax, a stable currency, rich natural resources, good infrastructure, a favorable lifestyle for expats, and the safety of the entire country (Abu Dhabi is the safest city in the world), the UAE is really an ideal place for many to consider. Even if you are in the process of obtaining your second passport, it's still a viable option in the interim.</p>
+            <p>
+                I believe that as more people realize the risks of putting all their eggs in one basket (one country), the UAE will become more appealing, attracting more investment to drive asset prices. Although whether the asset prices will continue to rise also depends on the quantity of supply, the UAE is inevitably at the right place and the right time for investors to consider. And if you are really risk-averse and concerned about the sharp rises and declines in UAE housing prices, you also have the option of maintaining a 2-million-dirham fixed deposit with banks to earn some interest.
+            </p>
+            <p>If there's a will, there's a way.</p>
+            <p>
+                However, the point of this article is not to discuss how to obtain the Golden Visa, but rather to highlight a more serious and still overlooked topic of why it's something that needs to be taken seriously. If you understand where the world is heading, the UAE's Golden Visa might just be what you need to protect yourself and your family as we navigate a world of growing risk and uncertainty.
+            </p>
+            <p>
+                If you want to discuss how Golden Visa can help you and your family, you are more than welcome to dm me or to contact our Golden Visa specialist Omar at <b>+971 58 599 6258</b> (Call/Whatsapp).
+            </p>
         </div>    
     </div>`,
     }
