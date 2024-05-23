@@ -52,7 +52,7 @@ export const articlesHTML = [
         path: '10-reasons-why-you-really-need-a-property-manager-in-abu-dhabi',
         title: '10 Reasons Why you Really Need a Property Manager in Abu Dhabi',
         metaDescription: 'Discover the top 10 compelling reasons why hiring a property manager in Abu Dhabi is a game-changer for property owners. From faster rentals to stress reduction and legal expertise, find out how a professional property manager can maximize your investment and peace of mind.',
-        published: 'September 27, 2023',
+        published: '2023-9-27',
         headImg: article1Header,
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src=${article1Header} loading="lazy"/>
@@ -136,7 +136,7 @@ export const articlesHTML = [
         path: '7-tips-for-effective-maintenance-in-abu-dhabi',
         title: '7 Tips for Effective Maintenance in Abu Dhabi',
         metaDescription: 'Unlock the secrets to successful property maintenance in Abu Dhabi with expert insights. Discover proactive strategies for addressing maintenance issues, choosing the right properties, and fostering positive tenant relationships. Learn how to avoid costly headaches and ensure property longevity with these essential tips.',
-        published: 'September 28, 2023',
+        published: '2023-9-28',
         headImg: article2Header,
         htmlBody: `<div style='margin-top: 2.5em'>
             <img class='article-img' alt='property-manager' src=${article2Header} loading="lazy"/>
@@ -251,7 +251,7 @@ export const articlesHTML = [
         path: 'solving-disputes-with-your-tenants-in-abu-dhabi-4-tips-from-a-property-manager',
         title: 'Solving Disputes with Your Tenants in Abu Dhabi: 4 Tips from A Property Manager',
         metaDescription: 'Learn valuable insights from seasoned Abu Dhabi property managers on resolving tenant disputes amicably and efficiently. Discover prevention strategies, maintenance solutions, and steps to avoid costly legal action. Explore expert advice for harmonious landlord-tenant relationships.',
-        published: 'October 4, 2023',
+        published: '2023-10-4',
         headImg: article3Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article3Header} loading="lazy"/>
@@ -367,7 +367,7 @@ export const articlesHTML = [
         path: 'leaving-the-uae-15-tips-to-not-have-any-headaches-after-you-are-gone-especially-for-property-owners',
         title: 'Leaving the UAE? 15 Tips to Not Have Any Headaches After You Are Gone Especially for Property Owners',
         metaDescription: 'Leaving the UAE? Discover 15 essential tips for a seamless property transition. From Golden Visa strategies to managing Tawtheeq, settle debts, and choose between selling or renting. Ensure a headache-free departure with expert advice.',
-        published: 'October 12, 2023',
+        published: '2023-10-12',
         headImg: article4Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article4Header} loading="lazy"/>
@@ -477,7 +477,7 @@ export const articlesHTML = [
         path: 'avoid-these-5-common-mistakes-to-prevent-losses-on-your-investment',
         title: 'Avoid These 5 Common Mistakes to Prevent Losses on Your Investment',
         metaDescription: 'Explore the essential factors to consider beyond location when making a real estate investment in the thriving UAE market.',
-        published: 'October 27, 2023',
+        published: '2023-10-27',
         headImg: article5Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article5Header} loading="lazy"/>
@@ -584,7 +584,7 @@ export const articlesHTML = [
         path: 'how-to-get-a-poa-done-with-no-title-deed',
         title: 'How to Get a POA Done With NO Title Deed?',
         metaDescription: 'Navigate the UAE Power of Attorney (POA) process without a title deed. Follow our concise guide for overseas attestation, ensuring a seamless application from appointment to certification.',
-        published: 'November 17, 2023',
+        published: '2023-11-17',
         headImg: article6Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article6Header} loading="lazy"/>
@@ -688,7 +688,7 @@ export const articlesHTML = [
         path: 'top-11-questions-answered-on-property-golden-visa-application-in-abu-dhabi',
         title: 'Top 11 Questions Answered on Property Golden Visa Application in Abu Dhabi',
         metaDescription: 'Discover Abu Dhabi\'s Property Golden Visa FAQs with expert insights from Transparent Property Management UAE. Your essential guide to a successful UAE residency journey.',
-        published: 'December 5, 2023',
+        published: '2023-12-5',
         headImg: article7Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article7Header} loading="lazy"/>
@@ -781,7 +781,7 @@ export const articlesHTML = [
         path: 'discover-truth-behind-property-management-myths',
         title: 'Discover the Truth Behind Property Management Myths',
         metaDescription: 'Bust property management myths with Transparent PM—your partner in transparent, efficient, and expert services for a stress-free investment journey.',
-        published: 'November 27, 2023',
+        published: '2023-11-27',
         headImg: article8Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article8Header} loading="lazy"/>
@@ -855,7 +855,7 @@ export const articlesHTML = [
         path: 'is-having-a-poa-in-abu-dhabi-really-going-to-help-you-with-your-property',
         title: 'Is having a POA in Abu Dhabi really going to help you with your property?',
         metaDescription: 'Discover the impact of a Power of Attorney (POA) on property matters in Abu Dhabi.',
-        published: 'November 27, 2023',
+        published: '2023-11-27',
         headImg: article9Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article9Header} loading="lazy"/>
@@ -985,7 +985,7 @@ export const articlesHTML = [
         path: 'where-are-we-now-in-abu-dhabis-real-estate-cycle-will-prices-continue-to-rise-in-2024',
         title: 'Where Are We Now in Abu Dhabi`s Real Estate Cycle? Will Prices Continue to Rise in 2024?',
         metaDescription: 'Navigate Abu Dhabi`s 2024 real estate outlook with Transparent Property Management UAE for expert insights on growth, off-plan challenges, population dynamics, and potential hyper supply risks.',
-        published: 'January 14, 2024',
+        published: '2024-1-14',
         headImg: article10Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article10Header} loading="lazy"/>
@@ -1063,7 +1063,7 @@ export const articlesHTML = [
         path: 'what-to-do-next-to-receive-your-property',
         title: 'What to do next to receive your property? (and a FREE offer!)',
         metaDescription: 'Prepare for a seamless Abu Dhabi property handover with our concise guide',
-        published: 'January 22, 2024',
+        published: '2024-1-22',
         headImg: article11Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article11Header} loading="lazy"/>
@@ -1142,7 +1142,7 @@ export const articlesHTML = [
         path: 'abu-dhabi-or-dubai-comparing-2023-real-estate-markets',
         title: 'Abu Dhabi or Dubai? Comparing 2023 Real Estate Markets',
         metaDescription: 'Real estate markets comparison in UAE in 2023',
-        published: 'February 12, 2024',
+        published: '2024-2-12',
         headImg: article12Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article12Header} loading="lazy"/>
@@ -1243,7 +1243,7 @@ export const articlesHTML = [
         path: 'spotting-troublesome-tenants-a-property-managers-guide-to-red-flags-in-tenant -screening',
         title: `Spotting Troublesome Tenants: A Property Manager's Guide to Red Flags in Tenant Screening`,
         metaDescription: 'Learn how to identify red flags in tenant screening with expert insights from Transparent Property Management UAE',
-        published: 'February 19, 2024',
+        published: '2024-2-19',
         headImg: article13Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article13Header} loading="lazy"/>
@@ -1330,7 +1330,7 @@ export const articlesHTML = [
         path: 'how-can-you-maximize-rental-income-like-a-professional-property-manager',
         title: `How Can You Maximize Rental Income Like a Professional Property Manager?`,
         metaDescription: 'Learn how to maximize your rental income like a pro property manager with insights on premium rent potential, identifying revenue leaks, and rethinking rental strategies.',
-        published: 'March 11, 2024',
+        published: '2024-3-11',
         headImg: article14Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article14Header} loading="lazy"/>
@@ -1405,7 +1405,7 @@ export const articlesHTML = [
         path: 'how-to-screen-for-your-next-tenant',
         title: `How to Screen for Your Next Tenant?`,
         metaDescription: 'Unlock the secrets to effective tenant screening in Abu Dhabi with practical insights and strategies from Transparent Property Management UAE, guiding landlords towards finding the ideal tenants who respect and value their properties.',
-        published: 'March 19, 2024',
+        published: '2024-3-19',
         headImg: article15Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article15Header} loading="lazy"/>
@@ -1501,7 +1501,7 @@ export const articlesHTML = [
         path: 'short-term-lease-vs-annual-lease-which-one-is-for-you',
         title: `Short-Term Lease vs. Annual Lease: Which One is for You?`,
         metaDescription: 'Discover the pros and cons of short-term leasing versus annual leasing in Abu Dhabi`s real estate market.',
-        published: 'March 26, 2024',
+        published: '2024-3-26',
         headImg: article16Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article16Header} loading="lazy"/>
@@ -1576,7 +1576,7 @@ export const articlesHTML = [
         path: 'how-to-move-a-tenant-out-of-a-property-without-causing-too-much-backlash',
         title: `How to Move a Tenant Out of a Property Without Causing Too Much Backlash?`,
         metaDescription: 'Learn effective strategies for managing tenant move-outs smoothly and reducing friction by setting clear expectations, conducting thorough inspections, and staying proactive in communication to navigate the process seamlessly.',
-        published: 'March 29, 2024',
+        published: '2024-3-29',
         headImg: article17Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article17Header} loading="lazy"/>
@@ -1660,7 +1660,7 @@ export const articlesHTML = [
         path: '8-lessons-i-learned-being-a-property-manager-in-abu-dhabi',
         title: `8 Lessons I Learned Being a Property Manager in Abu Dhabi`,
         metaDescription: '8 Lessons Learned as a Property Manager in Abu Dhabi: From navigating unexpected changes to valuing problem solvers and prioritizing action over words, these insights highlight the importance of adaptability and resilience in property management.',
-        published: 'April 5, 2024',
+        published: '2024-4-5',
         headImg: article18Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article18Header} loading="lazy"/>
@@ -1728,7 +1728,7 @@ export const articlesHTML = [
         path: 'crowdfunding-uae-real-estate-a-game-changer-or-a-gamble',
         title: `Crowdfunding UAE Real Estate: A Game Changer or a Gamble?`,
         metaDescription: 'The article weighs the pros and cons of real estate crowdfunding in the UAE, advising cautious consideration due to its higher risks compared to traditional investment avenues like REITs, but acknowledging its potential for diversification.',
-        published: 'April 22, 2024',
+        published: '2024-4-22',
         headImg: article19Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article19Header} loading="lazy"/>
@@ -1796,7 +1796,7 @@ export const articlesHTML = [
         path: 'best-mathematical-strategy-to-find-your-best-property-to-invest-in',
         title: `Property Commitment Issue? Best Mathematical Strategy to Find Your Best Property to Invest in`,
         metaDescription: 'Discover the Optimal Stopping Theory as a strategic solution to the "commitment issue" in property investment, guiding buyers on when to act amidst infinite options, offered by Transparent Property Management UAE.',
-        published: 'May 6, 2024',
+        published: '2024-5-6',
         headImg: article20Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article20Header} loading="lazy"/>
@@ -1841,7 +1841,7 @@ export const articlesHTML = [
         path: 'why-the-uae-property-market-is-not-for-conservative-investors',
         title: `Why the UAE Property Market Is Not for Conservative Investors?`,
         metaDescription: 'Explore the unparalleled volatility of the UAE property market, advising potential investors to approach it with caution and robust portfolio management akin to cryptocurrency investment, as detailed by Transparent Property Management UAE.',
-        published: 'April 30, 2024',
+        published: '2024-4-30',
         headImg: article21Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article21Header} loading="lazy"/>
@@ -1882,7 +1882,7 @@ export const articlesHTML = [
         path: 'where-to-move-to-when-the-world-is-getting-crazier',
         title: `Where to move to when the world is getting crazier?`,
         metaDescription: 'Considering global instability and increasing risks, obtaining a UAE Golden Visa is a prudent strategy for ensuring safety and security for you and your family.',
-        published: 'May 14, 2024',
+        published: '2024-5-14',
         headImg: article22Header,
         htmlBody: `<div style='margin-top: 2.5em'>
         <img class='article-img' alt='property-manager' src=${article22Header} loading="lazy"/>

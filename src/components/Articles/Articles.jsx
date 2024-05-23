@@ -6,6 +6,7 @@ import Logo from '../common/Logo/Logo'
 import Footer from '../common/Footer/Footer'
 import { articlesHTML } from './articlesHTML'
 import SearchInput from './components/SearchInput';
+import RecentPosts from './components/RecentPosts';
 
 const Articles = () => {
   const [searchKeyword, setSearchKeyword] = useState('')
@@ -20,12 +21,11 @@ const Articles = () => {
     window.history.replaceState({}, '', '/articles');
   }, []);
 
-  const inputSearchHandler = (e) => {
-    setSearchKeyword(e.target.value)
-    if (e.target.value.length === 0) {
+  const inputSearchHandler = () => {
+    if (searchKeyword.length === 0) {
       setArticles(articlesHTML)
     } else {
-      const filteredArticles = articlesHTML.filter((article) => article.htmlBody.toLowerCase().includes(e.target.value.toLowerCase()))
+      const filteredArticles = articlesHTML.filter((article) => article.htmlBody.toLowerCase().includes(searchKeyword.toLowerCase()))
       setArticles(filteredArticles)
     }
   }
@@ -39,7 +39,7 @@ const Articles = () => {
           <p className='property-header'>Articles</p>
         </div>
       </div>
-      <SearchInput keyword={searchKeyword} handlerFunction={inputSearchHandler} />
+      <SearchInput keyword={searchKeyword} handleOnChange={(e) => setSearchKeyword(e.target.value)} handleOnClick={inputSearchHandler}/>
       <div className='articles-container'>
         {articles.map(article => {
           return (
@@ -51,6 +51,7 @@ const Articles = () => {
           )
         })}
       </div>
+      <RecentPosts />
       <div className='footer-wrapper'>
         <Footer />
       </div>

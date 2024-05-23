@@ -1,17 +1,41 @@
-.searchInputContainer {
+@import '../../../index.scss';
+.searchInputOuterContainer {
     display: flex;
     align-items: center;
-    input {
-        padding: 1em;
-        border-radius: 15px;
-        margin: 0.5em;
-        margin-left: 1em;
-        border: 2px solid #238DC1;
-        font-family: 'Open Sans', sans-serif;
-        width: 200px;
+    width: 70%;
+
+    @media screen and (max-width: 1805px) {
+        justify-content: center;
     }
-    @media screen and (max-width: 481px) {
-        flex-direction: column;
+
+    .searchInputContainer {
+        p {
+            margin: 16px 0.5em 10px 0.5em;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        input {
+            padding: 12px;
+            border-radius: 5px;
+            margin: 0.5em;
+            border: 1px solid #ccc;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            width: 200px;
+        }
+        button {
+            @include reset-button-style;
+            padding: 12px 15px 12px 15px;
+            background-color:rgba(57, 165, 175, 0.9);
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            margin: 5px 0 5px 0.5em;
+            border-radius: 5px;
+    
+            &:hover {
+                box-shadow: 0 0 10px 2px #ff9900;
+            }
+        }
     }
 
 }
