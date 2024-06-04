@@ -49,6 +49,8 @@ import article23Header from '../../assets/images/articlesImg/Article23/header.gi
 import article23BodyImg1 from '../../assets/images/articlesImg/Article23/bodyImg1.gif'
 import article24Header from '../../assets/images/articlesImg/Article24/header.gif'
 import article24BodyImg1 from '../../assets/images/articlesImg/Article24/bodyImg1.gif'
+import article25Header from '../../assets/images/articlesImg/Article25/header.gif'
+import article25BodyImg1 from '../../assets/images/articlesImg/Article25/bodyImg1.gif'
 
 export const articlesHTML = [
     {
@@ -2041,6 +2043,48 @@ export const articlesHTML = [
             <p>Some helpful article links below</p>
             <p>1) <a href='https://www.linkedin.com/pulse/where-we-big-cycle-brink-period-great-disorder-ray-dalio/'>Where We Are in the Big Cycle: On the Brink of a Period of Great Disorder</a></p>
             <p>2) <a href='https://www.oaktreecapital.com/insights/memo/sea-change'>Sea Change</a></p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 25,
+        path: 'a-peek-into-how-320-rich-families-actually-allocate-their-assets',
+        title: `A Peek into How 320 Rich Families Actually Allocate Their Assets`,
+        metaDescription: 'Explore how to navigate economic uncertainties with investment strategies from Ray Dalio, Howard Marks, and Robert Kiyosaki, emphasizing diversification and the enduring value of real estate.',
+        published: '2024-6-4',
+        headImg: article25Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article25Header} loading="lazy"/>
+        <h1 class='article-title'>A Peek into How 320 Rich Families Actually Allocate Their Assets</h1>
+        <div><i style='color: gray'>June 4, 2024</i></div>
+        <div class='article-body'>
+            <p>Last week, I shared insights from financial legends. This week, we are going to take a look into how rich people actually do their portfolio management. UBS just released its annual Global Family Office Report on 22 May 2024. This report surveyed 320 rich family offices and offers a glimpse into how these wealthiest, with an average net worth of USD 2.6 billion, actually put their money into.</p>
+            <p><b>Portfolio Diversification:</b></p>
+            <p>Diversification is certainly a major theme here. The report shows that more family offices are focusing on diversification and prefer more active management of their portfolios. Fixed income in developed markets has been gaining favor, marking the biggest shift in five years.</p>
+            <p>In terms of real estate investment, although it saw the biggest dip in 2023, dropping from 13% in 2022 to 10% due to concerns over commercial properties, it is expected to rebound to 12% in 2024. This indicates a cautious yet optimistic approach towards this asset class.</p>
+            <p><b>Regional Concerns and Greatest Perceived Risks in the Future:</b></p>
+            <p>Across all family offices, the top concern in the next 12 months is geopolitical conflict (58%), followed by worries about higher inflation (39%) and higher interest rates (37%).</p>
+            <p>For the long-term outlook over the next five years, geopolitical conflict once again tops the list with 62% concerned, followed by climate change (49%) and a debt crisis (48%).</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article25BodyImg1} class='article-img' alt='asset allocation' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>Two</b>particularly interesting points to highlight are:</p>
+            <p>1. Middle Eastern family offices are unique in that their top concern over the next five years is a major financial market crisis (57%), and they also seem to be the most in favor of real estate investment compared to their global peers.</p>
+            <p>2. Despite the high concern about geopolitical conflict, the Asia-Pacific region (excluding Greater China) is ranked second only to North America as the region where 35% of family offices are looking to increase allocations to capture growth.</p>
+            <p class='quote'>
+                In terms of real estate investment, although it saw the biggest dip in 2023, dropping from 13% in 2022 to 10% due to concerns over commercial properties, it is expected to rebound to 12% in 2024. This indicates a cautious yet optimistic approach towards this asset class.
+            </p>
+            <p>This report not only reveals how rich families are actually allocating their assets but also provides regional perspectives on how they view the world, the opportunities, and the risks. Interestingly, although the Asia-Pacific region is generally considered a hotspot for geopolitical tension, it remains a favored destination for increasing portfolio allocations. It seems that the best returns are happening in some of the most challenging areas now.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
+            <p>References:</p>
+            <p><a href='https://transparentpm.ae/articles/major-changes-are-happening-in-our-economy-are-we-prepared'>Major Changes are happening in our economy. Are we prepared?</a></p>
+            <p><a href='https://www.ubs.com/global/en/media/display-page-ndp/en-20240522-global-family-office-report-2024.html'>UBS Global Family Market Report 2024: balance is back</a></p>
         </div>    
     </div>`,
     },
