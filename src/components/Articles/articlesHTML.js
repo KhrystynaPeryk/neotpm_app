@@ -45,6 +45,10 @@ import article21Header from '../../assets/images/articlesImg/Article21/header.gi
 import article21BodyImg1 from '../../assets/images/articlesImg/Article21/bodyImg1.png'
 import article22Header from '../../assets/images/articlesImg/Article22/header.gif'
 import article22BodyImg1 from '../../assets/images/articlesImg/Article22/bodyImg1.png'
+import article23Header from '../../assets/images/articlesImg/Article23/header.gif'
+import article23BodyImg1 from '../../assets/images/articlesImg/Article23/bodyImg1.gif'
+import article24Header from '../../assets/images/articlesImg/Article24/header.gif'
+import article24BodyImg1 from '../../assets/images/articlesImg/Article24/bodyImg1.gif'
 
 export const articlesHTML = [
     {
@@ -1921,5 +1925,123 @@ export const articlesHTML = [
             </p>
         </div>    
     </div>`,
-    }
+    },
+    {
+        id: 23,
+        path: 'can-1-million-dirhams-get-you-golden-visa-in-uae-via-property-investment',
+        title: `Can 1 Million Dirhams Get You Golden Visa in UAE via Property Investment?`,
+        metaDescription: 'Discover how investing 1 million dirhams in UAE property can potentially help you work towards obtaining the Golden Visa through strategic real estate investments and alternative visa options.',
+        published: '2024-5-20',
+        headImg: article23Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article23Header} loading="lazy"/>
+        <h1 class='article-title'>Can 1 Million Dirhams Get You Golden Visa in UAE via Property Investment?</h1>
+        <div><i style='color: gray'>May 20, 2024</i></div>
+        <div class='article-body'>
+            <p>Over the weekend, a friend of mine—a fellow mom—asked me an interesting question. She wants to invest in UAE property with a budget of 1 million dirhams and hopes to use this investment to obtain the Golden Visa.</p>
+            <p>I bet many of you have had similar thoughts. You want the Golden Visa, but the 2 million AED requirement seems daunting. Plus, there's the worry that property prices in the UAE might keep rising before you can save up the 2 million AED needed to invest.</p>
+            <p>So, can you make the most of the 1 million AED you have now to work towards your Golden Visa goal? Absolutely. Here are four ways to get started: (If you have other ideas, I'd love to hear them too!)</p>
+            <p>1. <b>Start with the Investor Visa</b> - While the Golden Visa often steals the spotlight as a fantastic 10-year residency option, don't overlook the Investor Visa. With a real estate investment of just 750k AED, you can get a 2-year visa.</p>
+            <p>2. <b>Buy Smaller Properties</b> - One great aspect of the Golden Visa scheme is that you can combine properties to meet the 2 million AED threshold, as long as the properties are within the same emirate. You can start with a 1-bedroom property for 800k AED this year (and get your investor visa). Next year, you could buy another 1-bedroom for 700k AED, and in the third year, a studio for 500k AED. This way, you're gradually building up your property investment portfolio and working towards that 10-year Golden Visa.</p>
+            <p>3. <b>Invest in Off-Plan Projects and Pay in Installments</b> - If you're working with limited finances, off-plan projects are a fantastic option. The initial down payment is lower, and you can pay off the investment in installments. As long as the total amount you pay towards your off-plan property reaches 2 million AED or more, you can apply for your Golden Visa. Just be sure to carefully evaluate any off-plan projects and choose reputable developers.</p>
+            <p>4. <b>Mortgage</b> - This can be a bit more challenging if you're not already a UAE resident, but it's doable. We've had clients who successfully navigated this path. With 1 million AED, you could purchase a property worth 2 million AED by taking out a 50% mortgage. Although you can't immediately apply for your Golden Visa—since the amount paid by you less the mortgage should be 2 million AED or more—you can lock in the current property price, secure the property you love without worrying about future price increases, and potentially start earning from the rent. Once you pay off your mortgage and meet the 2 million AED investment requirement, you can apply for your Golden Visa.</p>
+            <p class='quote'>
+                As long as the total amount you pay towards your off-plan property reaches 2 million AED or more, you can apply for your Golden Visa. Just be sure to carefully evaluate any off-plan projects and choose reputable developers.
+            </p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article23BodyImg1} class='article-img' alt='golden visa' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>
+                Lastly, I want to emphasize that this post focuses on those wanting to get the Golden Visa through real estate investment. 
+                However, this isn't the only way to obtain the Golden Visa. The UAE government has opened up several categories that support Golden Visa applications. 
+                You can check them out here <a href='https://tinyurl.com/visa-categories-uae'>https://tinyurl.com/visa-categories-uae</a>. 
+                There are also many other visa categories to consider if you're simply looking for residency (check out here <a href='https://tinyurl.com/residence-visas'>https://tinyurl.com/residence-visas</a>).</p>
+            <p>That said, real estate investment or a fixed deposit investment of 2 million AED is still likely the most straightforward and popular route. If you want to learn more about the Golden Visa, real estate, or property management, feel free to reach out!</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 24,
+        path: 'major-changes-are-happening-in-our-economy-are-we-prepared',
+        title: `Major Changes are happening in our economy. Are we prepared?`,
+        metaDescription: 'Explore how to navigate economic uncertainties with investment strategies from Ray Dalio, Howard Marks, and Robert Kiyosaki, emphasizing diversification and the enduring value of real estate.',
+        published: '2024-5-27',
+        headImg: article24Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article24Header} loading="lazy"/>
+        <h1 class='article-title'>Major Changes are happening in our economy. Are we prepared?</h1>
+        <div><i style='color: gray'>May 27, 2024</i></div>
+        <div class='article-body'>
+            <p>I believe that during any economic cycle, there will always be talk of an impending crash or burst of a bubble. Therefore, it's not news when someone makes such a prediction, and we probably shouldn't pay too much attention to it. However, when not just one or two, but several prominent figures are talking about an upcoming drastic change, we should certainly give it some thought.</p>
+            <p>Our current economy seems to be heading towards a potential catastrophe. Among investors, whether in real estate, stocks, Bitcoin, or commodities, many are cheering for a bullish 2024. However, more and more prominent investors worldwide warn us that a “<b>drastic change</b>” is about to come.</p>
+            <p>Ray Dalio, Founder of Bridgewater® Associates, says we are on the brink of a period of “great disorder”. Howard Marks, Co-chairman of Oaktree Capital Management, says we are going to see the third “sea change” coming soon. Robert Kiyosaki, author of the best-selling financial education book <i>Rich Dad Poor Dad</i>, says a big storm is brewing in the world economy.</p>
+            <p>Although no one can predict exactly when this drastic change will occur, it is the trend we are heading towards.</p>
+            <p>With the shift in global political dynamics and advancements in technology, the ramifications of this change are less predictable. So “be prepared” is probably the best advice to keep in mind when making our investment decisions. Above all, “diversification” will be the best strategy to navigate through a period of uncertainty.</p>
+            <p class='quote'>
+                During any economic cycle, there will always be talk of an impending crash or burst of a bubble. Therefore, it's not news when someone makes such a prediction, and we probably shouldn't pay too much attention to it. However, when not just one or two, but several prominent figures are talking about an upcoming drastic change, we should certainly give it some thought.
+            </p>
+            <p>In this article, I am going to summarize the investment advice from Ray Dalio, Howard Marks, and Robert Kiyosaki.</p>
+            <p><b>Howard Marks</b></p>
+            <p>Howard Marks emphasizes a cautious approach to investment, given the current economic uncertainties. He advocates for:</p>
+            <p>1. Credit Market Investments: Marks recommends a significant allocation to high-quality credit instruments, which offer attractive returns in a higher interest rate environment. He believes that credit markets provide better risk management and yield opportunities compared to equities in the current cycle.</p>
+            <p>2. Cautious Equity Investments: Marks suggests focusing on high-quality companies and maintaining a balanced equity allocation to navigate market volatility.</p>
+            <p>3. Role of Cash: Marks values holding cash for its optionality, allowing investors to capitalize on market downturns and opportunities.</p>
+            <p>4. Bitcoin and Precious Metals: Marks doesn't believe there is much intrinsic value in these assets. Their worth is determined by what others are willing to pay, but they can still be included in small portions in a portfolio.</p>
+            <p>So if we make a hypothetical guess on Marks' ideal portfolio, probably it will be something like this.</p>
+            <p>- Credit Market Investments: 50-60%</p>
+            <p>- Equities (High-Quality Companies): 20-30%</p>
+            <p>- Real Estate: 10-20%</p>
+            <p>- Speculative Assets (Precious Metals, Bitcoin): Minimal allocation, if any</p>
+            <p><b>Ray Dalio</b></p>
+            <p>Ray Dalio's investment philosophy centers around diversification and balancing risk. His famous All Weather Portfolio includes:</p>
+            <p>1. A mix of 30% stocks, 40% long-term treasury bonds, 15% intermediate-term treasury bonds, 7.5% gold, and 7.5% commodities. This diversified approach helps manage risks across different economic conditions.</p>
+            <p>2. On cash: Unlike Marks' opinion on cash, Dalio is generally wary of holding too much cash due to inflation risks and prefers assets that provide real returns, such as commodities and real estate.</p>
+            <p><b>Robert Kiyosaki</b></p>
+            <p>Robert Kiyosaki's investment strategy focuses on tangible assets. From his own portfolio, he advocates holding:</p>
+            <p>1. Gold, Silver, and Bitcoin: 75% of the portfolio. This allocation includes physical gold and silver, as well as Bitcoin. Kiyosaki emphasizes these assets due to their intrinsic value and their ability to serve as a hedge against inflation and economic instability.</p>
+            <p>2. Real Estate and Oil Stocks: 25% of the portfolio. This portion of the portfolio should be invested in real estate and oil stocks. Real estate provides income and potential for appreciation, while oil stocks are considered valuable due to the critical role of oil in the economy and its relatively stable value.</p>
+            <p>3. Avoiding Cash: Kiyosaki is critical of holding cash, considering it a depreciating asset in an inflationary environment.</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article24BodyImg1} class='article-img' alt='financial reminder' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p class='quote'>
+                Dalio is generally wary of holding too much cash due to inflation risks and prefers assets that provide real returns, such as commodities and real estate.
+            </p>
+            <p><b>The Role of Real Estate Investment</b></p>
+            <p>From the above summaries of the three prominent financial figures' investment strategies, we can see their opinions generally differ on precious metals, Bitcoin, and cash. However, there are two things that they all agree on:</p>
+            <ul>
+                <li><b>Diversification strategy becomes increasingly crucial in an uncertain world.</b></li>
+                <li><b>Real Estate remains a vital component of a diversified portfolio, especially in the current economic context.</b></li>
+            </ul>
+            <p>Here's why:</p>
+            <p>1.       Tangible Asset with Intrinsic Value: Real estate is one of the few physical assets that actually has a generally recognized intrinsic value. Unlike precious metals or Bitcoin, whose claims of intrinsic value are often debated.</p>
+            <p>2.       Income Generation: Properties can offer consistent cash flow through rental income, which is crucial during periods of economic uncertainty and market volatility.</p>
+            <p>3.       Inflation Hedge: Real estate values and rental incomes typically rise with inflation, preserving the purchasing power of investments.</p>
+            <p>4.       Diversification: Including real estate in a portfolio helps diversify investment risks, balancing the volatility of stocks and the fixed income from bonds.</p>
+            <p><b>Conclusion</b></p>
+            <p>I feel we are walking in some kind of darkness right now. We know the direction we are heading, but we can't see clearly when it's going to happen and how it's going to happen. All we know is that many things that were once stable or taken for granted have now been shaken.</p>
+            <p class='quote'>One thing is certain: we are in an era of uncertainty.</p>
+            <p>However, even though we don't know the exact details, by incorporating insights from Howard Marks, Ray Dalio, and Robert Kiyosaki, investors can better prepare for economic uncertainties.</p>
+            <p>Lastly, it's worth mentioning that although real estate is generally considered a conservative investment, whether property prices go up or down in the short term largely depends on supply and demand, the level of leverage in a given economy (interest rates), and the financial vehicles used (like REITs, land, leased properties, etc.). Nothing is certain in our uncertain world, but choosing the right property to invest in will certainly strengthen the robustness of your investment portfolio.</p>
+            <p>By understanding and giving deeper thought into how we structure our own portfolios, we will be in better shape when something drastic happens.</p>
+            <p>Meara He</p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
+            <p>Some helpful article links below</p>
+            <p>1) <a href='https://www.linkedin.com/pulse/where-we-big-cycle-brink-period-great-disorder-ray-dalio/'>Where We Are in the Big Cycle: On the Brink of a Period of Great Disorder</a></p>
+            <p>2) <a href='https://www.oaktreecapital.com/insights/memo/sea-change'>Sea Change</a></p>
+        </div>    
+    </div>`,
+    },
 ];
