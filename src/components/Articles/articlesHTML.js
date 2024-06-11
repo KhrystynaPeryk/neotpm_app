@@ -53,6 +53,9 @@ import article25Header from '../../assets/images/articlesImg/Article25/header.gi
 import article25BodyImg1 from '../../assets/images/articlesImg/Article25/bodyImg1.gif'
 import article26Header from '../../assets/images/articlesImg/Article26/header.gif'
 import article26BodyImg1 from '../../assets/images/articlesImg/Article26/bodyImg1.gif'
+import article27Header from '../../assets/images/articlesImg/Article27/header.gif'
+import article27BodyImg1 from '../../assets/images/articlesImg/Article27/bodyImg1.gif'
+import article27BodyImg2 from '../../assets/images/articlesImg/Article27/bodyImg2.gif'
 
 export const articlesHTML = [
     {
@@ -2127,6 +2130,62 @@ export const articlesHTML = [
             </p>
             <p>The real estate market in Abu Dhabi offers exciting opportunities, but navigating it successfully requires more than just optimism and basic market knowledge. Engaging a professional, experienced real estate broker can provide the expertise, accountability, and comprehensive services that are crucial for making the best investment decisions. By offering personalized advice, market insights, and end-to-end services, brokers ensure that your investment not only meets but exceeds your financial goals.</p>
             <p>In a constantly changing market of real estate investments, the value of a skilled broker cannot be overstated. They are not just intermediaries; they are strategic partners dedicated to helping you achieve long-term financial success. Trusting in their expertise and allowing them to guide your investment strategy is a decision that can significantly enhance your returns and ensure your peace of mind. So, the next time you think about diving into the Abu Dhabi real estate market, remember: having a broker by your side is like having a seasoned pilot guiding you through turbulent skies—essential for a smooth and successful journey.</p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 27,
+        path: 'my-shocking-and-painful-experiences-of-buying-a-property-in-the-uk',
+        title: `My Shocking and Painful Experiences of Buying a Property in the UK`,
+        metaDescription: 'Meara He, a seasoned property manager from Abu Dhabi, details her frustrating experience of buying property in Manchester, UK, where she faced significant differences in real estate processes.',
+        published: '2024-6-11',
+        headImg: article27Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article27Header} loading="lazy"/>
+        <h1 class='article-title'>My Shocking and Painful Experiences of Buying a Property in the UK</h1>
+        <div><i style='color: gray'>June 11, 2024</i></div>
+        <div class='article-body'>
+            <p>Being a property manager and owning a property in Abu Dhabi for over 7 years made me think I knew everything about purchasing and managing properties…until I bought one myself in Manchester, UK.</p>
+            <p>Right from the start, I knew the process would be different. But I didn't expect them to be so different and, frankly…painful.</p>
+            <p>Being a property manager in Abu Dhabi, can sometimes feel like a small-town girl, wondering how the international standard of real estate transaction and property management service must be like. I was ready to soak in all the lessons learning from the best before I started my purchasing journey. But it turned out, the only brilliant part was the real estate agency in Abu Dhabi that sold me the property, the rest of the service providers in the UK dropped the ball everywhere, leaving me, an international buyer, confused and suffering.</p>
+            <p><b>Why am I even paying for my solicitor who can't be bothered to do their findings?</b></p>
+            <p>Mine really wasn't a complicated case. I bought it straight from the developer without any mortgage. The solicitor I hired was recommended by the developer and my agent since they are very experienced with this project.</p>
+            <p>It turned out, their findings were frankly laughable and appalling. They claimed the building was still under construction when residents had already moved in, and my agent did a better job at obtaining the correct service charge amount than those “professional solicitors”.</p>
+            <p>I had to proofread, supposedly, legal report 3 times and each time with corrections. It's obvious that they simply copied and pasted what they previously did for other clients without verifying the information before sending it to me. However, despite their lack of professionalism, not a single one of them apologized for their mistakes or the inconvenience they caused to their clients. How nice.</p>
+            <p><b>Duly signed SPA is not a common sense.</b></p>
+            <p>When my solicitor informed me that the sales transfer was done, I expected to see a duly signed sales and purchase agreement (SPA) from both the seller and the buyer, like how it is done in Abu Dhabi, and most of the world, I'd assume.</p>
+            <p><b>Wrong. Not in England.</b></p>
+            <p>Instead of a duly signed SPA, I got one signed copy by the seller, and one copy signed by the buyer (by my solicitor).</p>
+            <p>Very confused, I asked can I have a duly signed copy where both the buyer and the seller's signatures are in one copy. (Considering how many mistakes they made, I couldn't trust them even if they attested the copies are the same).</p>
+            <p>My solicitor simply responded, this is the standard procedure in England, and they cannot assist me further to obtain the duly signed version.</p>
+            <p>Very polite.</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article27BodyImg1} class='article-img' alt='property' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>Delays in Registration</b></p>
+            <p>In Abu Dhabi, upon the completion of the sales transfer, the buyer receives a shiny title deed under their name. But once again, I failed to recognize that the UK and Abu Dhabi are very different. Something that takes Abu Dhabi Municipality 10 minutes to do takes the UK's local authority, according to my solicitor, 6 months to a year (or even longer) to register the title under my name. After informing me to be patient indefinitely, my solicitor disappeared, leaving me clueless about the status of my title registration. Eventually, seven months later, I confirmed the property title was registered under my name because I received an official letter from a debt collection agency about my outstanding ground rent, “thoughtfully” including a copy of my register of title!</p>
+            <p><b>Questioning the Role of My Property Manager</b></p>
+            <p>Owning a property management business in Abu Dhabi, I was shocked by the scope of work in the UK. Back to the overdue ground rent from the debt collector, I asked my property manager why they didn't pay the ground rent on my behalf since they received all the rental from my tenant before wiring me the balance. They said it wasn't their scope of work. Apparently, it also wasn't their scope of work to send me any posts delivered to my address in the UK on time, which is how the ground rent invoice became overdue.</p>
+            <p>Not long after settling my ground rent overdue, I received another notice of my service charge overdue, with fines imposed. Outraged, I asked my property manager why this was also overdue. The answer was the same: it wasn't her scope of work to pay the overdue service charge. She advised me to register my property directly with the service charge billing company's portal so I could receive communication via email.</p>
+            <p>Fine. I immediately registered my property with the service charge billing company's portal to avoid missing any invoices. Wrong. Another month later, I received another overdue notice with fines, this time for my parking slot. Puzzled, I wondered why I had any outstanding bills without any email communication. But this time, I didn't bother asking my property manager. I contacted the customer service of the service charge billing portal and found out I needed to register my parking as a separate “property” on their portal and pay a separate service charge for it.</p>
+            <p>This is beyond confusing for an international investor, as in Abu Dhabi, the service charge includes your parking space, so you only pay once and don't have to register separately. At least for my company, we always try to help settle any outstanding bills for our clients before wiring them the rent, leaving them worry-free about the nitty-gritty of property upkeep. But perhaps this “standard” service is not so standard.</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article27BodyImg2} class='article-img' alt='financial reminder' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p>Don't get me wrong, I still see the value of having a property manager in the UK, but sometimes, I wonder what justifies their rates, which are double what my company charges in Abu Dhabi, for doing less.</p>
+            <p><b>Conclusion</b></p>
+            <p>This is my true story, just the tip of the iceberg of all the confusion and struggles I went through to purchase and keep this property in the UK. I still believe my investment decision is correct, but too many service providers and no one feeling ultimately responsible to their clients means the ball got dropped everywhere. Every time I picked it up, there was a financial consequence. I just wish someone could have held my hand better from the beginning to the end, explaining even the nitty-gritty details like registering both the parking and property on the service provider's portal.</p>
+            <p>As a lesson learned from my painful experiences, we are not going to do that to our clients. We hold each client's hand throughout the entire sales process and even after the sale is done. We only let them go once we know the seller's name is removed from all the billing companies' communication, and the buyer is registered with them.</p>
+            <p>If you are an international buyer or seller and don't want to go through this horror of being charged for not knowing what's going on, let us know. In addition to your sales agents, we can assist with all the documentation, inform you about the sales process, and take care of the post-sales stuff for you.</p>
+            <p>I wish your transaction much smoother than mine.</p>
+            <p><b>by: Meara He</b></p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p><b>+971 56 442 0883</b></p>
         </div>    
     </div>`,
     },
