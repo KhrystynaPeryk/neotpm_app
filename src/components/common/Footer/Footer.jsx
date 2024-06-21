@@ -4,7 +4,7 @@ import './Footer.scss'
 import Crompton from '../../../assets/images/CP.png'
 import Google from '../../../assets/images/google.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookSquare, faLinkedin, faSquareInstagram, faWhatsappSquare} from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faLinkedin, faSquareInstagram, faWhatsappSquare, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import PlayStoreLogo from '../../../assets/images/logo_playstore.svg'
 import AppStoreLogo from '../../../assets/images/logo_appstore.svg'
 
@@ -18,7 +18,8 @@ const Footer = () => {
         backgroundColor: '#1e5258', 
         width: '30px', 
         height: '30px',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        marginLeft: '0.5em'
     }
 
     return (
@@ -57,6 +58,7 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faSquareInstagram} style={iconStyle} onClick={() => redirectToSocialPage('https://www.instagram.com/transparentpm_auh/?fbclid=IwAR1aiMtOIfc8ThmLDSNeO8D3sTiKHGky8kmRPUhqZEx5lJDdIMAg1vXcr0w')} />
                         <FontAwesomeIcon icon={faFacebookSquare} style={iconStyle} onClick={() => redirectToSocialPage('https://www.facebook.com/tpmUAE')} />
                         <FontAwesomeIcon icon={faWhatsappSquare} style={iconStyle} onClick={() => redirectToSocialPage('https://api.whatsapp.com/send?phone=971564420883')} />
+                        <FontAwesomeIcon icon={faYoutube} style={iconStyle} onClick={() => redirectToSocialPage('https://www.youtube.com/@TransparentPM')} />
                     </div>
                 </div>
                 <div className='footer-content-block'>

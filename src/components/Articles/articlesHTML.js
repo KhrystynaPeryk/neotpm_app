@@ -56,6 +56,8 @@ import article26BodyImg1 from '../../assets/images/articlesImg/Article26/bodyImg
 import article27Header from '../../assets/images/articlesImg/Article27/header.gif'
 import article27BodyImg1 from '../../assets/images/articlesImg/Article27/bodyImg1.gif'
 import article27BodyImg2 from '../../assets/images/articlesImg/Article27/bodyImg2.gif'
+import article28Header from '../../assets/images/articlesImg/Article28/header.png'
+import article28BodyImg1 from '../../assets/images/articlesImg/Article28/bodyImg1.png'
 
 export const articlesHTML = [
     {
@@ -2186,6 +2188,64 @@ export const articlesHTML = [
                 <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
             </p>
             <p><b>+971 56 442 0883</b></p>
+        </div>    
+    </div>`,
+    },
+    {
+        id: 28,
+        path: 'self-management-vs-hiring-a-professional-which-is-the-right-approach-for-you',
+        title: `Self-Management vs. Hiring a Professional: Which is the Right Approach for You?`,
+        metaDescription: 'Pros and cons of self-managing rental properties versus hiring a professional property manager',
+        published: '2023-11-24',
+        headImg: article28Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article28Header} loading="lazy"/>
+        <h1 class='article-title'>Self-Management vs. Hiring a Professional: Which is the Right Approach for You?</h1>
+        <div><i style='color: gray'>November 24, 2023</i></div>
+        <div class='article-body'>
+            <p>Property management is a critical aspect of real estate investment, but it often poses a dilemma: should an investor self-manage their properties or hire a professional property manager? This decision can significantly impact the efficiency, profitability, and overall experience of managing rental properties. In this article, we explore the pros and cons of both approaches to help property owners make an informed decision.</p>
+            <p style='margin-top: 70px;'><b><i>Self-Managing Properties</i></b></p>
+            <p><b>🔵Pros:</b></p>
+            <p>· <b>Cost Savings</b>: One of the primary advantages of self-managing is the potential for cost savings. By managing properties themselves, owners avoid paying management fees.</p>
+            <p>· <b>Direct Control</b>: Self-management allows property owners to have direct control over their investment. This includes choosing tenants, setting rental rates, and making decisions about maintenance and repairs.</p>  
+            <p>· <b>Personal Relationships with Tenants</b>: Self-managing landlords often develop personal relationships with their tenants, which can lead to better tenant retention and care for the property.</p>
+            <p><b>🔴Cons:</b></p>
+            <p>· <b>Time-Consuming</b>: Managing properties is time-intensive. Owners must devote time to finding and vetting tenants, conducting maintenance, addressing tenant issues, and handling documentation.</p>
+            <p>· <b>Requires Expertise</b>: Landlords need a broad skill set, including knowledge of legal requirements, financial management, and maintenance skills.</p>
+            <p>· <b>Stressful</b>: Dealing with tenant issues, late payments, and emergency repairs can be stressful and challenging, especially for those with multiple properties or other full-time commitments.</p>
+            <p>· <b>Governmental Compliance</b>: Figuring out how to comply with governmental requirements is not easy. This is particularly true for individual owners, especially those overseas.</p>
+            <p style='margin-top: 70px;'><b><i>Hiring a Property Manager</i></b></p>
+            <p><b>🔵Pros:</b></p>
+            <p>· <b>Professional Expertise</b>: Property managers bring expertise in the local real estate market, legal compliance, and tenant management, which can lead to better property performance and fewer legal issues.</p>
+            <p>· <b>Time (& Headaches) Savings</b>: Delegating management tasks frees up time for property owners, allowing them to focus on other investments or personal pursuits.</p>
+            <p>· <b>Handling Tenant Issues</b>: Property managers handle all aspects of tenant management, including finding and vetting tenants, collecting rent, and addressing complaints or maintenance issues.</p>
+            <p>· <b>Clear Documentation</b>: Professional property management follows clear SOPs in handling all tenancy-related issues, which helps prevent future disputes.</p>
+            <p>· <b>Understanding of Local Market and Governmental Compliance</b>: It's challenging for overseas owners to stay informed about the market and comply with the government's new requirements on system updates or legal obligations. Property managers possess this knowledge and can assist overseas owners in quickly resolving issues.</p>
+            <p><b>🔴Cons:</b></p>
+            <p>· <b>Cost</b>: The primary drawback of hiring a property manager is the cost. Management fees can reduce the property's net income.</p>
+            <p>· <b>Less Personal Control</b>: Property owners have less direct control over their investment, relying on the property manager to make day-to-day decisions.</p>
+            <p>· <b>Potential for Misalignment of Interests</b>: There can be a misalignment of interests between the property owner and the manager. For instance, a manager may not be as motivated to keep costs low or may not handle tenant issues with the urgency a property owner might prefer.</p>
+            <p style='margin-top: 70px;'><b>Conclusion</b></p>
+            <p>Choosing between self-managing properties and hiring a property manager depends on various factors, including the owner's time availability, expertise, financial goals, and personal preference for involvement in management tasks. Both approaches have distinct advantages and challenges. Property owners should carefully consider their individual circumstances and long-term investment goals before making this crucial decision.</p>
+            <p class='quote'>
+                Property managers handle all aspects of tenant management, including finding and vetting tenants, collecting rent, and addressing complaints or maintenance issues.
+            </p>
+            <p><b>Here's the rule of thumb:</b></p>
+            <ul>
+                <li>If you have the time, don't mind disturbances from agents and tenants, and are willing to spend the effort figuring out the latest governmental requirements è manage the properties directly yourselves. It makes financial sense.</li>
+                <li>If you value your time,  don't want the unnecessary headaches from agents or tenants, and want to have someone to fall back on è you should hire a professional property manager. It will save you so much time and hassle. It will simplify your life a lot.</li>
+            </ul> 
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article28BodyImg1} class='article-img' alt='property managers' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><i>That said, if you are an overseas owner living outside of the UAE, it's most advisable to find a reliable and professional property manager to help you handle things locally. It would save you from a lot of headaches and worries.</i></p>
+            <p>A property manager is essentially your <b>personal assistant in real estate</b>. Whether that's something for you or not depends on your needs, but having a good one will certainly make your life much easier.</p>
+            <p><b>written by: Meara He</b></p>
+            <p>Director of Transparent Property Management</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
         </div>    
     </div>`,
     },
