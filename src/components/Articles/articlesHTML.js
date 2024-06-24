@@ -1337,6 +1337,7 @@ export const articlesHTML = [
             </p>
         </div>    
     </div>`,
+    youtubeUrl: 'https://youtube.com/shorts/DN2qzLx2WWw?feature=share',
     },
     {
         id: 14,
@@ -2248,5 +2249,6 @@ export const articlesHTML = [
             </p>
         </div>    
     </div>`,
+    youtubeUrl: 'https://www.youtube.com/shorts/jc5wjaUD-20',
     },
 ];

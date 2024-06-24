@@ -6,6 +6,7 @@ import NavBar from '../../common/NavBar/NavBar';
 import Footer from '../../common/Footer/Footer';
 import { Helmet } from 'react-helmet-async';
 import Spinner from '../../common/Spinner/Spinner';
+import { YouTubeEmbed } from 'react-social-media-embed';
 
 const ArticleItem = () => {
   const {path} = useParams()
@@ -40,6 +41,11 @@ const ArticleItem = () => {
             <NavBar />
             <div className='articleItem-container'>
               <div dangerouslySetInnerHTML={{ __html: article.htmlBody }} />
+              {article.youtubeUrl && (
+                <div className='video'>
+                  <YouTubeEmbed url={article.youtubeUrl} width={320} height={180} />
+                </div>
+              )}
             </div>
           </div>
           <div className='footer-wrapper'>
