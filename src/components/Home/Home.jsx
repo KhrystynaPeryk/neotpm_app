@@ -6,6 +6,7 @@ import Main from './components/Main';
 import Footer from '../common/Footer/Footer';
 import WhatsAppIcon from '../../assets/images/whatsapp-icon.png';
 import NavBar from '../common/NavBar/NavBar';
+import EmbeddedYouTube from '../common/EmbeddedYouTube/EmbeddedYouTube';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -22,11 +23,6 @@ const Home = () => {
     const [myFirstElementVisible, setMyFirstElementVisible] = useState(false);
     const [mySecondElementVisible, setMySecondElementVisible] = useState(false);
     const [myThirdElementVisible, setMyThirdElementVisible] = useState(false);
-
-    useEffect(() => {
-        //for old non existing urls like /contacts from the old website
-        window.history.replaceState({}, '', '/');
-    }, []);
 
     useEffect(() => {
         const handleIntersection = (entries) => {
@@ -126,6 +122,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home-services-image third-service-img" />
+                <EmbeddedYouTube youtubeUrl={"https://www.youtube.com/watch?v=yOQl2Wh5TII"} />
                 <Footer />
             </section>
         </div>

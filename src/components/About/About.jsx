@@ -6,6 +6,7 @@ import Maria from '../../assets/photos/Maria.png'
 import Angel from '../../assets/photos/Angel.png'
 import Jaypee from '../../assets/photos/Jaypee.png'
 import TeamMember from './components/TeamMember/TeamMember'
+import Meara from '../../assets/photos/Meara.png'
 import All from '../../assets/photos/all.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faLinkedin, faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -57,6 +58,7 @@ const About = () => {
                     </div>
                     <h2>Meet the team</h2>
                     <div className='team-members-container'>
+                        <TeamMember image={Meara} name={'Meara'} occupation={'Direactor'} />
                         <TeamMember image={Maria} name={'Maria'} occupation={'Head of Property Management'} />
                         <TeamMember image={Jaypee} name={'Jaypee'} occupation={'Property Maintenance Team Lead'} />
                         <TeamMember image={Angel} name={'Angel'} occupation={'Accountant'} />
