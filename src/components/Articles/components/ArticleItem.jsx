@@ -8,10 +8,16 @@ import { Helmet } from 'react-helmet-async';
 import Spinner from '../../common/Spinner/Spinner';
 import { YouTubeEmbed } from 'react-social-media-embed';
 
+const YOUTUBE_DEFAULT_WIDTH = 720;
+const YOUTUBE_DEFAULT_HEIGHT = 405;
+
 const ArticleItem = () => {
   const {path} = useParams()
   const [article, setArticle] = useState({ title: '', metaDescription: '', headImg: '', htmlBody: '' })
   const [isLoading, setIsLoading] = useState(true)
+
+  const [embedWidth, setEmbedWidth] = useState(YOUTUBE_DEFAULT_WIDTH);
+  const [embedHeight, setEmbedHeight] = useState(YOUTUBE_DEFAULT_HEIGHT);
 
   useEffect(() => {
     const filteredArticles = articlesHTML.filter((article) => article.path === path);
@@ -21,6 +27,23 @@ const ArticleItem = () => {
       setIsLoading(false)
     }
   }, [path]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 720) {
+        setEmbedWidth(320);
+        setEmbedHeight(180);
+      } else {
+        setEmbedWidth(YOUTUBE_DEFAULT_WIDTH);
+        setEmbedHeight(YOUTUBE_DEFAULT_HEIGHT);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call initially to set the correct size
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div className='property-container'>
@@ -43,8 +66,16 @@ const ArticleItem = () => {
               <div dangerouslySetInnerHTML={{ __html: article.htmlBody }} />
               {article.youtubeUrl && (
                 <div className='video'>
-                  <YouTubeEmbed url={article.youtubeUrl} width={320} height={180} />
-                </div>
+                  <YouTubeEmbed
+                    url={article.youtubeUrl}
+                    width={embedWidth}
+                    height={embedHeight}
+                    youTubeProps={{
+                      onReady: async (r) =>
+                        (await r.target.getIframe()).addEventListener('load', () => setEmbedHeight((height) => height + 1)),
+                    }}
+                  />
+              </div>
               )}
             </div>
           </div>

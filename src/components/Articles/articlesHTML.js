@@ -58,6 +58,8 @@ import article27BodyImg1 from '../../assets/images/articlesImg/Article27/bodyImg
 import article27BodyImg2 from '../../assets/images/articlesImg/Article27/bodyImg2.gif'
 import article28Header from '../../assets/images/articlesImg/Article28/header.png'
 import article28BodyImg1 from '../../assets/images/articlesImg/Article28/bodyImg1.png'
+import article29Header from '../../assets/images/articlesImg/Article29/header.png'
+import article29BodyImg1 from '../../assets/images/articlesImg/Article29/bodyImg1.gif'
 
 export const articlesHTML = [
     {
@@ -2250,5 +2252,62 @@ export const articlesHTML = [
         </div>    
     </div>`,
     youtubeUrl: 'https://www.youtube.com/shorts/jc5wjaUD-20',
+    },
+    {
+        id: 29,
+        path: 'why-owning-a-property-makes-you-poorer',
+        title: `Why Owning a Property Makes You Poorer?`,
+        metaDescription: 'Discover how owning property can strain your finances and learn why effective cash flow management is crucial to avoid becoming asset-rich but cash flow-poor.',
+        published: '2024-7-1',
+        headImg: article29Header,
+        htmlBody: `<div style='margin-top: 2.5em'>
+        <img class='article-img' alt='property-manager' src=${article29Header} loading="lazy"/>
+        <h1 class='article-title'>Why Owning a Property Makes You Poorer?</h1>
+        <div><i style='color: gray'>July 1, 2024</i></div>
+        <div class='article-body'>
+            <p>Have you ever wondered why, despite climbing up the property ladder, you might still feel financially strained?</p>
+            <p>Recently, two of my property management clients shared the same frustration: "I worked so hard to finally climb up the property ladder, but why do I feel so poor now?"</p>
+            <p>This initially seemed strange to me, but after some investigation, it became clear.</p>
+            <p>Owning a property is a lifelong dream for many. It's not just an investment; it's a badge of social status and a testament to your hard work and achievements. However, owning a property is not cheap, and maintaining an asset is not free. The problem these two owners face is that their properties are highly leveraged through mortgages, and they overlooked one critical factor when they purchased their properties - their cash flow.</p>       
+            <p style='margin-top: 70px;'><b>The Cash Flow Conundrum</b></p>
+            <p>How crucial is cash flow management? Consider these two famous real-world examples:</p>
+            <p>On September 15, 2008, Lehman Brothers declared bankruptcy. Who would have thought this corporation, once considered “too big to fail,” would truly collapse due to a cash flow crisis? They couldn't meet their short-term obligations because they couldn't liquidate their assets quickly enough.</p>
+            <p>Fifteen years later, a similar situation happened to Silicon Valley Bank. On March 10, 2023, Silicon Valley Bank collapsed because it faced a liquidity crisis and couldn't fulfill withdrawal requests from its depositors, despite holding substantial assets in long-term U.S. Treasury bonds and mortgage-backed securities, generally considered very safe assets.</p>
+            <p>These banks did not collapse due to a lack of assets. Quite the contrary, they owned plenty but nonetheless went under because of cash flow issues.</p>
+            <p class='quote'>
+                Owning a property is not cheap, and maintaining an asset is not free.
+            </p>
+            <p><b>Why Cash Flow Matters</b></p>
+            <p>When times are good, cash flow might seem like the least of our worries. However, in the real world, nothing stays good forever, and no one can accurately predict the future.</p>
+            <p>That's why cash flow is so important. It's the lubrication that ensures you can navigate all weathers, good and bad, smoothly. This is particularly crucial if the assets you own are properties. Properties are generally harder to liquidate and cost more than other assets, like stocks or bonds, to maintain. Ensuring your cash flow remains positive even during tough times is vital.</p>
+            <p>Ask yourself:</p>
+            <p>- How many months of mortgage can you afford to pay if you suddenly lose your job?</p>
+            <p>- How much cash can you allocate for major maintenance if your property requires it or if rental income drops?</p>
+            <div style='display: flex; flex-direction: column; align-items: center'>
+                <img src=${article29BodyImg1} class='article-img' alt='cash flow' loading="lazy"/>
+                <div class='img-caption' style='margin-top: 0.5em'><a style='text-decoration: none; color: gray' href='https://www.transparentpm.ae/'>www.transparentpm.ae</a></div>
+            </div>
+            <p><b>Insights from Experts</b></p>
+            <p>Nassim Nicholas Taleb, author of the bestsellers “The Black Swan: The Impact of the Highly Improbable” and “Skin in the Game,” suggests that due to the complexity and interconnectedness of the world, we are likely to see more Black Swan events in the future. These unexpected disasters could have significant impacts on us.</p>
+            <p style='margin-top: 70px;'><b>What Can We Do?</b></p>
+            <p>Acquiring an asset, especially something as expensive as a property, is a significant moment in our lives. It's a huge accomplishment! But before we hastily buy an asset just because we can, let's think carefully about what it takes to continue affording the asset once we own it.</p>
+            <p>Consider:</p>
+            <p>- Can you sustain it in all weather conditions?</p>
+            <p>- What if something unexpected happens, like job loss or illness?</p>
+            <p>- How can you ensure you can survive without constant worry?</p>
+            <p>Thinking carefully about how you will maintain the asset in both good and bad times and knowing you can survive regardless will eliminate the drastic risk of this cash flow conundrum.</p>
+            <p style='margin-top: 70px;'><b>Conclusion</b></p>
+            <p>Buying assets should bring hope for a brighter future, which heavily relies on how well you can manage your cash flow in all situations. Avoid being asset-rich but cash flow-poor, and you will find that having assets indeed makes you richer and happier.</p>
+            <p class='quote'>
+                Thinking carefully about how you will maintain the asset in both good and bad times and knowing you can survive regardless will eliminate the drastic risk of this cash flow conundrum.
+            </p>
+            <p>I'm not a financial expert, but if you'd like to discuss with someone independent without having any motive in selling you any properties in Abu Dhabi, you are welcome to reach me via</p>
+            <p>
+                <a href="mailto:meara.he@transparentpm.ae">meara.he@transparentpm.ae</a>
+            </p>
+            <p>Director of Transparent Property Management</p>
+            <p>Meara He</p>
+        </div>    
+    </div>`,
     },
 ];

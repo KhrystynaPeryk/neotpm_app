@@ -23,8 +23,19 @@
     .video {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 4em;
         margin-bottom: 5em;
+
+        .youtube-wrapper {
+            width: 720px;
+            height: 360px;
+
+            @media screen and (max-width: 720px) {
+                width: 320px;
+                height: 180px;
+            }
+        }
     }
 
     .article-title {

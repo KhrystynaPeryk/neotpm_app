@@ -2,7 +2,6 @@ import React from 'react'
 import './About.scss'
 import NavBar from '../common/NavBar/NavBar'
 import Sphere from '../../assets/images/about-us/abstract-about.png'
-import Omar from '../../assets/photos/Omar.png'
 import Maria from '../../assets/photos/Maria.png'
 import Angel from '../../assets/photos/Angel.png'
 import Jaypee from '../../assets/photos/Jaypee.png'
@@ -58,7 +57,6 @@ const About = () => {
                     </div>
                     <h2>Meet the team</h2>
                     <div className='team-members-container'>
-                        <TeamMember image={Omar} name={'Omar'} occupation={'Property Manager'} />
                         <TeamMember image={Maria} name={'Maria'} occupation={'Head of Property Management'} />
                         <TeamMember image={Jaypee} name={'Jaypee'} occupation={'Property Maintenance Team Lead'} />
                         <TeamMember image={Angel} name={'Angel'} occupation={'Accountant'} />
