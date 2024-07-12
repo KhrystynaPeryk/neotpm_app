@@ -78,7 +78,7 @@ const LeadGenerationPopUp = ({ onClose }) => {
             await saveLeadToFirestore(lead, 'pop up form')
 
             const bodyObj = selectedOption === 'POWER OF ATTORNEY' ? 
-                leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'omar.alsayes@transparentpm.ae', 'joshua.jamelo@transparentpm.ae')
+                leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'khrystyna.peryk@transparentpm.ae', 'joshua.jamelo@transparentpm.ae')
                 :
                 leadGenerationEmailTemplate(name, email, phone, selectedRole, selectedOption, 'joshua.jamelo@transparentpm.ae', 'khrystyna.peryk@transparentpm.ae');
 
